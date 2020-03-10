@@ -43,7 +43,6 @@ namespace DefaultNamespace.Battle
             }
             else
             {
-
                 m_Image.sprite = Fight_Sprite;
             }
             text.GetComponent<Text>().text = _rarit.ToString();

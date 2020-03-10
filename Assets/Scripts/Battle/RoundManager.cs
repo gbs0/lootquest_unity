@@ -11,7 +11,7 @@ public class RoundManager : MonoBehaviour
     public static Queue<TaticsMove> turnTeam = new Queue<TaticsMove>();
     private static GameObject EnemyPainel;
     public GameObject Painel;
-
+    public static bool Tutorial;
     private void Start()
     {
 	    EnemyPainel = Painel;
@@ -20,7 +20,8 @@ public class RoundManager : MonoBehaviour
     void Update()
     {
     	if (turnTeam.Count == 0)
-    	{
+        {
+	        
     		InitTeamTurnQueue();
     	}
     }
@@ -32,7 +33,7 @@ public class RoundManager : MonoBehaviour
     	{
     		turnTeam.Enqueue(unit);
     	}
-
+        if(Tutorial)
     	StartTurn();
     }
 
