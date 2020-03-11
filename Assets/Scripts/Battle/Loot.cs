@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace DefaultNamespace.Battle
-{
     public class Loot: MonoBehaviour
     {
         public int BadDrop = 50, MidDrop= 75, GoodDrop =90;
@@ -19,6 +17,7 @@ namespace DefaultNamespace.Battle
 
         public Transform text;
 
+        public GameManager gameManager;
 
 
         //private Animator PlayerAnim;
@@ -28,7 +27,10 @@ namespace DefaultNamespace.Battle
         {
             //PlayerAnim = gameObject.GetComponent<Animator>();
 
-            text = transform.GetChild(0);
+            // text = transform.GetChild(0);
+            GameManager gameManagerItemsList = gameManager.GetComponent<GameManager>();
+            listCount = gameManagerItemsList.itemList.Count;
+
             CanUse = true;
             m_Image = GetComponent<Image>();
             botao = transform.GetComponent<Button>();
@@ -39,11 +41,14 @@ namespace DefaultNamespace.Battle
             
             if (TypeLoot == 1)
             {
-                m_Image.sprite = Run_Sprite;
+                // Instancio novo item de movimento no inventário
+                Item newItem = gameManagerItemsList.itemList[Random.Range(0, gameManagerItemsList.itemList.Count)];
+                InventoryManager.instance.AddItem(Instantiate(newItem));
             }
             else
             {
-                m_Image.sprite = Fight_Sprite;
+                Item newItem = gameManagerItemsList.itemList[Random.Range(0, gameManagerItemsList.itemList.Count)];
+                InventoryManager.instance.AddItem(Instantiate(newItem));
             }
             text.GetComponent<Text>().text = _rarit.ToString();
         }
@@ -111,4 +116,3 @@ namespace DefaultNamespace.Battle
         
     }
     
-}
