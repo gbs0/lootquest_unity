@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
 
     public class Loot: MonoBehaviour
     {
@@ -27,7 +29,7 @@ using UnityEngine.UI;
 
             // text = transform.GetChild(0);
             GameManager gameManagerItemsList = gameManager.GetComponent<GameManager>();
-            // listCount = gameManagerItemsList.itemList.Count;
+            Debug.Log(gameManagerItemsList.itemList.Count); // Conta quantos items tem no gameManager
             
             CanUse = true;
             m_Image = GetComponent<Image>();
