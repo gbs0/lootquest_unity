@@ -29,16 +29,16 @@ namespace DefaultNamespace.Battle
         }
         void Update()
         {
-            if(tempo)
-            {
-                timeStart += Time.deltaTime;
+            // if(tempo)
+            // {
+            //     timeStart += Time.deltaTime;
 
-            }
-            if (timeStart >= 1.5f)
-            {
+            // }
+            // if (timeStart >= 1.5f)
+            // {
 
                 
-            }
+            // }
         }
 
         private void RunLoot()
