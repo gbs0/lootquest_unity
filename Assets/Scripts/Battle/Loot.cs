@@ -19,7 +19,7 @@ namespace DefaultNamespace.Battle
 
         public Transform text;
 
-
+        public GameManager gameManager;
 
         //private Animator PlayerAnim;
 
