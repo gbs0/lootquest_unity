@@ -28,8 +28,9 @@ using System.Collections.Generic;
             //PlayerAnim = gameObject.GetComponent<Animator>();
 
             // text = transform.GetChild(0);
-            GameManager gameManagerItemsList = gameManager.GetComponent<GameManager>();
-            Debug.Log(gameManagerItemsList.itemList.Count); // Conta quantos items tem no gameManager
+
+            GameManager gameManagerItemsList = FindObjectOfType<GameManager>();
+            // listCount = gameManagerItemsList.itemList.Count;
             
             CanUse = true;
             m_Image = GetComponent<Image>();
