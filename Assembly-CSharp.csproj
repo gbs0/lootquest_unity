@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3A45D873-2288-4397-A7D8-C59AD63ADF57}</ProjectGuid>
+    <ProjectGuid>{D22BD355-2C6F-826B-395D-244EDE05013D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -178,64 +178,64 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Cinemachine">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.CacheServer">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ScriptableBuildPipeline.Editor">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Editor">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Runtime">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Lightweight.Runtime">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Lightweight.Editor">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Editor">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Runtime">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.cinemachine.editor">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ScriptableBuildPipeline">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ShaderGraph.Editor">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -421,43 +421,43 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Compat">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Tasks">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Auth">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
  </Reference>
  <Reference Include="Google.MiniJson">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Storage">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Assets/Firebase/Plugins/Firebase.Storage.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Assets/Firebase/Plugins/Firebase.Storage.dll</HintPath>
  </Reference>
  <Reference Include="Google.Sharpen">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Assets/Firebase/Plugins/Google.Sharpen.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Assets/Firebase/Plugins/Google.Sharpen.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Analytics">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Assets/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Assets/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.App">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Platform">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.TaskExtension">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>/Users/gpineappleb/Desktop/c9_Backup/TCCLootBox/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>/Users/gpineappleb/Desktop/c9_Backup/lootquest_unity/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/Applications/Unity/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
