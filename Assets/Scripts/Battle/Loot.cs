@@ -19,9 +19,7 @@ using UnityEngine.UI;
 
         public GameManager gameManager;
 
-
         //private Animator PlayerAnim;
-
 
         private void Awake()
         {
