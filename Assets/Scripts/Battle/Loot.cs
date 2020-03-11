@@ -29,7 +29,7 @@ using UnityEngine.UI;
 
             // text = transform.GetChild(0);
             GameManager gameManagerItemsList = gameManager.GetComponent<GameManager>();
-            // listCount = gameManagerItemsList.itemList.Count;
+            listCount = gameManagerItemsList.itemList.Count;
 
             CanUse = true;
             m_Image = GetComponent<Image>();
