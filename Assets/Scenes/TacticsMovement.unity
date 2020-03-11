@@ -1639,7 +1639,6 @@ GameObject:
   - component: {fileID: 344683073}
   - component: {fileID: 344683072}
   - component: {fileID: 344683071}
-  - component: {fileID: 344683074}
   m_Layer: 5
   m_Name: lootpainel
   m_TagString: Untagged
@@ -1728,18 +1727,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344683069}
   m_CullTransparentMesh: 0
---- !u!114 &344683074
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 344683069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ed24295fe584db08d57cd7e82b632d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &354202751
 GameObject:
   m_ObjectHideFlags: 0
@@ -5521,7 +5508,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &916364140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7873,7 +7860,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1136845047}
   - component: {fileID: 1136845046}
-  - component: {fileID: 1136845048}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -7928,30 +7914,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1136845048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136845045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8984c280801e4850b87c3bba5e3cd677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BadDrop: 50
-  MidDrop: 75
-  GoodDrop: 90
-  TypeLoot: 0
-  CanUse: 0
-  _rarit: 0
-  botao: {fileID: 0}
-  m_Image: {fileID: 0}
-  Run_Sprite: {fileID: 0}
-  Fight_Sprite: {fileID: 0}
-  text: {fileID: 0}
-  gameManager: {fileID: 1136845046}
 --- !u!1 &1175737352
 GameObject:
   m_ObjectHideFlags: 0
@@ -9205,6 +9167,7 @@ GameObject:
   - component: {fileID: 1318098722}
   - component: {fileID: 1318098724}
   - component: {fileID: 1318098723}
+  - component: {fileID: 1318098725}
   m_Layer: 5
   m_Name: inventorySlotParent
   m_TagString: Untagged
@@ -9269,6 +9232,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &1318098725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318098721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed24295fe584db08d57cd7e82b632d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1328292408
 GameObject:
   m_ObjectHideFlags: 0
@@ -12513,7 +12488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 676cadc979da85c47bf44566f9dca611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PainelLootBox: {fileID: 344683069}
+  PainelLootBox: {fileID: 1318098721}
   LootBoxPrefab: {fileID: 5931145552630058116, guid: ed31b6d107d9cca44a0cb12c18343a50,
     type: 3}
   BuyButton: {fileID: 1666242985}

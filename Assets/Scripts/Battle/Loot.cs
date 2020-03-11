@@ -19,7 +19,6 @@ using System.Collections.Generic;
 
         public Transform text;
 
-        public GameManager gameManager;
 
         //private Animator PlayerAnim;
 
@@ -27,10 +26,8 @@ using System.Collections.Generic;
         {
             //PlayerAnim = gameObject.GetComponent<Animator>();
 
-            // text = transform.GetChild(0);
+            text = transform.GetChild(0);
 
-            GameManager gameManagerItemsList = FindObjectOfType<GameManager>();
-            // listCount = gameManagerItemsList.itemList.Count;
             
             CanUse = true;
             m_Image = GetComponent<Image>();
@@ -40,21 +37,35 @@ using System.Collections.Generic;
             SelectRarit(prob);
             player = RoundManager.turnTeam.Peek();
             
-            if (TypeLoot == 1)
+            
+            if(TypeLoot == 2)
             {
-                // Instancio novo item de movimento no inventário
-                Item newItem = gameManagerItemsList.itemList[Random.Range(0, gameManagerItemsList.itemList.Count)];
-                InventoryManager.instance.AddItem(Instantiate(newItem));
+                m_Image.sprite = Run_Sprite;
             }
-            else
+            else if(TypeLoot == 3)
             {
-                Item newItem = gameManagerItemsList.itemList[Random.Range(0, gameManagerItemsList.itemList.Count)];
-                InventoryManager.instance.AddItem(Instantiate(newItem));
+                m_Image.sprite = Fight_Sprite;
             }
             text.GetComponent<Text>().text = _rarit.ToString();
         }
 
-        
+        private void Start()
+        {
+            if (m_Image.sprite == null)
+            {
+                
+                    if(TypeLoot == 2)
+                                {
+                                    m_Image.sprite = Run_Sprite;
+                                }
+                                else if(TypeLoot == 3)
+                                {
+                                    m_Image.sprite = Fight_Sprite;
+                                }
+                
+            }
+        }
+
 
         public void SpendLoot()
         {
