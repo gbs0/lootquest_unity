@@ -4593,7 +4593,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -480.95, y: 378.04}
+  m_AnchoredPosition: {x: -480.95, y: 173}
   m_SizeDelta: {x: 1039.3, y: -492.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &810479425
@@ -8228,8 +8228,8 @@ MonoBehaviour:
   canvas: {fileID: 626703701}
   itemInfoPrefab: {fileID: 2400788845841610616, guid: 72d9d6eaf295442f296203ce17d787d1,
     type: 3}
-  moveX: -180
-  moveY: 100
+  moveX: 250
+  moveY: -200
 --- !u!4 &1136845047
 Transform:
   m_ObjectHideFlags: 0
@@ -11442,7 +11442,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 95840571}
   m_HandleRect: {fileID: 95840570}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
