@@ -14,14 +14,14 @@ namespace DefaultNamespace.Battle
         public GameObject PainelLootBox;
         public GameObject PrefabLoots;
 
-        public GameObject inventorySlot;
+        
         
         private void Awake()
         {
             //cache the animator component
             animator = GetComponent<Animator>();
-            inventorySlot = FindObjectOfType<inventorySlotParent>().gameObject;
         }
+        
         void Start()
         {
             PainelLootBox = FindObjectOfType<LootBoxPainel>().gameObject;
@@ -39,8 +39,7 @@ namespace DefaultNamespace.Battle
             {
 
                 var index = Random.Range(1, 3);
-                item = PrefabLoots.transform.SetParent( Grid.transform, false );
-                var loot = Instantiate(PrefabLoots, Vector3.zero, Quaternion.identity, item);
+                var loot = Instantiate(PrefabLoots, Vector3.zero, Quaternion.identity, PrefabLoots.transform);
                 loot.GetComponent<Loot>().TypeLoot = index;
                 Destroy(transform.gameObject);
             }
