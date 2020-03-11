@@ -13,13 +13,10 @@ namespace DefaultNamespace.Battle
         private TaticsMove player;      
         public GameObject PainelLootBox;
         public GameObject PrefabLoots;
-        
-        public GameManager gameManager;
         private void Awake()
         {
             //cache the animator component
             animator = GetComponent<Animator>();
-            gameManager = FindObjectOfType<GameManager>();
         }
         void Start()
         {
@@ -29,7 +26,7 @@ namespace DefaultNamespace.Battle
         }
         void Update()
         {
-            if(tempo)
+            if(tempo == true)
             {
                 timeStart += Time.deltaTime;
 
@@ -37,7 +34,10 @@ namespace DefaultNamespace.Battle
             if (timeStart >= 1.5f)
             {
 
-                
+                var index = Random.Range(1, 3);
+                var loot = Instantiate(PrefabLoots, Vector3.zero, Quaternion.identity, PainelLootBox.transform);
+                loot.GetComponent<Loot>().TypeLoot = index;
+                Destroy(transform.gameObject);
             }
         }
 
@@ -45,19 +45,7 @@ namespace DefaultNamespace.Battle
         {
             animator.Play("LootAnimation");
             tempo = true;
-            var index = Random.Range(1, 4);
-            if (index < 2)
-            {
-                // Instancio novo item de movimento no inventário
-                Item newItem = gameManager.itemList[Random.Range(0, gameManager.itemList.Count)];
-                InventoryManager.instance.AddItem(Instantiate(newItem));
-                    
-                Destroy(transform.gameObject);
-                return;
-            }
-            var loot = Instantiate(PrefabLoots, Vector3.zero, Quaternion.identity, PainelLootBox.transform);
-            loot.GetComponent<Loot>().TypeLoot = index;
-            Destroy(transform.gameObject);
+           
         }
 
 

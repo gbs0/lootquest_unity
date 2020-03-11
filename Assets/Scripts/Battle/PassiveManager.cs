@@ -15,8 +15,6 @@ public class PassiveManager : MonoBehaviour
     private GameObject selectLoot;
     private Loot[] loots;
     public Passive Passiva;
-    public bool FirstTime = true;
-    public GameObject TutorialPainel;
 
     private void Start()
     {
@@ -26,7 +24,6 @@ public class PassiveManager : MonoBehaviour
 
     private void ClosePainel()
     {
-        FirstTime = false;
         if(selectLoot)
         selectLoot.transform.parent = lastParent;
         passivePainel[i].SetActive(false);
@@ -40,10 +37,6 @@ public class PassiveManager : MonoBehaviour
 
     private void OpenPainel()
     {
-        if (FirstTime)
-        {
-            TutorialPainel.SetActive(true);
-        }
         loots = FindObjectsOfType<Loot>();
         if (RoundManager.playerTurn)
         {
@@ -71,7 +64,6 @@ public class PassiveManager : MonoBehaviour
 
     public void ChoseOne(Loot l)
     {
-        
         var lootstats = selectLoot.GetComponent<Loot>();
         lootstats.SetValue(true, l._rarit, l.TypeLoot );
         ClosePainel();
