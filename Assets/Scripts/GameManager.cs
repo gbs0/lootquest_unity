@@ -7,8 +7,9 @@ public class GameManager : MonoBehaviour
     
     public static GameManager instance;
     
-
-    public List<Item> itemList = new List<Item>();
+    public List<Item> craftList = new List<Item>();
+    public List<Item> movementList = new List<Item>();
+    public List<Item> attackList = new List<Item>();
     public List<Item> craftingRecipes = new List<Item>();
 
     public Transform canvas;
@@ -31,7 +32,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.X))
         {
-            Item newItem = itemList[Random.Range(0, itemList.Count)];
+            Item newItem = craftList[Random.Range(0, craftList.Count)];
 
             InventoryManager.instance.AddItem(Instantiate(newItem));
         }

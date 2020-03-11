@@ -5521,7 +5521,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &916364140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7893,17 +7893,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56a00bf3035c64b01a64b5bd5a886e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemList:
-  - {fileID: 11400000, guid: 25a8911725f32aa49a8a7394250d7286, type: 2}
-  - {fileID: 11400000, guid: 2a5e1817c3d01404ebe798fcea8f27f3, type: 2}
-  - {fileID: 11400000, guid: c2a1bd28d261145f7bb900ec4aefb4ca, type: 2}
-  - {fileID: 11400000, guid: 66a0fb60c55884d49b991ce9905a4304, type: 2}
-  - {fileID: 11400000, guid: a52acddc1114f4c958b8b891d9961cd7, type: 2}
-  - {fileID: 11400000, guid: bca9c9c4477f244acb58939d24dd24f8, type: 2}
-  - {fileID: 11400000, guid: fd7573dd17e704291baabe16d15c18b0, type: 2}
-  - {fileID: 11400000, guid: c2a1bd28d261145f7bb900ec4aefb4ca, type: 2}
-  - {fileID: 11400000, guid: c2a1bd28d261145f7bb900ec4aefb4ca, type: 2}
-  - {fileID: 11400000, guid: c2a1bd28d261145f7bb900ec4aefb4ca, type: 2}
+  craftList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  movementList:
+  - {fileID: 0}
+  attackList:
+  - {fileID: 0}
   craftingRecipes:
   - {fileID: 11400000, guid: 4db3cbb648950466f9787be46a01ad35, type: 2}
   - {fileID: 11400000, guid: 8f12ebc08433d4522b420bb08dbe7314, type: 2}

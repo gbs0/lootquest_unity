@@ -29,8 +29,8 @@ using System.Collections.Generic;
 
             // text = transform.GetChild(0);
 
-            GameManager gameManagerItemsList = FindObjectOfType<GameManager>();
-            // listCount = gameManagerItemsList.itemList.Count;
+            GameManager gameManagerList = FindObjectOfType<GameManager>();
+            // listCount = gameManagerList.itemList.Count;
             
             CanUse = true;
             m_Image = GetComponent<Image>();
@@ -43,12 +43,12 @@ using System.Collections.Generic;
             if (TypeLoot == 1)
             {
                 // Instancio novo item de movimento no inventário
-                Item newItem = gameManagerItemsList.itemList[Random.Range(0, gameManagerItemsList.itemList.Count)];
+                Item newItem = gameManagerList.movementList[Random.Range(0, gameManagerList.movementList.Count)];
                 InventoryManager.instance.AddItem(Instantiate(newItem));
             }
             else
             {
-                Item newItem = gameManagerItemsList.itemList[Random.Range(0, gameManagerItemsList.itemList.Count)];
+                Item newItem = gameManagerList.attackList[Random.Range(0, gameManagerList.attackList.Count)];
                 InventoryManager.instance.AddItem(Instantiate(newItem));
             }
             text.GetComponent<Text>().text = _rarit.ToString();
