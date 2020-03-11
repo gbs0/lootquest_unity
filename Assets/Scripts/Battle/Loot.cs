@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
-using System.Collections.Generic;
 
+namespace DefaultNamespace.Battle
+{
     public class Loot: MonoBehaviour
     {
         public int BadDrop = 50, MidDrop= 75, GoodDrop =90;
@@ -19,16 +19,16 @@ using System.Collections.Generic;
 
         public Transform text;
 
+        
 
         //private Animator PlayerAnim;
+
 
         private void Awake()
         {
             //PlayerAnim = gameObject.GetComponent<Animator>();
 
             text = transform.GetChild(0);
-
-            
             CanUse = true;
             m_Image = GetComponent<Image>();
             botao = transform.GetComponent<Button>();
@@ -37,35 +37,20 @@ using System.Collections.Generic;
             SelectRarit(prob);
             player = RoundManager.turnTeam.Peek();
             
-            
-            if(TypeLoot == 2)
+            if (TypeLoot == 1)
             {
                 m_Image.sprite = Run_Sprite;
             }
-            else if(TypeLoot == 3)
+            else
             {
+
                 m_Image.sprite = Fight_Sprite;
             }
+            // Implementar o Instantiate no Inventário
             text.GetComponent<Text>().text = _rarit.ToString();
         }
 
-        private void Start()
-        {
-            if (m_Image.sprite == null)
-            {
-                
-                    if(TypeLoot == 2)
-                                {
-                                    m_Image.sprite = Run_Sprite;
-                                }
-                                else if(TypeLoot == 3)
-                                {
-                                    m_Image.sprite = Fight_Sprite;
-                                }
-                
-            }
-        }
-
+        
 
         public void SpendLoot()
         {
@@ -128,3 +113,4 @@ using System.Collections.Generic;
         
     }
     
+}

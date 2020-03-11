@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Mapa
   icon: {fileID: 21300000, guid: d53e79fd25fe34dd38f0b10da980a98b, type: 3}
   itemDescription: "Descri\xE7\xE3o do Item"
-  result: {fileID: 11400000, guid: f54724ab7450749c6aff08f544b9f30d, type: 2}
+  result: {fileID: 11400000, guid: 07366f20709f341aca7a3b1916facb8d, type: 2}
   ingredients:
   - item: {fileID: 11400000, guid: bca9c9c4477f244acb58939d24dd24f8, type: 2}
     amount: 2
