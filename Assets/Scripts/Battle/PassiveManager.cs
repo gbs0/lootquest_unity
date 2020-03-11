@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class PassiveManager : MonoBehaviour
 {
     private PlayerStats _player;
-    public Button passiveButton, closeButton;
+    public Button passiveInventoryButton, passiveCraftButton, closeButton;
     public List<GameObject> passivePainel;
     private int i, l;
     private Transform lastParent;
@@ -20,7 +20,9 @@ public class PassiveManager : MonoBehaviour
 
     private void Start()
     {
-        passiveButton.onClick.AddListener(OpenPainel);
+        
+        passiveInventoryButton.onClick.AddListener(OpenPainel);
+        passiveCraftButton.onClick.AddListener(OpenPainel);
         closeButton.onClick.AddListener(ClosePainel);
     }
 

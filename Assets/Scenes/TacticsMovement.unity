@@ -12691,7 +12691,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abaad9b4afde7654281e6d8d8cc8c3fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  passiveButton: {fileID: 1105070170}
+  passiveInventoryButton: {fileID: 1105070170}
+  passiveCraftButton: {fileID: 1236334008}
   closeButton: {fileID: 972879698625037951}
   passivePainel:
   - {fileID: 972879698098213089}
