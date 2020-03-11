@@ -47,7 +47,8 @@ using UnityEngine.UI;
             }
             else
             {
-                
+                Item newItem = gameManagerItemsList.itemList[Random.Range(0, gameManagerItemsList.itemList.Count)];
+                InventoryManager.instance.AddItem(Instantiate(newItem));
             }
             text.GetComponent<Text>().text = _rarit.ToString();
         }
