@@ -22,8 +22,7 @@ public class InventoryUI : MonoBehaviour
     public GameObject inventoryScreen; // GUI do Inventário
     public GameObject inventoryTab; // Aba Inventario
     public GameObject craftingTab; // Aba Craft
-    public GameObject passivaTab;
-
+    
     private List<ItemSlot> itemSlotList = new List<ItemSlot>();
     public GameObject itemSlotPrefab;
     public Transform inventoryItemTransform;
@@ -116,23 +115,21 @@ public class InventoryUI : MonoBehaviour
     {
         craftingTab.SetActive(true);
         inventoryTab.SetActive(false);
-        passivaTab.SetActive(false);
+       // passivaTab.SetActive(false);
     }
     
     public void OnInventoryTabClicked()
     {
         craftingTab.SetActive(false);
         inventoryTab.SetActive(true);
-        passivaTab.SetActive(false);
     }
 
-    public void onPassivaTabClicked()
+    public void OnPassivaTabClicked()
     {
         craftingTab.SetActive(false);
         inventoryTab.SetActive(false);
-        passivaTab.SetActive(true);
     }
-
+    
     // P/ travar o cursor do player e não atrapalhar no mapa
     // private void ChangeCursorState(bool lockCursor)
     // {
