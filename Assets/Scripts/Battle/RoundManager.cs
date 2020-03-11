@@ -33,7 +33,6 @@ public class RoundManager : MonoBehaviour
     	{
     		turnTeam.Enqueue(unit);
     	}
-        if(Tutorial)
     	StartTurn();
     }
 
