@@ -26,7 +26,7 @@ using UnityEngine.UI;
             //PlayerAnim = gameObject.GetComponent<Animator>();
 
             // text = transform.GetChild(0);
-            GameManager gameManagerItemsList = gameManager.GetComponent<GameManager>();
+            GameManager gameManagerItemsList = FindObjectOfType<GameManager>();
             // listCount = gameManagerItemsList.itemList.Count;
             
             CanUse = true;
