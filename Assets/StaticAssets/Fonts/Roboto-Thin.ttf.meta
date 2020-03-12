@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 865d4757b1b05c447b6d5408e66369c8
+guid: aa11add543a994da5bd5fc676445e2e7
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Roboto Light
+  fontName: Roboto Thin
   fontNames:
-  - Roboto Light
+  - Roboto Thin
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
