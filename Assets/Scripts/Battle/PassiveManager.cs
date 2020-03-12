@@ -20,7 +20,6 @@ public class PassiveManager : MonoBehaviour
 
     private void Start()
     {
-        
         passiveInventoryButton.onClick.AddListener(OpenPainel);
         passiveCraftButton.onClick.AddListener(OpenPainel);
         closeButton.onClick.AddListener(ClosePainel);
