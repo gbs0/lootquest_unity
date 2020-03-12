@@ -116,7 +116,7 @@ public class PlayerMove : TaticsMove
     				Tile t = hit.collider.GetComponent<Tile>();
     				Debug.Log("Tile Clicada");
 
-    				if (t.selectable && LootGenTest == 1) // Move target
+    				if (t.selectable && LootGenTest == 2) // Move target
     				{
     					// t.target = true;
     					// moving = true;

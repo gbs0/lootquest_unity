@@ -53,15 +53,14 @@ using System.Collections.Generic;
         {
             if (m_Image.sprite == null)
             {
-                
-                    if(TypeLoot == 2)
-                                {
-                                    m_Image.sprite = Run_Sprite;
-                                }
-                                else if(TypeLoot == 3)
-                                {
-                                    m_Image.sprite = Fight_Sprite;
-                                }
+                if(TypeLoot == 2)
+                {
+                    m_Image.sprite = Run_Sprite;
+                }
+                else if(TypeLoot == 3)
+                {
+                    m_Image.sprite = Fight_Sprite;
+                }
                 
             }
         }
