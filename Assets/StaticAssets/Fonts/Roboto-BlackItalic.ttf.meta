@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 77b5191b5a1b3464c8ba226b9cffda08
+guid: e1ff2753e348841a1ae9fabe291c3f8b
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,10 +8,11 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Roboto Thin
+  fontName: Roboto Black
   fontNames:
-  - Roboto Thin
-  fallbackFontReferences: []
+  - Roboto Black
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2ee99581c024e433bbae705c27a5226a, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

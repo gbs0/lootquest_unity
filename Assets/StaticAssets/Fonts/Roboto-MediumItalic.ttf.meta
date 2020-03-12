@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fb1ce845e37b09240ab29fd4a1e3acd6
+guid: bebde99b6682b47acb400c99c348f8f6
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,13 +8,10 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Roboto
+  fontName: Roboto Medium
   fontNames:
-  - Roboto
-  fallbackFontReferences:
-  - {fileID: 12800000, guid: d721659061d38184b97d511aefcc99a4, type: 3}
-  - {fileID: 12800000, guid: 0414ed775a0dd984fa160abd085b5f55, type: 3}
-  - {fileID: 12800000, guid: 3115288955c235e48b7709402fbd5649, type: 3}
+  - Roboto Medium
+  fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

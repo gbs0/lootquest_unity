@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f921c772886763944ae331bad151a355
+guid: 995cf6127198d44a7955b379ac2a28a8
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,11 +8,10 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Roboto Thin
+  fontName: Liberation Sans
   fontNames:
-  - Roboto Thin
-  fallbackFontReferences:
-  - {fileID: 12800000, guid: 77b5191b5a1b3464c8ba226b9cffda08, type: 3}
+  - Liberation Sans
+  fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

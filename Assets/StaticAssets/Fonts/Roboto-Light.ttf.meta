@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d2b25b3c2c357d346b4779012e4c9e0b
+guid: 17206fcd70e374df7a484c554c5159bc
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,11 +8,10 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Roboto Black
+  fontName: Roboto Light
   fontNames:
-  - Roboto Black
-  fallbackFontReferences:
-  - {fileID: 12800000, guid: 89c85569f8ca3e64085d853cc217fe46, type: 3}
+  - Roboto Light
+  fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
