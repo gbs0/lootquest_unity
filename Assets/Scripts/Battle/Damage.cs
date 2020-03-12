@@ -68,7 +68,7 @@ public class Damage : MonoBehaviour
 
     void Attack()
     {
-        if (playerMove.LootGenTest == 2 && distTotal < 6)
+        if (playerMove.LootGenTest == 3 && distTotal < 6)
         {
             selectable = true;
             if (Input.GetMouseButtonDown(0)&& Selection.activeSelf)
