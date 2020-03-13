@@ -1,12 +1,75 @@
 fileFormatVersion: 2
 guid: 23f350fbe05964e349cee273ef1b04fc
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1351485747774924093
+    second: Grama_00
+  - first:
+      213: 4358488982619071879
+    second: Grama_01
+  - first:
+      213: 3381822614539391533
+    second: Grama_02
+  - first:
+      213: 656812491465077262
+    second: Sprite3_0
+  - first:
+      213: -8789308149967122665
+    second: Grama_04
+  - first:
+      213: 8240380879324222901
+    second: Nuvem_00
+  - first:
+      213: 8116033704581911741
+    second: Arbusto_00
+  - first:
+      213: -5613523170847733077
+    second: Folhagem_00
+  - first:
+      213: 4216440726020487693
+    second: Folhagem_01
+  - first:
+      213: -1731944195582888695
+    second: Arbusto_01
+  - first:
+      213: 7668703218634582919
+    second: Arbusto_02
+  - first:
+      213: -6554982947187730164
+    second: Arbusto_03
+  - first:
+      213: 3255894690537975639
+    second: Arbusto_04
+  - first:
+      213: -8263810614110086600
+    second: Arbusto_05
+  - first:
+      213: -6789137564472752978
+    second: Cogumelo_00
+  - first:
+      213: 1287477472194001357
+    second: CogumeloGigante_00
+  - first:
+      213: -6651787769521006448
+    second: Planta_00
+  - first:
+      213: 1649087650033593697
+    second: Pedregulhos_00
+  - first:
+      213: -7074076787940747876
+    second: Pedregulhos_01
+  - first:
+      213: 4508129926701642001
+    second: CordaArvore_00
+  - first:
+      213: 5861384633470603248
+    second: CordaArvore_01
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,13 +97,13 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,9 +112,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -69,13 +132,465 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Grama_00
+      rect:
+        serializedVersion: 2
+        x: 4152
+        y: 4680
+        width: 262
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2635edc7ea9d4f47abb7122e5181eaa
+      internalID: 1351485747774924093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grama_01
+      rect:
+        serializedVersion: 2
+        x: 4418
+        y: 4881
+        width: 390
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292c9b2bd812248f88d56aaf3e81d23f
+      internalID: 4358488982619071879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grama_02
+      rect:
+        serializedVersion: 2
+        x: 4434
+        y: 4520
+        width: 398
+        height: 301
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b7d082fac9440db8a23e6f819736c2
+      internalID: 3381822614539391533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite3_0
+      rect:
+        serializedVersion: 2
+        x: 3878
+        y: 4155
+        width: 374
+        height: 467
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66577c473760c489ebe9836a8a3430ff
+      internalID: 656812491465077262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grama_04
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 3520
+        width: 669
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548fa2602505e4237bc37deb71996398
+      internalID: -8789308149967122665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nuvem_00
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 2945
+        width: 5068
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c184ee4291e449739e5914933acc803
+      internalID: 8240380879324222901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbusto_00
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 2585
+        width: 193
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef909841ad5384ad08d7e1da94d428e5
+      internalID: 8116033704581911741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folhagem_00
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 2239
+        width: 952
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6931c0a2d90634a5aaf4a9bf1cd9291e
+      internalID: -5613523170847733077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folhagem_01
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 2492
+        width: 1359
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b17f9b2b9b84c2d897edc41497450f
+      internalID: 4216440726020487693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbusto_01
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 2422
+        width: 447
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40e7e7be3a984c9aa6172fbe443bb4d
+      internalID: -1731944195582888695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbusto_02
+      rect:
+        serializedVersion: 2
+        x: 3948
+        y: 2191
+        width: 423
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574ab0fe8c351417d95cf34787d2ba5b
+      internalID: 7668703218634582919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbusto_03
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 2505
+        width: 589
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5756b0e2195442f7adc53954195a073
+      internalID: -6554982947187730164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbusto_04
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1347
+        width: 731
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 199b83fe35cd04371a9bc2b8c9077869
+      internalID: 3255894690537975639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbusto_05
+      rect:
+        serializedVersion: 2
+        x: 2219
+        y: 1074
+        width: 681
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f29d4562d47c457c977092b3d28a45c
+      internalID: -8263810614110086600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cogumelo_00
+      rect:
+        serializedVersion: 2
+        x: 3962
+        y: 1087
+        width: 427
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a74a23dfe3a04425a981d8d65eb9a6f
+      internalID: -6789137564472752978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CogumeloGigante_00
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 739
+        width: 442
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872c03d1e36904a99864988e6abd3293
+      internalID: 1287477472194001357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planta_00
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 867
+        width: 272
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96605b6b9630a47deb61c7d5da0a0f0a
+      internalID: -6651787769521006448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pedregulhos_00
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 683
+        width: 950
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98dac8bfd71764d739f0507318c8228f
+      internalID: 1649087650033593697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pedregulhos_01
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 103
+        width: 948
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a13b9d53859d42d68454c30ffed0b9a
+      internalID: -7074076787940747876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordaArvore_00
+      rect:
+        serializedVersion: 2
+        x: 3048
+        y: 1774
+        width: 455
+        height: 658
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298f692104aaf42ce8d24a2b88ef3330
+      internalID: 4508129926701642001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordaArvore_01
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 1506
+        width: 687
+        height: 646
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8416aa5b06e5a44f08bc2a0f62ea42aa
+      internalID: 5861384633470603248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d9b4863536c514ca4b2624b3312ad398
     internalID: 0
     vertices: []
     indices: 
