@@ -41,6 +41,8 @@ public class PassiveManager : MonoBehaviour
 
     private void OpenPainel()
     {
+        Debug.Log("OpenPanel() habilidades");
+        
         if (FirstTime)
         {
             TutorialPainel.SetActive(true);
