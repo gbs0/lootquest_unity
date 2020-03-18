@@ -8,7 +8,8 @@ using UnityEngine.UI;
 public class PassiveManager : MonoBehaviour
 {
     private PlayerStats _player;
-    public Button passiveInventoryButton, passiveCraftButton, closeButton;
+    public Button closeButton;
+    // public Button passiveInventoryButton, passiveCraftButton, closeButton;
     public List<GameObject> passivePainel;
     private int i, l;
     private Transform lastParent;
@@ -20,8 +21,8 @@ public class PassiveManager : MonoBehaviour
 
     private void Start()
     {
-        passiveInventoryButton.onClick.AddListener(OpenPainel);
-        passiveCraftButton.onClick.AddListener(OpenPainel);
+        // passiveInventoryButton.onClick.AddListener(OpenPainel);
+        // passiveCraftButton.onClick.AddListener(OpenPainel);
         closeButton.onClick.AddListener(ClosePainel);
     }
 
@@ -39,14 +40,14 @@ public class PassiveManager : MonoBehaviour
         }
     }
 
-    private void OpenPainel()
+    public void OpenPainel()
     {
-        Debug.Log("OpenPanel() habilidades");
+        Debug.Log("OpenPanel() Passiva");
         
-        if (FirstTime)
-        {
-            TutorialPainel.SetActive(true);
-        }
+        // if (FirstTime)
+        // {
+        //     TutorialPainel.SetActive(true);
+        // }
         loots = FindObjectsOfType<Loot>();
         if (RoundManager.playerTurn)
         {
