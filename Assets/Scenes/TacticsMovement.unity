@@ -4401,7 +4401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 464.7, y: -137.20001}
+  m_AnchoredPosition: {x: 464.69922, y: -137.20001}
   m_SizeDelta: {x: 930.4, y: 274.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &344683071
@@ -8085,6 +8085,7 @@ MonoBehaviour:
   inventoryTab: {fileID: 35049908}
   craftingTab: {fileID: 865821608}
   passivaTab: {fileID: 2123922338}
+  passivaGUI: {fileID: 972879698098213089}
   itemSlotPrefab: {fileID: 2645853407316783421, guid: da44bdd035322417596a2fa8c698ba02,
     type: 3}
   inventoryItemTransform: {fileID: 1318098722}
@@ -17019,6 +17020,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 972879698692993002}
+        m_MethodName: OpenPainel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1230737755
@@ -24164,6 +24176,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 972879698692993002}
+        m_MethodName: OpenPainel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1714550658
@@ -29938,8 +29961,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abaad9b4afde7654281e6d8d8cc8c3fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  passiveInventoryButton: {fileID: 1714550657}
-  passiveCraftButton: {fileID: 1230737754}
   closeButton: {fileID: 972879698625037951}
   passivePainel:
   - {fileID: 972879698098213089}
