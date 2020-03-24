@@ -17,6 +17,8 @@ public class TempPlayerHp : MonoBehaviour
     float waitForSec = 5.0f;
     
     public Animator slimeAnimator;
+
+    public ParticleSystem particulaAura;
      
     // void Awake () {
     //  slimeAnimator = slimeObject.GetComponent<Animator> ();
@@ -26,6 +28,7 @@ public class TempPlayerHp : MonoBehaviour
     void Start()
     {
         PlayerHealth = 100;
+        particulaAura.Emit(1);
     }
 
     // Checar a vida do player a cada Frame
