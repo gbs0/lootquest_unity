@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerParticleLauncher : MonoBehaviour
+public class GameParticleLauncher : MonoBehaviour
 {
+    public ParticleSystem particula;
     // Start is called before the first frame update
     void Start()
     {
-        
+        particula.Emit(1);
     }
 
     // Update is called once per frame
