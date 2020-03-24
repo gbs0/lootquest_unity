@@ -9,7 +9,7 @@ public class PassiveManager : MonoBehaviour
 {
     private PlayerStats _player;
     public Button closeButton;
-    // public Button passiveInventoryButton, passiveCraftButton, closeButton;
+    
     public List<GameObject> passivePainel;
     private int i, l;
     private Transform lastParent;
@@ -21,8 +21,6 @@ public class PassiveManager : MonoBehaviour
 
     private void Start()
     {
-        // passiveInventoryButton.onClick.AddListener(OpenPainel);
-        // passiveCraftButton.onClick.AddListener(OpenPainel);
         closeButton.onClick.AddListener(ClosePainel);
     }
 
@@ -44,10 +42,10 @@ public class PassiveManager : MonoBehaviour
     {
         Debug.Log("OpenPanel() Passiva");
         
-        // if (FirstTime)
-        // {
-        //     TutorialPainel.SetActive(true);
-        // }
+        if (FirstTime)
+        {
+            TutorialPainel.SetActive(true);
+        }
         loots = FindObjectsOfType<Loot>();
         if (RoundManager.playerTurn)
         {
@@ -77,7 +75,7 @@ public class PassiveManager : MonoBehaviour
     {
         
         var lootstats = selectLoot.GetComponent<Loot>();
-        lootstats.SetValue(true, l._rarit, l.TypeLoot );
+        lootstats.SetValue(true, l._rarit, l.TypeLoot);
         ClosePainel();
     }
 }
