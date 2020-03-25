@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Damage : MonoBehaviour
 {
-
+    
     public GameObject PainelVitoria;
     public GameObject Selection;
     private GameObject player;
@@ -13,6 +13,8 @@ public class Damage : MonoBehaviour
     PlayerMove playerMove;
     public Animator PlayerAnim;
     public Animator GS;
+
+    public NPCParticleLauncher npcParticles;
 
     public float TimeAnimation;
     public bool Morte = false;
@@ -43,6 +45,7 @@ public class Damage : MonoBehaviour
     void Start()
     {
         tempLife = 100;
+        npcParticles.StartParticle();
     }
 
     // Update is called once per frame
@@ -100,6 +103,7 @@ public class Damage : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         GS.SetTrigger("Damage");
+        npcParticles.DamageParticle();
     }
 
     public void DistCheck()

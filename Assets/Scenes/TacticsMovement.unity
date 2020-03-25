@@ -8843,7 +8843,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.37e-42, y: 1.34665e-19, z: 1.56e-43, w: 0.02734375}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -22986,6 +22986,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4889621933968704880}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1661451074 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6121474905733257545, guid: d68c92c07d3bb384997ab40b6d643c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 4889621933968704880}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661451073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9039fb9ad0dc4661b65a8d23ee7f79d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1661451079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30403,6 +30415,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3397164897075905928, guid: d68c92c07d3bb384997ab40b6d643c97,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3397164898782556112, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_AnchorMin.x
@@ -30499,6 +30516,11 @@ PrefabInstance:
       propertyPath: NextCenaName
       value: TesteMovimento2
       objectReference: {fileID: 0}
+    - target: {fileID: 4889621934937223168, guid: d68c92c07d3bb384997ab40b6d643c97,
+        type: 3}
+      propertyPath: npcParticles
+      value: 
+      objectReference: {fileID: 1661451074}
     - target: {fileID: 4889621934937223199, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: GS
@@ -30533,6 +30555,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 311815998135034582, guid: d68c92c07d3bb384997ab40b6d643c97,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3601240796076962872, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
