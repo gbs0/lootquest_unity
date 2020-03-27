@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class PassiveManager : MonoBehaviour
 {
+    
     private PlayerStats _player;
     public Button closeButton;
     // public Button passiveInventoryButton, passiveCraftButton, closeButton;
@@ -75,7 +76,6 @@ public class PassiveManager : MonoBehaviour
 
     public void ChoseOne(Loot l)
     {
-        
         var lootstats = selectLoot.GetComponent<Loot>();
         lootstats.SetValue(true, l._rarit, l.TypeLoot );
         ClosePainel();

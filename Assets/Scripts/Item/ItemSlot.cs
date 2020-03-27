@@ -7,7 +7,9 @@ public class ItemSlot : MonoBehaviour
 {
     public Image icon;
     private Item item;
+
     // Start is called before the first frame update
+
     public void AddItem(Item newItem)
     {
         item = newItem;
@@ -25,9 +27,11 @@ public class ItemSlot : MonoBehaviour
         if (item == null) return;
    
         if (Input.GetKey(KeyCode.LeftAlt))
+        // if (Input.GetKey(KeyCode.RightShift))
         {
             Debug.Log("Trying to switch");
-            InventoryManager.instance.ChangeHotbarInventory(item);
+            // InventoryManager.instance.ChangeHotbarInventory(item);
+            // psvManager.SelectLoot();
         }
         else
         {
