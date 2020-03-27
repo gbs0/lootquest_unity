@@ -40,7 +40,7 @@ public class PassiveManager : MonoBehaviour
 
     public void OpenPainel()
     {
-        Debug.Log("OpenPanel() Passiva");
+        Debug.Log("mandei abrir");
         
         if (FirstTime)
         {

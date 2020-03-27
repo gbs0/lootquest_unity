@@ -8184,6 +8184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c40a2896a3784f3fa9533bc016bf5f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PassiveM: {fileID: 972879698692993002}
   inventoryScreen: {fileID: 810479423}
   inventoryTab: {fileID: 35049908}
   craftingTab: {fileID: 865821608}
@@ -24267,29 +24268,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1714550658}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 626703702}
-        m_MethodName: OnCraftingTabClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 972879698692993002}
-        m_MethodName: OpenPainel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1714550658
@@ -24305,7 +24284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 0.5882353}
+  m_Color: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -29887,6 +29866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe4f7b84c881ca4f8b57384f3765e72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Manager: {fileID: 972879698692993002}
   PrefabLoots: {fileID: 3274952489686710200, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
     type: 3}
   ChoseTransfom: {fileID: 972879697589811301}
