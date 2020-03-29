@@ -30,7 +30,7 @@ public class Damage : MonoBehaviour
     bool selectable = false;
     public bool selected = false;
 
-    float tempLife;
+    public float tempLife =100;
     public string NextCenaName;
 
     private void Awake()
@@ -42,7 +42,7 @@ public class Damage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tempLife = 100;
+       // tempLife = 100;
     }
 
     // Update is called once per frame
