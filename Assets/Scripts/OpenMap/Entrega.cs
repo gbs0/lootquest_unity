@@ -7,7 +7,8 @@ public class Entrega : MonoBehaviour
     public GameObject Dialogo1;
     public int M;
     public GameObject Dialogo2;
-
+    public GameObject BemVindo,Quadro,Missao,Entregra,Portal;
+    
     // Start is called before the first frame update
     void Start()
     {
