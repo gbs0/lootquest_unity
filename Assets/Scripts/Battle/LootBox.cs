@@ -45,7 +45,7 @@ namespace DefaultNamespace.Battle
         {
             animator.Play("LootAnimation");
             tempo = true;
-            var index = Random.Range(1, 4);
+            var index = Random.Range(2, 4);
             if (index < 2)
             {
                 // Instancio novo item de movimento no inventário

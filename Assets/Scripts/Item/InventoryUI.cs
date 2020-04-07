@@ -18,7 +18,8 @@ public class InventoryUI : MonoBehaviour
 
     private bool inventoryOpen = false; // Bool p/ inventário aberto ou fechado
     public bool InventoryOpen => inventoryOpen;
-    
+
+    public PassiveManager PassiveM;
     public GameObject inventoryScreen; // GUI do Inventário
     public GameObject inventoryTab; // Aba Inventario
     public GameObject craftingTab; // Aba Craft
@@ -132,9 +133,10 @@ public class InventoryUI : MonoBehaviour
     public void onPassivaTabClicked()
     {
         craftingTab.SetActive(false);
-        inventoryTab.SetActive(false);
-        passivaTab.SetActive(true);
+       // inventoryTab.SetActive(false);
+       // passivaTab.SetActive(true);
         passivaGUI.SetActive(true);
+        PassiveM.OpenPainel();
     }
 
     // P/ travar o cursor do player e não atrapalhar no mapa

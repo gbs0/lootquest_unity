@@ -8184,6 +8184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c40a2896a3784f3fa9533bc016bf5f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PassiveM: {fileID: 972879698692993002}
   inventoryScreen: {fileID: 810479423}
   inventoryTab: {fileID: 35049908}
   craftingTab: {fileID: 865821608}
@@ -24268,17 +24269,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 626703702}
-        m_MethodName: OnCraftingTabClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 972879698692993002}
         m_MethodName: OpenPainel
         m_Mode: 1
@@ -29563,6 +29553,7 @@ GameObject:
   - component: {fileID: 972879697589811302}
   - component: {fileID: 972879697589811296}
   - component: {fileID: 972879697589811303}
+  - component: {fileID: 972879697589811304}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -29618,6 +29609,30 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &972879697589811304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972879697589811301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2095666955, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 200, y: 150}
+  m_Spacing: {x: 90, y: 30}
+  m_Constraint: 0
+  m_ConstraintCount: 2
 --- !u!224 &972879697751715204
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29887,6 +29902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe4f7b84c881ca4f8b57384f3765e72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Manager: {fileID: 0}
   PrefabLoots: {fileID: 3274952489686710200, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
     type: 3}
   ChoseTransfom: {fileID: 972879697589811301}
