@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Xml;
 using DefaultNamespace.Battle;
@@ -7,7 +6,7 @@ using UnityEngine;
 
 public class Passive : MonoBehaviour
 {
-    public PassiveManager Manager;
+    
     public GameObject PrefabLoots;
     public GameObject ChoseTransfom;
     public GameObject NewLootPainel;
