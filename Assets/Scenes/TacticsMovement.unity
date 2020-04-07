@@ -30502,7 +30502,7 @@ PrefabInstance:
     - target: {fileID: 4889621934937223168, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: NextCenaName
-      value: TesteMovimento2
+      value: Ilha1
       objectReference: {fileID: 0}
     - target: {fileID: 4889621934937223168, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
@@ -30524,6 +30524,11 @@ PrefabInstance:
       propertyPath: NPC
       value: 
       objectReference: {fileID: 1661451073}
+    - target: {fileID: 4889621934937223199, guid: d68c92c07d3bb384997ab40b6d643c97,
+        type: 3}
+      propertyPath: move
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3397164898782556113, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_Name

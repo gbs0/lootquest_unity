@@ -6,28 +6,49 @@ public class ControleMonstros : MonoBehaviour
 {
     public GameObject Slime1;
     public GameObject Slime2;
-    public GameObject Slime3;
+    public GameObject Gatos;
+    public GameObject Bruxa;
+   
+
 
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.GetInt("ConversaMonstros") == 0)
-        {
-            Slime1.SetActive(false);
-            Slime2.SetActive(false);
-            Slime3.SetActive(false);
 
-        }
+        Slime1.SetActive(false);
+        Slime2.SetActive(false);
+        Gatos.SetActive(false);
+        Bruxa.SetActive(false);
+
+
         if (PlayerPrefs.GetInt("ConversaMonstros") == 1)
         {
-            Slime1.SetActive(true);
-            Slime2.SetActive(true);
-            Slime3.SetActive(true);
+            if (PlayerPrefs.GetInt("Monstro1") == 0)
+            {
+                Slime1.SetActive(true);
 
+            }
+            if (PlayerPrefs.GetInt("Monstro2") == 0)
+            {
+                Slime2.SetActive(true);
+
+            }
+
+            Gatos.SetActive(false);
+            Bruxa.SetActive(false);
         }
-
+        if (PlayerPrefs.GetInt("ConversaMonstros") == 2)
+        {
+            if (PlayerPrefs.GetInt("Gatos") == 0)
+            {
+                Gatos.SetActive(true);
+            }
+            if (PlayerPrefs.GetInt("Bruxa") == 0)
+            {
+                Bruxa.SetActive(true);
+            }
+        }
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -41,10 +62,19 @@ public class ControleMonstros : MonoBehaviour
             Slime2.SetActive(false);
 
         }
-        if (PlayerPrefs.GetInt("Monstro3") == 1)
+        if (PlayerPrefs.GetInt("Gatos") == 1)
         {
-            Slime3.SetActive(false);
+            Gatos.SetActive(false);
 
+        }
+        if (PlayerPrefs.GetInt("Bruxa") == 1)
+        {
+            Bruxa.SetActive(false);
+
+        }
+        if (PlayerPrefs.GetInt("Monstro1") == 1 )
+        {
+            PlayerPrefs.SetInt("DialogoGuilda", 5);
         }
     }
 }

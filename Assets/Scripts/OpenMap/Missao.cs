@@ -32,12 +32,13 @@ public class Missão : MonoBehaviour
     {
         PapelMissao.SetActive(true);
         TextoNome.text = "" + Nome;
-        TextoDescriçao.text = "" + TextoDescriçao;
-        TextoDificuldade.text = "" + TextoDificuldade;
+        TextoDescriçao.text = "" + Descriçao;
+        TextoDificuldade.text = "" + Dificuldade;
     }
     public void Aceitar()
     {
         PlayerPrefs.SetString("Missao", Nome);
+
     }
 
 

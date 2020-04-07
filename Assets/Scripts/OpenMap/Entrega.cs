@@ -16,7 +16,6 @@ public class Entrega : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetInt("DialogoGuilda", 2);
         BemVindo.SetActive(false);
         Quadro.SetActive(false);
         Missao.SetActive(false);
@@ -70,6 +69,7 @@ public class Entrega : MonoBehaviour
             Missao.SetActive(false);
             Entregra.SetActive(false);
             Portal.SetActive(false);
+            
 
         }
         if (PlayerPrefs.GetInt("DialogoGuilda") == 5)
@@ -87,6 +87,8 @@ public class Entrega : MonoBehaviour
             Missao.SetActive(false);
             Entregra.SetActive(false);
             Portal.SetActive(true);
+            Application.LoadLevel("Vitoria");
+
 
         }
     }

@@ -491,7 +491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextCenaName: TacticsMovement
-  NovoJogo: Prolog
+  NovoJogo: Menu
   timeStart: 0
   time: 0
 --- !u!4 &253901893
@@ -592,7 +592,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 253901892}
-        m_MethodName: NextScene
+        m_MethodName: NewGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

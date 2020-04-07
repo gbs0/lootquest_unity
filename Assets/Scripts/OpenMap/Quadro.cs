@@ -23,10 +23,11 @@ public class Quadro : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             
-            if (Input.GetKeyUp(KeyCode.E) && PlayerPrefs.GetInt("DialogoGuilda", 0) >= 2)
+            if (Input.GetKeyUp(KeyCode.E) && PlayerPrefs.GetInt("DialogoGuilda", 0) >= 1)
             {
                 Abrir.SetActive(true);
-              
+                PlayerPrefs.SetInt("DialogoGuilda", 2);
+
 
             }
         }

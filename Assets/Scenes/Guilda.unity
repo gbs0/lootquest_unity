@@ -3439,6 +3439,7 @@ MonoBehaviour:
   Conversa: {fileID: 516791319}
   podeFalar: 0
   Guilda: 1
+  jafoi: 0
   linhaAtual: 0
   textoMensagem: {fileID: 455036139}
   texto:
@@ -3803,6 +3804,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.1999999, y: 1.1999999, z: 1.1999999}
   m_Children:
+  - {fileID: 2138843820}
   - {fileID: 988114610}
   - {fileID: 655114529}
   m_Father: {fileID: 1487473903}
@@ -3868,7 +3870,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &537883212
 Transform:
   m_ObjectHideFlags: 0
@@ -3877,7 +3879,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537883211}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.884919, y: 33.56478, z: -131.76633}
+  m_LocalPosition: {x: -7.884797, y: 33.56478, z: -131.76633}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 572152835}
@@ -3932,13 +3934,13 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537883211}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.32180762, y: -0.4625988}
+  m_Offset: {x: 0.20549941, y: 0.04492855}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3949,7 +3951,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.9308429, y: 2.6492653}
+  m_Size: {x: 2.6982265, y: 1.6342106}
   m_EdgeRadius: 0
 --- !u!1 &540328121
 GameObject:
@@ -4009,7 +4011,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1206789}
+  m_Offset: {x: 0, y: -0.022938728}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4020,7 +4022,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.3331013, y: 2.4481335}
+  m_Size: {x: 3.3331013, y: 2.2526531}
   m_EdgeRadius: 0
 --- !u!1 &548310061
 GameObject:
@@ -4107,6 +4109,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1288169538}
         m_MethodName: Aceitar
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 537592598}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4645,7 +4658,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &655114529
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4659,7 +4672,7 @@ RectTransform:
   m_Children:
   - {fileID: 2692832}
   m_Father: {fileID: 537592599}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5530,7 +5543,8 @@ MonoBehaviour:
   "Interroga\xE7ao": {fileID: 256428610}
   Conversa: {fileID: 826815469}
   podeFalar: 0
-  Guilda: 0
+  Guilda: 1
+  jafoi: 0
   linhaAtual: 0
   textoMensagem: {fileID: 455036139}
   texto:
@@ -5546,7 +5560,7 @@ MonoBehaviour:
   - Roger that.
   - "\u2026"
   limitText: 9
-  NivelEntrando: 4
+  NivelEntrando: 6
   teste: 0
   jaComecaFalando: 0
   img: {fileID: 0}
@@ -6225,7 +6239,7 @@ RectTransform:
   m_Children:
   - {fileID: 1288169534}
   m_Father: {fileID: 537592599}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7545,7 +7559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 611ff648cf4ff544d827fa375d21c75e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextCenaName: TesteMovimento2
+  NextCenaName: Ilha1
   Entrando: 0
 --- !u!1 &1266191762
 GameObject:
@@ -7681,6 +7695,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 655114528}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1288169536
@@ -7734,12 +7759,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PapelMissao: {fileID: 2692831}
-  Nome: 
-  "Descri\xE7ao": 
-  Dificuldade: 
+  Nome: Matar Slimes
+  "Descri\xE7ao": "Mate os slimes que est\xE3o aterrorizando a vila"
+  Dificuldade: A
   TextoNome: {fileID: 231785134}
   "TextoDescri\xE7ao": {fileID: 1698703112}
   TextoDificuldade: {fileID: 2136525894}
+  monstros: 1
 --- !u!1 &1298351970
 GameObject:
   m_ObjectHideFlags: 0
@@ -8205,7 +8231,6 @@ Transform:
   m_LocalScale: {x: 0.83333325, y: 0.83333325, z: 0.83333325}
   m_Children:
   - {fileID: 537592599}
-  - {fileID: 2138843820}
   m_Father: {fileID: 1644109936}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8661,7 +8686,7 @@ MonoBehaviour:
   textoMensagem: {fileID: 455036139}
   texto:
   - Ok. Here we are. Missions board. If you press "E" you can have access to it.
-  - d
+  - I have an impression you are not saying this to me.
   limitText: 1
   teste: 0
   jaComecaFalando: 0
@@ -8669,7 +8694,7 @@ MonoBehaviour:
   imgs:
   - {fileID: 1611832433}
   - {fileID: 39352148}
-  ProximoDiaologo: 2
+  ProximoDiaologo: 7
   rodaCut: 0
 --- !u!61 &1611338113
 BoxCollider2D:
@@ -8984,7 +9009,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Explica\xE7\xE3o"
+  m_Text: Mate os slimes que estao aterrorizando a vila
 --- !u!222 &1698703113
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11004,17 +11029,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138843819}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8333333, y: 0.8333333, z: 0.8333333}
   m_Children:
   - {fileID: 755751191}
-  m_Father: {fileID: 1487473903}
-  m_RootOrder: 1
+  m_Father: {fileID: 537592599}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -404.2, y: -377.2}
+  m_AnchoredPosition: {x: -349.33334, y: -335.1667}
   m_SizeDelta: {x: 306.9, y: 114.6}
   m_Pivot: {x: 0.5, y: 0.5000003}
 --- !u!114 &2138843821

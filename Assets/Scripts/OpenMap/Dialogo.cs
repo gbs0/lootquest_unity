@@ -11,6 +11,7 @@ public class Dialogo : MonoBehaviour
     public GameObject Conversa;
     public bool podeFalar = false;
     public bool Guilda = false;
+    public bool jafoi = false;
 
 
     [SerializeField]
@@ -42,8 +43,10 @@ public class Dialogo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-            if (podeFalar)
+        if (jafoi == false )
+      {
+        
+        if (podeFalar)
         {
             //img.SetActive(false);
             //img = imgs[linhaAtual];
@@ -88,7 +91,7 @@ public class Dialogo : MonoBehaviour
             }
         }
         teste = estaFalando;
-
+      }
     }
 
     
@@ -135,7 +138,8 @@ public class Dialogo : MonoBehaviour
             PlayerPrefs.SetInt("DialogoGuilda", NivelEntrando);
         
         }
-            Interrogaçao.SetActive(false);
+        jafoi = true;
+        Interrogaçao.SetActive(false);
             Conversa.SetActive(false);
 
 

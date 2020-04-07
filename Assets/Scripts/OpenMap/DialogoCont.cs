@@ -14,6 +14,7 @@ public class DialogoCont : MonoBehaviour
     public TextMeshProUGUI textoMensagem;
     public string[] texto;
     public int limitText;
+    public bool jafoi = false;
 
     //public float timer = 0;
     public static bool estaFalando = false;
@@ -40,8 +41,9 @@ public class DialogoCont : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (podeFalar)
+        if (jafoi == false)
+        {
+            if (podeFalar)
         {
             estaFalando = true;
 
@@ -69,10 +71,10 @@ public class DialogoCont : MonoBehaviour
                 textoMensagem.text = texto[linhaAtual].ToString();
 
             }
-
+            
         }
         teste = estaFalando;
-
+        }
     }
 
 
@@ -115,6 +117,7 @@ public class DialogoCont : MonoBehaviour
         estaFalando = false;
         Interrogaçao.SetActive(false);
         Conversa.SetActive(false);
+        jafoi = true;
 
 
     }
