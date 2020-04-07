@@ -29,7 +29,6 @@ public class PassiveManager : MonoBehaviour
         FirstTime = false;
         if(selectLoot)
         selectLoot.transform.parent = lastParent;
-        selectLoot.transform.localScale = Vector3.one;
         passivePainel[i].SetActive(false);
         Passiva.CleanPainel();
         foreach (var loot in loots)
@@ -41,7 +40,7 @@ public class PassiveManager : MonoBehaviour
 
     public void OpenPainel()
     {
-        Debug.Log("mandei abrir");
+        Debug.Log("OpenPanel() Passiva");
         
         if (FirstTime)
         {
