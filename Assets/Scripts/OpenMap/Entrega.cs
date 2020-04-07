@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,9 +11,16 @@ public class Entrega : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        BemVindo.SetActive(false);
+        Quadro.SetActive(false);
+        Missao.SetActive(false);
+        Entregra.SetActive(false);
+        Portal.SetActive(false);
+
+
         Dialogo1.SetActive(false);
         Dialogo2.SetActive(false);
-
 
     }
 
@@ -26,9 +33,52 @@ public class Entrega : MonoBehaviour
 
         }
 
-        if (PlayerPrefs.GetInt("SlimesMortos") == 3)
+       
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 1)
         {
-            Dialogo2.SetActive(true);
+            BemVindo.SetActive(false);
+            Quadro.SetActive(true);
+            Missao.SetActive(false);
+            Entregra.SetActive(false);
+            Portal.SetActive(false);
+
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 2)
+        {
+            BemVindo.SetActive(false);
+            Quadro.SetActive(false);
+            Missao.SetActive(true);
+            Entregra.SetActive(false);
+            Portal.SetActive(false);
+
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 3)
+        {
+            BemVindo.SetActive(false);
+            Quadro.SetActive(false);
+            Missao.SetActive(false);
+            Entregra.SetActive(false);
+            Portal.SetActive(false);
+            
+
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda") == 5)
+        {
+            BemVindo.SetActive(false);
+            Quadro.SetActive(false);
+            Missao.SetActive(false);
+            Entregra.SetActive(true);
+            Portal.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 6)
+        {
+            BemVindo.SetActive(false);
+            Quadro.SetActive(false);
+            Missao.SetActive(false);
+            Entregra.SetActive(false);
+            Portal.SetActive(true);
+            Application.LoadLevel("Vitoria");
+
 
         }
     }

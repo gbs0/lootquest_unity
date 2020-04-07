@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TacticsMovement.unity
     guid: 693d36a2df1e64bb7a35589abd39688f
+  - enabled: 1
+    path: Assets/Scenes/TacticsMovement-Rainha.unity
+    guid: 107c1d2f30f1e104aa18665eb3ff1722
   - enabled: 0
     path: Assets/Scenes/LootboxTest.unity
     guid: d91fe08dc5073354e9a08f68e542c4e0

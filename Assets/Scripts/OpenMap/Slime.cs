@@ -21,10 +21,14 @@ public class Slime : MonoBehaviour
     {
         if (theCollision.gameObject.tag == "Player")
         {
+           
+            PlayerPrefs.SetInt("indexSpam", 1);
+
             if (Monstros == 1)
             {
+                PlayerPrefs.SetInt("indexSpam", 1);
+
                 PlayerPrefs.SetInt("Monstro1", 1);
-                PlayerPrefs.SetInt("indexSpam", 2);
 
                 PlayerPrefs.SetInt("indexSpam", Monstros);
                 PlayerPrefs.SetString("_sceneName", NextCenaName);
