@@ -32,21 +32,13 @@ public class Missão : MonoBehaviour
     {
         PapelMissao.SetActive(true);
         TextoNome.text = "" + Nome;
-<<<<<<< HEAD
         TextoDescriçao.text = "" + Descriçao;
         TextoDificuldade.text = "" + Dificuldade;
-=======
-        TextoDescriçao.text = "" + TextoDescriçao;
-        TextoDificuldade.text = "" + TextoDificuldade;
->>>>>>> Salvando cena e modificações
     }
     public void Aceitar()
     {
         PlayerPrefs.SetString("Missao", Nome);
-<<<<<<< HEAD
 
-=======
->>>>>>> Salvando cena e modificações
     }
 
 
