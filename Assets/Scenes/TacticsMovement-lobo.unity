@@ -8547,6 +8547,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4889621934937223168, guid: ec3582913b4ddef4fa45f161c06bf26a,
+        type: 3}
+      propertyPath: PlayerAnim
+      value: 
+      objectReference: {fileID: 954975168}
+    - target: {fileID: 1661451079, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
+      propertyPath: SkipButton
+      value: 
+      objectReference: {fileID: 1416505810}
+    - target: {fileID: 1661451079, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
+      propertyPath: PlayerAnim
+      value: 
+      objectReference: {fileID: 1050067378}
     - target: {fileID: 3397164897075905928, guid: ec3582913b4ddef4fa45f161c06bf26a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -8557,7 +8570,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3601240796076962872, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
 --- !u!1 &645581153
 GameObject:
@@ -13314,6 +13328,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &954975168 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 954975168, guid: 790e0d5ad2ae4404c8755295d629a12b,
+    type: 3}
+  m_PrefabInstance: {fileID: 3889825052890228149}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &959698292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14616,6 +14636,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1050067378 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4889621933968704882, guid: ec3582913b4ddef4fa45f161c06bf26a,
+    type: 3}
+  m_PrefabInstance: {fileID: 638809964}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1051561410
 GameObject:
   m_ObjectHideFlags: 0
@@ -20145,6 +20171,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4557539474977832, guid: 1dccab803c1b24168807413cefb601fa,
     type: 3}
   m_PrefabInstance: {fileID: 1416533080}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1434975848 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4889621933968704882, guid: ec3582913b4ddef4fa45f161c06bf26a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8911518419597746032}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1441958023
 GameObject:
@@ -30137,6 +30169,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4889621934937223168, guid: ec3582913b4ddef4fa45f161c06bf26a,
+        type: 3}
+      propertyPath: PlayerAnim
+      value: 
+      objectReference: {fileID: 954975168}
+    - target: {fileID: 1661451079, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
+      propertyPath: SkipButton
+      value: 
+      objectReference: {fileID: 1416505810}
+    - target: {fileID: 1661451079, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
+      propertyPath: PlayerAnim
+      value: 
+      objectReference: {fileID: 1434975848}
     - target: {fileID: 3397164897075905928, guid: ec3582913b4ddef4fa45f161c06bf26a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -30147,5 +30192,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3601240796076962872, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
