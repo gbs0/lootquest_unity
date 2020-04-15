@@ -9,13 +9,14 @@ public class Eventos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        MorteRainha.SetActive(false);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (PlayerPrefs.GetInt("DialogoGuilda") == 5)
+        if (PlayerPrefs.GetInt("DialogoGuilda") == 5   )
         {
             if (evento1 == false)
             {
@@ -23,5 +24,13 @@ public class Eventos : MonoBehaviour
                 evento1 = true;
             }
         }
+        if (PlayerPrefs.GetInt("DialogoGuilda") > 5)
+        {
+
+            MorteRainha.SetActive(false);
+             evento1 = true;
+
+
+}
     }
 }

@@ -22,6 +22,7 @@ public class Dialogo : MonoBehaviour
     public int NivelMissao;
     public int NivelEntrando;
 
+
     //public float timer = 0;
     public static bool estaFalando = false;
     [SerializeField]
@@ -41,12 +42,13 @@ public class Dialogo : MonoBehaviour
         textoMensagem.text = texto[linhaAtual].ToString();
         img = imgs[linhaAtual];
         conta = 0;
-
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         if (jafoi == false )
       {
         

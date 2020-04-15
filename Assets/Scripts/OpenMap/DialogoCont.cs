@@ -117,7 +117,6 @@ public class DialogoCont : MonoBehaviour
         estaFalando = false;
         Interrogaçao.SetActive(false);
         Conversa.SetActive(false);
-        jafoi = true;
 
 
     }
