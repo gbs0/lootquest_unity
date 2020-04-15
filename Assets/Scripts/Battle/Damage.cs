@@ -31,8 +31,7 @@ public class Damage : MonoBehaviour
     public bool selected = false;
 
     float tempLife;
-    public string NextCenaName;
-
+    
     private void Awake()
     {
         
@@ -49,21 +48,7 @@ public class Damage : MonoBehaviour
     void Update()
     {
         Attack();
-
-        if (Morte == true)
-        {
-            TimeAnimation += Time.deltaTime;
-            if(TimeAnimation >= 0.7f)
-            {
-                
-                PlayerPrefs.SetInt("SlimesMortos", 3);
-                PlayerPrefs.SetString("_sceneName", NextCenaName);
-                LoadingSisten.LoadLevel(NextCenaName);
-            }
-
-        }
-
-
+        
     }
 
     void Attack()

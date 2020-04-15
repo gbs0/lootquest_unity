@@ -6,13 +6,7 @@ using UnityEngine.UI;
 public class TempDistCheck : MonoBehaviour
 {
     public string NextCenaName;
-
-
-    public GameObject coll01;
-    public GameObject coll02;
-    public GameObject coll03;
-    public GameObject coll04;
-
+    
     private GameObject player;
 
     private float distX;
@@ -39,6 +33,7 @@ public class TempDistCheck : MonoBehaviour
         player = GameObject.Find("Player");
         canHit = true;
         hitCount = 0;
+
         SkipButton.onClick.AddListener(SkipTurn);
     }
 
@@ -51,44 +46,11 @@ public class TempDistCheck : MonoBehaviour
             TestDamage();
             //GS.ResetTrigger("Attack");
         }
-
-        /*if (Input.GetMouseButtonDown(0))
-        {
-            canHit = true;
-        }*/
+        
         if (Input.GetMouseButtonDown(1))
         {
             hitCount = 0;
         }
-
-        //hitTime = Time.DeltaTime;
-
-            /*if (distTotal <= 1)
-            {
-                if(hitTime >= 2)
-                {
-                    coll01.SetActive(true);
-                    coll02.SetActive(true);
-                    coll03.SetActive(true);
-                    coll04.SetActive(true);
-                }
-            }
-            else
-            {
-                coll01.SetActive(false);
-                coll02.SetActive(false);
-                coll03.SetActive(false);
-                coll04.SetActive(false);
-            }
-
-            if (Input.GetMouseButtonDown(0))
-            {
-                coll01.SetActive(false);
-                coll02.SetActive(false);
-                coll03.SetActive(false);
-                coll04.SetActive(false);
-                hitTime = 0;
-            }*/
     }
 
     private void SkipTurn()

@@ -10,8 +10,10 @@ public class RoundManager : MonoBehaviour
     static Queue<string> turnKey = new Queue<string>();
     public static Queue<TaticsMove> turnTeam = new Queue<TaticsMove>();
     private static GameObject EnemyPainel;
+    public string NextCenaName = "ilha1";
     public GameObject Painel;
     public static bool Tutorial;
+    
     private void Start()
     {
 	    EnemyPainel = Painel;
@@ -24,6 +26,9 @@ public class RoundManager : MonoBehaviour
 	        
     		InitTeamTurnQueue();
     	}
+
+        
+        
     }
     static void InitTeamTurnQueue()
     {
@@ -90,5 +95,12 @@ public class RoundManager : MonoBehaviour
     	}
     	
     	list.Add(unit);
+    }
+
+    IEnumerator EndScene()
+    {
+	    yield return new WaitForSeconds(0.7f);
+	    PlayerPrefs.SetString("_sceneName", NextCenaName);
+	    LoadingSisten.LoadLevel(NextCenaName);
     }
 }
