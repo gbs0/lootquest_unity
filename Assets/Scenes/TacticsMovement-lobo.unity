@@ -18719,9 +18719,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f44629fa53e21499cb4e41c7673474ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextCenaName: ilha1
-  Painel: {fileID: 236448666}
-  Enimigs: []
+  nextSceneName: ilha1
+  painel: {fileID: 236448666}
+  enimigs: []
 --- !u!4 &1328292410
 Transform:
   m_ObjectHideFlags: 0

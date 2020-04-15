@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Damage : MonoBehaviour
 {
-
+    private RoundManager RM;
     public GameObject PainelVitoria;
     public GameObject Selection;
     private GameObject player;
@@ -34,7 +34,7 @@ public class Damage : MonoBehaviour
     
     private void Awake()
     {
-        
+        RM = FindObjectOfType<RoundManager>();
         player = GameObject.Find("Player");
         playerMove = player.GetComponent<PlayerMove>();
     }
@@ -71,7 +71,8 @@ public class Damage : MonoBehaviour
                     Morte = true;
 
                     GS.SetBool("Morto", true);
-
+                    RM.EnimKilled();
+                    
 
 
                 }

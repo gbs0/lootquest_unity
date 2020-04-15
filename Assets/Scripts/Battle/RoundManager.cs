@@ -27,19 +27,11 @@ public class RoundManager : MonoBehaviour
 
     void Update()
     {
-    	if (TurnTeam.Count == 0)
-        {
-	        
-    		InitTeamTurnQueue();
-    	}
+	    if (TurnTeam.Count == 0)
+	    {
 
-        if (enimigs.Count == 0)
-        {
-	        StartCoroutine(nameof(EndScene));
-        }
-
-        
-        
+		    InitTeamTurnQueue();
+	    }
     }
     static void InitTeamTurnQueue()
     {
@@ -109,6 +101,14 @@ public class RoundManager : MonoBehaviour
     	list.Add(unit);
     }
 
+    public void EnimKilled()
+    {
+	    enimigs.RemoveAt(0);
+	    if (enimigs.Count == 0)
+	    {
+		    StartCoroutine(nameof(EndScene));
+	    }
+    }
     IEnumerator EndScene()
     {
 	    yield return new WaitForSeconds(0.7f);
