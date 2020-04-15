@@ -40,7 +40,6 @@ public class ControleMonstros : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        g = PlayerPrefs.GetInt("Gatos");
 
         if (PlayerPrefs.GetInt("ConversaMonstros") == 2)
         {
