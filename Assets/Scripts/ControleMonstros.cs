@@ -4,22 +4,20 @@ using UnityEngine;
 
 public class ControleMonstros : MonoBehaviour
 {
+    public GameObject BruxaDialogo;
     public GameObject Slime1;
     public GameObject Slime2;
     public GameObject Gatos;
     public GameObject Bruxa;
-   
-
+    public int g;
 
     // Start is called before the first frame update
     void Start()
     {
-
         Slime1.SetActive(false);
         Slime2.SetActive(false);
         Gatos.SetActive(false);
         Bruxa.SetActive(false);
-
 
         if (PlayerPrefs.GetInt("ConversaMonstros") == 1)
         {
@@ -37,6 +35,13 @@ public class ControleMonstros : MonoBehaviour
             Gatos.SetActive(false);
             Bruxa.SetActive(false);
         }
+       
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        g = PlayerPrefs.GetInt("Gatos");
+
         if (PlayerPrefs.GetInt("ConversaMonstros") == 2)
         {
             if (PlayerPrefs.GetInt("Gatos") == 0)
@@ -48,10 +53,6 @@ public class ControleMonstros : MonoBehaviour
                 Bruxa.SetActive(true);
             }
         }
-    }
-    // Update is called once per frame
-    void Update()
-    {
         if (PlayerPrefs.GetInt("Monstro1") == 1)
         {
             Slime1.SetActive(false);
@@ -65,6 +66,7 @@ public class ControleMonstros : MonoBehaviour
         if (PlayerPrefs.GetInt("Gatos") == 1)
         {
             Gatos.SetActive(false);
+            BruxaDialogo.SetActive(true);
 
         }
         if (PlayerPrefs.GetInt("Bruxa") == 1)

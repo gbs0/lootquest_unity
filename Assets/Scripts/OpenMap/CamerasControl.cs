@@ -17,7 +17,7 @@ public class CamerasControl : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             CameraCidade.SetActive(true);
-           // CameraJogador.SetActive(false);
+            CameraJogador.SetActive(false);
         }
 
     }
@@ -25,7 +25,7 @@ public class CamerasControl : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //CameraJogador.SetActive(true);
+            CameraJogador.SetActive(true);
             CameraCidade.SetActive(false);
             
         }

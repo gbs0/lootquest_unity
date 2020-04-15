@@ -22,7 +22,6 @@ public class Slime : MonoBehaviour
         if (theCollision.gameObject.tag == "Player")
         {
            
-            PlayerPrefs.SetInt("indexSpam", 1);
 
             if (Monstros == 1)
             {
@@ -48,7 +47,7 @@ public class Slime : MonoBehaviour
             {
                 PlayerPrefs.SetInt("Monstro3", 1);
                 PlayerPrefs.SetInt("indexSpam", 4);
-
+                PlayerPrefs.SetInt("Gatos",1);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
                 PlayerPrefs.SetString("_sceneName", NextCenaName);
                 Application.LoadLevel("LoadingScene");

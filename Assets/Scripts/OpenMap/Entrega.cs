@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Entrega : MonoBehaviour
 {
-    public GameObject Dialogo1;
-    public int M;
-    public GameObject Dialogo2;
-    public GameObject BemVindo,Quadro,Missao,Entregra,Portal;
-    
+    public GameObject BemVindo;
+    public GameObject Quadro;
+    public GameObject Missao;
+    public GameObject Entregra;
+    public GameObject Portal;
+    public int valor;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
-
         BemVindo.SetActive(false);
         Quadro.SetActive(false);
         Missao.SetActive(false);
@@ -20,21 +23,27 @@ public class Entrega : MonoBehaviour
         Portal.SetActive(false);
 
 
-        Dialogo1.SetActive(false);
-        Dialogo2.SetActive(false);
+
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (PlayerPrefs.GetInt("Missao",0) == 0)
+        valor = PlayerPrefs.GetInt("DialogoGuilda");
+
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 0)
         {
-            Dialogo1.SetActive(true);
+            BemVindo.SetActive(true);
+            Quadro.SetActive(false);
+            Missao.SetActive(false);
+            Entregra.SetActive(false);
+            Portal.SetActive(false);
 
         }
 
-       
+
         if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 1)
         {
             BemVindo.SetActive(false);
@@ -60,7 +69,7 @@ public class Entrega : MonoBehaviour
             Missao.SetActive(false);
             Entregra.SetActive(false);
             Portal.SetActive(false);
-            
+
 
         }
         if (PlayerPrefs.GetInt("DialogoGuilda") == 5)
@@ -77,8 +86,7 @@ public class Entrega : MonoBehaviour
             Quadro.SetActive(false);
             Missao.SetActive(false);
             Entregra.SetActive(false);
-            Portal.SetActive(true);
-            Application.LoadLevel("Vitoria");
+
 
 
         }
