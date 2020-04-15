@@ -2,75 +2,87 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class RoundManager : MonoBehaviour
 {
-	public static bool playerTurn;
-    static Dictionary<string, List<TaticsMove>> units = new Dictionary<string, List<TaticsMove>>(); 
-    static Queue<string> turnKey = new Queue<string>();
-    public static Queue<TaticsMove> turnTeam = new Queue<TaticsMove>();
-    private static GameObject EnemyPainel;
-    public string NextCenaName = "ilha1";
-    public GameObject Painel;
+	public static bool PlayerTurn;
+    static readonly Dictionary<string, List<TaticsMove>> Units = new Dictionary<string, List<TaticsMove>>(); 
+    static readonly Queue<string> TurnKey = new Queue<string>();
+    public static readonly Queue<TaticsMove> TurnTeam = new Queue<TaticsMove>();
+    private static GameObject _enemyPainel;
+    public string nextSceneName = "ilha1";
+    public GameObject painel;
     public static bool Tutorial;
-    
+    public List<NPCMove> enimigs;
     private void Start()
     {
-	    EnemyPainel = Painel;
+	    _enemyPainel = painel;
+	    var v = FindObjectsOfType<NPCMove>();
+	    foreach (var npc in v)
+	    {
+		    enimigs.Add(npc);
+	    }
     }
 
     void Update()
     {
-    	if (turnTeam.Count == 0)
+    	if (TurnTeam.Count == 0)
         {
 	        
     		InitTeamTurnQueue();
     	}
+
+        if (enimigs.Count == 0)
+        {
+	        StartCoroutine(nameof(EndScene));
+        }
 
         
         
     }
     static void InitTeamTurnQueue()
     {
-    	List<TaticsMove> teamList = units[turnKey.Peek()];
+    	List<TaticsMove> teamList = Units[TurnKey.Peek()];
 
     	foreach (TaticsMove unit in teamList)
     	{
-    		turnTeam.Enqueue(unit);
+    		TurnTeam.Enqueue(unit);
     	}
     	StartTurn();
+        Debug.Log(TurnTeam);
     }
 
     public static void StartTurn()
     {
-    	if (turnTeam.Count > 0)
+    	if (TurnTeam.Count > 0)
     	{
-		    if (turnTeam.Peek().gameObject.GetComponent<PlayerMove>())
+		    if (TurnTeam.Peek().gameObject.GetComponent<PlayerMove>())
 		    {
-			    playerTurn = true;
-			    EnemyPainel.SetActive(false);
+			    PlayerTurn = true;
+			    _enemyPainel.SetActive(false);
 			    return;
 		    }
 
-		    playerTurn = false;
-		    EnemyPainel.SetActive(true);
-    		turnTeam.Peek().BeginTurn();
+		    PlayerTurn = false;
+		    _enemyPainel.SetActive(true);
+    		TurnTeam.Peek().BeginTurn();
     	}
     }
 
     public static void EndTurn()
     {
-    	TaticsMove unit = turnTeam.Dequeue();
+    	TaticsMove unit = TurnTeam.Dequeue();
     	unit.EndTurn();
 	    
-    	if (turnTeam.Count > 0)
+    	if (TurnTeam.Count > 0)
     	{
     		StartTurn();
     	}
     	else
     	{
-    		string team = turnKey.Dequeue();
-    		turnKey.Enqueue(team);
+    		string team = TurnKey.Dequeue();
+    		TurnKey.Enqueue(team);
     		InitTeamTurnQueue();
     	}
     }
@@ -79,19 +91,19 @@ public class RoundManager : MonoBehaviour
     {
     	List<TaticsMove> list;
 
-    	if (!units.ContainsKey(unit.tag))
+    	if (!Units.ContainsKey(unit.tag))
     	{
     		list = new List<TaticsMove>();
-    		units[unit.tag] = list;
+    		Units[unit.tag] = list;
 
-    		if (!turnKey.Contains(unit.tag))
+    		if (!TurnKey.Contains(unit.tag))
     		{
-    			turnKey.Enqueue(unit.tag);
+    			TurnKey.Enqueue(unit.tag);
     		}
     	}
     	else
     	{
-    		list = units[unit.tag];
+    		list = Units[unit.tag];
     	}
     	
     	list.Add(unit);
@@ -100,7 +112,7 @@ public class RoundManager : MonoBehaviour
     IEnumerator EndScene()
     {
 	    yield return new WaitForSeconds(0.7f);
-	    PlayerPrefs.SetString("_sceneName", NextCenaName);
-	    LoadingSisten.LoadLevel(NextCenaName);
+	    PlayerPrefs.SetString("_sceneName", nextSceneName);
+	    LoadingSisten.LoadLevel(nextSceneName);
     }
 }

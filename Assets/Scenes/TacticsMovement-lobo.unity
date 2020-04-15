@@ -8573,12 +8573,12 @@ PrefabInstance:
     - target: {fileID: 3397164898782556112, guid: ec3582913b4ddef4fa45f161c06bf26a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0166
+      value: 0.016600013
       objectReference: {fileID: 0}
     - target: {fileID: 3397164898782556112, guid: ec3582913b4ddef4fa45f161c06bf26a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0103
+      value: 0.010299981
       objectReference: {fileID: 0}
     - target: {fileID: 3397164898782556112, guid: ec3582913b4ddef4fa45f161c06bf26a,
         type: 3}
@@ -8594,8 +8594,18 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 09bf181f1967688409960bd8eab007f1,
+      objectReference: {fileID: 21300000, guid: 57661d49fe03de7438ab613fa99f91f0,
         type: 3}
+    - target: {fileID: 3397164898782556115, guid: ec3582913b4ddef4fa45f161c06bf26a,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3397164898782556115, guid: ec3582913b4ddef4fa45f161c06bf26a,
+        type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3601240796076962872, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
@@ -18711,6 +18721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NextCenaName: ilha1
   Painel: {fileID: 236448666}
+  Enimigs: []
 --- !u!4 &1328292410
 Transform:
   m_ObjectHideFlags: 0
@@ -30243,7 +30254,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 09bf181f1967688409960bd8eab007f1,
+      objectReference: {fileID: 21300000, guid: d2ecbb390f722704195897e3da786c5a,
         type: 3}
     m_RemovedComponents:
     - {fileID: 3601240796076962872, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}

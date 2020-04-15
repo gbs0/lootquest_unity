@@ -48,9 +48,9 @@ public class PassiveManager : MonoBehaviour
             TutorialPainel.SetActive(true);
         }
         loots = FindObjectsOfType<Loot>();
-        if (RoundManager.playerTurn)
+        if (RoundManager.PlayerTurn)
         {
-            _player = RoundManager.turnTeam.Peek().gameObject.GetComponent<PlayerStats>();
+            _player = RoundManager.TurnTeam.Peek().gameObject.GetComponent<PlayerStats>();
             i = _player.passivaIndex;
             passivePainel[i].SetActive(true);
             foreach (var loot in loots)
