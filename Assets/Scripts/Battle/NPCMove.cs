@@ -18,7 +18,7 @@ public class NPCMove : TaticsMove
     }
 
     // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
         if (!turn)
         {
