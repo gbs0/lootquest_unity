@@ -12,7 +12,7 @@ using System.Collections.Generic;
         public int _rarit;
         public Button botao;
         public Image m_Image;
-        
+        private UndoLoot UL;
         public Sprite Run_Sprite;
 
         public Sprite Fight_Sprite;
@@ -28,7 +28,7 @@ using System.Collections.Generic;
 
             text = transform.GetChild(0);
 
-            
+            UL = FindObjectOfType<UndoLoot>();            
             CanUse = true;
             m_Image = GetComponent<Image>();
             botao = transform.GetComponent<Button>();
@@ -70,6 +70,8 @@ using System.Collections.Generic;
         {
             if (CanUse)
             {
+                UL.sLoot = this;
+                UL.btn.gameObject.SetActive(true);
                 player.LootGenTest = TypeLoot;
                 player.move = _rarit;
                 player.HitForce = _rarit;
@@ -113,7 +115,7 @@ using System.Collections.Generic;
             TypeLoot = t;
             _rarit = r;
             CanUse = b;
-            if (TypeLoot == 1)
+            if (TypeLoot == 2)
             {
                 m_Image.sprite = Run_Sprite;
             }
@@ -124,6 +126,12 @@ using System.Collections.Generic;
             }
             text.GetComponent<Text>().text = _rarit.ToString();
         }
-        
+
+        public void SetLoot(Loot VL)
+        {
+            var loot = this;
+            loot = VL;
+        }
+
     }
     

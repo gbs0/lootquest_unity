@@ -85,22 +85,9 @@ public class PlayerMove : TaticsMove
 			RemoveSelectableTiles();
 			moving = false;
 			
-			// Mudar a Rodada ou Terminar o turno;
-			//RoundManager.EndTurn();
 		}
 	}
-
-//    void TempReact()
-//    {
-//        if (Input.GetKeyDown(KeyCode.UpArrow))
-//        {
-//            PlayerAnim.SetTrigger("PositiveReact");
-//        }
-//        if (Input.GetKeyDown(KeyCode.DownArrow))
-//        {
-//            PlayerAnim.SetTrigger("NegativeReact");
-//        }
-//    }
+	
 
     void CheckMouse()
     {
@@ -125,6 +112,12 @@ public class PlayerMove : TaticsMove
     			}
     		}
     	}
+    }
+
+    public void CancelLoot()
+    {
+	    RemoveSelectableTiles();
+	    LootGenTest = 0;
     }
 }
 
