@@ -1,7 +1,13 @@
 fileFormatVersion: 2
-guid: ee9ec677c2cd3b94f8a03191630a638d
+guid: 8a1fd0f020acfc94394f97d938facfc6
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2036497243000506829
+    second: Folhas arbustos_0
+  - first:
+      213: 3921073721318779217
+    second: Folhas arbustos_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,11 +99,53 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Folhas arbustos_0
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 538
+        width: 425
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc81206b3c864f4b94f2a28a10c2754
+      internalID: 2036497243000506829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folhas arbustos_1
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 527
+        width: 514
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a13acd8f3510346b76e1da78776cf7
+      internalID: 3921073721318779217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2250b501ca4316646a4d7b798bb08b7f
+    spriteID: c43d2a27b112aa9459be84103afcdd96
     internalID: 0
     vertices: []
     indices: 

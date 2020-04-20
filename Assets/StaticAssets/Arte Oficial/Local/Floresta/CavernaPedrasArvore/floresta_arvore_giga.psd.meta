@@ -1,7 +1,13 @@
 fileFormatVersion: 2
-guid: ee9ec677c2cd3b94f8a03191630a638d
+guid: 29ef66c9039ae11428a097eccd32ee79
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5588329381192436730
+    second: floresta_arvore_giga_0
+  - first:
+      213: -6693948331280902170
+    second: floresta_arvore_giga_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -32,7 +38,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -100
     wrapU: 1
     wrapV: 1
@@ -40,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,11 +99,53 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: floresta_arvore_giga_0
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 1930
+        width: 1393
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d955d381f2abf47a218221a1addb29
+      internalID: 5588329381192436730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_arvore_giga_1
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 0
+        width: 1570
+        height: 1901
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d18a073a865fbd4097ad1bb8502e293
+      internalID: -6693948331280902170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2250b501ca4316646a4d7b798bb08b7f
+    spriteID: 68a2284e89262794cadce66f1d51266c
     internalID: 0
     vertices: []
     indices: 
@@ -106,7 +154,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
+  pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
