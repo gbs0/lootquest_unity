@@ -12,12 +12,12 @@ public class RoundManager : MonoBehaviour
     public static readonly Queue<TaticsMove> TurnTeam = new Queue<TaticsMove>();
     private static GameObject _enemyPainel;
     public string nextSceneName = "ilha1";
-    public GameObject painel;
+    public GameObject enemyPainel;
     public static bool Tutorial;
     public List<NPCMove> enimigs;
     private void Start()
     {
-	    _enemyPainel = painel;
+	    _enemyPainel = enemyPainel;
 	    var v = FindObjectsOfType<NPCMove>();
 	    foreach (var npc in v)
 	    {
