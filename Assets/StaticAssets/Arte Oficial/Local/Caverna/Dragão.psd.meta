@@ -1,30 +1,12 @@
 fileFormatVersion: 2
-guid: 1b775465b5139a44fb47441ffd601006
+guid: 54ad66994bbb99b4ca7657870ca5f31e
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 7274062751108876075
-    second: "Drag\xE3o_0"
-  - first:
-      213: -2468747959348660900
-    second: "Drag\xE3o_1"
-  - first:
-      213: 1609586573110251236
-    second: "Drag\xE3o_2"
-  - first:
-      213: -77428075978687731
-    second: "Drag\xE3o_3"
-  - first:
-      213: -7336643190615762067
-    second: "Drag\xE3o_4"
-  - first:
-      213: -8709421093280029294
-    second: "Drag\xE3o_5"
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -52,13 +34,13 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -100
-    wrapU: 1
-    wrapV: 1
+    wrapU: -1
+    wrapV: -1
     wrapW: -1
-  nPOTScale: 0
+  nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 0
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -67,9 +49,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -87,98 +69,13 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: "Drag\xE3o_0"
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 264
-        width: 809
-        height: 797
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0d276336ca5d7746894971c7281b0bf
-      internalID: 7274062751108876075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Drag\xE3o_2"
-      rect:
-        serializedVersion: 2
-        x: 852
-        y: 266
-        width: 809
-        height: 797
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20279c4bafd494f4ab21ff55ad0892d5
-      internalID: 1609586573110251236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Drag\xE3o_4"
-      rect:
-        serializedVersion: 2
-        x: 1701
-        y: 264
-        width: 809
-        height: 797
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 020560bfb52f9f04db86a361b585ef7e
-      internalID: -7336643190615762067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3ca8d8dbd23f0154db27d3bee53d59a1
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -187,7 +84,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 1
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

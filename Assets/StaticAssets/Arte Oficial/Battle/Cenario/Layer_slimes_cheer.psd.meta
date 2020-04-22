@@ -1,33 +1,12 @@
 fileFormatVersion: 2
-guid: 1ef77bdd58660e647ad5aa73089dbcc9
+guid: c0c055bb7d17d4141b15ab41814747f8
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 4149345542637824455
-    second: Layer_slimes_cheer_0
-  - first:
-      213: 1693797093357934438
-    second: Layer_slimes_cheer_1
-  - first:
-      213: 8430751123462311
-    second: Layer_slimes_cheer_2
-  - first:
-      213: -4620394096247973116
-    second: Layer_slimes_cheer_3
-  - first:
-      213: 5134253255884592300
-    second: Layer_slimes_cheer_4
-  - first:
-      213: -9147389657405127602
-    second: Layer_slimes_cheer_5
-  - first:
-      213: 2819453479382419015
-    second: Layer_slimes_cheer_6
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -55,13 +34,13 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -100
-    wrapU: 1
-    wrapV: 1
+    wrapU: -1
+    wrapV: -1
     wrapW: -1
-  nPOTScale: 0
+  nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 0
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +49,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -90,182 +69,13 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Layer_slimes_cheer_0
-      rect:
-        serializedVersion: 2
-        x: 459
-        y: 740
-        width: 195
-        height: 153
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a07ed4c6b955096408ea746a3c87ae22
-      internalID: 4149345542637824455
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Layer_slimes_cheer_1
-      rect:
-        serializedVersion: 2
-        x: 608
-        y: 699
-        width: 125
-        height: 133
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b63cca54f8e6bab47863a13d6db8e567
-      internalID: 1693797093357934438
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Layer_slimes_cheer_2
-      rect:
-        serializedVersion: 2
-        x: 731
-        y: 742
-        width: 125
-        height: 133
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc00f8cbab300b045b0a1d68a9ba4960
-      internalID: 8430751123462311
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Layer_slimes_cheer_3
-      rect:
-        serializedVersion: 2
-        x: 850
-        y: 708
-        width: 125
-        height: 142
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fac17fbb5be0c0545adf8a28693fe7c9
-      internalID: -4620394096247973116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Layer_slimes_cheer_4
-      rect:
-        serializedVersion: 2
-        x: 980
-        y: 685
-        width: 125
-        height: 142
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e87694cc00d6ff4e875287d7261420f
-      internalID: 5134253255884592300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Layer_slimes_cheer_5
-      rect:
-        serializedVersion: 2
-        x: 1099
-        y: 676
-        width: 439
-        height: 176
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 532dfc8a59c1a4a4bb10896deb57c3b3
-      internalID: -9147389657405127602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Layer_slimes_cheer_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 165
-        width: 474
-        height: 577
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87e635bb1c5b87c43954cc2df9bbc541
-      internalID: 2819453479382419015
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 48e3984313ca59544a66373e35f45fd9
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -274,7 +84,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 1
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

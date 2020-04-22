@@ -1,36 +1,12 @@
 fileFormatVersion: 2
-guid: c9c96b696aa030840a4c9be5f2231913
+guid: 508e0f6bf18f743409ccb19b93be38f2
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 803852084029842682
-    second: Layer_02_middle_battle_forest2_0
-  - first:
-      213: -5997692147507754582
-    second: Layer_02_middle_battle_forest2_1
-  - first:
-      213: -4649877685454511467
-    second: Layer_02_middle_battle_forest2_2
-  - first:
-      213: 1710776047679414009
-    second: Layer_02_middle_battle_forest2_3
-  - first:
-      213: 8564498158896029566
-    second: Layer_02_middle_battle_forest2_4
-  - first:
-      213: -6609058020620066262
-    second: Layer_02_middle_battle_forest2_5
-  - first:
-      213: -5172071895973163339
-    second: Layer_02_middle_battle_forest2_6
-  - first:
-      213: -2033723370348746923
-    second: Layer_02_middle_battle_forest2_7
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -58,13 +34,13 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -100
-    wrapU: 1
-    wrapV: 1
+    wrapU: -1
+    wrapV: -1
     wrapW: -1
-  nPOTScale: 0
+  nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 0
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -73,9 +49,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -93,203 +69,13 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Layer_02_middle_battle_forest2_0
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 111
-        width: 515
-        height: 828
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bdc4f2787d381f47bef2fef3738cf00
-      internalID: 803852084029842682
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Layer_02_middle_battle_forest2_1
-      rect:
-        serializedVersion: 2
-        x: 570
-        y: 640
-        width: 51
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54b82cac0c99b954eb3d678eb35ba61d
-      internalID: -5997692147507754582
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Layer_02_middle_battle_forest2_2
-      rect:
-        serializedVersion: 2
-        x: 1219
-        y: 623
-        width: 153
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36a3bcb439dd94f4da5bcced4c83fa00
-      internalID: -4649877685454511467
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Layer_02_middle_battle_forest2_3
-      rect:
-        serializedVersion: 2
-        x: 1460
-        y: 176
-        width: 442
-        height: 817
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d72bdc2ec60b864db190ef60867e8ae
-      internalID: 1710776047679414009
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Layer_02_middle_battle_forest2_4
-      rect:
-        serializedVersion: 2
-        x: 626
-        y: 478
-        width: 42
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 15727234e625f534cac2e09db48981f7
-      internalID: 8564498158896029566
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Layer_02_middle_battle_forest2_5
-      rect:
-        serializedVersion: 2
-        x: 1364
-        y: 432
-        width: 23
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bab2064516e4aa34da64f36f715a54a8
-      internalID: -6609058020620066262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Layer_02_middle_battle_forest2_6
-      rect:
-        serializedVersion: 2
-        x: 1439
-        y: 298
-        width: 60
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca11405d66dc5664f8470592a2cd94be
-      internalID: -5172071895973163339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Layer_02_middle_battle_forest2_7
-      rect:
-        serializedVersion: 2
-        x: 1489
-        y: 153
-        width: 144
-        height: 153
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a134d9ff577e80943886d5457bcb7592
-      internalID: -2033723370348746923
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f2aad280293b54b4a99202f819504aad
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -298,7 +84,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 1
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
