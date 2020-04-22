@@ -1,7 +1,25 @@
 fileFormatVersion: 2
-guid: fe41378dd4d54ff46897dc1d25ed7003
+guid: 54ad66994bbb99b4ca7657870ca5f31e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7274062751108876075
+    second: "Drag\xE3o_0"
+  - first:
+      213: -2468747959348660900
+    second: "Drag\xE3o_1"
+  - first:
+      213: 1609586573110251236
+    second: "Drag\xE3o_2"
+  - first:
+      213: -77428075978687731
+    second: "Drag\xE3o_3"
+  - first:
+      213: -7336643190615762067
+    second: "Drag\xE3o_4"
+  - first:
+      213: -8709421093280029294
+    second: "Drag\xE3o_5"
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,11 +111,74 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "Drag\xE3o_0"
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 264
+        width: 809
+        height: 799
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f670d82774a65d4f87d7159538840d8
+      internalID: 7274062751108876075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Drag\xE3o_2"
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 264
+        width: 809
+        height: 799
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4440f792867a4d543ba27770d9657031
+      internalID: 1609586573110251236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Drag\xE3o_4"
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 264
+        width: 809
+        height: 799
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7237f95085225554890791e455cc2bf7
+      internalID: -7336643190615762067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cddb0d377a258c3488f2b80d561c2fa2
     internalID: 0
     vertices: []
     indices: 

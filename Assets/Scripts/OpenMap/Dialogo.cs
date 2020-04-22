@@ -136,10 +136,10 @@ public class Dialogo : MonoBehaviour
     }
     void Desabilitar()
     {
-        PlayerPrefs.SetInt("ConversaMonstros", 1);
         panelBox.SetActive(false);
             estaFalando = false;
-            
+        img.SetActive(false);
+
         if (Guilda == true)
         {
             PlayerPrefs.SetInt("DialogoGuilda", NivelEntrando);

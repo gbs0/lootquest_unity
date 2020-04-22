@@ -2423,12 +2423,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &252784618 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 252784618, guid: d68c92c07d3bb384997ab40b6d643c97,
-    type: 3}
-  m_PrefabInstance: {fileID: 4889621933968704880}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &273662352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3093,12 +3087,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4557539474977832, guid: 1dccab803c1b24168807413cefb601fa,
     type: 3}
   m_PrefabInstance: {fileID: 319892739}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &324693697 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 324693697, guid: d68c92c07d3bb384997ab40b6d643c97,
-    type: 3}
-  m_PrefabInstance: {fileID: 4889621933968704880}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &328658001
 GameObject:
@@ -6206,12 +6194,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4557539474977832, guid: 1dccab803c1b24168807413cefb601fa,
     type: 3}
   m_PrefabInstance: {fileID: 635858322}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &636479822 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 636479822, guid: d68c92c07d3bb384997ab40b6d643c97,
-    type: 3}
-  m_PrefabInstance: {fileID: 4889621933968704880}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &636872126
 GameObject:
@@ -11189,12 +11171,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022595244}
   m_CullTransparentMesh: 0
---- !u!1 &1023144994 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1023144994, guid: d68c92c07d3bb384997ab40b6d643c97,
-    type: 3}
-  m_PrefabInstance: {fileID: 4889621933968704880}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1023714685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11958,7 +11934,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f44629fa53e21499cb4e41c7673474ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Painel: {fileID: 236448666}
+  nextSceneName: ilha1
+  enemyPainel: {fileID: 0}
+  enimigs: []
 --- !u!1 &1105809073
 GameObject:
   m_ObjectHideFlags: 0
@@ -14376,6 +14354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1328292410}
+  - component: {fileID: 1328292409}
   m_Layer: 0
   m_Name: RoundController
   m_TagString: Untagged
@@ -14383,6 +14362,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1328292409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328292408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f44629fa53e21499cb4e41c7673474ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneName: ilha1
+  enemyPainel: {fileID: 1022595244}
+  enimigs: []
 --- !u!4 &1328292410
 Transform:
   m_ObjectHideFlags: 0
@@ -22733,19 +22727,19 @@ PrefabInstance:
     - target: {fileID: 813663111, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
       propertyPath: coll01
       value: 
-      objectReference: {fileID: 324693697}
+      objectReference: {fileID: 0}
     - target: {fileID: 813663111, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
       propertyPath: coll02
       value: 
-      objectReference: {fileID: 1023144994}
+      objectReference: {fileID: 0}
     - target: {fileID: 813663111, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
       propertyPath: coll03
       value: 
-      objectReference: {fileID: 252784618}
+      objectReference: {fileID: 0}
     - target: {fileID: 813663111, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
       propertyPath: coll04
       value: 
-      objectReference: {fileID: 636479822}
+      objectReference: {fileID: 0}
     - target: {fileID: 813663111, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
       propertyPath: NextCenaName
       value: Derrota

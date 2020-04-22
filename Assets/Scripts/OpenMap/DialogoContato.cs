@@ -118,6 +118,8 @@ public class DialogoContato : MonoBehaviour
     }
     void Desabilitar()
     {
+        img.SetActive(false);
+
         panelBox.SetActive(false);
         estaFalando = false;
         Interrogaçao.SetActive(false);
