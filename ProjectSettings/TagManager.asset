@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Tile
   - NPC
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -42,4 +43,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2097258601
+    locked: 0
+  - name: Personagens
+    uniqueID: 1011834695
+    locked: 0
+  - name: Interface(UI)
+    uniqueID: 2094102187
     locked: 0
