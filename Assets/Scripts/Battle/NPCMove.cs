@@ -6,11 +6,11 @@ using UnityEngine;
 public class NPCMove : TaticsMove
 {
     private GameObject NPC;
-    GameObject target;
+	public GameObject target;
     public Animator GS;
-    TempDistCheck tempDistCheck;
+    public TempDistCheck tempDistCheck;
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
 	    NPC = gameObject;
         tempDistCheck = NPC.GetComponent<TempDistCheck>();
@@ -42,20 +42,20 @@ public class NPCMove : TaticsMove
         }
     }
 
-    IEnumerator MoveAnim()
+   public  IEnumerator MoveAnim()
     {
         GS.SetTrigger("Move");
         yield return new WaitForSeconds(0.9f);
         GS.ResetTrigger("Move");
     }
 
-    void CalculatePath() 
+    public void CalculatePath() 
     {
     	Tile targetTile = GetTargetTile(target);
     	FindPath(targetTile); // Perform A*
     }
 
-    void FindNearestTarget()
+    public virtual void FindNearestTarget()
     {
     	GameObject[] targets = GameObject.FindGameObjectsWithTag("Player");
 

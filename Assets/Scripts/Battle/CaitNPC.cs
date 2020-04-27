@@ -4,8 +4,66 @@ using UnityEngine;
 
 public class CaitNPC : NPCMove
 {
+    private float distance;
+    public List<GameObject> TPTarguets;
     public override void Update()
     {
-        base.Update();
+        if (!turn)
+        {
+            return;
+        }
+        if (!moving)
+        {
+            FindNearestTarget();
+            if (distance<2)
+            {
+                Teleport();
+            }
+            else
+            {
+                FindSelectableTiles(); // Still show the movement from NPC
+                CalculatePath();
+                actualTargetTile.target = true;
+            }
+            
+        }
+        else
+        {
+            if (tempDistCheck.distTotal >= 1.5f)
+            {
+                StartCoroutine("MoveAnim");
+            }
+
+            Move();
+        }
+    }
+
+    public override void FindNearestTarget()
+    {GameObject[] targets = GameObject.FindGameObjectsWithTag("Player");
+
+        // Put simple AI
+        GameObject nearest = null;
+        distance = Mathf.Infinity;
+
+        foreach (GameObject obj in targets)
+        {
+            float d = Vector3.Distance(transform.position, obj.transform.position);
+
+            if (d < distance)
+            {
+                distance = d;
+                nearest = obj;
+            }
+        }
+
+        target = nearest;
+       
+    }
+
+    private void Teleport()
+    {
+        var i = Random.Range(0, 4);
+        gameObject.transform.position = TPTarguets[i].transform.position;
+        
     }
 }

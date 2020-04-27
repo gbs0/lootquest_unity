@@ -8,7 +8,7 @@ public class TempDistCheck : MonoBehaviour
     public string NextCenaName;
     
     private GameObject player;
-
+    public float atkDistance = 1.5f;
     private float distX;
     private float distZ;
     public float distTotal;
@@ -41,7 +41,7 @@ public class TempDistCheck : MonoBehaviour
     void Update()
     {
         DistCheck();
-        if (distTotal <= 1.5f && canHit == true)
+        if (distTotal <= atkDistance && canHit == true)
         {
             TestDamage();
             //GS.ResetTrigger("Attack");
