@@ -31,9 +31,9 @@ public class Objetivo : MonoBehaviour
     public void Escolher()
     {
         PapelMissao.SetActive(true);
-        TextoNome.text = "" + Nome;
-        TextoDescriçao.text = "" + TextoDescriçao;
-        TextoDificuldade.text = "" + TextoDificuldade;
+       // TextoNome.text = "" + Nome;
+      //TextoDescriçao.text = "" + TextoDescriçao;
+      //  TextoDificuldade.text = "" + TextoDificuldade;
     }
     public void Aceitar()
     {

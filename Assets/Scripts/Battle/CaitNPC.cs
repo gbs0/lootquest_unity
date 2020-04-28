@@ -29,11 +29,10 @@ public class CaitNPC : NPCMove
         }
         else
         {
-            if (tempDistCheck.distTotal >= 1.5f)
+            if (tempDistCheck.distTotal >= 6f)
             {
                 StartCoroutine("MoveAnim");
             }
-
             Move();
         }
     }

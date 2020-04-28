@@ -12537,6 +12537,11 @@ PrefabInstance:
       propertyPath: atkDistance
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4889621934937223168, guid: f6958a85ecf449946827983584a2195c,
+        type: 3}
+      propertyPath: PlayerAnim
+      value: 
+      objectReference: {fileID: 954975168}
     m_RemovedComponents:
     - {fileID: 4889621934937223199, guid: f6958a85ecf449946827983584a2195c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f6958a85ecf449946827983584a2195c, type: 3}
