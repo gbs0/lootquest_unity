@@ -14,12 +14,16 @@ public class ProjectileSword : MonoBehaviour
 
     //static float t = 0.0f;
 
+    private void Awake()
+    {
+        Enem = FindObjectOfType<TempDistCheck>().gameObject;        
+    }
     // Start is called before the first frame update
     void Start()
     {
         var player = FindObjectOfType<PlayerMove>();
-       Enem = FindObjectOfType<Damage>().gameObject;
-        
+        // Enem = FindObjectOfType<Damage>().gameObject; // codigo antigo
+
         Player = player.transform;
         Enemie = Enem.transform;
     }

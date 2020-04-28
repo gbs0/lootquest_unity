@@ -5,45 +5,76 @@ using UnityEngine.UI;
 
 public class TempDistCheck : MonoBehaviour
 {
-    public string NextCenaName;
+    // **Bugs Atuais:**
+    // - Barra de Vida do jogador não diminui;
+    // - Player ataca o NPC, porém espada buga
+
+    // **OK:**
+    // - Barra de Vida do NPC;
     
+
+    // Elementos do Gameplay
+    private RoundManager RM;
+
+    public string NextCenaName;
+    public GameObject PainelVitoria;
+    
+    // Elementos dos Personagens
     private GameObject player;
+    PlayerMove playerMove;
+    public Animator GS;
+    public Animator PlayerAnim;
+    public GameObject Selection;
+    public Image LifeBar;
+
+    // Elementos do Combate
     public float atkDistance = 1.5f;
     private float distX;
     private float distZ;
+    private float PEdist;
     public float distTotal;
     private float PositivizadorX;
     private float PositivizadorZ;
     private float DX;
     private float DZ;
 
-    public float hitTime;
-
+    bool selectable = false;
+    
+    public bool Morte = false;
+    public bool selected = false;
+    
     public bool canHit;
+    public float hitTime;
     public int hitCount;
+    float tempLife;
 
     public Button SkipButton;
-
-    public Animator GS;
-    public Animator PlayerAnim;
-
+    public float TimeAnimation;
+    
     // Start is called before the first frame update
+    private void Awake()
+    {
+        RM = FindObjectOfType<RoundManager>();
+        // player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.Find("Player");
+        playerMove = player.GetComponent<PlayerMove>();      
+    }
     void Start()
     {
-        player = GameObject.Find("Player");
         canHit = true;
         hitCount = 0;
-
+        tempLife = 100;
         SkipButton.onClick.AddListener(SkipTurn);
     }
 
     // Update is called once per frame
     void Update()
     {
+        Attack();
         DistCheck();
         if (distTotal <= atkDistance && canHit == true)
         {
-            TestDamage();
+            TestDamage(); // Toggle Death Method
             //GS.ResetTrigger("Attack");
         }
         
@@ -57,6 +88,37 @@ public class TempDistCheck : MonoBehaviour
     {
         canHit = true;
 
+    }
+
+    void Attack()
+    {
+        if (playerMove.LootGenTest == 3 && distTotal < 6)
+        {
+            selectable = true;
+            if (Input.GetMouseButtonDown(0)&& Selection.activeSelf)
+            {
+                PlayerAnim.SetTrigger("Attack");
+                //GS.SetTrigger("Damage");
+                StartCoroutine("DamageAnim");
+                tempLife -= playerMove.HitForce*10;
+                float barra = tempLife / 100;
+                Debug.Log(barra);
+                LifeBar.fillAmount = barra;
+                if (tempLife <= 0)
+                {
+
+                    Morte = true;
+
+                    GS.SetBool("Morto", true);
+                    RM.EnimKilled();
+                    
+
+
+                }
+                playerMove.LootGenTest = 0;
+                //RoundManager.EndTurn();
+            }
+        }
     }
 
     private void TestDamage()
@@ -79,7 +141,13 @@ public class TempDistCheck : MonoBehaviour
         LoadingSisten.LoadLevel(NextCenaName);
     }
 
-    public void DistCheck()
+    IEnumerator DamageAnim()
+    {
+        yield return new WaitForSeconds(0.5f);
+        GS.SetTrigger("Damage");
+    }
+
+    public void DistCheck() 
     {
         distX = (player.transform.position.x - transform.position.x) / 1;
         distZ = (player.transform.position.z - transform.position.z) / 1;
@@ -104,6 +172,21 @@ public class TempDistCheck : MonoBehaviour
         DX = distX * PositivizadorX;
         DZ = distZ * PositivizadorZ;
         distTotal = DX + DZ;
+    }
+
+    private void OnMouseEnter()
+    {
+        if (selectable == true)
+        {
+            Selection.SetActive(true);
+            selected = true;
+        }
+    }
+
+    private void OnMouseExit()
+    {
+        Selection.SetActive(false);
+        selected = false;
     }
 
 }

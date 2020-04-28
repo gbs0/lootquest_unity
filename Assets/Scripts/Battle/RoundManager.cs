@@ -15,6 +15,7 @@ public class RoundManager : MonoBehaviour
     public GameObject enemyPainel;
     public static bool Tutorial;
     public List<NPCMove> enimigs;
+    
     private void Start()
     {
 	    _enemyPainel = enemyPainel;

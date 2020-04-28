@@ -3005,6 +3005,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 319892739}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &327933425 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4889621933577898582, guid: d68c92c07d3bb384997ab40b6d643c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 4889621933968704880}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &328658001
 GameObject:
   m_ObjectHideFlags: 0
@@ -8244,7 +8250,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1118329664}
   m_HandleRect: {fileID: 1118329663}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -13140,7 +13146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneName: ilha1
-  painel: {fileID: 236448666}
+  enemyPainel: {fileID: 236448666}
   enimigs: []
 --- !u!4 &1328292410
 Transform:
@@ -21347,24 +21353,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4889621934937223168, guid: d68c92c07d3bb384997ab40b6d643c97,
-        type: 3}
-      propertyPath: PlayerAnim
-      value: 
-      objectReference: {fileID: 954975168}
-    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
-      propertyPath: SkipButton
-      value: 
-      objectReference: {fileID: 1416505810}
-    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
-      propertyPath: PlayerAnim
-      value: 
-      objectReference: {fileID: 954975168}
     - target: {fileID: 3397164897075905928, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 4889621934937223168, guid: d68c92c07d3bb384997ab40b6d643c97,
+        type: 3}
+      propertyPath: PlayerAnim
+      value: 
+      objectReference: {fileID: 954975168}
+    - target: {fileID: 4889621934937223199, guid: d68c92c07d3bb384997ab40b6d643c97,
+        type: 3}
+      propertyPath: tempDistCheck
+      value: 
+      objectReference: {fileID: 4889621933968704881}
     - target: {fileID: 3397164898782556112, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -21375,8 +21378,38 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.44
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: SkipButton
+      value: 
+      objectReference: {fileID: 1416505810}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: PlayerAnim
+      value: 
+      objectReference: {fileID: 954975168}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: Selection
+      value: 
+      objectReference: {fileID: 327933425}
+    - target: {fileID: 4889621933577898582, guid: d68c92c07d3bb384997ab40b6d643c97,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4889621934937223168, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+--- !u!114 &4889621933968704881 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 4889621933968704880}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d570e71e90f1262488c3002d278684bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &4889621933968704882 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 4889621933968704882, guid: d68c92c07d3bb384997ab40b6d643c97,

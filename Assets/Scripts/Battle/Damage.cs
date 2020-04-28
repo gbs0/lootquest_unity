@@ -34,9 +34,9 @@ public class Damage : MonoBehaviour
     
     private void Awake()
     {
-        RM = FindObjectOfType<RoundManager>();
+        RM = FindObjectOfType<RoundManager>(); // Deletar linha
         player = GameObject.Find("Player");
-        playerMove = player.GetComponent<PlayerMove>();
+        playerMove = player.GetComponent<PlayerMove>(); // Deletar linha
     }
     // Start is called before the first frame update
     void Start()
@@ -82,13 +82,13 @@ public class Damage : MonoBehaviour
         }
     }
 
-    IEnumerator DamageAnim()
+    IEnumerator DamageAnim() // Deletar Funçao
     {
         yield return new WaitForSeconds(0.5f);
         GS.SetTrigger("Damage");
     }
 
-    public void DistCheck()
+    public void DistCheck() // Deletar Funçao
     {
         distX = (player.transform.position.x - transform.position.x)/1;
         distZ = (player.transform.position.z - transform.position.z)/1;
