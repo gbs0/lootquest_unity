@@ -11,7 +11,7 @@ public class TempDistCheck : MonoBehaviour
 
     // **OK:**
     // - Barra de Vida do NPC;
-    
+    // - Ataque do NPC
 
     // Elementos do Gameplay
     private RoundManager RM;
@@ -57,7 +57,11 @@ public class TempDistCheck : MonoBehaviour
         RM = FindObjectOfType<RoundManager>();
         // player = GameObject.FindGameObjectWithTag("Player");
         player = GameObject.Find("Player");
-        playerMove = player.GetComponent<PlayerMove>();      
+        playerMove = player.GetComponent<PlayerMove>();
+        
+        // LifeBar = GameObject.Find("sprite slime");
+        // LifeBar = this.GetComponentInChildren<InputField>();
+        // LifeBar = this.GameObject.Find("personagem canvas").GetComponentInChildren<InputField>();
     }
     void Start()
     {
