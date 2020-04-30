@@ -330,7 +330,7 @@ MonoBehaviour:
   LootGenTest: 0
   target: {fileID: 0}
   GS: {fileID: 4889621933968704882}
-  tempDistCheck: {fileID: 1661451079}
+  tempDistCheck: {fileID: 0}
 --- !u!114 &4993610007012293987
 MonoBehaviour:
   m_ObjectHideFlags: 0

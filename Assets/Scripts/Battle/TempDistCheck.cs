@@ -53,7 +53,7 @@ public class TempDistCheck : MonoBehaviour
     
     // Start is called before the first frame update
     
-    void Start()
+    public void Start()
     {
         // LifeBar = GameObject.Find("sprite slime");
         // LifeBar = this.GetComponentInChildren<InputField>();
@@ -71,7 +71,7 @@ public class TempDistCheck : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         Attack();
         DistCheck();
@@ -93,7 +93,7 @@ public class TempDistCheck : MonoBehaviour
 
     }
 
-    void Attack()
+    private void Attack()
     {
         if (playerMove.LootGenTest == 3 && distTotal < 6)
         {
