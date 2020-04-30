@@ -52,19 +52,18 @@ public class TempDistCheck : MonoBehaviour
     public float TimeAnimation;
     
     // Start is called before the first frame update
-    private void Awake()
+    
+    void Start()
     {
+        // LifeBar = GameObject.Find("sprite slime");
+        // LifeBar = this.GetComponentInChildren<InputField>();
+        // LifeBar = this.GameObject.Find("personagem canvas").GetComponentInChildren<InputField>();
+
         RM = FindObjectOfType<RoundManager>();
         // player = GameObject.FindGameObjectWithTag("Player");
         player = GameObject.Find("Player");
         playerMove = player.GetComponent<PlayerMove>();
-        
-        // LifeBar = GameObject.Find("sprite slime");
-        // LifeBar = this.GetComponentInChildren<InputField>();
-        // LifeBar = this.GameObject.Find("personagem canvas").GetComponentInChildren<InputField>();
-    }
-    void Start()
-    {
+
         canHit = true;
         hitCount = 0;
         tempLife = 100;
