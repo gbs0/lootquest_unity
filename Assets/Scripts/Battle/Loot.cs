@@ -14,10 +14,16 @@ using System.Collections.Generic;
         public Image m_Image;
         private UndoLoot UL;
         public Sprite Run_Sprite;
+        public Sprite Run_Sprite2;
+        public Sprite Run_Sprite3;
+        public Sprite Run_Sprite4;
 
         public Sprite Fight_Sprite;
+        public Sprite Fight_Sprite2;
+        public Sprite Fight_Sprite3;
+        public Sprite Fight_Sprite4;
 
-        public Transform text;
+    public Transform text;
 
 
         //private Animator PlayerAnim;
@@ -40,12 +46,42 @@ using System.Collections.Generic;
             
             if(TypeLoot == 2)
             {
+            if (_rarit == 1)
+            {
                 m_Image.sprite = Run_Sprite;
             }
+            if (_rarit == 2)
+            {
+                m_Image.sprite = Run_Sprite2;
+            }
+            if (_rarit == 3)
+            {
+                m_Image.sprite = Run_Sprite3;
+            }
+            if (_rarit == 4)
+            {
+                m_Image.sprite = Run_Sprite4;
+            }
+        }
             else if(TypeLoot == 3)
+            {
+            if (_rarit == 1)
             {
                 m_Image.sprite = Fight_Sprite;
             }
+            if (_rarit == 2)
+            {
+                m_Image.sprite = Fight_Sprite2;
+            }
+            if (_rarit == 3)
+            {
+                m_Image.sprite = Fight_Sprite3;
+            }
+            if (_rarit == 4)
+            {
+                m_Image.sprite = Fight_Sprite4;
+            }
+        }
             text.GetComponent<Text>().text = _rarit.ToString();
         }
 
@@ -55,12 +91,42 @@ using System.Collections.Generic;
             {
                 if(TypeLoot == 2)
                 {
+                if (_rarit == 1)
+                {
                     m_Image.sprite = Run_Sprite;
+                }
+                if (_rarit == 2)
+                {
+                    m_Image.sprite = Run_Sprite2;
+                }
+                if (_rarit == 3)
+                {
+                    m_Image.sprite = Run_Sprite3;
+                }
+                if (_rarit == 4)
+                {
+                    m_Image.sprite = Run_Sprite4;
+                };
                 }
                 else if(TypeLoot == 3)
                 {
+                if (_rarit == 1)
+                {
                     m_Image.sprite = Fight_Sprite;
                 }
+                if (_rarit == 2)
+                {
+                    m_Image.sprite = Fight_Sprite2;
+                }
+                if (_rarit == 3)
+                {
+                    m_Image.sprite = Fight_Sprite3;
+                }
+                if (_rarit == 4)
+                {
+                    m_Image.sprite = Fight_Sprite4;
+                }
+            }
                 
             }
         }
@@ -117,12 +183,42 @@ using System.Collections.Generic;
             CanUse = b;
             if (TypeLoot == 2)
             {
+              if (_rarit == 1)
+              {
                 m_Image.sprite = Run_Sprite;
+              }
+            if (_rarit == 2)
+            {
+                m_Image.sprite = Run_Sprite2;
             }
+            if (_rarit == 3)
+            {
+                m_Image.sprite = Run_Sprite3;
+            }
+            if (_rarit == 4)
+            {
+                m_Image.sprite = Run_Sprite4;
+            }
+        }
             else
             {
-
+            if (_rarit == 1)
+            {
                 m_Image.sprite = Fight_Sprite;
+            }
+            if (_rarit == 2)
+            {
+                m_Image.sprite = Fight_Sprite2;
+            }
+            if (_rarit == 3)
+            {
+                m_Image.sprite = Fight_Sprite3;
+            }
+            if (_rarit == 4)
+            {
+                m_Image.sprite = Fight_Sprite4;
+            }
+            
             }
             text.GetComponent<Text>().text = _rarit.ToString();
         }

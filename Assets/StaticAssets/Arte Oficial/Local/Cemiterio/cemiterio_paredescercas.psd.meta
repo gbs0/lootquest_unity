@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 4822e425f45edb746a48fffd792bae36
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4113115987831965048
+    second: cemiterio_paredescercas_0
+  - first:
+      213: 4165258656704650944
+    second: cemiterio_paredescercas_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,11 +99,53 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: cemiterio_paredescercas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1580
+        width: 3942
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856eae536ac904541b7d88c945ba8514
+      internalID: -4113115987831965048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cemiterio_paredescercas_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3942
+        height: 1583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669bf4387f57f194da7c3aa9620e0778
+      internalID: 4165258656704650944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 18e94415247be1c43bc26916a2c2b7e6
     internalID: 0
     vertices: []
     indices: 

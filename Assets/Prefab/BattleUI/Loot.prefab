@@ -143,7 +143,19 @@ MonoBehaviour:
   botao: {fileID: 1352389915913000019}
   m_Image: {fileID: 1561672323074171811}
   Run_Sprite: {fileID: 21300000, guid: 5033e93b1f1e645448d4a6d50e9af01f, type: 3}
-  Fight_Sprite: {fileID: 21300000, guid: 96d673c2338d7394c80e6e97393fbd9e, type: 3}
+  Run_Sprite2: {fileID: 8529331299460908022, guid: 7ea47be36443acc478724dc3cb1f52e3,
+    type: 3}
+  Run_Sprite3: {fileID: 8097742742180188588, guid: 3b76841995c484d4e879c5ebd5ecded4,
+    type: 3}
+  Run_Sprite4: {fileID: -4010490318862172752, guid: e1d9d2e6ce3d0744f99118707924a5c4,
+    type: 3}
+  Fight_Sprite: {fileID: 2669574069554654812, guid: 16748027cda1ed140b7af2ff67a3f41e,
+    type: 3}
+  Fight_Sprite2: {fileID: 21300000, guid: 96d673c2338d7394c80e6e97393fbd9e, type: 3}
+  Fight_Sprite3: {fileID: -3997080806550171263, guid: cdfa7cadfa2c056409a21477515e1c74,
+    type: 3}
+  Fight_Sprite4: {fileID: 6147709295510676719, guid: 64b0f37b7eab6b84a87baaf5692a28bd,
+    type: 3}
   text: {fileID: 5458695550581898254}
 --- !u!1 &6150905846411631795
 GameObject:

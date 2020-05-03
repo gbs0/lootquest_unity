@@ -1,43 +1,52 @@
 fileFormatVersion: 2
-guid: 1424c3b4cf857c846b45a10b48ff71a6
+guid: 1e9f31c670a15d44ba568c733cb7f5b6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1773822403620542209
-    second: cemiterio_outros_0
+      213: -2344028189745849153
+    second: Foguinhos_aleatorios_0
   - first:
-      213: -7271167701727482906
-    second: cemiterio_outros_1
+      213: -5915308187112843353
+    second: Foguinhos_aleatorios_1
   - first:
-      213: -929952909617088636
-    second: cemiterio_outros_2
+      213: -5225566011920922881
+    second: Foguinhos_aleatorios_3
   - first:
-      213: -4843277977424725056
-    second: cemiterio_outros_3
+      213: 3094967291216500943
+    second: Foguinhos_aleatorios_4
   - first:
-      213: -7672434981516964274
-    second: cemiterio_outros_4
+      213: 4733488834876240526
+    second: Foguinhos_aleatorios_5
   - first:
-      213: -3829677803439362705
-    second: cemiterio_outros_5
+      213: -8727205191155364266
+    second: Foguinhos_aleatorios_6
   - first:
-      213: -519777581183988079
-    second: cemiterio_outros_6
+      213: -235967829405907288
+    second: Foguinhos_aleatorios_9
   - first:
-      213: -1955958188006272804
-    second: cemiterio_outros_7
+      213: -2750876170427890877
+    second: Foguinhos_aleatorios_11
   - first:
-      213: 2073951048751107801
-    second: cemiterio_outros_8
+      213: 8950939021237255467
+    second: Foguinhos_aleatorios_12
   - first:
-      213: 8365507060293078693
-    second: cemiterio_outros_9
+      213: 9048079852464032487
+    second: Foguinhos_aleatorios_13
   - first:
-      213: 1864778243524052106
-    second: cemiterio_outros_10
+      213: 5102289875165976322
+    second: Foguinhos_aleatorios_18
   - first:
-      213: 5628401007251498528
-    second: cemiterio_outros_19
+      213: 2211487529884247130
+    second: Foguinhos_aleatorios_23
+  - first:
+      213: 5550200249693258297
+    second: Foguinhos_aleatorios_24
+  - first:
+      213: 5212966907324278965
+    second: Foguinhos_aleatorios_25
+  - first:
+      213: 1004568277748637152
+    second: Foguinhos_aleatorios_26
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -131,232 +140,316 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cemiterio_outros_0
+      name: Foguinhos_aleatorios_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 1943
-        width: 117
-        height: 89
+        x: 238
+        y: 281
+        width: 61
+        height: 110
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6231ba8d902faa445886b7c8d2ed2575
-      internalID: -1773822403620542209
+      spriteID: c1bd11c1e76f04144bcc71f85d7b9ef1
+      internalID: -2344028189745849153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cemiterio_outros_1
+      name: Foguinhos_aleatorios_1
       rect:
         serializedVersion: 2
-        x: 558
-        y: 1763
-        width: 292
-        height: 298
+        x: 312
+        y: 275
+        width: 59
+        height: 116
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bdd1e276db13c843ad1fa3ba311e76d
-      internalID: -7271167701727482906
+      spriteID: c5358cfe3fb2eab47959665ad7f5280a
+      internalID: -5915308187112843353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cemiterio_outros_2
+      name: Foguinhos_aleatorios_3
       rect:
         serializedVersion: 2
-        x: 1613
-        y: 1805
-        width: 212
-        height: 355
+        x: 12
+        y: 282
+        width: 61
+        height: 109
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ef91bc34ba2b4c41aa9da04a59fc505
-      internalID: -929952909617088636
+      spriteID: 434a62784426e39478146b29aae03c54
+      internalID: -5225566011920922881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cemiterio_outros_3
+      name: Foguinhos_aleatorios_4
       rect:
         serializedVersion: 2
-        x: 3666
-        y: 1784
-        width: 206
-        height: 169
+        x: 85
+        y: 281
+        width: 61
+        height: 110
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 983597e8f0a3bae4baa526e50a037db4
-      internalID: -4843277977424725056
+      spriteID: 58ef991def459314b94d0da8b38c8535
+      internalID: 3094967291216500943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cemiterio_outros_4
+      name: Foguinhos_aleatorios_5
       rect:
         serializedVersion: 2
-        x: 213
-        y: 1608
-        width: 283
-        height: 308
+        x: 159
+        y: 281
+        width: 61
+        height: 110
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c423e8c67b0bee44bd743a477b3f3e6
-      internalID: -7672434981516964274
+      spriteID: 188eb7accfa79ae4ebeb6b15ecf4429b
+      internalID: 4733488834876240526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cemiterio_outros_5
+      name: Foguinhos_aleatorios_6
       rect:
         serializedVersion: 2
-        x: 843
-        y: 1674
-        width: 335
-        height: 169
+        x: 238
+        y: 165
+        width: 61
+        height: 109
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87971ab24ab3f5e45b11d97c9bb93738
-      internalID: -3829677803439362705
+      spriteID: 628a3ceebb22c7e4d9cd495a37f947dd
+      internalID: -8727205191155364266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cemiterio_outros_7
+      name: Foguinhos_aleatorios_9
       rect:
         serializedVersion: 2
-        x: 3480
-        y: 1468
-        width: 282
-        height: 308
+        x: 86
+        y: 159
+        width: 61
+        height: 109
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fb9171fad40b6d438b2592ecac77290
-      internalID: -1955958188006272804
+      spriteID: 3e7eb218344b092428bc36dba0279ddf
+      internalID: -235967829405907288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cemiterio_outros_8
+      name: Foguinhos_aleatorios_11
       rect:
         serializedVersion: 2
-        x: 1527
-        y: 1304
-        width: 210
-        height: 299
+        x: 165
+        y: 159
+        width: 61
+        height: 109
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd2058264c56114418a81ab09659160a
-      internalID: 2073951048751107801
+      spriteID: ebe93d8a91961a44bba7bbf1da609499
+      internalID: -2750876170427890877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cemiterio_outros_9
+      name: Foguinhos_aleatorios_12
       rect:
         serializedVersion: 2
-        x: 122
-        y: 224
-        width: 211
-        height: 297
+        x: 311
+        y: 165
+        width: 60
+        height: 109
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f301585b5f7e4c4cbd19fb32f3e380a
-      internalID: 8365507060293078693
+      spriteID: b8e928be664c83a42b7413fa8f1e65cc
+      internalID: 8950939021237255467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cemiterio_outros_10
+      name: Foguinhos_aleatorios_13
       rect:
         serializedVersion: 2
-        x: 1204
-        y: 444
-        width: 117
-        height: 88
+        x: 23
+        y: 159
+        width: 62
+        height: 109
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bca53ce8ac47c234eabe5c977e6485c8
-      internalID: 1864778243524052106
+      spriteID: 0862d49bf7ca1d64d90052c2ad1f6c4a
+      internalID: 9048079852464032487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cemiterio_outros_19
+      name: Foguinhos_aleatorios_18
       rect:
         serializedVersion: 2
-        x: 303
-        y: 0
-        width: 2828
-        height: 301
+        x: 23
+        y: 22
+        width: 62
+        height: 116
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5f9161eb7ef3f34fb0830aada1a8828
-      internalID: 5628401007251498528
+      spriteID: c8bfa3ae06ed553409de7394e5c188c9
+      internalID: 5102289875165976322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foguinhos_aleatorios_23
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 36
+        width: 61
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5c62e1becdced4c88765d426d61ea2
+      internalID: 2211487529884247130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foguinhos_aleatorios_24
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 36
+        width: 61
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c9dc4cd7ad60b41998b463e6053c12
+      internalID: 5550200249693258297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foguinhos_aleatorios_25
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 36
+        width: 54
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf66e1a5524e8a48a9db48a70c075e0
+      internalID: 5212966907324278965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foguinhos_aleatorios_26
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 30
+        width: 60
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4468429e7bf02424795066a8aba7bba5
+      internalID: 1004568277748637152
       vertices: []
       indices: 
       edges: []
@@ -364,7 +457,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 91371e7287b4b1945813e8356b633268
+    spriteID: 11139058621fd5346b9690ecd3f43358
     internalID: 0
     vertices: []
     indices: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6584f274da5db864d93b23e0876eb842
+guid: 112093ea8d18c654f87fc82b95949124
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4142210630792288995
-    second: cemiterio_igreja_0
+      213: 8048895734273272223
+    second: Layer_slimes_cheer02_0
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -46,8 +46,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.70037615, y: 0.73366976}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -98,22 +98,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cemiterio_igreja_0
+      name: Layer_slimes_cheer02_0
       rect:
         serializedVersion: 2
-        x: 2148
-        y: 1260
-        width: 1192
-        height: 900
-      alignment: 9
-      pivot: {x: 0.5047847, y: 0.54118925}
+        x: 427
+        y: 673
+        width: 1089
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f3b3b5367ada92408a9d801ba9ecc85
-      internalID: -4142210630792288995
+      spriteID: f8d71d6f32b3c4845902e4e1d164b21b
+      internalID: 8048895734273272223
       vertices: []
       indices: 
       edges: []
@@ -121,7 +121,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 6994ba8d202c9ea4987f5fa3a9b37a35
+    spriteID: 144f87662795598469d710162f4f2665
     internalID: 0
     vertices: []
     indices: 
@@ -130,7 +130,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 1
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
