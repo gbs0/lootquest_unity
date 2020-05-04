@@ -13140,7 +13140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneName: ilha1
-  painel: {fileID: 236448666}
+  enemyPainel: {fileID: 0}
   enimigs: []
 --- !u!4 &1328292410
 Transform:
@@ -21347,11 +21347,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4889621934937223168, guid: d68c92c07d3bb384997ab40b6d643c97,
-        type: 3}
-      propertyPath: PlayerAnim
-      value: 
-      objectReference: {fileID: 954975168}
     - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
       propertyPath: SkipButton
       value: 
@@ -21375,6 +21370,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.44
       objectReference: {fileID: 0}
+    - target: {fileID: 3601240796076962872, guid: d68c92c07d3bb384997ab40b6d643c97,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889621934937223168, guid: d68c92c07d3bb384997ab40b6d643c97,
+        type: 3}
+      propertyPath: PlayerAnim
+      value: 
+      objectReference: {fileID: 954975168}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
 --- !u!95 &4889621933968704882 stripped
