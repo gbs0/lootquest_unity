@@ -21272,6 +21272,10 @@ PrefabInstance:
       propertyPath: slimeAnimator
       value: 
       objectReference: {fileID: 4889621933968704882}
+    - target: {fileID: 954975165, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
 --- !u!1001 &4889621933968704880
