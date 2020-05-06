@@ -4432,8 +4432,8 @@ GameObject:
   - component: {fileID: 402603437}
   - component: {fileID: 402603436}
   m_Layer: 0
-  m_Name: casa 2
-  m_TagString: Untagged
+  m_Name: Casa_1
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4661,7 +4661,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402603429}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d626ca133f7e2254ea03d3786ace4963, type: 3}
   m_Name: 
@@ -8001,6 +8001,92 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0454102, y: 2.2607193}
   m_EdgeRadius: 0
+--- !u!1 &746722614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 746722615}
+  - component: {fileID: 746722617}
+  - component: {fileID: 746722616}
+  m_Layer: 0
+  m_Name: Dialogo4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &746722615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746722614}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -49.689995, y: 13.42, z: 8.665628}
+  m_LocalScale: {x: 1.80898, y: 1.7968999, z: 1.78967}
+  m_Children: []
+  m_Father: {fileID: 1917612968}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &746722616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746722614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ceaedbfea64b349872e47e9875f809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelBox: {fileID: 528418076}
+  "Interroga\xE7ao": {fileID: 2066669891}
+  Conversa: {fileID: 746722614}
+  podeFalar: 1
+  linhaAtual: 0
+  textoMensagem: {fileID: 39703577}
+  texto:
+  - You can't steal other people's house.
+  limitText: 1
+  jafoi: 0
+  teste: 0
+  jaComecaFalando: 0
+  img: {fileID: 1662651662}
+  imgs:
+  - {fileID: 1662651662}
+  rodaCut: 0
+--- !u!61 &746722617
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746722614}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.025031328, y: -1.0467527}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.117702, y: 1.8650565}
+  m_EdgeRadius: 0
 --- !u!1 &750904329
 GameObject:
   m_ObjectHideFlags: 3
@@ -8338,6 +8424,92 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &776913996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 776913997}
+  - component: {fileID: 776913999}
+  - component: {fileID: 776913998}
+  m_Layer: 0
+  m_Name: Dialogo1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &776913997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776913996}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -49.689995, y: 13.42, z: 8.665628}
+  m_LocalScale: {x: 1.80898, y: 1.7968999, z: 1.78967}
+  m_Children: []
+  m_Father: {fileID: 1917612968}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &776913998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776913996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ceaedbfea64b349872e47e9875f809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelBox: {fileID: 528418076}
+  "Interroga\xE7ao": {fileID: 2066669891}
+  Conversa: {fileID: 776913996}
+  podeFalar: 0
+  linhaAtual: 0
+  textoMensagem: {fileID: 39703577}
+  texto:
+  - It just someone's house.
+  limitText: 1
+  jafoi: 0
+  teste: 0
+  jaComecaFalando: 0
+  img: {fileID: 819435739}
+  imgs:
+  - {fileID: 819435739}
+  rodaCut: 0
+--- !u!61 &776913999
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776913996}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.025031328, y: -1.0467527}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.117702, y: 1.8650565}
+  m_EdgeRadius: 0
 --- !u!1 &778936091
 GameObject:
   m_ObjectHideFlags: 0
@@ -9143,8 +9315,8 @@ GameObject:
   - component: {fileID: 826536384}
   - component: {fileID: 826536383}
   m_Layer: 0
-  m_Name: Casa1 (1)
-  m_TagString: Untagged
+  m_Name: Casa_2
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9373,7 +9545,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826536376}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d626ca133f7e2254ea03d3786ace4963, type: 3}
   m_Name: 
@@ -10844,6 +11016,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1366812512}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &943400072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943400070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf1b60fc003fd0b478f84aa54016190c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  House: 0
+  Dialogo1: {fileID: 776913996}
+  Dialogo2: {fileID: 1326929871}
+  Dialogo3: {fileID: 1723354074}
+  Dialogo4: {fileID: 746722614}
+  Dialogo5: {fileID: 958083955}
+  DialogoGeral: {fileID: 1170920409}
+  conversa: {fileID: 528418076}
 --- !u!1 &954460751
 GameObject:
   m_ObjectHideFlags: 0
@@ -10998,6 +11190,93 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957712810}
   m_CullTransparentMesh: 0
+--- !u!1 &958083955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 958083956}
+  - component: {fileID: 958083958}
+  - component: {fileID: 958083957}
+  m_Layer: 0
+  m_Name: Dialogo5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &958083956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958083955}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -49.689995, y: 13.42, z: 8.665628}
+  m_LocalScale: {x: 1.80898, y: 1.7968999, z: 1.78967}
+  m_Children: []
+  m_Father: {fileID: 1917612968}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &958083957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958083955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ceaedbfea64b349872e47e9875f809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelBox: {fileID: 528418076}
+  "Interroga\xE7ao": {fileID: 2066669891}
+  Conversa: {fileID: 958083955}
+  podeFalar: 1
+  linhaAtual: 0
+  textoMensagem: {fileID: 39703577}
+  texto:
+  - There is a rumor that Gods thought that players were smart enough to know obvious
+    things, like this is a house, period. Guess what? You are just proving them wrong.
+  limitText: 1
+  jafoi: 0
+  teste: 0
+  jaComecaFalando: 0
+  img: {fileID: 957712810}
+  imgs:
+  - {fileID: 957712810}
+  rodaCut: 0
+--- !u!61 &958083958
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958083955}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.025031328, y: -1.0467527}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.117702, y: 1.8650565}
+  m_EdgeRadius: 0
 --- !u!1 &989492559
 GameObject:
   m_ObjectHideFlags: 0
@@ -12849,8 +13128,8 @@ GameObject:
   - component: {fileID: 1082374634}
   - component: {fileID: 1082374633}
   m_Layer: 0
-  m_Name: casa 2 (2)
-  m_TagString: Untagged
+  m_Name: Casa_3
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13078,7 +13357,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082374626}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d626ca133f7e2254ea03d3786ace4963, type: 3}
   m_Name: 
@@ -13864,6 +14143,92 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &1170920409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1170920410}
+  - component: {fileID: 1170920412}
+  - component: {fileID: 1170920411}
+  m_Layer: 0
+  m_Name: DialogoGeral
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1170920410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170920409}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -49.689995, y: 13.42, z: 8.665628}
+  m_LocalScale: {x: 1.80898, y: 1.7968999, z: 1.78967}
+  m_Children: []
+  m_Father: {fileID: 1917612968}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1170920411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170920409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ceaedbfea64b349872e47e9875f809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelBox: {fileID: 528418076}
+  "Interroga\xE7ao": {fileID: 2066669891}
+  Conversa: {fileID: 1170920409}
+  podeFalar: 1
+  linhaAtual: 0
+  textoMensagem: {fileID: 39703577}
+  texto:
+  - '... Please, stop.'
+  limitText: 1
+  jafoi: 0
+  teste: 0
+  jaComecaFalando: 0
+  img: {fileID: 1662651662}
+  imgs:
+  - {fileID: 1662651662}
+  rodaCut: 0
+--- !u!61 &1170920412
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170920409}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.025031328, y: -1.0467527}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.117702, y: 1.8650565}
+  m_EdgeRadius: 0
 --- !u!1 &1185693685
 GameObject:
   m_ObjectHideFlags: 0
@@ -15344,6 +15709,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318799409}
   m_CullTransparentMesh: 0
+--- !u!1 &1326929871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1326929872}
+  - component: {fileID: 1326929874}
+  - component: {fileID: 1326929873}
+  m_Layer: 0
+  m_Name: Dialogo2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1326929872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326929871}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -49.689995, y: 13.42, z: 8.665628}
+  m_LocalScale: {x: 1.80898, y: 1.7968999, z: 1.78967}
+  m_Children: []
+  m_Father: {fileID: 1917612968}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1326929873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326929871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ceaedbfea64b349872e47e9875f809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelBox: {fileID: 528418076}
+  "Interroga\xE7ao": {fileID: 2066669891}
+  Conversa: {fileID: 1326929871}
+  podeFalar: 1
+  linhaAtual: 0
+  textoMensagem: {fileID: 39703577}
+  texto:
+  - It just another house.
+  limitText: 1
+  jafoi: 0
+  teste: 0
+  jaComecaFalando: 0
+  img: {fileID: 262449865}
+  imgs:
+  - {fileID: 262449865}
+  rodaCut: 0
+--- !u!61 &1326929874
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326929871}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.025031328, y: -1.0467527}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.117702, y: 1.8650565}
+  m_EdgeRadius: 0
 --- !u!1 &1334960937
 GameObject:
   m_ObjectHideFlags: 0
@@ -19771,6 +20222,92 @@ Transform:
   m_Father: {fileID: 342254235}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1723354074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1723354075}
+  - component: {fileID: 1723354077}
+  - component: {fileID: 1723354076}
+  m_Layer: 0
+  m_Name: Dialogo3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1723354075
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723354074}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -49.689995, y: 13.42, z: 8.665628}
+  m_LocalScale: {x: 1.80898, y: 1.7968999, z: 1.78967}
+  m_Children: []
+  m_Father: {fileID: 1917612968}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1723354076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723354074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ceaedbfea64b349872e47e9875f809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelBox: {fileID: 528418076}
+  "Interroga\xE7ao": {fileID: 2066669891}
+  Conversa: {fileID: 1723354074}
+  podeFalar: 1
+  linhaAtual: 0
+  textoMensagem: {fileID: 39703577}
+  texto:
+  - Well, I think you already know what it is.
+  limitText: 1
+  jafoi: 0
+  teste: 0
+  jaComecaFalando: 0
+  img: {fileID: 819435739}
+  imgs:
+  - {fileID: 819435739}
+  rodaCut: 0
+--- !u!61 &1723354077
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723354074}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.025031328, y: -1.0467527}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.117702, y: 1.8650565}
+  m_EdgeRadius: 0
 --- !u!1 &1730272475
 GameObject:
   m_ObjectHideFlags: 0
@@ -20718,8 +21255,8 @@ GameObject:
   - component: {fileID: 1811238278}
   - component: {fileID: 1811238277}
   m_Layer: 0
-  m_Name: Casa1
-  m_TagString: Untagged
+  m_Name: Casa_5
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20948,7 +21485,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1811238270}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d626ca133f7e2254ea03d3786ace4963, type: 3}
   m_Name: 
@@ -21224,8 +21761,8 @@ GameObject:
   - component: {fileID: 1854542983}
   - component: {fileID: 1854542982}
   m_Layer: 0
-  m_Name: casa 2 (1)
-  m_TagString: Untagged
+  m_Name: Casa_4
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21454,7 +21991,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854542975}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d626ca133f7e2254ea03d3786ace4963, type: 3}
   m_Name: 
@@ -22801,6 +23338,13 @@ Transform:
   - {fileID: 1082374627}
   - {fileID: 1854542976}
   - {fileID: 1811238271}
+  - {fileID: 776913997}
+  - {fileID: 1326929872}
+  - {fileID: 1723354075}
+  - {fileID: 746722615}
+  - {fileID: 958083956}
+  - {fileID: 1170920410}
+  - {fileID: 2066669892}
   m_Father: {fileID: 899246094}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25253,6 +25797,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2066669891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2066669892}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2066669892
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066669891}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -49.689995, y: 13.42, z: 8.665628}
+  m_LocalScale: {x: 1.80898, y: 1.7968999, z: 1.78967}
+  m_Children: []
+  m_Father: {fileID: 1917612968}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2074610184
 GameObject:
   m_ObjectHideFlags: 0
