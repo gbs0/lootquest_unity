@@ -8,6 +8,7 @@ TagManager:
   - NPC
   - FxTemporaire
   - Trees
+  - PlayerSprite
   layers:
   - Default
   - TransparentFX

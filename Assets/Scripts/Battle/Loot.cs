@@ -18,17 +18,18 @@ using System.Collections.Generic;
         public Sprite Run_Sprite3;
         public Sprite Run_Sprite4;
 
-        public Sprite Fight_Sprite;
+    public Sprite Fight_Sprite;
         public Sprite Fight_Sprite2;
         public Sprite Fight_Sprite3;
         public Sprite Fight_Sprite4;
-
+    private GameObject PlayerAni;
     public Transform text;
-
+    public Animator AnimePlayer;
 
         //private Animator PlayerAnim;
 
-        private void Awake()
+
+    private void Awake()
         {
             //PlayerAnim = gameObject.GetComponent<Animator>();
 
@@ -42,31 +43,42 @@ using System.Collections.Generic;
             int prob = Random.Range(0, 100);
             SelectRarit(prob);
             player = RoundManager.TurnTeam.Peek();
-            
-            
-            if(TypeLoot == 2)
+
+
+        if (TypeLoot == 2)
             {
             if (_rarit == 1)
             {
                 m_Image.sprite = Run_Sprite;
+
             }
             if (_rarit == 2)
             {
                 m_Image.sprite = Run_Sprite2;
+                
+
             }
             if (_rarit == 3)
             {
+                AnimePlayer.SetTrigger("PositiveReact");
+
                 m_Image.sprite = Run_Sprite3;
+
             }
             if (_rarit == 4)
             {
+                AnimePlayer.SetTrigger("PositiveReact");
+
                 m_Image.sprite = Run_Sprite4;
+                
+
             }
         }
             else if(TypeLoot == 3)
             {
             if (_rarit == 1)
             {
+                AnimePlayer.SetTrigger("NegativeReact");
                 m_Image.sprite = Fight_Sprite;
             }
             if (_rarit == 2)
@@ -75,11 +87,16 @@ using System.Collections.Generic;
             }
             if (_rarit == 3)
             {
+                AnimePlayer.SetTrigger("PositiveReact");
+
                 m_Image.sprite = Fight_Sprite3;
+               
             }
             if (_rarit == 4)
             {
+                AnimePlayer.SetTrigger("PositiveReact");
                 m_Image.sprite = Fight_Sprite4;
+                
             }
         }
             text.GetComponent<Text>().text = _rarit.ToString();
@@ -87,12 +104,17 @@ using System.Collections.Generic;
 
         private void Start()
         {
-            if (m_Image.sprite == null)
+        PlayerAni = GameObject.FindGameObjectWithTag("PlayerSprite");
+        AnimePlayer = PlayerAni.GetComponent<Animator>();
+
+        if (m_Image.sprite == null)
             {
                 if(TypeLoot == 2)
                 {
                 if (_rarit == 1)
                 {
+                    AnimePlayer.SetTrigger("NegativeReact");
+
                     m_Image.sprite = Run_Sprite;
                 }
                 if (_rarit == 2)
@@ -101,10 +123,14 @@ using System.Collections.Generic;
                 }
                 if (_rarit == 3)
                 {
+                    AnimePlayer.SetTrigger("PositiveReact");
+
                     m_Image.sprite = Run_Sprite3;
                 }
                 if (_rarit == 4)
                 {
+                    AnimePlayer.SetTrigger("PositiveReact");
+
                     m_Image.sprite = Run_Sprite4;
                 };
                 }
@@ -112,6 +138,8 @@ using System.Collections.Generic;
                 {
                 if (_rarit == 1)
                 {
+                    AnimePlayer.SetTrigger("NegativeReact");
+
                     m_Image.sprite = Fight_Sprite;
                 }
                 if (_rarit == 2)
@@ -120,10 +148,14 @@ using System.Collections.Generic;
                 }
                 if (_rarit == 3)
                 {
+                    AnimePlayer.SetTrigger("PositiveReact");
+
                     m_Image.sprite = Fight_Sprite3;
                 }
                 if (_rarit == 4)
                 {
+                    AnimePlayer.SetTrigger("PositiveReact");
+
                     m_Image.sprite = Fight_Sprite4;
                 }
             }
@@ -185,10 +217,13 @@ using System.Collections.Generic;
             {
               if (_rarit == 1)
               {
+                AnimePlayer.SetTrigger("NegativeReact");
+
                 m_Image.sprite = Run_Sprite;
               }
             if (_rarit == 2)
             {
+            
                 m_Image.sprite = Run_Sprite2;
             }
             if (_rarit == 3)
@@ -204,6 +239,8 @@ using System.Collections.Generic;
             {
             if (_rarit == 1)
             {
+                AnimePlayer.SetTrigger("NegativeReact");
+
                 m_Image.sprite = Fight_Sprite;
             }
             if (_rarit == 2)

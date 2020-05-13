@@ -14,8 +14,8 @@ public class ControleMonstros : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Slime1.SetActive(false);
-        Slime2.SetActive(false);
+        Slime1.SetActive(true);
+        Slime2.SetActive(true);
         Gatos.SetActive(false);
         Bruxa.SetActive(false);
 
