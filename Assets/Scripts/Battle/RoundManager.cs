@@ -14,15 +14,15 @@ public class RoundManager : MonoBehaviour
     public string nextSceneName = "ilha1";
     public GameObject enemyPainel;
     public static bool Tutorial;
-    public List<NPCMove> enimigs;
-	
+    public List<NPCMove> enemies;
+
     private void Start()
     {
 	    _enemyPainel = enemyPainel;
 	    var v = FindObjectsOfType<NPCMove>();
 	    foreach (var npc in v)
 	    {
-		    enimigs.Add(npc);
+		    enemies.Add(npc);
 	    }
     }
 
@@ -34,7 +34,8 @@ public class RoundManager : MonoBehaviour
 		    InitTeamTurnQueue();
 	    }
     }
-    static void InitTeamTurnQueue()
+    
+	static void InitTeamTurnQueue()
     {
     	List<TaticsMove> teamList = Units[TurnKey.Peek()];
 
@@ -48,7 +49,10 @@ public class RoundManager : MonoBehaviour
 
     public static void StartTurn()
     {
-    	if (TurnTeam.Count > 0)
+    	Console.Write("Number of elements in the Queue(StartTurn()) are : "); 
+	Console.WriteLine(TurnTeam.Count);
+	
+	if (TurnTeam.Count > 0)
     	{
 		    if (TurnTeam.Peek().gameObject.GetComponent<PlayerMove>())
 		    {
@@ -86,7 +90,7 @@ public class RoundManager : MonoBehaviour
 
     	if (!Units.ContainsKey(unit.tag))
     	{
-    		list = new List<TaticsMove>();
+    		list = new List<TaticsMove>(); // Nova lista de TacticsMove
     		Units[unit.tag] = list;
 
     		if (!TurnKey.Contains(unit.tag))
@@ -104,11 +108,18 @@ public class RoundManager : MonoBehaviour
 
     public void EnimKilled()
     {
-	    enimigs.RemoveAt(0);
-	    if (enimigs.Count == 0)
+	    enemies.RemoveAt(0);
+	    if (enemies.Count == 0)
 	    {
 		    StartCoroutine(nameof(EndScene));
+			
+			// for (var i = 0; i < teamList.Count; i++) //Apagando teamList assim que os inimigos morrem
+ 			// {
+     			//teamList.RemoveAt(i);
+ 			// }
 	    }
+
+		
     }
     IEnumerator EndScene()
     {
