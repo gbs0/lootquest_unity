@@ -13418,7 +13418,6 @@ MonoBehaviour:
   Portal: {fileID: 2105981772}
   BatalhaGatos: {fileID: 206345400}
   mon: 0
-  NUMERO: 0
   missao0: {fileID: 225168158}
   missao1: {fileID: 534737042}
   missao2: {fileID: 1572799184}
@@ -16489,7 +16488,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096884302}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.24, y: 4, z: 0}
+  m_LocalPosition: {x: 13.7, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 421856528}

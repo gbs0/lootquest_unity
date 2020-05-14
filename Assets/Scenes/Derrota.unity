@@ -490,7 +490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c210087906848974586c966de0628380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextCenaName: RainhaSlime
+  NextCenaName: TacticsMovement
   NovoJogo: Menu
   timeStart: 0
   time: 0
