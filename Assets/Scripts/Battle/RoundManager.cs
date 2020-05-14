@@ -20,7 +20,8 @@ public class RoundManager : MonoBehaviour
     {
 	    _enemyPainel = enemyPainel;
 	    var v = FindObjectsOfType<NPCMove>();
-	    foreach (var npc in v)
+	    
+		foreach (var npc in v)
 	    {
 		    enemies.Add(npc);
 	    }
@@ -33,6 +34,8 @@ public class RoundManager : MonoBehaviour
 
 		    InitTeamTurnQueue();
 	    }
+		
+	
     }
     
 	static void InitTeamTurnQueue()
@@ -44,17 +47,17 @@ public class RoundManager : MonoBehaviour
     		TurnTeam.Enqueue(unit);
     	}
     	StartTurn();
-        Debug.Log(TurnTeam);
+        Debug.Log(TurnTeam.Count);
+		// Console.Write("Number of elements in the Queue(StartTurn()) are : "); 
+		// Console.WriteLine(TurnTeam.Count);
     }
 
     public static void StartTurn()
     {
-    	Console.Write("Number of elements in the Queue(StartTurn()) are : "); 
-	Console.WriteLine(TurnTeam.Count);
-	
+ 	
 	if (TurnTeam.Count > 0)
     	{
-		    if (TurnTeam.Peek().gameObject.GetComponent<PlayerMove>())
+		    if (TurnTeam.Peek().gameObject.GetComponent<PlayerMove>() != null)
 		    {
 			    PlayerTurn = true;
 			    _enemyPainel.SetActive(false);
