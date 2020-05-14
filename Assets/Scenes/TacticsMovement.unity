@@ -8245,7 +8245,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1118329663}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.9999999
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13140,7 +13140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneName: ilha1
-  enemyPainel: {fileID: 0}
+  enemyPainel: {fileID: 236448666}
   enimigs: []
 --- !u!4 &1328292410
 Transform:
@@ -15687,7 +15687,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 95840571}
   m_HandleRect: {fileID: 95840570}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:

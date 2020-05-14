@@ -30,7 +30,7 @@ public class Passive : MonoBehaviour
             for (int i = 0; i < TypesOfloot; i++)
             {
                 var loot = Instantiate(PrefabLoots, Vector3.zero, Quaternion.identity, NewLootPainel.transform).GetComponent<Loot>();
-                loot.TypeLoot = i;
+                loot.TypeLoot = 3;
                 loot.SetValue(false, chosedLoot._rarit - 1, i);
                 LLoot.Add(loot);
             }

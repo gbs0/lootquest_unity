@@ -7,7 +7,7 @@ public class Mission : MonoBehaviour
     public GameObject Portal;
     public GameObject BatalhaGatos;
     public int mon;
-
+    public int NUMERO;
     public GameObject missao0;
     public GameObject missao1;
     public GameObject missao2;
@@ -27,7 +27,13 @@ public class Mission : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       mon = PlayerPrefs.GetInt("ConversaMonstros");
+        if (Input.GetKeyDown("space"))
+        {
+            NUMERO = PlayerPrefs.GetInt("ConversaMonstros", 0) + 1;
+            PlayerPrefs.SetInt("ConversaMonstros", NUMERO);
+        }
+        
+        mon = PlayerPrefs.GetInt("ConversaMonstros");
 
 
         if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 0)

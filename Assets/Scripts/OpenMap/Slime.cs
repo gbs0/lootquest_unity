@@ -45,9 +45,16 @@ public class Slime : MonoBehaviour
             }
             if (Monstros == 3)
             {
-                PlayerPrefs.SetInt("Monstro3", 1);
                 PlayerPrefs.SetInt("indexSpam", 4);
                 PlayerPrefs.SetInt("Gatos",1);
+                PlayerPrefs.SetInt("indexSpam", Monstros);
+                PlayerPrefs.SetString("_sceneName", NextCenaName);
+                Application.LoadLevel("LoadingScene");
+            }
+            if (Monstros == 4)
+            {
+                PlayerPrefs.SetInt("indexSpam", 4);
+                PlayerPrefs.SetInt("Bruxa", 1);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
                 PlayerPrefs.SetString("_sceneName", NextCenaName);
                 Application.LoadLevel("LoadingScene");
