@@ -15,6 +15,7 @@ public class RoundManager : MonoBehaviour
     public GameObject enemyPainel;
     public static bool Tutorial;
     public List<NPCMove> enimigs;
+    public TaticsMove[] test;
 	
     private void Start()
     {
@@ -33,6 +34,8 @@ public class RoundManager : MonoBehaviour
 
 		    InitTeamTurnQueue();
 	    }
+
+	    test = TurnTeam.ToArray();
     }
     static void InitTeamTurnQueue()
     {
