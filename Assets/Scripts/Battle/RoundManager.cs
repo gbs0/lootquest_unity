@@ -49,7 +49,10 @@ public class RoundManager : MonoBehaviour
 
     public static void StartTurn()
     {
-    	if (TurnTeam.Count > 0)
+    	Console.Write("Number of elements in the Queue(StartTurn()) are : "); 
+	Console.WriteLine(TurnTeam.Count);
+	
+	if (TurnTeam.Count > 0)
     	{
 		    if (TurnTeam.Peek().gameObject.GetComponent<PlayerMove>())
 		    {
