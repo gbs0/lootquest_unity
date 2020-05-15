@@ -63,7 +63,7 @@ namespace DefaultNamespace.Battle
 
         public void GetActualPlayer()
         {
-            player = RoundManager.TurnTeam.Peek();
+            player = RoundManager._allCaracters.Peek();
         }
     }
 }

@@ -42,7 +42,7 @@ using System.Collections.Generic;
             botao.onClick.AddListener(SpendLoot);
             int prob = Random.Range(0, 100);
             SelectRarit(prob);
-            player = RoundManager.TurnTeam.Peek();
+            player = RoundManager._allCaracters.Peek();
 
 
         if (TypeLoot == 2)

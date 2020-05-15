@@ -7,15 +7,14 @@ using UnityEngine.Serialization;
 public class RoundManager : MonoBehaviour
 {
 	public static bool PlayerTurn;
-    static readonly Dictionary<string, List<TaticsMove>> Units = new Dictionary<string, List<TaticsMove>>(); 
-    static readonly Queue<string> TurnKey = new Queue<string>();
-    public static readonly Queue<TaticsMove> TurnTeam = new Queue<TaticsMove>();
+
+	public static Queue<TaticsMove> _allCaracters = new Queue<TaticsMove>();
     private static GameObject _enemyPainel;
     public string nextSceneName = "ilha1";
     public GameObject enemyPainel;
     public static bool Tutorial;
     public List<NPCMove> enemies;
-
+    private static List<TaticsMove> safelist = new List<TaticsMove>();
     private void Start()
     {
 	    _enemyPainel = enemyPainel;
@@ -29,7 +28,7 @@ public class RoundManager : MonoBehaviour
 
     void Update()
     {
-	    if (TurnTeam.Count == 0)
+	    if (_allCaracters.Count == 0)
 	    {
 
 		    InitTeamTurnQueue();
@@ -40,14 +39,13 @@ public class RoundManager : MonoBehaviour
     
 	static void InitTeamTurnQueue()
     {
-    	List<TaticsMove> teamList = Units[TurnKey.Peek()];
-
-    	foreach (TaticsMove unit in teamList)
+	    
+    	foreach (TaticsMove unit in safelist)
     	{
-    		TurnTeam.Enqueue(unit);
+    		_allCaracters.Enqueue(unit);
     	}
     	StartTurn();
-        Debug.Log(TurnTeam.Count);
+        
 		// Console.Write("Number of elements in the Queue(StartTurn()) are : "); 
 		// Console.WriteLine(TurnTeam.Count);
     }
@@ -55,9 +53,9 @@ public class RoundManager : MonoBehaviour
     public static void StartTurn()
     {
  	
-	if (TurnTeam.Count > 0)
+	if (_allCaracters.Count > 0)
     	{
-		    if (TurnTeam.Peek().gameObject.GetComponent<PlayerMove>())
+		    if (_allCaracters.Peek().gameObject.GetComponent<PlayerMove>())
 		    {
 			    PlayerTurn = true;
 			    _enemyPainel.SetActive(false);
@@ -66,47 +64,30 @@ public class RoundManager : MonoBehaviour
 
 		    PlayerTurn = false;
 		    _enemyPainel.SetActive(true);
-    		TurnTeam.Peek().BeginTurn();
+    		_allCaracters.Peek().BeginTurn();
     	}
     }
 
     public static void EndTurn()
     {
-    	TaticsMove unit = TurnTeam.Dequeue();
+    	TaticsMove unit = _allCaracters.Dequeue();
     	unit.EndTurn();
 	    
-    	if (TurnTeam.Count > 0)
+    	if (_allCaracters.Count > 0)
     	{
     		StartTurn();
     	}
     	else
     	{
-    		string team = TurnKey.Dequeue();
-    		TurnKey.Enqueue(team);
+    		
     		InitTeamTurnQueue();
     	}
     }
 
     public static void AddUnit(TaticsMove unit)
     {
-    	List<TaticsMove> list;
-
-    	if (!Units.ContainsKey(unit.tag))
-    	{
-    		list = new List<TaticsMove>(); // Nova lista de TacticsMove
-    		Units[unit.tag] = list;
-
-    		if (!TurnKey.Contains(unit.tag))
-    		{
-    			TurnKey.Enqueue(unit.tag);
-    		}
-    	}
-    	else
-    	{
-    		list = Units[unit.tag];
-    	}
-    	
-    	list.Add(unit);
+	    _allCaracters.Enqueue(unit);
+	    safelist.Add(unit);
     }
 
     public void EnimKilled()
