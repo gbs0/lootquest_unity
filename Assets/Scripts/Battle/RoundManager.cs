@@ -14,7 +14,8 @@ public class RoundManager : MonoBehaviour
     public GameObject enemyPainel;
     public static bool Tutorial;
     public List<NPCMove> enemies;
-    private static List<TaticsMove> safelist = new List<TaticsMove>();
+    private static List<TaticsMove> safelist =new List<TaticsMove>();
+    public List<TaticsMove> test;
     private void Start()
     {
 	    _enemyPainel = enemyPainel;
@@ -28,6 +29,7 @@ public class RoundManager : MonoBehaviour
 
     void Update()
     {
+	    test = safelist;
 	    if (_allCaracters.Count == 0)
 	    {
 
@@ -116,6 +118,9 @@ public class RoundManager : MonoBehaviour
     }
     IEnumerator EndScene()
     {
+	    _allCaracters.Clear();
+	    safelist.Clear();
+	    test.Clear();
 	    yield return new WaitForSeconds(0.7f);
 	    PlayerPrefs.SetString("_sceneName", nextSceneName);
 	    LoadingSisten.LoadLevel(nextSceneName);
