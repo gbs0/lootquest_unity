@@ -3373,6 +3373,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &319570704 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4889621934937223199, guid: ec3582913b4ddef4fa45f161c06bf26a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8911518419597746032}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddfb9fcae92d457ab187e7577c5ad65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &328658001
 GameObject:
   m_ObjectHideFlags: 0
@@ -10402,6 +10414,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810479423}
   m_CullTransparentMesh: 0
+--- !u!114 &813134568 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4889621934937223199, guid: ec3582913b4ddef4fa45f161c06bf26a,
+    type: 3}
+  m_PrefabInstance: {fileID: 638809964}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddfb9fcae92d457ab187e7577c5ad65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &816318747
 GameObject:
   m_ObjectHideFlags: 0
@@ -16351,7 +16375,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextSceneName: ilha1
   enemyPainel: {fileID: 1022595244}
-  enemies: []
+  enemies:
+  - {fileID: 319570704}
+  - {fileID: 813134568}
 --- !u!4 &1328292410
 Transform:
   m_ObjectHideFlags: 0
