@@ -5,16 +5,16 @@ using UnityEngine;
 
 public class NPCMove : TaticsMove
 {
-    // private GameObject NPC;
+    private GameObject NPC;
 	public GameObject target;
     public Animator GS;
     public TempDistCheck tempDistCheck;
     // Start is called before the first frame update
-    
+
     public void Start()
     {
-	    // NPC = gameObject;
-        // tempDistCheck = NPC.GetComponent<TempDistCheck>();
+	    NPC = gameObject;
+        tempDistCheck = NPC.GetComponent<TempDistCheck>();
         Init();
     }
 
