@@ -16616,6 +16616,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: bruxa
       objectReference: {fileID: 0}
+    - target: {fileID: 4889621933968704882, guid: f6958a85ecf449946827983584a2195c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1cfb7bf3d06c55d458966e39e0ec9cd7, type: 2}
     - target: {fileID: 4889621934937223198, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16681,7 +16686,7 @@ PrefabInstance:
       objectReference: {fileID: 954975168}
     - target: {fileID: 1661451079, guid: f6958a85ecf449946827983584a2195c, type: 3}
       propertyPath: atkDistance
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1661451079, guid: f6958a85ecf449946827983584a2195c, type: 3}
       propertyPath: Selection
@@ -16695,6 +16700,10 @@ PrefabInstance:
       propertyPath: PainelVitoria
       value: 
       objectReference: {fileID: 834558281}
+    - target: {fileID: 1661451079, guid: f6958a85ecf449946827983584a2195c, type: 3}
+      propertyPath: SkipButton
+      value: 
+      objectReference: {fileID: 2147458112}
     - target: {fileID: 4889621934937223168, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: PlayerAnim
@@ -16703,28 +16712,28 @@ PrefabInstance:
     - target: {fileID: 3397164898782556112, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.13
+      value: 0.0047175
       objectReference: {fileID: 0}
     - target: {fileID: 3397164898782556112, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.047
+      value: 0.251
       objectReference: {fileID: 0}
     - target: {fileID: 3397164898782556112, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -0.239
+      value: -0.47845
       objectReference: {fileID: 0}
     - target: {fileID: 3397164898782556112, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: -0.39
+      value: -0.782
       objectReference: {fileID: 0}
     - target: {fileID: 3397164898782556115, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2ddeb3d24ea747a47b3c4b1abf28b701,
+      objectReference: {fileID: 7450172814951472338, guid: 62fc4b89094e7a24c9311afa9b8ba696,
         type: 3}
     m_RemovedComponents:
     - {fileID: 4889621934937223199, guid: f6958a85ecf449946827983584a2195c, type: 3}
@@ -17252,7 +17261,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextSceneName: ilha1
   enemyPainel: {fileID: 236448666}
-  enimigs: []
+  enemies:
+  - {fileID: 1267464289}
+  test: []
 --- !u!4 &1328292410
 Transform:
   m_ObjectHideFlags: 0
@@ -26439,6 +26450,18 @@ Transform:
   m_Father: {fileID: 1356822493}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2147458112 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8723907968777252309, guid: 97ce75c9446da244e96c3483b3ce92ef,
+    type: 3}
+  m_PrefabInstance: {fileID: 1356015281}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &972879697589811296
 CanvasRenderer:
   m_ObjectHideFlags: 0

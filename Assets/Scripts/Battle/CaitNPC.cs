@@ -29,11 +29,25 @@ public class CaitNPC : NPCMove
         }
         else
         {
-            if (tempDistCheck.distTotal >= 6f)
+            if (tempDistCheck.distTotal >= tempDistCheck.atkDistance)
             {
-                StartCoroutine("MoveAnim");
-            }
+                if (tempDistCheck.distTotal >= 6f)
+                {
+                    StartCoroutine("MoveAnim");
+                }
             Move();
+            }
+            else
+            {
+                RemoveSelectableTiles();
+                moving = false;
+
+                // Mudar a Rodada ou Terminar o turno;
+
+
+                RoundManager.EndTurn();
+            }
+
         }
     }
 
@@ -65,4 +79,5 @@ public class CaitNPC : NPCMove
         gameObject.transform.position = TPTarguets[i].transform.position;
         
     }
+  
 }

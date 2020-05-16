@@ -5484,7 +5484,7 @@ SpriteRenderer:
   m_Size: {x: 21.199999, y: 16.200195}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1022728761
@@ -8027,7 +8027,7 @@ SpriteRenderer:
   m_Size: {x: 2.53, y: 1.6500199}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1689848755
@@ -8459,7 +8459,7 @@ SpriteRenderer:
   m_Size: {x: 2.44, y: 1.4700177}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1778501696
@@ -8889,7 +8889,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 378adb549dbfb1845920498fce6824aa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3109e0a23dc4b4c46889b02227f0952f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9815,6 +9815,7 @@ MonoBehaviour:
   Portal: {fileID: 1956457438}
   BatalhaGatos: {fileID: 1956457438}
   mon: 0
+  NUMERO: 0
   missao0: {fileID: 723116130}
   missao1: {fileID: 1227134954}
   missao2: {fileID: 1329433049}
