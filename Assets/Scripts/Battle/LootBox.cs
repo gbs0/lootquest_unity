@@ -45,16 +45,8 @@ namespace DefaultNamespace.Battle
         {
             animator.Play("LootAnimation");
             tempo = true;
-            var index = Random.Range(2, 4);
-            if (index < 2)
-            {
-                // Instancio novo item de movimento no inventário
-                Item newItem = gameManager.itemList[Random.Range(0, gameManager.itemList.Count)];
-                InventoryManager.instance.AddItem(Instantiate(newItem));
-                    
-                Destroy(transform.gameObject);
-                return;
-            }
+            var index = Random.Range(0, 2);
+            
             var loot = Instantiate(PrefabLoots, Vector3.zero, Quaternion.identity, PainelLootBox.transform);
             loot.GetComponent<Loot>().TypeLoot = index;
             Destroy(transform.gameObject);

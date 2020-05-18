@@ -295,12 +295,12 @@ public partial class TaticsMove : MonoBehaviour
     {
 	   // LootGenTest = Random.Range(1, 3);
 	    Debug.Log(LootGenTest);
-	    if (LootGenTest == 2)
+	    if (LootGenTest == 1)
 	    {	    
 		    FindSelectableTiles();
 	    }
 
-	    if (LootGenTest == 3)
+	    if (LootGenTest == 0)
 	    {
 		    var enimi = FindObjectsOfType<Damage>();
 		    foreach (var objDamage in enimi)

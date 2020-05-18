@@ -43,77 +43,76 @@ using System.Collections.Generic;
             int prob = Random.Range(0, 100);
             SelectRarit(prob);
             player = RoundManager._allCaracters.Peek();
+            PlayerAni = GameObject.FindGameObjectWithTag("PlayerSprite");
+            AnimePlayer = PlayerAni.GetComponent<Animator>();
 
+    //     if (TypeLoot == 1)
+    //         {
+    //             if (_rarit == 1)
+    //             {
+    //                 m_Image.sprite = Run_Sprite;
+    //     
+    //             }
+    //             if (_rarit == 2)
+    //             {
+    //                 m_Image.sprite = Run_Sprite2;
+    //             
+    //     
+    //             }
+    //             if (_rarit == 3)
+    //             {
+    //                 //  AnimePlayer.SetTrigger("PositiveReact");
+    //     
+    //                 m_Image.sprite = Run_Sprite3;
+    //     
+    //             }
+    //             if (_rarit == 4)
+    //             {
+    //                 //  AnimePlayer.SetTrigger("PositiveReact");
+    //     
+    //                 m_Image.sprite = Run_Sprite4;
+    //             
+    //     
+    //             } 
+    //         } 
+    //     if(TypeLoot == 0) {
+    //         if (_rarit == 1)
+    //         {
+    //             //AnimePlayer.SetTrigger("NegativeReact");
+    //             m_Image.sprite = Fight_Sprite;
+    //         }
+    //         if (_rarit == 2)
+    //         {
+    //             m_Image.sprite = Fight_Sprite2;
+    //         }
+    //         if (_rarit == 3)
+    //         {
+    //             //  AnimePlayer.SetTrigger("PositiveReact");
+    //     
+    //             m_Image.sprite = Fight_Sprite3;
+    //            
+    //         }
+    //         if (_rarit == 4)
+    //         {
+    //             // AnimePlayer.SetTrigger("PositiveReact");
+    //             m_Image.sprite = Fight_Sprite4;
+    //             
+    //         }
+    //     }
+    //     text.GetComponent<Text>().text = _rarit.ToString();
+    }
 
-        if (TypeLoot == 2)
-            {
-            if (_rarit == 1)
-            {
-                m_Image.sprite = Run_Sprite;
-
-            }
-            if (_rarit == 2)
-            {
-                m_Image.sprite = Run_Sprite2;
-                
-
-            }
-            if (_rarit == 3)
-            {
-                AnimePlayer.SetTrigger("PositiveReact");
-
-                m_Image.sprite = Run_Sprite3;
-
-            }
-            if (_rarit == 4)
-            {
-                AnimePlayer.SetTrigger("PositiveReact");
-
-                m_Image.sprite = Run_Sprite4;
-                
-
-            }
-        }
-            else if(TypeLoot == 3)
-            {
-            if (_rarit == 1)
-            {
-                AnimePlayer.SetTrigger("NegativeReact");
-                m_Image.sprite = Fight_Sprite;
-            }
-            if (_rarit == 2)
-            {
-                m_Image.sprite = Fight_Sprite2;
-            }
-            if (_rarit == 3)
-            {
-                AnimePlayer.SetTrigger("PositiveReact");
-
-                m_Image.sprite = Fight_Sprite3;
-               
-            }
-            if (_rarit == 4)
-            {
-                AnimePlayer.SetTrigger("PositiveReact");
-                m_Image.sprite = Fight_Sprite4;
-                
-            }
-        }
-            text.GetComponent<Text>().text = _rarit.ToString();
-        }
-
-        private void Start()
-        {
-        PlayerAni = GameObject.FindGameObjectWithTag("PlayerSprite");
-        AnimePlayer = PlayerAni.GetComponent<Animator>();
+    private void Start()
+    {
+        
 
         if (m_Image.sprite == null)
+        {
+            if(TypeLoot == 1)
             {
-                if(TypeLoot == 2)
-                {
                 if (_rarit == 1)
                 {
-                    AnimePlayer.SetTrigger("NegativeReact");
+                    //  AnimePlayer.SetTrigger("NegativeReact");
 
                     m_Image.sprite = Run_Sprite;
                 }
@@ -123,22 +122,22 @@ using System.Collections.Generic;
                 }
                 if (_rarit == 3)
                 {
-                    AnimePlayer.SetTrigger("PositiveReact");
+                    //  AnimePlayer.SetTrigger("PositiveReact");
 
                     m_Image.sprite = Run_Sprite3;
                 }
                 if (_rarit == 4)
                 {
-                    AnimePlayer.SetTrigger("PositiveReact");
+                    //  AnimePlayer.SetTrigger("PositiveReact");
 
                     m_Image.sprite = Run_Sprite4;
                 };
-                }
-                else if(TypeLoot == 3)
-                {
+            }
+            else if(TypeLoot == 0)
+            {
                 if (_rarit == 1)
                 {
-                    AnimePlayer.SetTrigger("NegativeReact");
+                    //AnimePlayer.SetTrigger("NegativeReact");
 
                     m_Image.sprite = Fight_Sprite;
                 }
@@ -148,79 +147,79 @@ using System.Collections.Generic;
                 }
                 if (_rarit == 3)
                 {
-                    AnimePlayer.SetTrigger("PositiveReact");
+                    // AnimePlayer.SetTrigger("PositiveReact");
 
                     m_Image.sprite = Fight_Sprite3;
                 }
                 if (_rarit == 4)
                 {
-                    AnimePlayer.SetTrigger("PositiveReact");
+                    // AnimePlayer.SetTrigger("PositiveReact");
 
                     m_Image.sprite = Fight_Sprite4;
                 }
             }
                 
-            }
         }
+    }
 
 
-        public void SpendLoot()
+    public void SpendLoot()
+    {
+        if (CanUse)
         {
-            if (CanUse)
-            {
-                UL.sLoot = this;
-                UL.btn.gameObject.SetActive(true);
-                player.LootGenTest = TypeLoot;
-                player.move = _rarit;
-                player.HitForce = _rarit;
-                player.BeginTurn();
-                Destroy(gameObject);
-            }
-            else
-            {
-                FindObjectOfType<PassiveManager>().ChoseOne(this);
-            }
+            UL.sLoot = this;
+            UL.btn.gameObject.SetActive(true);
+            player.LootGenTest = TypeLoot;
+            player.move = _rarit;
+            player.HitForce = _rarit;
+            player.BeginTurn();
+            Destroy(gameObject);
         }
+        else
+        {
+            FindObjectOfType<PassiveManager>().ChoseOne(this);
+        }
+    }
 
-        private void SelectRarit(int prob)
+    private void SelectRarit(int prob)
+    {
+        if (prob>GoodDrop)
         {
-            if (prob>GoodDrop)
-            {
-                _rarit = 4;
-                //PlayerAnim.SetTrigger("PositiveReact");
-            }
-            else if (prob>MidDrop)
-            {
-                _rarit = 3;
-            }
-            else if (prob>BadDrop)
-            {
-                _rarit = 2;
-            }
-            else if (prob<=BadDrop)
-            {
-                _rarit = 1;
-                //PlayerAnim.SetTrigger("NegativeReact");
-            }
+            _rarit = 4;
+            //PlayerAnim.SetTrigger("PositiveReact");
         }
-        public void Chose()
+        else if (prob>MidDrop)
         {
-            FindObjectOfType<PassiveManager>().SelectLoot(gameObject);
+            _rarit = 3;
         }
+        else if (prob>BadDrop)
+        {
+            _rarit = 2;
+        }
+        else if (prob<=BadDrop)
+        {
+            _rarit = 1;
+            //PlayerAnim.SetTrigger("NegativeReact");
+        }
+    }
+    public void Chose()
+    {
+        FindObjectOfType<PassiveManager>().SelectLoot(gameObject);
+    }
 
-        public void SetValue(bool b, int r, int t)
+    public void SetValue(bool b, int r, int t)
+    {
+        TypeLoot = t;
+        _rarit = r;
+        CanUse = b;
+        if (TypeLoot == 1)
         {
-            TypeLoot = t;
-            _rarit = r;
-            CanUse = b;
-            if (TypeLoot == 2)
+            if (_rarit == 1)
             {
-              if (_rarit == 1)
-              {
-                AnimePlayer.SetTrigger("NegativeReact");
+                //AnimePlayer.SetTrigger("NegativeReact");
 
                 m_Image.sprite = Run_Sprite;
-              }
+            }
             if (_rarit == 2)
             {
             
@@ -235,11 +234,11 @@ using System.Collections.Generic;
                 m_Image.sprite = Run_Sprite4;
             }
         }
-            else
+        else
+        {
+            if (_rarit == 0)
             {
-            if (_rarit == 1)
-            {
-                AnimePlayer.SetTrigger("NegativeReact");
+                //AnimePlayer.SetTrigger("NegativeReact");
 
                 m_Image.sprite = Fight_Sprite;
             }
@@ -256,15 +255,15 @@ using System.Collections.Generic;
                 m_Image.sprite = Fight_Sprite4;
             }
             
-            }
-            text.GetComponent<Text>().text = _rarit.ToString();
         }
+        text.GetComponent<Text>().text = _rarit.ToString();
+    }
 
-        public void SetLoot(Loot VL)
-        {
-            var loot = this;
-            loot = VL;
-        }
+    public void SetLoot(Loot VL)
+    {
+        var loot = this;
+        loot = VL;
+    }
 
     }
     

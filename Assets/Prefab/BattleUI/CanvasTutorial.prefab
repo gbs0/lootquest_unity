@@ -287,7 +287,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.40300003, y: 0.56375825}
   m_AnchorMax: {x: 0.60200006, y: 0.81344837}
-  m_AnchoredPosition: {x: -4.80011, y: -63.490005}
+  m_AnchoredPosition: {x: -4.8007812, y: -63.490005}
   m_SizeDelta: {x: -143.6, y: -86.31}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8027669020246243501
@@ -667,7 +667,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -200.6, y: 149}
+  m_AnchoredPosition: {x: -200.60156, y: 149}
   m_SizeDelta: {x: 191.4, y: 202.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6383063484432062458
@@ -963,6 +963,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8cd108359ed170499c240cddb2f9b0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tutorial1: {fileID: 6383063485077655782}
+  TutorialPassiva: {fileID: 5890296518425666948}
 --- !u!1 &6383063485077655782
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,7 +982,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6383063485077655783
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1224,7 +1226,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -211.1, y: 147.6}
+  m_AnchoredPosition: {x: -211.10156, y: 147.6}
   m_SizeDelta: {x: 196.3, y: 215.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6383063485486005377
@@ -1321,17 +1323,6 @@ MonoBehaviour:
       - m_Target: {fileID: 6383063485069638016}
         m_MethodName: EndTutorial
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6383063485069638043}
-        m_MethodName: SetActive
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1525,7 +1516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -202.1, y: 149}
+  m_AnchoredPosition: {x: -202.10156, y: 149}
   m_SizeDelta: {x: 188.3, y: 202.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6383063486111687643
@@ -1823,7 +1814,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 258645574993360518}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5890296518425666948}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1001 &905273185261486969
@@ -1969,7 +1971,9 @@ PrefabInstance:
       propertyPath: m_Text
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6, type: 3}
+    - {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b16aa103a5adf8a4e9425cd9c39ba6b6, type: 3}
 --- !u!224 &1058688666472063522 stripped
 RectTransform:

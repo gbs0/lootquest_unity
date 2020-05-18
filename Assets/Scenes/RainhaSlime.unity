@@ -4018,97 +4018,9 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6383063485069638016, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: Tutorial1
-      value: 
-      objectReference: {fileID: 911300802}
-    - target: {fileID: 6383063485069638016, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: TutorialPassiva
-      value: 
-      objectReference: {fileID: 222066640}
-    - target: {fileID: 6138219185723720304, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -4.800293
-      objectReference: {fileID: 0}
-    - target: {fileID: 6383063485077655782, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6383063485486005406, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -211.10156
-      objectReference: {fileID: 0}
-    - target: {fileID: 6383063486111687640, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -202.10156
-      objectReference: {fileID: 0}
-    - target: {fileID: 6383063484432062455, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -200.60156
-      objectReference: {fileID: 0}
-    - target: {fileID: 6383063485486005407, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6383063485486005407, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2610132082532488221, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2610132082532488221, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2610132082532488221, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2610132082532488221, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 222066640}
-    - target: {fileID: 2610132082532488221, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 2610132082532488221, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 2610132082532488221, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2610132082532488221, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2610132082532488221, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 972879698692993000}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8454515509564519884, guid: ecc6b64f5d46ca14e9626b338f61648c, type: 3}
+    - {fileID: 6507086994365090926, guid: ecc6b64f5d46ca14e9626b338f61648c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecc6b64f5d46ca14e9626b338f61648c, type: 3}
 --- !u!1 &273894200
 GameObject:
@@ -15629,12 +15541,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909865861}
   m_CullTransparentMesh: 0
---- !u!1 &911300802 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6383063485077655782, guid: ecc6b64f5d46ca14e9626b338f61648c,
-    type: 3}
-  m_PrefabInstance: {fileID: 273662352}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &912518483
 GameObject:
   m_ObjectHideFlags: 0
@@ -18278,6 +18184,7 @@ MonoBehaviour:
   nextSceneName: ilha1
   enemyPainel: {fileID: 0}
   enemies: []
+  test: []
 --- !u!1 &1110757703
 GameObject:
   m_ObjectHideFlags: 0
@@ -21588,6 +21495,7 @@ MonoBehaviour:
   enemyPainel: {fileID: 1022595244}
   enemies:
   - {fileID: 4889621933968704885}
+  test: []
 --- !u!4 &1328292410
 Transform:
   m_ObjectHideFlags: 0
@@ -33247,7 +33155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0010986328, y: -429}
+  m_AnchoredPosition: {x: 0, y: -429}
   m_SizeDelta: {x: -557.09, y: -526}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2066218077
@@ -34478,7 +34386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe4f7b84c881ca4f8b57384f3765e72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Manager: {fileID: 0}
+  Manager: {fileID: 972879698692993002}
   PrefabLoots: {fileID: 3274952489686710200, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
     type: 3}
   ChoseTransfom: {fileID: 972879697589811301}
@@ -34659,6 +34567,7 @@ MonoBehaviour:
   closeButton: {fileID: 972879698625037951}
   passivePainel:
   - {fileID: 972879698098213089}
+  loots: []
   Passiva: {fileID: 972879698098213117}
   FirstTime: 1
   TutorialPainel: {fileID: 222066640}
