@@ -2308,12 +2308,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MenuPainel: {fileID: 3110571852395199417}
-  OptionsPainel: {fileID: 0}
   SoundPainel: {fileID: 3110571852369274004}
   CreditsPainel: {fileID: 0}
   SoundButton: {fileID: 3110571854012529538}
   OptionsButton: {fileID: 3110571854393264940}
   BackButton: {fileID: 102145781}
+  CreditButton: {fileID: 0}
   Menu: 0
 --- !u!114 &4894634402976009605
 MonoBehaviour:
@@ -2345,9 +2345,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextCenaName: MenuInicial
-  NovoJogo: 
+  NovoJogo: MenuInicial
   timeStart: 0
-  Credits: 
   time: 0
 --- !u!1 &3110571854012529566
 GameObject:

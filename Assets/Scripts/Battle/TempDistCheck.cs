@@ -46,8 +46,8 @@ public class TempDistCheck : MonoBehaviour
     public bool canHit;
     public float hitTime;
     public int hitCount;
-    float tempLife;
-
+    public float tempLife = 100;
+    public float vida;
     public Button SkipButton;
     public float TimeAnimation;
     
@@ -58,7 +58,7 @@ public class TempDistCheck : MonoBehaviour
         // LifeBar = GameObject.Find("sprite slime");
         // LifeBar = this.GetComponentInChildren<InputField>();
         // LifeBar = this.GameObject.Find("personagem canvas").GetComponentInChildren<InputField>();
-
+        vida = tempLife;
         RM = FindObjectOfType<RoundManager>();
         // player = GameObject.FindGameObjectWithTag("Player");
         player = GameObject.Find("Player");
@@ -66,7 +66,6 @@ public class TempDistCheck : MonoBehaviour
 
         canHit = true;
         hitCount = 0;
-        tempLife = 100;
         SkipButton.onClick.AddListener(SkipTurn);
     }
 
@@ -104,7 +103,7 @@ public class TempDistCheck : MonoBehaviour
                 //GS.SetTrigger("Damage");
                 StartCoroutine("DamageAnim");
                 tempLife -= playerMove.HitForce*10;
-                float barra = tempLife / 100;
+                float barra = tempLife / vida;
                 Debug.Log(barra);
                 LifeBar.fillAmount = barra;
                 if (tempLife <= 0)

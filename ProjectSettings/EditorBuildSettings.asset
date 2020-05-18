@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Derrota.unity
     guid: 1f1c55dc4a86f8a42a00c83afc3d7162
   - enabled: 1
-    path: Assets/Scenes/TacticsMovement-Bruxa.unity
+    path: Assets/Scenes/Bruxa.unity
     guid: f5f46ae28662eec4e8c1b6938cbcf5e6
   - enabled: 1
     path: Assets/Scenes/Vitoria.unity
@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TacticsMovement-lobo.unity
     guid: 689e709eae24d1b4b96b2ce2886eecc4
+  - enabled: 1
+    path: Assets/Scenes/Cogumelo.unity
+    guid: be079a5179c309f43879017a4daefe68
   m_configObjects: {}

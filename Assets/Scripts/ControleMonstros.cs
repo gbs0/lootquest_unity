@@ -9,7 +9,16 @@ public class ControleMonstros : MonoBehaviour
     public GameObject Slime2;
     public GameObject Gatos;
     public GameObject Bruxa;
-    public int g;
+    public GameObject BruxaCombate;
+    public GameObject BruxaDialogoPosCombate;
+    public GameObject Batloot;
+    public GameObject Cogumelo1;
+    public GameObject DragaoCombate;
+    public int cot;
+
+
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -35,12 +44,33 @@ public class ControleMonstros : MonoBehaviour
             Gatos.SetActive(false);
             Bruxa.SetActive(false);
         }
-       
+        if (PlayerPrefs.GetInt("BruxaCombate") == 1)
+        {
+            BruxaCombate.SetActive(false);
+            if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 9)
+            {
+                BruxaDialogoPosCombate.SetActive(true);
+            }
+
+        }
+        if (PlayerPrefs.GetInt("Gatos") == 1)
+        {
+            Gatos.SetActive(false);
+            if ( PlayerPrefs.GetInt("DialogoGuilda", 0) ==  8)
+            {
+                
+                    BruxaDialogo.SetActive(true);
+                
+            }
+        }
+        
+          
+
     }
     // Update is called once per frame
     void Update()
     {
-
+        cot = PlayerPrefs.GetInt("DialogoGuilda", 0);
         if (PlayerPrefs.GetInt("ConversaMonstros") == 2)
         {
             if (PlayerPrefs.GetInt("Gatos") == 0)
@@ -52,6 +82,10 @@ public class ControleMonstros : MonoBehaviour
                 Bruxa.SetActive(true);
             }
         }
+        if (PlayerPrefs.GetInt("Gatos") == 1)
+        {
+            Gatos.SetActive(false);
+        }
         if (PlayerPrefs.GetInt("Monstro1") == 1)
         {
             Slime1.SetActive(false);
@@ -62,20 +96,42 @@ public class ControleMonstros : MonoBehaviour
             Slime2.SetActive(false);
 
         }
-        if (PlayerPrefs.GetInt("Gatos") == 1)
-        {
-            Gatos.SetActive(false);
-            BruxaDialogo.SetActive(true);
-
-        }
+        
         if (PlayerPrefs.GetInt("Bruxa") == 1)
         {
             Bruxa.SetActive(false);
 
         }
-        if (PlayerPrefs.GetInt("Monstro1") == 1 )
+        
+        
+        if (PlayerPrefs.GetInt("Batloot") == 1)
         {
-            PlayerPrefs.SetInt("DialogoGuilda", 5);
+            Batloot.SetActive(false);
+
+
         }
+        if (PlayerPrefs.GetInt("Cogumelo1") == 1)
+        {
+            Cogumelo1.SetActive(false);           
+        }
+        if (PlayerPrefs.GetInt("Dragao") == 1)
+        {
+            DragaoCombate.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("BruxaCombate") == 1)
+        {
+            BruxaCombate.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 9)
+        {
+            BruxaDialogoPosCombate.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 10)
+        {
+            Bruxa.SetActive(false);
+
+            PlayerPrefs.SetInt("Bruxa", 1);
+        }
+
     }
 }

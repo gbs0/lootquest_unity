@@ -3080,6 +3080,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasTutorial
       objectReference: {fileID: 0}
+    - target: {fileID: 6383063485069638043, guid: ecc6b64f5d46ca14e9626b338f61648c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6383063485069638047, guid: ecc6b64f5d46ca14e9626b338f61648c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16704,6 +16709,14 @@ PrefabInstance:
       propertyPath: SkipButton
       value: 
       objectReference: {fileID: 2147458112}
+    - target: {fileID: 1661451079, guid: f6958a85ecf449946827983584a2195c, type: 3}
+      propertyPath: tempLife
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661451079, guid: f6958a85ecf449946827983584a2195c, type: 3}
+      propertyPath: selected
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4889621934937223168, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: PlayerAnim

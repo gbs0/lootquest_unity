@@ -11,6 +11,7 @@ public class Eventos : MonoBehaviour
     {
         MorteRainha.SetActive(false);
 
+
     }
 
     // Update is called once per frame

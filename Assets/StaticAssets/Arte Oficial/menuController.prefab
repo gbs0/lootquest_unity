@@ -3093,7 +3093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextCenaName: MenuInicial
-  NovoJogo: 
+  NovoJogo: MenuInicial
   timeStart: 0
   time: 0
 --- !u!1 &4068232242299121953
