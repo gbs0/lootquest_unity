@@ -17,11 +17,12 @@ public class GridManager : MonoBehaviour
     
     
     // public static bool Tutorial;
-    public List<NPCMove> enemies;
+     // public List<NPCMove> enemies;
+
     private static List<TaticsMove> safelist = new List<TaticsMove>();
     public List<TaticsMove> test;
 
-    public AtaqueGrid ataqueGrid; // referecia do script da grid
+    public static AtaqueGrid ataqueGrid; // referecia do script da grid
     
     private void Awake ()
     {
@@ -78,7 +79,7 @@ public class GridManager : MonoBehaviour
 		    PlayerTurn = false;
 		    _enemyPainel.SetActive(true);
     		// _allCaracters.Peek().BeginTurn(); // Roda a vez do inimigo chamando função do TacticsMove
-            
+            ataqueGrid.AtaqueHorizontal();
     	}
     }
 

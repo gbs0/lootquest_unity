@@ -30,8 +30,7 @@ public class AtaqueGrid : MonoBehaviour
 
 	private void Start()
 	{
-		AtaqueTraseiro();
-		AtaqueHorizontal();
+	
 	}
 
 	private void Update()
