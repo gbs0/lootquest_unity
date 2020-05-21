@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class AtaqueGrid : MonoBehaviour
 {
+	public static AtaqueGrid instance;
+	
 	public Slider dragaoHealthBar;
 	
 	public int vidaBoss;
