@@ -26,6 +26,7 @@ public class GridManager : MonoBehaviour
 	private void Start()
     {
 	    _enemyPainel = enemyPainel;
+        
 	    // var v = FindObjectsOfType<NPCMove>();
 	    
 		// foreach (var npc in v)
