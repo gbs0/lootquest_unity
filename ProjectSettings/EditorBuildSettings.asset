@@ -39,7 +39,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Vitoria.unity
     guid: bbd05b0345d3b034690aca27af650231
   - enabled: 1
-    path: Assets/Scenes/TacticsMovement-Boss.unity
+    path: Assets/Scenes/TacticsMovement-Dragao.unity
     guid: a854b5e1ee3175645b153301f9ab6c64
   - enabled: 1
     path: Assets/Scenes/RainhaSlime.unity
