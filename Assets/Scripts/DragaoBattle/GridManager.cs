@@ -21,12 +21,18 @@ public class GridManager : MonoBehaviour
     private static List<TaticsMove> safelist = new List<TaticsMove>();
     public List<TaticsMove> test;
 
-    public AtaqueGrid ataqueGrid;
+    public AtaqueGrid ataqueGrid; // referecia do script da grid
     
+    private void Awake ()
+    {
+        ataqueGrid = GetComponent<AtaqueGrid>();
+    }
+
 	private void Start()
     {
 	    _enemyPainel = enemyPainel;
-        
+
+    
 	    // var v = FindObjectsOfType<NPCMove>();
 	    
 		// foreach (var npc in v)
@@ -72,7 +78,7 @@ public class GridManager : MonoBehaviour
 		    PlayerTurn = false;
 		    _enemyPainel.SetActive(true);
     		// _allCaracters.Peek().BeginTurn(); // Roda a vez do inimigo chamando função do TacticsMove
-            AtaqueGrid.AtaqueTraseiro(); 
+            
     	}
     }
 
