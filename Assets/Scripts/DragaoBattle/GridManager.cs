@@ -1,25 +1,39 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class RoundManager : MonoBehaviour
+public class GridManager : MonoBehaviour
 {
 	public static bool PlayerTurn;
 
 	public static Queue<TaticsMove> _allCaracters = new Queue<TaticsMove>();
     private static GameObject _enemyPainel;
-    public string nextSceneName = "ilha1";
     public GameObject enemyPainel;
-    public static bool Tutorial;
-    public List<NPCMove> enemies;
-    private static List<TaticsMove> safelist =new List<TaticsMove>();
-    public List<TaticsMove> test;
+
+    // Proxima cena setada no inspect
+    public string nextSceneName = "ilha1";
     
+    
+    // public static bool Tutorial;
+     // public List<NPCMove> enemies;
+
+    private static List<TaticsMove> safelist = new List<TaticsMove>();
+    public List<TaticsMove> test;
+
+    public static AtaqueGrid ataqueGrid; // referecia do script da grid
+    
+    private void Awake ()
+    {
+        ataqueGrid = GetComponent<AtaqueGrid>();
+    }
+
 	private void Start()
     {
 	    _enemyPainel = enemyPainel;
+
+    
 	    // var v = FindObjectsOfType<NPCMove>();
 	    
 		// foreach (var npc in v)
@@ -30,13 +44,11 @@ public class RoundManager : MonoBehaviour
 
     void Update()
     {
-	    test = safelist;
 	    if (_allCaracters.Count == 0)
 	    {
 
 		    InitTeamTurnQueue();
-	    }
-		
+	    }	
 	
     }
     
@@ -49,8 +61,7 @@ public class RoundManager : MonoBehaviour
     	}
     	StartTurn();
         
-		// Console.Write("Number of elements in the Queue(StartTurn()) are : "); 
-		// Console.WriteLine(TurnTeam.Count);
+        // Debug.Log("Numero de elementos na fila: "+ TurnTeam.Count);
     }
 
     public static void StartTurn()
@@ -67,7 +78,8 @@ public class RoundManager : MonoBehaviour
 
 		    PlayerTurn = false;
 		    _enemyPainel.SetActive(true);
-    		_allCaracters.Peek().BeginTurn();
+    		// _allCaracters.Peek().BeginTurn(); // Roda a vez do inimigo chamando função do TacticsMove
+            ataqueGrid.AtaqueHorizontal();
     	}
     }
 
@@ -92,7 +104,7 @@ public class RoundManager : MonoBehaviour
 	    _allCaracters.Enqueue(unit);
 	    safelist.Add(unit);
     }
-
+/*
     public void EnimKilled()
     {
 	     for(int i = 0; i < enemies.Count; i++)
@@ -100,10 +112,10 @@ public class RoundManager : MonoBehaviour
 			enemies.RemoveAt(i);
         } 
 
-	 	/* foreach(NPCMove e in enemies)
-        {
-            enemies.RemoveAt(e);
-        } */
+	 	// foreach(NPCMove e in enemies)
+        // {
+            // enemies.RemoveAt(e);
+        // }
 
 	    if (enemies.Count == 0)
 	    {
@@ -117,11 +129,14 @@ public class RoundManager : MonoBehaviour
 
 		
     }
+    */
+
     IEnumerator EndScene()
     {
-	    _allCaracters.Clear();
+	    // Limpando Listas no final do turno
+        _allCaracters.Clear();
 	    safelist.Clear();
-	    test.Clear();
+	    
 	    yield return new WaitForSeconds(0.7f);
 	    PlayerPrefs.SetString("_sceneName", nextSceneName);
 	    LoadingSisten.LoadLevel(nextSceneName);
