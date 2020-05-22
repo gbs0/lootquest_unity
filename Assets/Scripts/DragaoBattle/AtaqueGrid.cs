@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AtaqueGrid : MonoBehaviour
+public class AtaqueGrid : TaticsMove
 {
 	public static AtaqueGrid instance;
 	
@@ -96,4 +97,91 @@ public class AtaqueGrid : MonoBehaviour
 			}
 		}
 	}
+
+
+	public override void Init()
+    {
+    	
+    }
+
+    public override void GetCurrentTile()
+    {
+    	
+    }
+
+    public override Tile GetTargetTile(GameObject target)
+    {
+	    return target.AddComponent<Tile>();
+    }
+
+    public override void ComputeProximityList(float jumpHeight, Tile target)
+    {
+    	
+    }
+
+    public override void FindSelectableTiles() 
+    {
+    	
+    }
+
+    public override void MoveToTile(Tile tile)
+    {
+    
+    }
+
+    public override void  Move() {
+	    
+    }
+
+    public override void RemoveSelectableTiles()
+    {
+      
+    }
+
+    public override void CalculatePointVector(Vector3 target)
+    {
+    	
+    }
+
+	public override void SetHorizotalVelocity()
+    {
+    	
+    }
+
+	public override Tile FindLowestF(List<Tile> list)
+    {
+        Tile lowest = list[0]; // Get the first member for lowest Array
+
+        foreach (Tile t in list)
+        {
+            if (t.f < lowest.f)
+            {
+                lowest = t;
+            }
+        }
+
+        list.Remove(lowest);
+        return lowest;
+    }
+
+	public override Tile FindEndTile(Tile t)
+    {
+	    return t;
+    }
+
+	public override void FindPath(Tile target)
+    {
+       
+    }
+
+	public void BeginTurn()
+	{
+	    
+    }
+
+
+	public void EndTurn()
+    {
+        
+    }   
 }

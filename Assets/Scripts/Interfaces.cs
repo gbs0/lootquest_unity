@@ -35,4 +35,10 @@ namespace DefaultNamespace
     {
         int Iniciativa { get; set; }
     }
+
+    public interface ITurnable
+    {
+        void BeginTurn();
+        void EndTurn();
+    }
 }

@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 
-public partial class TaticsMove : MonoBehaviour
+public partial class TaticsMove : MonoBehaviour, ITurnable
 {
 	public bool turn = false;
 
@@ -27,9 +28,8 @@ public partial class TaticsMove : MonoBehaviour
 
 	public int LootGenTest;
 
-	
 
-	protected void Init()
+	public virtual void Init()
     {
     	tiles = GameObject.FindGameObjectsWithTag("Tile");
 
@@ -38,14 +38,14 @@ public partial class TaticsMove : MonoBehaviour
         RoundManager.AddUnit(this); // Init the Round
     }
 
-    public void GetCurrentTile()
+    public virtual void GetCurrentTile()
     {
     	currentTile = GetTargetTile(gameObject);
     	currentTile.current = true;
     	currentTile.selectable = false;
     }
 
-    public Tile GetTargetTile(GameObject target)
+    public virtual Tile GetTargetTile(GameObject target)
     {
     	RaycastHit hit;
     	Tile tile = null;
@@ -59,7 +59,7 @@ public partial class TaticsMove : MonoBehaviour
 			tile.selectable = true;
     }
 
-    public void ComputeProximityList(float jumpHeight, Tile target)
+    public virtual void ComputeProximityList(float jumpHeight, Tile target)
     {
     	// tiles = GameObject.FindGameObjectsWithTag("Tile");
 
@@ -70,7 +70,7 @@ public partial class TaticsMove : MonoBehaviour
     	}
     }
 
-    public void FindSelectableTiles() 
+    public virtual void FindSelectableTiles() 
     {
     	ComputeProximityList(jumpHeight, null);
     	GetCurrentTile();
@@ -105,7 +105,7 @@ public partial class TaticsMove : MonoBehaviour
     	}
     }
 
-    public void MoveToTile(Tile tile)
+    public virtual void MoveToTile(Tile tile)
     {
     	path.Clear();
     	moving = true;
@@ -158,8 +158,8 @@ public partial class TaticsMove : MonoBehaviour
             RoundManager.EndTurn();
   		}
     }
-	
-    protected void RemoveSelectableTiles()
+
+    public virtual void RemoveSelectableTiles()
     {
       if (currentTile != null)
       {
@@ -175,18 +175,18 @@ public partial class TaticsMove : MonoBehaviour
       selectableTiles.Clear();
     }
 
-	protected void CalculatePointVector(Vector3 target)
+    public virtual void CalculatePointVector(Vector3 target)
     {
     	pointVector = target - transform.position;
     	pointVector.Normalize();
     }
 
-	protected void SetHorizotalVelocity()
+	public virtual void SetHorizotalVelocity()
     {
     	velocity = pointVector * moveSpeed;
     }
 
-    protected Tile FindLowestF(List<Tile> list)
+	public virtual Tile FindLowestF(List<Tile> list)
     {
         Tile lowest = list[0]; // Get the first member for lowest Array
 
@@ -202,7 +202,7 @@ public partial class TaticsMove : MonoBehaviour
         return lowest;
     }
 
-    protected Tile FindEndTile(Tile t)
+	public virtual Tile FindEndTile(Tile t)
     {
         Stack<Tile> tempPath = new Stack<Tile>(); // Temp Cost for all the map
 
@@ -226,7 +226,8 @@ public partial class TaticsMove : MonoBehaviour
 
         return endTile;
     }
-	 protected void FindPath(Tile target)
+
+	public virtual void FindPath(Tile target)
     {
         ComputeProximityList(jumpHeight, target);
         GetCurrentTile();
@@ -292,9 +293,7 @@ public partial class TaticsMove : MonoBehaviour
     }
 
 	public void BeginTurn()
-    {
-	   // LootGenTest = Random.Range(1, 3);
-	    Debug.Log(LootGenTest);
+	{
 	    if (LootGenTest == 1)
 	    {	    
 		    FindSelectableTiles();
