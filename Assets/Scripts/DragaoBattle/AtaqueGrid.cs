@@ -80,7 +80,7 @@ public class AtaqueGrid : MonoBehaviour
  		}
  	}
 	
-	public void DanoNoPlayer(GameObject GO)
+	public void DanoNoPlayer(List<GameObject> GO)
 	{
 		// playTransform playerTrans = GO.transform.position.x;
 		foreach(GameObject tile in GO) // Comparar com posição atual do player nas tiles
