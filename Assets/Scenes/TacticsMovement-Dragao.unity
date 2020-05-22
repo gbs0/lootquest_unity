@@ -16466,8 +16466,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1105728066}
-  - component: {fileID: 1105728069}
+  - component: {fileID: 1105728067}
   - component: {fileID: 1105728068}
+  - component: {fileID: 1105728069}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -16495,6 +16496,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1105728067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105728065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f44629fa53e21499cb4e41c7673474ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneName: ilha1
+  enemyPainel: {fileID: 236448666}
+  enemies: []
+  test: []
 --- !u!114 &1105728068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16537,12 +16554,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1105728065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4637619b53f41a54b99331c82183f741, type: 3}
+  m_Script: {fileID: 11500000, guid: 65412a53c9a634541881083e31ab3798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPainel: {fileID: 236448666}
-  nextSceneName: ilha1
-  test: []
+  turn: 0
+  HitForce: 0
+  moving: 0
+  move: 3
+  jumpHeight: 1
+  moveSpeed: 2
+  actualTargetTile: {fileID: 0}
+  LootGenTest: 0
+  target: {fileID: 0}
+  GS: {fileID: 0}
+  tempDistCheck: {fileID: 0}
+  TPTarguets: []
 --- !u!1 &1105809073
 GameObject:
   m_ObjectHideFlags: 0

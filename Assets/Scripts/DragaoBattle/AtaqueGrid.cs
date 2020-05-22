@@ -53,20 +53,9 @@ public class AtaqueGrid : MonoBehaviour
 		
 
 		
- 		
+ 		DanoNoPlayer(backTiles);
 		 
-		foreach(GameObject tile in backTiles) // Comparar com posição atual do player nas tiles
-		{
-			// Debug.Log(tile.transform.position.x);
-
-			if(player.transform.position.x == tile.transform.position.x)
-			{
-				// Dar dano ao player
-				Debug.Log("Transform do player: " + player.transform.position.x);
-				
-				DanoNoPlayer(player);
-			}
-		}
+		
 		
 		/*
 		foreach(GameObject tile in backTiles)
@@ -91,8 +80,20 @@ public class AtaqueGrid : MonoBehaviour
  		}
  	}
 	
-	public void DanoNoPlayer(GameObject GO)
+	public void DanoNoPlayer(List<GameObject> GO)
 	{
 		// playTransform playerTrans = GO.transform.position.x;
+		foreach(GameObject tile in GO) // Comparar com posição atual do player nas tiles
+		{
+			// Debug.Log(tile.transform.position.x);
+
+			if(player.transform.position.x == tile.transform.position.x)
+			{
+				// Dar dano ao player
+				Debug.Log("Transform do player: " + player.transform.position.x);
+				
+				
+			}
+		}
 	}
 }
