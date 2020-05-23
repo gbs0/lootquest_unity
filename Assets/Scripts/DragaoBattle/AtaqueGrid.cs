@@ -26,12 +26,14 @@ public class AtaqueGrid : TaticsMove
 	public List<GameObject> backTiles = new List<GameObject>();
 	public List<GameObject> horizontalTiles = new List<GameObject>();
 	public List<GameObject> verticalTiles = new List<GameObject>();
+
+	public Color tileColor = Color.red;
 		
 	// Dictionary<string, GameObject> myDictionaryObjects = new Dictionary<string, GameObject>();
 
 	private void Start()
 	{
-	
+		MarcarTiles(backTiles);		
 	}
 
 	private void Update()
@@ -98,6 +100,25 @@ public class AtaqueGrid : TaticsMove
 		}
 	}
 
+	public void RemoverEfeitos(List<GameObject> GOlist)
+	{
+		foreach(GameObject tile in GOlist)
+		{
+			// Remover efeitos da tile
+			
+
+		}
+	}
+	
+	public void MarcarTiles(List<GameObject> GOlist)
+	{
+		foreach(GameObject tile in GOlist)
+		{
+			// GetComponent<Renderer>().material.color = tile.GetComponent<Renderer>().material.GetColor("_Color");
+			Color corAtual = tile.GetComponent<Renderer>().material.color;
+			corAtual = tileColor;
+		}
+	}
 
 	public override void Init()
     {

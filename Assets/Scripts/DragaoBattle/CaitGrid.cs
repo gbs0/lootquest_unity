@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class CaitGrid : NPCMove
 {
-    private float distance;
+    // private float distance;
     public List<GameObject> TPTarguets;
     
-    public static AtaqueGrid ataqueGrid; // referecia do script da grid
+    public static AtaqueGrid ataqueGrid; // Referecia do script da grid
     
     private void Awake ()
     {
@@ -20,23 +20,17 @@ public class CaitGrid : NPCMove
         {
             return;
         }
+
         if (!moving) // Se ñ estiver movendo
         {
-            FindNearestTarget();
-            if (distance<2)
-            {
-                Teleport();
-            }
-            else
-            {
-                FindSelectableTiles(); // Still show the movement from NPC
-                CalculatePath();
-                actualTargetTile.target = true;
-            }
+            // Marca na Grid qual será o proximo ataque de tiles
+            
             
         }
+        
         else // Vez da Grid
         {
+            /* Se o npc puder atacar
             if (tempDistCheck.distTotal >= tempDistCheck.atkDistance)
             {
                 if (tempDistCheck.distTotal >= 6f)
@@ -45,9 +39,13 @@ public class CaitGrid : NPCMove
                 }
             Move();
             }
-            else
+            */
+            if (turn)
             {
-                RemoveSelectableTiles();
+                
+            } else
+            {
+                // RemoveSelectableTiles();
                 moving = false;
 
                 RoundManager.EndTurn(); // Mudar a Rodada ou Terminar o turno;
@@ -56,8 +54,11 @@ public class CaitGrid : NPCMove
         }
     }
 
+
+    /* 
     public override void FindNearestTarget()
-    {GameObject[] targets = GameObject.FindGameObjectsWithTag("Player");
+    {
+        GameObject[] targets = GameObject.FindGameObjectsWithTag("Player");
 
         // Put simple AI
         GameObject nearest = null;
@@ -84,4 +85,5 @@ public class CaitGrid : NPCMove
         gameObject.transform.position = TPTarguets[i].transform.position;
         
     }
+    */
 }
