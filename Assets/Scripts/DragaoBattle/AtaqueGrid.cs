@@ -23,17 +23,13 @@ public class AtaqueGrid : TaticsMove
 	// Pegar Transform do Player
 	public GameObject player;
 
-	public List<GameObject> backTiles = new List<GameObject>();
-	public List<GameObject> horizontalTiles = new List<GameObject>();
-	public List<GameObject> verticalTiles = new List<GameObject>();
-
 	public Color tileColor = Color.red;
 		
 	// Dictionary<string, GameObject> myDictionaryObjects = new Dictionary<string, GameObject>();
 
 	private void Start()
 	{
-		MarcarTiles(backTiles);		
+		
 	}
 
 	private void Update()
@@ -41,22 +37,23 @@ public class AtaqueGrid : TaticsMove
 		// dragaoHealthBar.value = vidaBoss;
 	}
 
- 	public void AtaqueHorizontal()
+ 	public void AtaqueHorizontal(List<GameObject> tilesList)
 	{
 		// Sortear qual será o Objeto de Row.transform.position.z entre [-1 ... 4]
  		
 
-		FogoNaTileAnim(horizontalTiles);
+		FogoNaTileAnim(tilesList);
+		DanoNoPlayer(tilesList);
 			
 	}
 
-	public void AtaqueTraseiro()
+	public void AtaqueTraseiro(List<GameObject> tilesList)
  	{
  		// Animate Dragon's attack
 		
 
-		
- 		DanoNoPlayer(backTiles);
+		FogoNaTileAnim(tilesList);
+ 		DanoNoPlayer(tilesList);
 		 
 		
 		

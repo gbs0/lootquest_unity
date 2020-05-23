@@ -16469,6 +16469,7 @@ GameObject:
   - component: {fileID: 1105728067}
   - component: {fileID: 1105728068}
   - component: {fileID: 1105728069}
+  - component: {fileID: 1105728070}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -16524,27 +16525,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0c5e55a592f7740a607bb9b99f6a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turn: 0
+  HitForce: 0
+  moving: 0
+  move: 3
+  jumpHeight: 1
+  moveSpeed: 2
+  actualTargetTile: {fileID: 0}
+  LootGenTest: 0
   dragaoHealthBar: {fileID: 0}
   vidaBoss: 0
   danoLateral: 0
   particulaAtaque: {fileID: 19800002, guid: 50339303116674b30a2c7b44fbbb72ef, type: 3}
   player: {fileID: 1060997790}
-  backTiles:
-  - {fileID: 808943103}
-  - {fileID: 2080297734}
-  - {fileID: 732217630}
-  - {fileID: 1004019876}
-  - {fileID: 273894200}
-  - {fileID: 1256693419}
-  - {fileID: 758629714}
-  horizontalTiles:
-  - {fileID: 158488159}
-  - {fileID: 1535895307}
-  - {fileID: 811705841}
-  - {fileID: 722851989}
-  - {fileID: 2027591120}
-  - {fileID: 1945142273}
-  verticalTiles: []
+  tileColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &1105728069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16569,6 +16563,22 @@ MonoBehaviour:
   GS: {fileID: 0}
   tempDistCheck: {fileID: 0}
   TPTarguets: []
+  backTiles: []
+  horizontalTiles: []
+  verticalTiles: []
+--- !u!65 &1105728070
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105728065}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1105809073
 GameObject:
   m_ObjectHideFlags: 0
@@ -30194,7 +30204,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1932686924}
   m_HandleRect: {fileID: 1932686923}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:

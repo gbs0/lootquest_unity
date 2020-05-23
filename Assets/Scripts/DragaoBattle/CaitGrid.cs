@@ -6,6 +6,11 @@ public class CaitGrid : NPCMove
 {
     // private float distance;
     public List<GameObject> TPTarguets;
+
+    // Posiveis posições de ataques de tile
+    public List<GameObject> backTiles = new List<GameObject>();
+	public List<GameObject> horizontalTiles = new List<GameObject>();
+	public List<GameObject> verticalTiles = new List<GameObject>();
     
     public static AtaqueGrid ataqueGrid; // Referecia do script da grid
     
@@ -24,10 +29,10 @@ public class CaitGrid : NPCMove
         if (!moving) // Se ñ estiver movendo
         {
             // Marca na Grid qual será o proximo ataque de tiles
-            
+            ataqueGrid.MarcarTiles(backTiles);
             
         }
-        
+
         else // Vez da Grid
         {
             /* Se o npc puder atacar
@@ -39,7 +44,7 @@ public class CaitGrid : NPCMove
                 }
             Move();
             }
-            */
+            */ 
             if (turn)
             {
                 

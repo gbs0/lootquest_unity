@@ -79,7 +79,7 @@ public class GridManager : MonoBehaviour
 		    PlayerTurn = false;
 		    _enemyPainel.SetActive(true);
     		// _allCaracters.Peek().BeginTurn(); // Roda a vez do inimigo chamando função do TacticsMove
-            ataqueGrid.AtaqueHorizontal();
+            // ataqueGrid.AtaqueHorizontal();
     	}
     }
 
