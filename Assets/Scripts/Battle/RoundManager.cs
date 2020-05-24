@@ -13,8 +13,8 @@ public class RoundManager : MonoBehaviour
     public string nextSceneName = "ilha1";
     public GameObject enemyPainel;
     public static bool Tutorial;
-    public List<NPCMove> enemies;
-    private static List<TaticsMove> safelist =new List<TaticsMove>();
+    public List<NPCMove> enemies; // CaitGrid tbm faz parte
+    private static List<TaticsMove> safelist = new List<TaticsMove>();
     public List<TaticsMove> test;
     
 	private void Start()
@@ -36,8 +36,9 @@ public class RoundManager : MonoBehaviour
 
 		    InitTeamTurnQueue();
 	    }
-		
-	
+
+		// Debug.Log(safelist[1]); // #=> Return object: Grid(CaitGrid)/NPCMove;
+		// Debug.Log(_allCaracters.Count); #=> 2 objects in the list
     }
     
 	static void InitTeamTurnQueue()
@@ -56,19 +57,19 @@ public class RoundManager : MonoBehaviour
     public static void StartTurn()
     {
  	
-	if (_allCaracters.Count > 0)
-    	{
-		    if (_allCaracters.Peek().gameObject.GetComponent<PlayerMove>())
-		    {
-			    PlayerTurn = true;
-			    _enemyPainel.SetActive(false);
-			    return;
-		    }
+		if (_allCaracters.Count > 0)
+			{
+				if (_allCaracters.Peek().gameObject.GetComponent<PlayerMove>())
+				{
+					PlayerTurn = true;
+					_enemyPainel.SetActive(false);
+					return;
+				}
 
-		    PlayerTurn = false;
-		    _enemyPainel.SetActive(true);
-    		_allCaracters.Peek().BeginTurn();
-    	}
+				PlayerTurn = false;
+				_enemyPainel.SetActive(true);
+				_allCaracters.Peek().BeginTurn();
+			}
     }
 
     public static void EndTurn()

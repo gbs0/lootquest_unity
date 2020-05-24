@@ -149,7 +149,7 @@ public class AtaqueGrid : TaticsMove
     }
 
     public override void  Move() {
-		MarcarTiles(horizontalTiles);
+		
     }
 
     public override void RemoveSelectableTiles()
@@ -195,12 +195,13 @@ public class AtaqueGrid : TaticsMove
 
 	public void BeginTurn()
 	{
-	    
+	    turn = true;
+		MarcarTiles(horizontalTiles);
     }
 
 
 	public void EndTurn()
     {
-        
+        turn = false;
     }   
 }

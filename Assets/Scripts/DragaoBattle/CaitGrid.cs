@@ -58,6 +58,12 @@ public class CaitGrid : NPCMove
             }
             */
         }
+
+        
+    }
+    public override void FindNearestTarget()
+    {
+        
     }
 
 }
