@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class AtaqueGrid : TaticsMove
 {
+	public bool turn = false;
+
 	public static AtaqueGrid instance;
 	
 	public Slider dragaoHealthBar;
@@ -120,7 +122,7 @@ public class AtaqueGrid : TaticsMove
 
 	public override void Init()
     {
-    	
+    	RoundManager.AddUnit(this); // Inicia essa unidade da grid na lista do RoundManager
     }
 
     public override void GetCurrentTile()
@@ -149,7 +151,8 @@ public class AtaqueGrid : TaticsMove
     }
 
     public override void  Move() {
-		
+		Debug.Log("Move() da grid");
+		MarcarTiles(horizontalTiles);
     }
 
     public override void RemoveSelectableTiles()
@@ -193,10 +196,11 @@ public class AtaqueGrid : TaticsMove
        
     }
 
-	public void BeginTurn()
+	public void BeginTurn() // Ainda n caiu neste metodo
 	{
 	    turn = true;
-		MarcarTiles(horizontalTiles);
+		Debug.Log("VEZ DA GRID");
+		// MarcarTiles(horizontalTiles);
     }
 
 

@@ -26,22 +26,25 @@ public class CaitGrid : NPCMove
             return;
         }
 
+        
         if (!moving) // Se ñ estiver movendo
         {
             // Marca na Grid qual será o proximo ataque de tiles
-            ataqueGrid.MarcarTiles(backTiles);
             
+            Debug.Log("!moving Caitgrid)");
+            // ataqueGrid.MarcarTiles(backTiles);
+            Move();
         }
 
         else // Vez da Grid
         {
-            ataqueGrid.AtaqueHorizontal(backTiles);
+            // ataqueGrid.AtaqueHorizontal(backTiles);
             // RemoveSelectableTiles();
             // Sorteia qual sera o proximo ataque e marca nas tiles
-            ataqueGrid.MarcarTiles(backTiles);
+            // ataqueGrid.MarcarTiles(backTiles);
             moving = false;
-
-            RoundManager.EndTurn(); // Mudar a Rodada ou Terminar o turno;
+            
+            Debug.Log("Vez da grid!");
             
             /* Se o npc puder atacar
             if (tempDistCheck.distTotal >= tempDistCheck.atkDistance)
