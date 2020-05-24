@@ -16536,6 +16536,8 @@ MonoBehaviour:
   dragaoHealthBar: {fileID: 0}
   vidaBoss: 0
   danoLateral: 0
+  horizontalTiles:
+  - {fileID: 1114571259}
   particulaAtaque: {fileID: 19800002, guid: 50339303116674b30a2c7b44fbbb72ef, type: 3}
   player: {fileID: 1060997790}
   tileColor: {r: 1, g: 0, b: 0, a: 1}
@@ -16563,8 +16565,8 @@ MonoBehaviour:
   GS: {fileID: 0}
   tempDistCheck: {fileID: 0}
   TPTarguets: []
-  backTiles: []
-  horizontalTiles: []
+  backTiles:
+  - {fileID: 808943103}
   verticalTiles: []
 --- !u!65 &1105728070
 BoxCollider:

@@ -9,7 +9,7 @@ public class CaitGrid : NPCMove
 
     // Posiveis posições de ataques de tile
     public List<GameObject> backTiles = new List<GameObject>();
-	public List<GameObject> horizontalTiles = new List<GameObject>();
+	
 	public List<GameObject> verticalTiles = new List<GameObject>();
     
     public static AtaqueGrid ataqueGrid; // Referecia do script da grid
@@ -35,6 +35,14 @@ public class CaitGrid : NPCMove
 
         else // Vez da Grid
         {
+            ataqueGrid.AtaqueHorizontal(backTiles);
+            // RemoveSelectableTiles();
+            // Sorteia qual sera o proximo ataque e marca nas tiles
+            ataqueGrid.MarcarTiles(backTiles);
+            moving = false;
+
+            RoundManager.EndTurn(); // Mudar a Rodada ou Terminar o turno;
+            
             /* Se o npc puder atacar
             if (tempDistCheck.distTotal >= tempDistCheck.atkDistance)
             {
@@ -44,51 +52,12 @@ public class CaitGrid : NPCMove
                 }
             Move();
             }
-            */ 
-            if (turn)
+            else
             {
-                
-            } else
-            {
-                // RemoveSelectableTiles();
-                moving = false;
-
-                RoundManager.EndTurn(); // Mudar a Rodada ou Terminar o turno;
+           
             }
-
+            */
         }
     }
 
-
-    /* 
-    public override void FindNearestTarget()
-    {
-        GameObject[] targets = GameObject.FindGameObjectsWithTag("Player");
-
-        // Put simple AI
-        GameObject nearest = null;
-        distance = Mathf.Infinity;
-
-        foreach (GameObject obj in targets)
-        {
-            float d = Vector3.Distance(transform.position, obj.transform.position);
-
-            if (d < distance)
-            {
-                distance = d;
-                nearest = obj;
-            }
-        }
-
-        target = nearest;
-       
-    }
-
-    private void Teleport()
-    {
-        var i = Random.Range(0, 4);
-        gameObject.transform.position = TPTarguets[i].transform.position;
-        
-    }
-    */
 }

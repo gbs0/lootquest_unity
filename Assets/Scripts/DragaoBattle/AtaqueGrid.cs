@@ -13,6 +13,7 @@ public class AtaqueGrid : TaticsMove
 	public int vidaBoss;
 	public int danoLateral;
 	
+	public List<GameObject> horizontalTiles = new List<GameObject>();
 
 	// public Animator ataqueBoss;
 	// public Animator camAnim;
@@ -148,7 +149,7 @@ public class AtaqueGrid : TaticsMove
     }
 
     public override void  Move() {
-	    
+		MarcarTiles(horizontalTiles);
     }
 
     public override void RemoveSelectableTiles()
