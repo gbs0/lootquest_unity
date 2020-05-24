@@ -31,7 +31,7 @@ public class CaitGrid : NPCMove
         {
             // Marca na Grid qual será o proximo ataque de tiles
             
-            Debug.Log("!moving Caitgrid)");
+            // Debug.Log("!moving Caitgrid)");
             // ataqueGrid.MarcarTiles(backTiles);
             Move();
         }

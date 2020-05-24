@@ -38,7 +38,7 @@ public class RoundManager : MonoBehaviour
 	    }
 
 		// Debug.Log(safelist[1]); // #=> Return object: Grid(CaitGrid)/NPCMove;
-		Debug.Log(_allCaracters.Count); // #=> 2 objects in the list
+		// Debug.Log(_allCaracters.Count); // #=> 2 objects in the list
     }
     
 	static void InitTeamTurnQueue()
