@@ -4677,6 +4677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Portal: {fileID: 1276115033}
   BatalhaGatos: {fileID: 572652460}
+  DialogoBruxa: {fileID: 0}
   mon: 0
   NUMERO: 0
   missao0: {fileID: 1049957767}
@@ -6269,7 +6270,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Tutorial:\r\nPegue a missao no quadro"
+  m_Text: "Tutorial:\r\nGo to the mission board. Is right there... I know you can
+    see it... It is the board... with missions..."
 --- !u!222 &1186154991
 CanvasRenderer:
   m_ObjectHideFlags: 0
