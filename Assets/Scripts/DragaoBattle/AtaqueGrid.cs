@@ -153,6 +153,7 @@ public class AtaqueGrid : TaticsMove
     public override void  Move() {
 		Debug.Log("Move() da grid");
 		MarcarTiles(horizontalTiles);
+		RoundManager.EndTurn();
     }
 
     public override void RemoveSelectableTiles()

@@ -120,8 +120,8 @@ public partial class TaticsMove : MonoBehaviour, ITurnable
 
     public virtual void  Move() {
     	
-    	Debug.Log("Move() from tacticsMove");
-        
+    	Debug.Log("Move() from tacticsMove script");
+
         if (path.Count > 0)
     	{
     		Tile t = path.Peek();

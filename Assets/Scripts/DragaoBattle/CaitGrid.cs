@@ -26,15 +26,17 @@ public class CaitGrid : NPCMove
             return;
         }
 
-        
-        if (!moving) // Se ñ estiver movendo
-        {
+        /*
+        if (!moving)
+        {  // Calcular Distancias e Probabilidades quando ñ estive movendo
+            
             // Marca na Grid qual será o proximo ataque de tiles
             
             // Debug.Log("!moving Caitgrid)");
             // ataqueGrid.MarcarTiles(backTiles);
-            Move();
+            
         }
+        */
 
         else // Vez da Grid
         {
@@ -42,9 +44,9 @@ public class CaitGrid : NPCMove
             // RemoveSelectableTiles();
             // Sorteia qual sera o proximo ataque e marca nas tiles
             // ataqueGrid.MarcarTiles(backTiles);
-            moving = false;
-            
             Debug.Log("Vez da grid!");
+            
+            Move();
             
             /* Se o npc puder atacar
             if (tempDistCheck.distTotal >= tempDistCheck.atkDistance)
