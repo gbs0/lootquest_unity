@@ -12,11 +12,11 @@ public class CaitGrid : NPCMove
 	
 	public List<GameObject> verticalTiles = new List<GameObject>();
     
-    public static AtaqueGrid ataqueGrid; // Referecia do script da grid
+    // public static AtaqueGrid ataqueGrid; // Referecia do script da grid
     
     private void Awake ()
     {
-        ataqueGrid = GetComponent<AtaqueGrid>();
+        // ataqueGrid = GetComponent<AtaqueGrid>();
     }
     
     public override void Update()
@@ -46,7 +46,7 @@ public class CaitGrid : NPCMove
             // ataqueGrid.MarcarTiles(backTiles);
             Debug.Log("Vez da grid!");
             
-            Move();
+            
             
             /* Se o npc puder atacar
             if (tempDistCheck.distTotal >= tempDistCheck.atkDistance)

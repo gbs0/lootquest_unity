@@ -150,9 +150,9 @@ public class AtaqueGrid : TaticsMove
     
     }
 
-    public override void  Move() {
+    public override void  Move() { // Quando é a vez da grid, este override não é chamado
 		Debug.Log("Move() da grid");
-		MarcarTiles(horizontalTiles);
+		// MarcarTiles(horizontalTiles);
 		RoundManager.EndTurn();
     }
 
