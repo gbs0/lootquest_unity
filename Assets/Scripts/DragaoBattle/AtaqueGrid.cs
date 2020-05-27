@@ -208,5 +208,10 @@ public class AtaqueGrid : TaticsMove
 	public void EndTurn()
     {
         turn = false;
-    }   
+    }
+
+	public static void AtaqueHorizontal()
+	{
+		throw new System.NotImplementedException();
+	}
 }

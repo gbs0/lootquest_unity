@@ -1,42 +1,12 @@
 fileFormatVersion: 2
-guid: 4a04634e6bfb0434cbecc325483a0da6
+guid: ac59bbfd4382b4c46a30b0f30faccd87
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 2675848468739514376
-    second: Huds_more_2
-  - first:
-      213: 38906288203750344
-    second: Huds_more_4
-  - first:
-      213: 27570185866580689
-    second: Huds_more_7
-  - first:
-      213: -3678159136146611699
-    second: Huds_more_8
-  - first:
-      213: 1061089003538993161
-    second: Huds_more_9
-  - first:
-      213: 8890402119605909493
-    second: Huds_more_10
-  - first:
-      213: 4908754049457109493
-    second: Huds_more_11
-  - first:
-      213: 6155320042613853518
-    second: Huds_more_12
-  - first:
-      213: -3344917524091300803
-    second: Huds_more_13
-  - first:
-      213: -699779996599336860
-    second: Huds_more_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -64,13 +34,13 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -100
-    wrapU: 1
-    wrapV: 1
+    wrapU: -1
+    wrapV: -1
     wrapW: -1
-  nPOTScale: 0
+  nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 0
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -79,9 +49,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -99,245 +69,13 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Huds_more_2
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 613
-        width: 105
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5000001, y: 0.4722223}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9df6d361f354d5544822d2148bb05641
-      internalID: 2675848468739514376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Huds_more_4
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 506
-        width: 176
-        height: 203
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f2d3eabf96768840aaf2ebec267426a
-      internalID: 38906288203750344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Huds_more_7
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 392
-        width: 249
-        height: 195
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 282aaeba3e557c547b19d58f1538c5c3
-      internalID: 27570185866580689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Huds_more_8
-      rect:
-        serializedVersion: 2
-        x: 573
-        y: 450
-        width: 5
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9ea47542acce31498ce358c04b59f82
-      internalID: -3678159136146611699
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Huds_more_9
-      rect:
-        serializedVersion: 2
-        x: 648
-        y: 305
-        width: 151
-        height: 154
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03b9190f38e70704f82f717afa167f5e
-      internalID: 1061089003538993161
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Huds_more_10
-      rect:
-        serializedVersion: 2
-        x: 476
-        y: 294
-        width: 142
-        height: 156
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a0c636c6b31cd3488df190c533ef5ad
-      internalID: 8890402119605909493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Huds_more_11
-      rect:
-        serializedVersion: 2
-        x: 821
-        y: 320
-        width: 288
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 368e9995eb306f741a9928f496b94169
-      internalID: 4908754049457109493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Huds_more_12
-      rect:
-        serializedVersion: 2
-        x: 481
-        y: 125
-        width: 129
-        height: 129
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9741ed4a85ffab444a053da4c2f8f400
-      internalID: 6155320042613853518
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Huds_more_13
-      rect:
-        serializedVersion: 2
-        x: 668
-        y: 122
-        width: 142
-        height: 143
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2230c0cbaae73eb41962b8b7771e4ed5
-      internalID: -3344917524091300803
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Huds_more_0
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 615
-        width: 105
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e3a16ac3e686f140bd32a1bd000c348
-      internalID: -699779996599336860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: db792f6fc1d972243bfaf478246da353
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
