@@ -16467,8 +16467,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1105728066}
   - component: {fileID: 1105728067}
-  - component: {fileID: 1105728069}
   - component: {fileID: 1105728070}
+  - component: {fileID: 1105728068}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -16512,7 +16512,7 @@ MonoBehaviour:
   enemyPainel: {fileID: 236448666}
   enemies: []
   test: []
---- !u!114 &1105728069
+--- !u!114 &1105728068
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16521,7 +16521,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1105728065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65412a53c9a634541881083e31ab3798, type: 3}
+  m_Script: {fileID: 11500000, guid: dd0c5e55a592f7740a607bb9b99f6a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   turn: 0
@@ -16532,13 +16532,15 @@ MonoBehaviour:
   moveSpeed: 2
   actualTargetTile: {fileID: 0}
   LootGenTest: 0
-  target: {fileID: 0}
-  GS: {fileID: 0}
-  tempDistCheck: {fileID: 0}
-  TPTarguets: []
-  backTiles:
+  turn: 0
+  dragaoHealthBar: {fileID: 0}
+  vidaBoss: 0
+  danoLateral: 0
+  horizontalTiles:
   - {fileID: 808943103}
-  verticalTiles: []
+  particulaAtaque: {fileID: 19800002, guid: 50339303116674b30a2c7b44fbbb72ef, type: 3}
+  player: {fileID: 1060997790}
+  tileColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &1105728070
 BoxCollider:
   m_ObjectHideFlags: 0
