@@ -13,6 +13,7 @@ public class CasasDialogosFix : MonoBehaviour
     public GameObject Dialogo5;
     public GameObject DialogoGeral;
     public GameObject conversa;
+    public bool ativo = false;
 
     // Start is called before the first frame update
     void Start()
@@ -28,26 +29,42 @@ public class CasasDialogosFix : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Tercerizado();
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Houses")
+        {
+            ativo = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Houses")
+        {
+            ativo = false;
+        }
+    }
+
+    void Tercerizado()
+    {
+        if (ativo == true)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
                 // Colocar aqui o código que aciona os respectivos diálogos.
                 HouseDialog();
                 House++;
+                ativo = false;
             }
         }
-        
     }
 
     private void HouseDialog()
     {
-        if (House == 3)
+        if (House == 0)
         {
             Dialogo1.SetActive(true);
             Dialogo2.SetActive(false);
@@ -56,7 +73,7 @@ public class CasasDialogosFix : MonoBehaviour
             Dialogo5.SetActive(false);
             DialogoGeral.SetActive(false);
         }
-        else if (House == 6)
+        else if (House == 1)
         {
             Dialogo1.SetActive(false);
             Dialogo2.SetActive(true);
@@ -65,7 +82,7 @@ public class CasasDialogosFix : MonoBehaviour
             Dialogo5.SetActive(false);
             DialogoGeral.SetActive(false);
         }
-        else if (House == 9)
+        else if (House == 2)
         {
             Dialogo1.SetActive(false);
             Dialogo2.SetActive(false);
@@ -74,7 +91,7 @@ public class CasasDialogosFix : MonoBehaviour
             Dialogo5.SetActive(false);
             DialogoGeral.SetActive(false);
         }
-        else if (House == 12)
+        else if (House == 3)
         {
             Dialogo1.SetActive(false);
             Dialogo2.SetActive(false);
@@ -83,7 +100,7 @@ public class CasasDialogosFix : MonoBehaviour
             Dialogo5.SetActive(false);
             DialogoGeral.SetActive(false);
         }
-        else if (House == 15)
+        else if (House == 4)
         {
             Dialogo1.SetActive(false);
             Dialogo2.SetActive(false);
@@ -92,7 +109,7 @@ public class CasasDialogosFix : MonoBehaviour
             Dialogo5.SetActive(true);
             DialogoGeral.SetActive(false);
         }
-        else if (House >= 18)
+        else if (House >= 5)
         {
             Dialogo1.SetActive(false);
             Dialogo2.SetActive(false);
