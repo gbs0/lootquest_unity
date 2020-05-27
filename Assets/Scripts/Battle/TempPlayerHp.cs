@@ -11,7 +11,7 @@ public class TempPlayerHp : MonoBehaviour
     public GameObject coll02;
     public GameObject coll03;
     public GameObject coll04;
-    public int PlayerHealth;
+    public static int PlayerHealth;
     public Image LifeBar;
     public float tempLife;
     float waitForSec = 5.0f;

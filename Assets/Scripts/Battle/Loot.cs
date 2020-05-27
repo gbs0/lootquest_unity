@@ -110,6 +110,20 @@ using System.Collections.Generic;
         {
             if(TypeLoot == 1)
             {
+               if( PlayerPrefs.GetInt("MonthlySardine", 0) == 2)
+                {
+                    if (_rarit <=3)
+                    {
+                        _rarit = _rarit + 1;
+                    }
+                }
+                if (PlayerPrefs.GetInt("Creatuurr’sGauntlet", 0) == 2)
+                {
+                    if (_rarit <= 3)
+                    {
+                        _rarit = _rarit + 1;
+                    }
+                }
                 if (_rarit == 1)
                 {
                     //  AnimePlayer.SetTrigger("NegativeReact");
@@ -135,6 +149,20 @@ using System.Collections.Generic;
             }
             else if(TypeLoot == 0)
             {
+                if (PlayerPrefs.GetInt("MonthlySardine", 0) == 2)
+                {
+                    if (_rarit <= 3)
+                    {
+                        _rarit = _rarit + 1;
+                    }
+                }
+                if (PlayerPrefs.GetInt("Creatuurr’sGauntlet", 0) == 2)
+                {
+                    if (_rarit <= 3)
+                    {
+                        _rarit = _rarit + 1;
+                    }
+                }
                 if (_rarit == 1)
                 {
                     //AnimePlayer.SetTrigger("NegativeReact");
@@ -214,6 +242,20 @@ using System.Collections.Generic;
         CanUse = b;
         if (TypeLoot == 1)
         {
+            if (PlayerPrefs.GetInt("MonthlySardine", 0) == 2)
+            {
+                if (_rarit <= 3)
+                {
+                    _rarit = _rarit + 1;
+                }
+            }
+            if (PlayerPrefs.GetInt("Creatuurr’sGauntlet", 0) == 2)
+            {
+                if (_rarit <= 3)
+                {
+                    _rarit = _rarit + 1;
+                }
+            }
             if (_rarit == 1)
             {
                 //AnimePlayer.SetTrigger("NegativeReact");
@@ -236,12 +278,41 @@ using System.Collections.Generic;
         }
         else
         {
+            if (PlayerPrefs.GetInt("MonthlySardine", 0) == 2)
+            {
+                if (_rarit == 0)
+                {
+                    _rarit = _rarit + 2;
+                }
+                else
+                {
+                    if (_rarit <= 3)
+                    {
+                        _rarit = _rarit + 1;
+                    }
+                }
+            }
+            if (PlayerPrefs.GetInt("Creatuurr’sGauntlet", 0) == 2)
+            {
+                if(_rarit == 0)
+                { 
+                _rarit = _rarit + 2;
+                }
+                else
+                {
+                    if (_rarit <= 3)
+                    {
+                        _rarit = _rarit + 1;
+                    }
+                }
+            }
             if (_rarit == 0)
             {
                 //AnimePlayer.SetTrigger("NegativeReact");
 
                 m_Image.sprite = Fight_Sprite;
             }
+            
             if (_rarit == 2)
             {
                 m_Image.sprite = Fight_Sprite2;

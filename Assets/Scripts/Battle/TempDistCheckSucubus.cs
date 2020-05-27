@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TempDistCheck : MonoBehaviour
+public class TempDistCheckSucubus : MonoBehaviour
 {
     // **Bugs Atuais:**
     // - Barra de Vida do jogador não diminui;
@@ -18,7 +18,7 @@ public class TempDistCheck : MonoBehaviour
 
     public string NextCenaName;
     public GameObject PainelVitoria;
-    
+
     // Elementos dos Personagens
     private GameObject player;
     PlayerMove playerMove;
@@ -39,7 +39,7 @@ public class TempDistCheck : MonoBehaviour
     private float DZ;
 
     bool selectable = false;
-    
+    public static bool charm;
     public bool Morte = false;
     public bool selected = false;
     public float vidaplayer;
@@ -50,9 +50,10 @@ public class TempDistCheck : MonoBehaviour
     public float vida;
     public Button SkipButton;
     public float TimeAnimation;
-    
+    public int atack;
+
     // Start is called before the first frame update
-    
+
     public void Start()
     {
         // LifeBar = GameObject.Find("sprite slime");
@@ -76,10 +77,11 @@ public class TempDistCheck : MonoBehaviour
         DistCheck();
         if (distTotal <= atkDistance && canHit == true)
         {
+
             TestDamage(); // Toggle Death Method
             //GS.ResetTrigger("Attack");
         }
-        
+
         if (Input.GetMouseButtonDown(1))
         {
             hitCount = 0;
@@ -88,21 +90,23 @@ public class TempDistCheck : MonoBehaviour
 
     private void SkipTurn()
     {
+        charm = false;
         canHit = true;
 
     }
 
     private void Attack()
     {
-        if (playerMove.LootGenTest == 3 && distTotal < 6)
+        if (playerMove.LootGenTest == 3 && distTotal < 6 && charm == false)
         {
+
             selectable = true;
-            if (Input.GetMouseButtonDown(0)&& Selection.activeSelf)
+            if (Input.GetMouseButtonDown(0) && Selection.activeSelf )
             {
                 PlayerAnim.SetTrigger("Attack");
                 //GS.SetTrigger("Damage");
                 StartCoroutine("DamageAnim");
-                tempLife -= playerMove.HitForce*10;
+                tempLife -= playerMove.HitForce * 10;
                 float barra = tempLife / vida;
                 Debug.Log(barra);
                 LifeBar.fillAmount = barra;
@@ -113,7 +117,7 @@ public class TempDistCheck : MonoBehaviour
 
                     GS.SetBool("Morto", true);
                     RM.EnimKilled();
-                    
+
 
 
                 }
@@ -125,20 +129,33 @@ public class TempDistCheck : MonoBehaviour
 
     private void TestDamage()
     {
-        GS.SetTrigger("Attack");
-        PlayerAnim.SetTrigger("Damage");
-        hitCount++;
-        canHit = false;
-        if (hitCount == 5)
-        {
+        atack = Random.Range(1, 4);
+          if (atack < 3)
+        { 
+           GS.SetTrigger("Attack");
+           PlayerAnim.SetTrigger("Damage");
+           hitCount++;
+
+           canHit = false;
+           if (hitCount == 5)
+           {
             StartCoroutine("DeathAnim");
+           }
+        }
+       else //(atack == 3)
+        {
+            GS.SetTrigger("Charm");
+            charm = true;
+            canHit = false;
         }
     }
+    
+
 
     IEnumerator DeathAnim()
     {
         PlayerAnim.SetBool("Morto", true);
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(3.0f);
         PlayerPrefs.SetString("_sceneName", NextCenaName);
         LoadingSisten.LoadLevel(NextCenaName);
     }
@@ -149,7 +166,7 @@ public class TempDistCheck : MonoBehaviour
         GS.SetTrigger("Damage");
     }
 
-    public void DistCheck() 
+    public void DistCheck()
     {
         distX = (player.transform.position.x - transform.position.x) / 1;
         distZ = (player.transform.position.z - transform.position.z) / 1;

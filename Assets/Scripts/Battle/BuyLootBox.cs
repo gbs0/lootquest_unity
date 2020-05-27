@@ -42,6 +42,7 @@ public class BuyLootBox : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         SkipButton.onClick.AddListener(SkipTurn);
         BuyButton.onClick.AddListener(CreateLootBox);
         GoldText.text = _currentGold.ToString();
@@ -49,8 +50,19 @@ public class BuyLootBox : MonoBehaviour
 
     private void SkipTurn()
     {
+        if(PlayerPrefs.GetInt("CrystalBob", 0) == 2)
+        {
+            Gold = Gold + 1;
+        }
+        if (PlayerPrefs.GetInt("Creatuurr’sGauntlet", 0) == 2)
+        {
+            Gold = Gold + 1;
+        }
+        else
+        { 
         Gold++;
-        
+        }
+
     }
 
     private void CreateLootBox()
