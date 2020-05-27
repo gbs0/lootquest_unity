@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
 
-public partial class TaticsMove : MonoBehaviour, ITurnable
+public partial class TaticsMove : MonoBehaviour
 {
 	public bool turn = false;
 
@@ -294,7 +294,7 @@ public partial class TaticsMove : MonoBehaviour, ITurnable
         Debug.Log("Path not found");
     }
 
-	public void BeginTurn()
+	public virtual void BeginTurn()
 	{
 	    if (LootGenTest == 1)
 	    {	    

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
@@ -6,9 +7,8 @@ using UnityEngine.UI;
 
 public class AtaqueGrid : TaticsMove
 {
-	public bool turn = false;
-
-	public static AtaqueGrid instance;
+	
+	
 	
 	public Slider dragaoHealthBar;
 	
@@ -29,26 +29,11 @@ public class AtaqueGrid : TaticsMove
 	public Color tileColor = Color.red;
 		
 	// Dictionary<string, GameObject> myDictionaryObjects = new Dictionary<string, GameObject>();
-
 	private void Start()
 	{
-		
+		Init();
 	}
 
-	private void Update()
-	{
-		// dragaoHealthBar.value = vidaBoss;
-	}
-
- 	public void AtaqueHorizontal(List<GameObject> tilesList)
-	{
-		// Sortear qual será o Objeto de Row.transform.position.z entre [-1 ... 4]
- 		
-
-		FogoNaTileAnim(tilesList);
-		DanoNoPlayer(tilesList);
-			
-	}
 
 	public void AtaqueTraseiro(List<GameObject> tilesList)
  	{
@@ -79,7 +64,7 @@ public class AtaqueGrid : TaticsMove
  			// Quaternion rotationParticula = new Quaternion(tile.transform.rotation.x, tile.transform.rotation.y, tile.transform.rotation.z, 0f );
  			Quaternion rotationParticula = new Quaternion( -90f, tile.transform.rotation.y, tile.transform.rotation.z, 0f );
             // Instantiate(particulaFogo, tile.transform.position, tile.transform.rotation);
-            Instantiate(particulaAtaque, tile.transform.position, rotationParticula);
+            //Instantiate(particulaAtaque, tile.transform.position, rotationParticula);
  		}
  	}
 	
@@ -152,8 +137,8 @@ public class AtaqueGrid : TaticsMove
 
     public override void  Move() { // Quando é a vez da grid, este override não é chamado
 		Debug.Log("Move() da grid");
-		// MarcarTiles(horizontalTiles);
-		RoundManager.EndTurn();
+		// // MarcarTiles(horizontalTiles);
+		// RoundManager.EndTurn();
     }
 
     public override void RemoveSelectableTiles()
@@ -197,21 +182,17 @@ public class AtaqueGrid : TaticsMove
        
     }
 
-	public void BeginTurn() // Ainda n caiu neste metodo
+	public override void BeginTurn() // Ainda n caiu neste metodo
 	{
 	    turn = true;
 		Debug.Log("VEZ DA GRID");
 		// MarcarTiles(horizontalTiles);
     }
+	
 
-
-	public void EndTurn()
-    {
-        turn = false;
-    }
-
-	public static void AtaqueHorizontal()
+	public void AtaqueHorizontal()
 	{
-		throw new System.NotImplementedException();
+		FogoNaTileAnim(horizontalTiles);
+		DanoNoPlayer(horizontalTiles);
 	}
 }

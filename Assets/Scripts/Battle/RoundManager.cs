@@ -69,7 +69,7 @@ public class RoundManager : MonoBehaviour
 				if (_allCaracters.Peek().gameObject.GetComponent<AtaqueGrid>())
 				{
 					var grid = _allCaracters.Peek().gameObject.GetComponent<AtaqueGrid>();
-					AtaqueGrid.AtaqueHorizontal();
+					grid.AtaqueHorizontal();
 				}
 
 				PlayerTurn = false;
