@@ -12042,7 +12042,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 240342491}
   m_Direction: 0
   m_Value: 1
-  m_Size: 1
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12318,7 +12318,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1118329663}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -16532,14 +16532,12 @@ MonoBehaviour:
   moveSpeed: 2
   actualTargetTile: {fileID: 0}
   LootGenTest: 0
-  turn: 0
   dragaoHealthBar: {fileID: 0}
   vidaBoss: 0
   danoLateral: 0
-  horizontalTiles:
-  - {fileID: 808943103}
-  particulaAtaque: {fileID: 19800002, guid: 50339303116674b30a2c7b44fbbb72ef, type: 3}
-  player: {fileID: 1060997790}
+  horizontalTiles: []
+  particulaAtaque: {fileID: 0}
+  player: {fileID: 0}
   tileColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &1105728070
 BoxCollider:
