@@ -182,11 +182,11 @@ public class AtaqueGrid : TaticsMove
        
     }
 
-	public override void BeginTurn() // Ainda n caiu neste metodo
+	public override void BeginTurn() // Ainda n troca o turno
 	{
 	    turn = true;
 		Debug.Log("VEZ DA GRID");
-		// MarcarTiles(horizontalTiles);
+		MarcarTiles(horizontalTiles);
     }
 	
 
