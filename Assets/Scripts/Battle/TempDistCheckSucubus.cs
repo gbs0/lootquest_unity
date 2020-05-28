@@ -24,7 +24,11 @@ public class TempDistCheckSucubus : MonoBehaviour
     PlayerMove playerMove;
     public Animator GS;
     public Animator PlayerAnim;
+    public Animator Charm;
+
     public GameObject Selection;
+    public GameObject CharmeImagem;
+
     public Image LifeBar;
 
     // Elementos do Combate
@@ -91,6 +95,7 @@ public class TempDistCheckSucubus : MonoBehaviour
     private void SkipTurn()
     {
         charm = false;
+        CharmExp();
         canHit = true;
 
     }
@@ -146,7 +151,10 @@ public class TempDistCheckSucubus : MonoBehaviour
         {
             GS.SetTrigger("Charm");
             charm = true;
+            CharmeImagem.SetActive(true);
             canHit = false;
+            StartCoroutine("CharAnim");
+
         }
     }
     
@@ -165,7 +173,17 @@ public class TempDistCheckSucubus : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         GS.SetTrigger("Damage");
     }
-
+    IEnumerator CharAnim()
+    {
+        yield return new WaitForSeconds(0.5f);
+        GS.SetTrigger("Charm");
+    }
+    IEnumerator CharmExp()
+    {
+        Charm.SetTrigger("Explode");
+        yield return new WaitForSeconds(0.7f);
+        CharmeImagem.SetActive(false);
+    }
     public void DistCheck()
     {
         distX = (player.transform.position.x - transform.position.x) / 1;

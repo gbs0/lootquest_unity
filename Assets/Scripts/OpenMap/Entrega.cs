@@ -9,6 +9,9 @@ public class Entrega : MonoBehaviour
     public GameObject Missao;
     public GameObject Entregra;
     public GameObject Portal;
+    public GameObject DragonRetrun;
+    public GameObject Irmaos;
+
     public int valor;
 
 
@@ -86,8 +89,14 @@ public class Entrega : MonoBehaviour
             Quadro.SetActive(false);
             Missao.SetActive(false);
             Entregra.SetActive(false);
-
-
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 13)
+        {
+            BemVindo.SetActive(false);
+            Quadro.SetActive(false);
+            Missao.SetActive(false);
+            Entregra.SetActive(false);
+            DragonRetrun.SetActive(true);
 
         }
     }

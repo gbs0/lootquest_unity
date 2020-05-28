@@ -14,6 +14,12 @@ public class ControleMonstros : MonoBehaviour
     public GameObject Batloot;
     public GameObject Cogumelo1;
     public GameObject DragaoCombate;
+    public GameObject DragaoDialogo;
+    public GameObject DragaoDialogoPosComb;
+    public GameObject DialogoCidadePosDragao;
+    public GameObject GhoulDialogo;
+    public GameObject Ghoul1;
+
     public int cot;
 
 
@@ -63,8 +69,18 @@ public class ControleMonstros : MonoBehaviour
                 
             }
         }
-        
-          
+        if (PlayerPrefs.GetInt("Dragao") ==1)
+        {
+            DragaoCombate.SetActive(false);
+            if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 11)
+            {
+
+                DragaoDialogoPosComb.SetActive(true);
+
+            }
+        }
+
+
 
     }
     // Update is called once per frame
@@ -96,7 +112,12 @@ public class ControleMonstros : MonoBehaviour
             Slime2.SetActive(false);
 
         }
-        
+        if (PlayerPrefs.GetInt("Ghoul1") == 1)
+        {
+            Ghoul1.SetActive(false);
+
+        }
+
         if (PlayerPrefs.GetInt("Bruxa") == 1)
         {
             Bruxa.SetActive(false);
@@ -131,7 +152,22 @@ public class ControleMonstros : MonoBehaviour
             Bruxa.SetActive(false);
 
             PlayerPrefs.SetInt("Bruxa", 1);
-        }
+            DragaoDialogo.SetActive(true);
 
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 11 && PlayerPrefs.GetInt("Dragao") == 0)
+        {
+            DragaoCombate.SetActive(true);
+            DragaoDialogoPosComb.SetActive(true);
+
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 12)
+        {
+            DialogoCidadePosDragao.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 15)
+        {
+            GhoulDialogo.SetActive(true);
+        }
     }
 }

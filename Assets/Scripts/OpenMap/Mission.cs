@@ -17,6 +17,11 @@ public class Mission : MonoBehaviour
     public GameObject missao4;
     public GameObject missao5;
     public GameObject missao6;
+    public GameObject missao7;
+    public GameObject missao8;
+    public GameObject missao9;
+    public GameObject missao10;
+
     public GameObject BruxaCombate;
     public GameObject DragaoCombate;
 
@@ -152,9 +157,29 @@ public class Mission : MonoBehaviour
             Portal.SetActive(false);
             missao5.SetActive(false);
             missao6.SetActive(true);
-            Application.LoadLevel("Vitoria");
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 12)
+        {
 
+            BruxaCombate.SetActive(false);
+            missao0.SetActive(false);
+            missao1.SetActive(false);
+            missao2.SetActive(false);
+            missao3.SetActive(false);
+            missao4.SetActive(false);
+            Portal.SetActive(false);
+            missao5.SetActive(false);
+            missao6.SetActive(false);
+            missao7.SetActive(true);
 
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 13)
+        {     
+            missao7.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 14)
+        {
+            missao8.SetActive(true);
         }
     }
 }
