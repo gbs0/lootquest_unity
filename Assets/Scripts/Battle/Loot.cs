@@ -18,13 +18,12 @@ using System.Collections.Generic;
         public Sprite Run_Sprite3;
         public Sprite Run_Sprite4;
 
-    public Sprite Fight_Sprite;
+        public Sprite Fight_Sprite;
         public Sprite Fight_Sprite2;
         public Sprite Fight_Sprite3;
         public Sprite Fight_Sprite4;
-    private GameObject PlayerAni;
-    public Transform text;
-    public Animator AnimePlayer;
+        private GameObject PlayerAni;
+        public Animator AnimePlayer;
 
         //private Animator PlayerAnim;
 
@@ -32,9 +31,7 @@ using System.Collections.Generic;
     private void Awake()
         {
             //PlayerAnim = gameObject.GetComponent<Animator>();
-
-            text = transform.GetChild(0);
-
+            
             UL = FindObjectOfType<UndoLoot>();            
             CanUse = true;
             m_Image = GetComponent<Image>();
@@ -327,7 +324,6 @@ using System.Collections.Generic;
             }
             
         }
-        text.GetComponent<Text>().text = _rarit.ToString();
     }
 
     public void SetLoot(Loot VL)

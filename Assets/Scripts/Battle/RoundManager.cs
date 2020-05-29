@@ -43,7 +43,7 @@ public class RoundManager : MonoBehaviour
     
 	static void InitTeamTurnQueue()
     {
-	    
+	
     	foreach (TaticsMove unit in safelist)
     	{
     		_allCaracters.Enqueue(unit);
@@ -58,31 +58,33 @@ public class RoundManager : MonoBehaviour
     {
  	
 		if (_allCaracters.Count > 0)
+		{
+			if (_allCaracters.Peek().gameObject.GetComponent<PlayerMove>())
 			{
-				if (_allCaracters.Peek().gameObject.GetComponent<PlayerMove>())
-				{
-					PlayerTurn = true;
-					_enemyPainel.SetActive(false);
-					return;
+				PlayerTurn = true;
+				_enemyPainel.SetActive(false);
+				return;
 
-					Debug.Log("Vez do player");
-				}
-
-				if (_allCaracters.Peek().gameObject.GetComponent<AtaqueGrid>())
-				{
-					var grid = _allCaracters.Peek().gameObject.GetComponent<AtaqueGrid>();
-					// grid.AtaqueHorizontal();
-					// PlayerTurn = false;
-					grid.AtaqueHorizontal();
-					Debug.Log("Vez da grid");
-					
-					return;
-				}
-
-				PlayerTurn = false;
-				_enemyPainel.SetActive(true);
-				_allCaracters.Peek().BeginTurn();
+				Debug.Log("Vez do player");
+				
 			}
+
+			if (_allCaracters.Peek().gameObject.GetComponent<AtaqueGrid>())
+			{
+				var grid = _allCaracters.Peek().gameObject.GetComponent<AtaqueGrid>();
+				grid.AtaqueHorizontal();
+				PlayerTurn = false;
+			
+				Debug.Log("Vez da grid");
+			
+		
+			}
+
+			PlayerTurn = false;
+			_enemyPainel.SetActive(true);
+			_allCaracters.Peek().BeginTurn();
+			
+		}
     }
 
     public static void EndTurn()

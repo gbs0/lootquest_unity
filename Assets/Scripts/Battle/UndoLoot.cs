@@ -28,5 +28,10 @@ public class UndoLoot : MonoBehaviour
         l.SetValue(sLoot.CanUse,sLoot._rarit,sLoot.TypeLoot);
         btn.gameObject.SetActive(false);
     }
+
+    public void CleanBtn()
+    {
+        btn.gameObject.SetActive(false);
+    }
     
 }

@@ -16,7 +16,7 @@ public class Damage : MonoBehaviour
 
     public float TimeAnimation;
     public bool Morte = false;
-
+    public UndoLoot Undo;
     private float distX;
     private float distZ;
     private float PEdist;
@@ -35,6 +35,7 @@ public class Damage : MonoBehaviour
     private void Awake()
     {
         RM = FindObjectOfType<RoundManager>();
+        Undo = FindObjectOfType<UndoLoot>();
         player = GameObject.Find("Player");
         playerMove = player.GetComponent<PlayerMove>();
     }
@@ -76,7 +77,8 @@ public class Damage : MonoBehaviour
 
 
                 }
-                playerMove.LootGenTest = 0;
+                playerMove.LootGenTest = 99;
+                Undo.CleanBtn();
                 //RoundManager.EndTurn();
             }
         }

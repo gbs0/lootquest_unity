@@ -26,7 +26,7 @@ public partial class TaticsMove : MonoBehaviour
 
     public Tile actualTargetTile;
 
-	public int LootGenTest;
+	public int LootGenTest = 99;
 
 
 	public virtual void Init()

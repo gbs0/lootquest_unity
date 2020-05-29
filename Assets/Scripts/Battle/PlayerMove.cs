@@ -7,7 +7,7 @@ public class PlayerMove : TaticsMove
 {
 
     public Animator PlayerAnim;
-
+    public UndoLoot Undo;
     
 
     //private GameObject ItemGen;
@@ -22,6 +22,7 @@ public class PlayerMove : TaticsMove
     }
     void Start()
     {
+	    Undo = FindObjectOfType<UndoLoot>();
         //UIScript = ItemGen.GetComponent<UIScript>();
         Init();
     }
@@ -70,7 +71,6 @@ public class PlayerMove : TaticsMove
 					CalculatePointVector(target);
 					SetHorizotalVelocity();
 				}
-
 				//Locomoção
 				//transform.forward = pointVector;
 				transform.position += velocity * Time.deltaTime;
@@ -108,6 +108,7 @@ public class PlayerMove : TaticsMove
     					// t.target = true;
     					// moving = true;
     					MoveToTile(t);
+                        Undo.CleanBtn();
     				}
     			}
     		}
@@ -117,7 +118,7 @@ public class PlayerMove : TaticsMove
     public void CancelLoot()
     {
 	    RemoveSelectableTiles();
-	    LootGenTest = 0;
+	    LootGenTest = 99;
     }
 }
 
