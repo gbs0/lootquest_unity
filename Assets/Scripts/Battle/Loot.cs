@@ -18,13 +18,12 @@ using System.Collections.Generic;
         public Sprite Run_Sprite3;
         public Sprite Run_Sprite4;
 
-    public Sprite Fight_Sprite;
+        public Sprite Fight_Sprite;
         public Sprite Fight_Sprite2;
         public Sprite Fight_Sprite3;
         public Sprite Fight_Sprite4;
-    private GameObject PlayerAni;
-    public Transform text;
-    public Animator AnimePlayer;
+        private GameObject PlayerAni;
+        public Animator AnimePlayer;
 
         //private Animator PlayerAnim;
 
@@ -33,8 +32,7 @@ using System.Collections.Generic;
         {
             //PlayerAnim = gameObject.GetComponent<Animator>();
 
-            text = transform.GetChild(0);
-
+         
             UL = FindObjectOfType<UndoLoot>();            
             CanUse = true;
             m_Image = GetComponent<Image>();
@@ -292,11 +290,12 @@ using System.Collections.Generic;
                     }
                 }
             }
+
             if (PlayerPrefs.GetInt("Creatuurr’sGauntlet", 0) == 2)
             {
-                if(_rarit == 0)
-                { 
-                _rarit = _rarit + 2;
+                if (_rarit == 0)
+                {
+                    _rarit = _rarit + 2;
                 }
                 else
                 {
@@ -306,28 +305,30 @@ using System.Collections.Generic;
                     }
                 }
             }
+
             if (_rarit == 0)
             {
                 //AnimePlayer.SetTrigger("NegativeReact");
 
                 m_Image.sprite = Fight_Sprite;
             }
-            
+
             if (_rarit == 2)
             {
                 m_Image.sprite = Fight_Sprite2;
             }
+
             if (_rarit == 3)
             {
                 m_Image.sprite = Fight_Sprite3;
             }
+
             if (_rarit == 4)
             {
                 m_Image.sprite = Fight_Sprite4;
             }
-            
+
         }
-        text.GetComponent<Text>().text = _rarit.ToString();
     }
 
     public void SetLoot(Loot VL)

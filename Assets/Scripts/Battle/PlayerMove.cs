@@ -11,7 +11,7 @@ public class PlayerMove : TaticsMove
     //private GameObject ItemGen;
     //UIScript UIScript;
     //private int LootGen;
-    //public int LootGenTest;
+    
 
     private void Awake()
     {
@@ -117,7 +117,7 @@ public class PlayerMove : TaticsMove
     public void CancelLoot()
     {
 	    RemoveSelectableTiles();
-	    LootGenTest = 0;
+	    LootGenTest = 99;
     }
 
 }

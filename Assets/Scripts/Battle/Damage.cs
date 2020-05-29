@@ -76,7 +76,7 @@ public class Damage : MonoBehaviour
 
 
                 }
-                playerMove.LootGenTest = 0;
+                playerMove.LootGenTest = 99;
                 //RoundManager.EndTurn();
             }
         }
