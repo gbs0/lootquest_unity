@@ -97,12 +97,16 @@ public class AtaqueGrid : TaticsMove
 	
 	public void MarcarTiles(List<GameObject> GOlist)
 	{
+		
 		foreach(GameObject tile in GOlist)
 		{
 			// GetComponent<Renderer>().material.color = tile.GetComponent<Renderer>().material.GetColor("_Color");
 			Color corAtual = tile.GetComponent<Renderer>().material.color;
 			corAtual = tileColor;
+			return;
 		}
+
+		RoundManager.EndTurn();
 	}
 
 	public override void Init()
@@ -136,9 +140,9 @@ public class AtaqueGrid : TaticsMove
     }
 
     public override void  Move() { // Quando é a vez da grid, este override não é chamado
+		moving = false;
 		Debug.Log("Move() da grid");
-		// // MarcarTiles(horizontalTiles);
-		// RoundManager.EndTurn();
+		MarcarTiles(horizontalTiles);
     }
 
     public override void RemoveSelectableTiles()
@@ -184,15 +188,15 @@ public class AtaqueGrid : TaticsMove
 
 	public override void BeginTurn() // Ainda n troca o turno
 	{
-	    turn = true;
-		Debug.Log("VEZ DA GRID");
-		MarcarTiles(horizontalTiles);
+		Move();
+		turn = true;
     }
 	
 
 	public void AtaqueHorizontal()
 	{
-		FogoNaTileAnim(horizontalTiles);
-		DanoNoPlayer(horizontalTiles);
+		MarcarTiles(horizontalTiles);
+		// FogoNaTileAnim(horizontalTiles);
+		// DanoNoPlayer(horizontalTiles);
 	}
 }

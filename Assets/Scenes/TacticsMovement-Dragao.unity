@@ -12042,7 +12042,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 240342491}
   m_Direction: 0
   m_Value: 1
-  m_Size: 0.9999999
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12318,7 +12318,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1118329663}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.9999999
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -16521,7 +16521,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1105728065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd0c5e55a592f7740a607bb9b99f6a65, type: 3}
+  m_Script: {fileID: 11500000, guid: 523fe994a550fe4428acc2153aa3b626, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   turn: 0
@@ -16535,9 +16535,10 @@ MonoBehaviour:
   dragaoHealthBar: {fileID: 0}
   vidaBoss: 0
   danoLateral: 0
-  horizontalTiles: []
-  particulaAtaque: {fileID: 0}
-  player: {fileID: 0}
+  horizontalTiles:
+  - {fileID: 1114571259}
+  particulaAtaque: {fileID: 19800002, guid: 50339303116674b30a2c7b44fbbb72ef, type: 3}
+  player: {fileID: 1060997790}
   tileColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &1105728070
 BoxCollider:
