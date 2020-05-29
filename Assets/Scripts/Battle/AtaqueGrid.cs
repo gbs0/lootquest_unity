@@ -7,9 +7,6 @@ using UnityEngine.UI;
 
 public class AtaqueGrid : TaticsMove
 {
-	
-	
-	
 	public Slider dragaoHealthBar;
 	
 	public int vidaBoss;
@@ -33,7 +30,6 @@ public class AtaqueGrid : TaticsMove
 	{
 		Init();
 	}
-
 
 	public void AtaqueTraseiro(List<GameObject> tilesList)
  	{
@@ -97,13 +93,12 @@ public class AtaqueGrid : TaticsMove
 	
 	public void MarcarTiles(List<GameObject> GOlist)
 	{
-		
 		foreach(GameObject tile in GOlist)
 		{
 			// GetComponent<Renderer>().material.color = tile.GetComponent<Renderer>().material.GetColor("_Color");
 			Color corAtual = tile.GetComponent<Renderer>().material.color;
 			corAtual = tileColor;
-			return;
+			Debug.Log("Coloriu Tile");
 		}
 
 		RoundManager.EndTurn();
@@ -115,9 +110,7 @@ public class AtaqueGrid : TaticsMove
     }
 
     public override void GetCurrentTile()
-    {
-    	
-    }
+    {		}
 
     public override Tile GetTargetTile(GameObject target)
     {
@@ -125,19 +118,13 @@ public class AtaqueGrid : TaticsMove
     }
 
     public override void ComputeProximityList(float jumpHeight, Tile target)
-    {
-    	
-    }
+    {		}
 
     public override void FindSelectableTiles() 
-    {
-    	
-    }
+    {		}
 
     public override void MoveToTile(Tile tile)
-    {
-    
-    }
+    {		}
 
     public override void  Move() { // Quando é a vez da grid, este override não é chamado
 		moving = false;
@@ -146,19 +133,13 @@ public class AtaqueGrid : TaticsMove
     }
 
     public override void RemoveSelectableTiles()
-    {
-      
-    }
+    {		}
 
     public override void CalculatePointVector(Vector3 target)
-    {
-    	
-    }
+    {		}
 
 	public override void SetHorizotalVelocity()
-    {
-    	
-    }
+    {    	}
 
 	public override Tile FindLowestF(List<Tile> list)
     {
@@ -182,9 +163,7 @@ public class AtaqueGrid : TaticsMove
     }
 
 	public override void FindPath(Tile target)
-    {
-       
-    }
+    {		}
 
 	public override void BeginTurn() // Ainda n troca o turno
 	{
