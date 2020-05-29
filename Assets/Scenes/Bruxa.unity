@@ -17473,6 +17473,16 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8399724567912524781, guid: 97ce75c9446da244e96c3483b3ce92ef,
+        type: 3}
+      propertyPath: FirstTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723907969225113509, guid: 97ce75c9446da244e96c3483b3ce92ef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97ce75c9446da244e96c3483b3ce92ef, type: 3}
 --- !u!1 &1356822492
@@ -27024,6 +27034,7 @@ MonoBehaviour:
   closeButton: {fileID: 972879698625037951}
   passivePainel:
   - {fileID: 972879698098213089}
+  loots: []
   Passiva: {fileID: 972879698098213117}
   FirstTime: 1
   TutorialPainel: {fileID: 222066640}
