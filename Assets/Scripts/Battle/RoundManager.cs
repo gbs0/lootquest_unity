@@ -64,12 +64,19 @@ public class RoundManager : MonoBehaviour
 					PlayerTurn = true;
 					_enemyPainel.SetActive(false);
 					return;
+
+					Debug.Log("Vez do player");
 				}
 
 				if (_allCaracters.Peek().gameObject.GetComponent<AtaqueGrid>())
 				{
 					var grid = _allCaracters.Peek().gameObject.GetComponent<AtaqueGrid>();
+					// grid.AtaqueHorizontal();
+					// PlayerTurn = false;
 					grid.AtaqueHorizontal();
+					Debug.Log("Vez da grid");
+					
+					return;
 				}
 
 				PlayerTurn = false;
@@ -82,14 +89,13 @@ public class RoundManager : MonoBehaviour
     {
     	TaticsMove unit = _allCaracters.Dequeue();
     	unit.EndTurn();
-	    
+
     	if (_allCaracters.Count > 0)
     	{
-    		StartTurn();
+			StartTurn();
     	}
     	else
     	{
-    		
     		InitTeamTurnQueue();
     	}
     }
