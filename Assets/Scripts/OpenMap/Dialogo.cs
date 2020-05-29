@@ -34,15 +34,19 @@ public class Dialogo : MonoBehaviour
     public GameObject img;
     public GameObject[] imgs;
     public int conta;
+    public Rigidbody2D PlayerRigi;
+    public GameObject Player;
     //[SerializeField]
     //private bool[] ray;
     public bool rodaCut = false;
     void Start()
     {
+
         textoMensagem.text = texto[linhaAtual].ToString();
         img = imgs[linhaAtual];
         conta = 0;
-       
+        Player = GameObject.FindGameObjectWithTag("Player");
+        PlayerRigi = Player.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -72,8 +76,9 @@ public class Dialogo : MonoBehaviour
                 //img.SetActive(false);
                 if (linhaAtual >= limitText)
                 {
-                    Time.timeScale = 1f;
-                    Desabilitar();
+                        PlayerRigi.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+                        PlayerRigi.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+                        PlayerRigi.constraints = RigidbodyConstraints2D.FreezeRotation; Desabilitar();
                     podeFalar = false;
                     linhaAtual = 0;
 
@@ -110,14 +115,14 @@ public class Dialogo : MonoBehaviour
             {
                 if (jaComecaFalando)
                 {
-                Time.timeScale = 0f;
+                PlayerRigi.constraints = RigidbodyConstraints2D.FreezePosition;
 
                 podeFalar = true;
                     Habilitar();
                 }
                 else if (!jaComecaFalando && Input.GetKeyUp(KeyCode.E))
                 {
-                Time.timeScale = 0f;
+                PlayerRigi.constraints = RigidbodyConstraints2D.FreezePosition;
 
                 podeFalar = true;
                     Habilitar();
@@ -145,6 +150,7 @@ public class Dialogo : MonoBehaviour
             PlayerPrefs.SetInt("DialogoGuilda", NivelEntrando);
         
         }
+
         jafoi = true;
         Interrogaçao.SetActive(false);
         Conversa.SetActive(false);

@@ -3130,6 +3130,8 @@ MonoBehaviour:
   - {fileID: 921794614}
   - {fileID: 852174369}
   conta: 0
+  PlayerRigi: {fileID: 0}
+  Player: {fileID: 0}
   rodaCut: 0
 --- !u!61 &516791322
 BoxCollider2D:
@@ -3555,6 +3557,8 @@ MonoBehaviour:
   panelBox: {fileID: 117573008}
   "Interroga\xE7ao": {fileID: 572152834}
   Conversa: {fileID: 537883211}
+  PlayerRigi: {fileID: 0}
+  Player: {fileID: 0}
   podeFalar: 0
   linhaAtual: 0
   textoMensagem: {fileID: 455036139}
@@ -3665,7 +3669,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.022938728}
+  m_Offset: {x: 0, y: 0.2821412}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3676,7 +3680,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.3331013, y: 2.2526531}
+  m_Size: {x: 3.3331013, y: 1.6424932}
   m_EdgeRadius: 0
 --- !u!1 &548310061
 GameObject:
@@ -5389,6 +5393,8 @@ MonoBehaviour:
   - {fileID: 1440240159}
   - {fileID: 1000071597}
   conta: 0
+  PlayerRigi: {fileID: 0}
+  Player: {fileID: 0}
   rodaCut: 0
 --- !u!1 &832709756
 GameObject:
@@ -9486,6 +9492,8 @@ MonoBehaviour:
   panelBox: {fileID: 117573008}
   "Interroga\xE7ao": {fileID: 817727869}
   Conversa: {fileID: 1611338110}
+  PlayerRigi: {fileID: 0}
+  Player: {fileID: 0}
   podeFalar: 0
   linhaAtual: 0
   textoMensagem: {fileID: 455036139}
@@ -10806,6 +10814,8 @@ MonoBehaviour:
   - {fileID: 1611832433}
   - {fileID: 1821399493}
   conta: 0
+  PlayerRigi: {fileID: 0}
+  Player: {fileID: 0}
   rodaCut: 0
 --- !u!1 &1816317259
 GameObject:
@@ -12171,6 +12181,8 @@ MonoBehaviour:
   - {fileID: 560806226}
   - {fileID: 1512555381}
   conta: 0
+  PlayerRigi: {fileID: 0}
+  Player: {fileID: 0}
   rodaCut: 0
 --- !u!61 &2054786923
 BoxCollider2D:

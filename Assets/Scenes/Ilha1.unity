@@ -1108,6 +1108,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelBox: {fileID: 528418076}
   Combate: {fileID: 14076656}
+  PlayerRigi: {fileID: 943400075}
+  Player: {fileID: 0}
   "Interroga\xE7ao": {fileID: 1358597326}
   Conversa: {fileID: 47679264}
   podeFalar: 1
@@ -1134,6 +1136,7 @@ MonoBehaviour:
   - {fileID: 1535015111}
   - {fileID: 1975718828}
   - {fileID: 1662651662}
+  vit: 0
   rodaCut: 0
 --- !u!58 &47679267
 CircleCollider2D:
@@ -1422,6 +1425,8 @@ MonoBehaviour:
   panelBox: {fileID: 528418076}
   "Interroga\xE7ao": {fileID: 1131460702}
   Conversa: {fileID: 68523902}
+  PlayerRigi: {fileID: 943400075}
+  Player: {fileID: 0}
   podeFalar: 0
   linhaAtual: 0
   textoMensagem: {fileID: 39703577}
@@ -3757,6 +3762,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226985284}
   m_CullTransparentMesh: 0
+--- !u!1 &228714956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 228714957}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &228714957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228714956}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1619870236}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &257585399
 GameObject:
   m_ObjectHideFlags: 0
@@ -5291,6 +5326,8 @@ MonoBehaviour:
   img: {fileID: 819435739}
   imgs:
   - {fileID: 819435739}
+  PlayerRigi: {fileID: 0}
+  Player: {fileID: 0}
   rodaCut: 0
 --- !u!61 &330687016
 BoxCollider2D:
@@ -5965,6 +6002,8 @@ MonoBehaviour:
   img: {fileID: 819435739}
   imgs:
   - {fileID: 819435739}
+  PlayerRigi: {fileID: 0}
+  Player: {fileID: 0}
   rodaCut: 0
 --- !u!61 &342155182
 BoxCollider2D:
@@ -6773,6 +6812,8 @@ MonoBehaviour:
   panelBox: {fileID: 528418076}
   "Interroga\xE7ao": {fileID: 2063863519}
   Conversa: {fileID: 402938916}
+  PlayerRigi: {fileID: 943400075}
+  Player: {fileID: 0}
   podeFalar: 0
   linhaAtual: 0
   textoMensagem: {fileID: 39703577}
@@ -8201,6 +8242,8 @@ MonoBehaviour:
   img: {fileID: 819435739}
   imgs:
   - {fileID: 819435739}
+  PlayerRigi: {fileID: 0}
+  Player: {fileID: 0}
   rodaCut: 0
 --- !u!61 &487502847
 BoxCollider2D:
@@ -12080,7 +12123,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 589de1e45986eb64f95b5bed84621272, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12912,7 +12955,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.047258824, g: 0.050892975, b: 0.05660379, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -14378,6 +14421,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1366812512}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &943400075 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 4347007623005583330, guid: 8bc9b12f9ebee464284cccc956b0d5a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1366812512}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &943400076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14822,6 +14871,8 @@ MonoBehaviour:
   img: {fileID: 819435739}
   imgs:
   - {fileID: 819435739}
+  PlayerRigi: {fileID: 0}
+  Player: {fileID: 0}
   rodaCut: 0
 --- !u!61 &963931920
 BoxCollider2D:
@@ -16209,6 +16260,8 @@ MonoBehaviour:
   panelBox: {fileID: 528418076}
   "Interroga\xE7ao": {fileID: 1532002421}
   Conversa: {fileID: 1052203895}
+  PlayerRigi: {fileID: 0}
+  Player: {fileID: 0}
   podeFalar: 0
   linhaAtual: 0
   textoMensagem: {fileID: 39703577}
@@ -18573,6 +18626,8 @@ MonoBehaviour:
   img: {fileID: 819435739}
   imgs:
   - {fileID: 819435739}
+  PlayerRigi: {fileID: 0}
+  Player: {fileID: 0}
   rodaCut: 0
 --- !u!61 &1269370182
 BoxCollider2D:
@@ -21656,6 +21711,8 @@ MonoBehaviour:
   panelBox: {fileID: 528418076}
   "Interroga\xE7ao": {fileID: 2089664751}
   Conversa: {fileID: 1512650599}
+  PlayerRigi: {fileID: 943400075}
+  Player: {fileID: 0}
   podeFalar: 0
   linhaAtual: 0
   textoMensagem: {fileID: 39703577}
@@ -23045,7 +23102,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.14000511, y: -0.34000093, z: 37.153618}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 228714957}
   m_Father: {fileID: 820224396}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23063,7 +23121,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelBox: {fileID: 528418076}
   Combate: {fileID: 14076656}
-  "Interroga\xE7ao": {fileID: 0}
+  PlayerRigi: {fileID: 0}
+  Player: {fileID: 0}
+  "Interroga\xE7ao": {fileID: 228714956}
   Conversa: {fileID: 1619870235}
   podeFalar: 0
   linhaAtual: 0
@@ -23094,6 +23154,7 @@ MonoBehaviour:
   - {fileID: 262449865}
   - {fileID: 1739745757}
   - {fileID: 335892086}
+  vit: 1
   rodaCut: 0
 --- !u!61 &1619870238
 BoxCollider2D:
@@ -23437,6 +23498,8 @@ MonoBehaviour:
   panelBox: {fileID: 528418076}
   "Interroga\xE7ao": {fileID: 288817243}
   Conversa: {fileID: 1640627882}
+  PlayerRigi: {fileID: 943400075}
+  Player: {fileID: 0}
   podeFalar: 0
   linhaAtual: 0
   textoMensagem: {fileID: 39703577}
@@ -25775,6 +25838,8 @@ MonoBehaviour:
   panelBox: {fileID: 528418076}
   "Interroga\xE7ao": {fileID: 1559290650}
   Conversa: {fileID: 1801676979}
+  PlayerRigi: {fileID: 943400075}
+  Player: {fileID: 0}
   podeFalar: 0
   linhaAtual: 0
   textoMensagem: {fileID: 39703577}
@@ -27662,6 +27727,8 @@ MonoBehaviour:
   panelBox: {fileID: 528418076}
   "Interroga\xE7ao": {fileID: 1864662958}
   Conversa: {fileID: 1865098260}
+  PlayerRigi: {fileID: 943400075}
+  Player: {fileID: 0}
   podeFalar: 0
   linhaAtual: 0
   textoMensagem: {fileID: 39703577}
@@ -29778,6 +29845,8 @@ MonoBehaviour:
   img: {fileID: 1662651662}
   imgs:
   - {fileID: 1662651662}
+  PlayerRigi: {fileID: 0}
+  Player: {fileID: 0}
   rodaCut: 0
 --- !u!61 &1949001289
 BoxCollider2D:
@@ -32032,6 +32101,8 @@ MonoBehaviour:
   panelBox: {fileID: 528418076}
   "Interroga\xE7ao": {fileID: 139024310}
   Conversa: {fileID: 2092729880}
+  PlayerRigi: {fileID: 943400075}
+  Player: {fileID: 0}
   podeFalar: 0
   linhaAtual: 0
   textoMensagem: {fileID: 39703577}
@@ -32241,6 +32312,8 @@ MonoBehaviour:
   panelBox: {fileID: 528418076}
   "Interroga\xE7ao": {fileID: 1785849282}
   Conversa: {fileID: 2105981772}
+  PlayerRigi: {fileID: 943400075}
+  Player: {fileID: 0}
   podeFalar: 0
   linhaAtual: 0
   textoMensagem: {fileID: 39703577}

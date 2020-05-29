@@ -60,7 +60,7 @@ public class Entrega : MonoBehaviour
         {
             BemVindo.SetActive(false);
             Quadro.SetActive(false);
-            Missao.SetActive(true);
+            Missao.SetActive(false);
             Entregra.SetActive(false);
             Portal.SetActive(false);
 

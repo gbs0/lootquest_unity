@@ -8,6 +8,8 @@ public class DialogoContato : MonoBehaviour
     public GameObject panelBox;
     public GameObject Interrogaçao;
     public GameObject Conversa;
+    public Rigidbody2D PlayerRigi;
+    public GameObject Player;
     public bool podeFalar = false;
     [SerializeField]
     private int linhaAtual;
@@ -32,8 +34,8 @@ public class DialogoContato : MonoBehaviour
     {
         textoMensagem.text = texto[linhaAtual].ToString();
         img = imgs[linhaAtual];
-        
-
+        Player = GameObject.FindGameObjectWithTag("Player");
+        PlayerRigi = Player.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -60,7 +62,9 @@ public class DialogoContato : MonoBehaviour
 
                 if (linhaAtual >= limitText)
                 {
-                    Time.timeScale = 1f;
+                    PlayerRigi.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+                    PlayerRigi.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+
                     Desabilitar();
                     podeFalar = false;
                     
@@ -92,14 +96,15 @@ public class DialogoContato : MonoBehaviour
         {
             if (jaComecaFalando)
             {
-                Time.timeScale = 0f;
+                PlayerRigi.constraints = RigidbodyConstraints2D.FreezeAll;
 
                 podeFalar = true;
                 Habilitar();
             }
             else if (!jaComecaFalando)
             {
-                Time.timeScale = 0f;
+                PlayerRigi.constraints = RigidbodyConstraints2D.FreezeAll;
+
 
                 podeFalar = true;
                 Habilitar();
@@ -123,8 +128,14 @@ public class DialogoContato : MonoBehaviour
         panelBox.SetActive(false);
         estaFalando = false;
         Interrogaçao.SetActive(false);
-        Conversa.SetActive(false);
         PlayerPrefs.SetInt("DialogoGuilda", ProximoDiaologo);
+
+        Conversa.SetActive(false);
+        PlayerRigi.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+        PlayerRigi.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+        PlayerRigi.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+
     }
 
 }

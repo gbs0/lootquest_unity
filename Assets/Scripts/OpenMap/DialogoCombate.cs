@@ -7,6 +7,8 @@ public class DialogoCombate : MonoBehaviour
 {
     public GameObject panelBox;
     public GameObject Combate;
+    public Rigidbody2D PlayerRigi;
+    public GameObject Player;
 
     public GameObject Interrogaçao;
     public GameObject Conversa;
@@ -28,7 +30,7 @@ public class DialogoCombate : MonoBehaviour
     // private bool[] Mike = 
     public GameObject img;
     public GameObject[] imgs;
-
+    public bool vit;
     //[SerializeField]
     //private bool[] ray;
     public bool rodaCut = false;
@@ -36,7 +38,8 @@ public class DialogoCombate : MonoBehaviour
     {
         textoMensagem.text = texto[linhaAtual].ToString();
         img = imgs[linhaAtual];
-
+        Player = GameObject.FindGameObjectWithTag("Player");
+        PlayerRigi = Player.GetComponent<Rigidbody2D>();
 
     }
 
@@ -64,8 +67,9 @@ public class DialogoCombate : MonoBehaviour
 
                     if (linhaAtual >= limitText)
                     {
-                        Time.timeScale = 1f;
-                        Desabilitar();
+                        PlayerRigi.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+                        PlayerRigi.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+                        PlayerRigi.constraints = RigidbodyConstraints2D.FreezeRotation; Desabilitar();
                         podeFalar = false;
                         linhaAtual = 0;
 
@@ -89,14 +93,14 @@ public class DialogoCombate : MonoBehaviour
         {
             if (jaComecaFalando)
             {
-                Time.timeScale = 0f;
+                PlayerRigi.constraints = RigidbodyConstraints2D.FreezePosition;
 
                 podeFalar = true;
                 Habilitar();
             }
             else if (!jaComecaFalando)
             {
-                Time.timeScale = 0f;
+                PlayerRigi.constraints = RigidbodyConstraints2D.FreezePosition;
 
                 podeFalar = true;
                 Habilitar();
@@ -121,10 +125,15 @@ public class DialogoCombate : MonoBehaviour
         estaFalando = false;
         Interrogaçao.SetActive(false);
         Combate.SetActive(true);
-
+        PlayerRigi.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+        PlayerRigi.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+        PlayerRigi.constraints = RigidbodyConstraints2D.FreezeRotation;
         Conversa.SetActive(false);
+        if (vit == true)
+        {
+            Application.LoadLevel("Vitoria");
 
-
+        }
     }
 
 }
