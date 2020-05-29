@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cogumelo.unity
     guid: be079a5179c309f43879017a4daefe68
+  - enabled: 1
+    path: Assets/Scenes/Ghoul.unity
+    guid: a8acd03e87f23f44a840f534c906b59c
   m_configObjects: {}

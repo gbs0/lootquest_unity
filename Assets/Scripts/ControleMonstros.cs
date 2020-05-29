@@ -19,6 +19,8 @@ public class ControleMonstros : MonoBehaviour
     public GameObject DialogoCidadePosDragao;
     public GameObject GhoulDialogo;
     public GameObject Ghoul1;
+    public GameObject EventoCidadeVoltando;
+
 
     public int cot;
 
@@ -163,7 +165,8 @@ public class ControleMonstros : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 12)
         {
-            DialogoCidadePosDragao.SetActive(true);
+            DragaoDialogoPosComb.SetActive(false);
+            EventoCidadeVoltando.SetActive(true);
         }
         if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 15)
         {
