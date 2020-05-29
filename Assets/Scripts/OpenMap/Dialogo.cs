@@ -76,6 +76,7 @@ public class Dialogo : MonoBehaviour
                 //img.SetActive(false);
                 if (linhaAtual >= limitText)
                 {
+
                         PlayerRigi.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
                         PlayerRigi.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
                         PlayerRigi.constraints = RigidbodyConstraints2D.FreezeRotation; Desabilitar();

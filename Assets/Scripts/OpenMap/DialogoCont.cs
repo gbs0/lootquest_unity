@@ -33,6 +33,7 @@ public class DialogoCont : MonoBehaviour
     public bool rodaCut = false;
     void Start()
     {
+
         textoMensagem.text = texto[linhaAtual].ToString();
         img = imgs[linhaAtual];
 

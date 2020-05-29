@@ -36,6 +36,7 @@ public class DialogoCombate : MonoBehaviour
     public bool rodaCut = false;
     void Start()
     {
+
         textoMensagem.text = texto[linhaAtual].ToString();
         img = imgs[linhaAtual];
         Player = GameObject.FindGameObjectWithTag("Player");
