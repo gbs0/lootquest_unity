@@ -143,7 +143,6 @@ public class AtaqueGrid : TaticsMove
 		moving = false;
 		Debug.Log("Move() da grid");
 		MarcarTiles(horizontalTiles);
-		
     }
 
     public override void RemoveSelectableTiles()

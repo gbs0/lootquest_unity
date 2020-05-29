@@ -89,6 +89,7 @@ public class RoundManager : MonoBehaviour
     {
     	TaticsMove unit = _allCaracters.Dequeue();
     	unit.EndTurn();
+		Debug.Log(_allCaracters.Count);
 
     	if (_allCaracters.Count > 0)
     	{
