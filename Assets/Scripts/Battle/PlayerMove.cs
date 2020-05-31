@@ -9,13 +9,11 @@ public class PlayerMove : TaticsMove
     public Animator PlayerAnim;
     public UndoLoot Undo;
     
-
     //private GameObject ItemGen;
     //UIScript UIScript;
     //private int LootGen;
-    //public int LootGenTest;
+    
 
-    // Start is called before the first frame update
     private void Awake()
     {
         //ItemGen = GameObject.Find("BatlleUI");
@@ -27,7 +25,11 @@ public class PlayerMove : TaticsMove
         Init();
     }
 
-    // Update is called once per frame
+	public void Init()
+	{
+    	RoundManager.AddUnit(this);
+    }
+    
     void Update()
     {
         //LootGen = UIScript.LootID;
@@ -120,5 +122,7 @@ public class PlayerMove : TaticsMove
 	    RemoveSelectableTiles();
 	    LootGenTest = 99;
     }
+
 }
+
 

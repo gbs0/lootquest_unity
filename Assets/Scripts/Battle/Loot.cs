@@ -30,8 +30,7 @@ using System.Collections.Generic;
 
     private void Awake()
         {
-            //PlayerAnim = gameObject.GetComponent<Animator>();
-            
+            //PlayerAnim = gameObject.GetComponent<Animator>(); 
             UL = FindObjectOfType<UndoLoot>();            
             CanUse = true;
             m_Image = GetComponent<Image>();
@@ -289,11 +288,12 @@ using System.Collections.Generic;
                     }
                 }
             }
+
             if (PlayerPrefs.GetInt("Creatuurr’sGauntlet", 0) == 2)
             {
-                if(_rarit == 0)
-                { 
-                _rarit = _rarit + 2;
+                if (_rarit == 0)
+                {
+                    _rarit = _rarit + 2;
                 }
                 else
                 {
@@ -303,26 +303,29 @@ using System.Collections.Generic;
                     }
                 }
             }
+
             if (_rarit == 0)
             {
                 //AnimePlayer.SetTrigger("NegativeReact");
 
                 m_Image.sprite = Fight_Sprite;
             }
-            
+
             if (_rarit == 2)
             {
                 m_Image.sprite = Fight_Sprite2;
             }
+
             if (_rarit == 3)
             {
                 m_Image.sprite = Fight_Sprite3;
             }
+
             if (_rarit == 4)
             {
                 m_Image.sprite = Fight_Sprite4;
             }
-            
+
         }
     }
 

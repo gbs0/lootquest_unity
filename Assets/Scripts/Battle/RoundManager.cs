@@ -46,7 +46,7 @@ public class RoundManager : MonoBehaviour
 	
     	foreach (TaticsMove unit in safelist)
     	{
-    		_allCaracters.Enqueue(unit);
+    		_allCaracters.Enqueue(unit); // Inclui todas as unidades na fila
     	}
     	StartTurn();
         
@@ -99,7 +99,7 @@ public class RoundManager : MonoBehaviour
     	}
     	else
     	{
-    		InitTeamTurnQueue();
+    		InitTeamTurnQueue(); // Ao terminar o turno, so entra a grid
     	}
     }
 
