@@ -30,9 +30,7 @@ using System.Collections.Generic;
 
     private void Awake()
         {
-            //PlayerAnim = gameObject.GetComponent<Animator>();
-
-         
+            //PlayerAnim = gameObject.GetComponent<Animator>(); 
             UL = FindObjectOfType<UndoLoot>();            
             CanUse = true;
             m_Image = GetComponent<Image>();

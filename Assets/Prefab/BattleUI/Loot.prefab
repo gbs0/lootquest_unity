@@ -155,5 +155,4 @@ MonoBehaviour:
     type: 3}
   Fight_Sprite4: {fileID: 6147709295510676719, guid: 64b0f37b7eab6b84a87baaf5692a28bd,
     type: 3}
-  text: {fileID: 0}
   AnimePlayer: {fileID: 0}

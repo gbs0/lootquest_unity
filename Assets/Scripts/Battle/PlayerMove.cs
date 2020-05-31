@@ -7,7 +7,8 @@ public class PlayerMove : TaticsMove
 {
 
     public Animator PlayerAnim;
-
+    public UndoLoot Undo;
+    
     //private GameObject ItemGen;
     //UIScript UIScript;
     //private int LootGen;
@@ -19,6 +20,7 @@ public class PlayerMove : TaticsMove
     }
     void Start()
     {
+	    Undo = FindObjectOfType<UndoLoot>();
         //UIScript = ItemGen.GetComponent<UIScript>();
         Init();
     }
@@ -108,6 +110,7 @@ public class PlayerMove : TaticsMove
     					// t.target = true;
     					// moving = true;
     					MoveToTile(t);
+                        Undo.CleanBtn();
     				}
     			}
     		}
