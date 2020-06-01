@@ -79,7 +79,8 @@ public class Dialogo : MonoBehaviour
 
                         PlayerRigi.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
                         PlayerRigi.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
-                        PlayerRigi.constraints = RigidbodyConstraints2D.FreezeRotation; Desabilitar();
+                        PlayerRigi.constraints = RigidbodyConstraints2D.FreezeRotation;
+                        Desabilitar();
                     podeFalar = false;
                     linhaAtual = 0;
 

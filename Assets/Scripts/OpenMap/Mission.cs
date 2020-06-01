@@ -108,6 +108,7 @@ public class Mission : MonoBehaviour
             missao4.SetActive(false);
             Portal.SetActive(false);
             missao5.SetActive(true);
+            PlayerPrefs.SetInt("Floresta", 1);
             PlayerPrefs.SetInt("ConversaMonstros", 2);
             PlayerPrefs.SetInt("Gatos", 0);
 
@@ -171,6 +172,7 @@ public class Mission : MonoBehaviour
             missao5.SetActive(false);
             missao6.SetActive(false);
             missao7.SetActive(true);
+            PlayerPrefs.SetInt("Cave", 1);
 
         }
         if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 13)
@@ -179,7 +181,21 @@ public class Mission : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 14)
         {
+            missao7.SetActive(false);
+            PlayerPrefs.SetInt("Cemitery", 1);
             missao8.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 16)
+        {
+            missao8.SetActive(false);
+
+            missao9.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 17)
+        {
+            missao9.SetActive(false);
+
+            missao10.SetActive(true);
         }
     }
 }

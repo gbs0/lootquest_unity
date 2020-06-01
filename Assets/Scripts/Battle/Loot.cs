@@ -113,7 +113,7 @@ using System.Collections.Generic;
                         _rarit = _rarit + 1;
                     }
                 }
-                if (PlayerPrefs.GetInt("Creatuurr’sGauntlet", 0) == 2)
+                if (PlayerPrefs.GetInt("CreatuurrsGauntlet", 0) == 2)
                 {
                     if (_rarit <= 3)
                     {
@@ -145,14 +145,14 @@ using System.Collections.Generic;
             }
             else if(TypeLoot == 0)
             {
-                if (PlayerPrefs.GetInt("MonthlySardine", 0) == 2)
+                if (PlayerPrefs.GetInt("LovesWhip", 0) == 2)
                 {
                     if (_rarit <= 3)
                     {
                         _rarit = _rarit + 1;
                     }
                 }
-                if (PlayerPrefs.GetInt("Creatuurr’sGauntlet", 0) == 2)
+                if (PlayerPrefs.GetInt("CreatuurrsGauntlet", 0) == 2)
                 {
                     if (_rarit <= 3)
                     {
@@ -245,7 +245,7 @@ using System.Collections.Generic;
                     _rarit = _rarit + 1;
                 }
             }
-            if (PlayerPrefs.GetInt("Creatuurr’sGauntlet", 0) == 2)
+            if (PlayerPrefs.GetInt("CreatuurrsGauntlet", 0) == 2)
             {
                 if (_rarit <= 3)
                 {
@@ -274,7 +274,7 @@ using System.Collections.Generic;
         }
         else
         {
-            if (PlayerPrefs.GetInt("MonthlySardine", 0) == 2)
+            if (PlayerPrefs.GetInt("LovesWhip", 0) == 2)
             {
                 if (_rarit == 0)
                 {
@@ -289,7 +289,7 @@ using System.Collections.Generic;
                 }
             }
 
-            if (PlayerPrefs.GetInt("Creatuurr’sGauntlet", 0) == 2)
+            if (PlayerPrefs.GetInt("CreatuurrsGauntlet", 0) == 2)
             {
                 if (_rarit == 0)
                 {
