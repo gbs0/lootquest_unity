@@ -5,13 +5,6 @@ using UnityEngine.UI;
 
 public class TempDistCheck : MonoBehaviour
 {
-    // **Bugs Atuais:**
-    // - Barra de Vida do jogador não diminui;
-    // - Player ataca o NPC, porém espada buga
-
-    // **OK:**
-    // - Barra de Vida do NPC;
-    // - Ataque do NPC
 
     // Elementos do Gameplay
     private RoundManager RM;
