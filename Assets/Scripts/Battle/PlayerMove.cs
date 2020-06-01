@@ -25,10 +25,10 @@ public class PlayerMove : TaticsMove
         Init();
     }
 
-	public void Init()
-	{
-    	RoundManager.AddUnit(this);
-    }
+	// public void Init()
+	// {
+    // 	RoundManager.AddUnit(this);
+    // }
     
     void Update()
     {

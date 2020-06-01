@@ -50,6 +50,8 @@ public class TempDistCheck : MonoBehaviour
     public float vida;
     public Button SkipButton;
     public float TimeAnimation;
+
+    public int m_ExperienceValue;
     
     // Start is called before the first frame update
     
@@ -139,6 +141,8 @@ public class TempDistCheck : MonoBehaviour
     {
         PlayerAnim.SetBool("Morto", true);
         yield return new WaitForSeconds(2.0f);
+        m_ExperienceValue = PlayerPrefs.GetInt("_xp", 0) + m_ExperienceValue;
+        PlayerPrefs.SetInt("_xp", m_ExperienceValue);
         PlayerPrefs.SetString("_sceneName", NextCenaName);
         LoadingSisten.LoadLevel(NextCenaName);
     }

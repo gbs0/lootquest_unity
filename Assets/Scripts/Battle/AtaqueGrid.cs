@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class AtaqueGrid : TaticsMove
 {
 	public Slider dragaoHealthBar;
-	
 	public int vidaBoss;
 	public int danoLateral;
 	
@@ -20,9 +19,7 @@ public class AtaqueGrid : TaticsMove
 
 	public ParticleSystem particulaAtaque;
 
-	// Pegar Transform do Player
-	public GameObject player;
-
+	public GameObject player; // Pegar Transform do Player
 	public Color tileColor = Color.red;
 		
 	// Dictionary<string, GameObject> myDictionaryObjects = new Dictionary<string, GameObject>();
@@ -35,11 +32,9 @@ public class AtaqueGrid : TaticsMove
  	{
  		// Animate Dragon's attack
 		
-
 		FogoNaTileAnim(tilesList);
  		DanoNoPlayer(tilesList);
 		 
-		
 		
 		/*
 		foreach(GameObject tile in backTiles)
@@ -50,7 +45,6 @@ public class AtaqueGrid : TaticsMove
             Instantiate(particulaAtaque, tile.transform.position, rotationParticula);
  		}
 		*/
-		
  	}
 
  	public void FogoNaTileAnim(List<GameObject> GOlist)

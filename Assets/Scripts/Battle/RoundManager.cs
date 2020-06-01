@@ -63,10 +63,9 @@ public class RoundManager : MonoBehaviour
 			{
 				PlayerTurn = true;
 				_enemyPainel.SetActive(false);
-				return;
-
 				Debug.Log("Vez do player");
-				
+
+				return;
 			}
 
 			if (_allCaracters.Peek().gameObject.GetComponent<AtaqueGrid>())
