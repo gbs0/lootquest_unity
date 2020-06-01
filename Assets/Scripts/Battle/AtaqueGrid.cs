@@ -98,10 +98,10 @@ public class AtaqueGrid : TaticsMove
 		RoundManager.EndTurn();
 	}
 
-	public override void Init()
-    {
-    	RoundManager.AddUnit(this); // Inicia essa unidade da grid na lista do RoundManager
-    }
+	// public override void Init()
+    // {
+    // 	RoundManager.AddUnit(this); // Inicia essa unidade da grid na lista do RoundManager
+    // }
 
     public override void GetCurrentTile()
     {		}
@@ -159,11 +159,11 @@ public class AtaqueGrid : TaticsMove
 	public override void FindPath(Tile target)
     {		}
 
-	public override void BeginTurn() // Ainda n troca o turno
-	{
-		Move();
-		turn = true;
-    }
+	// public override void BeginTurn() // Ainda n troca o turno
+	// {
+	// 	Move();
+	// 	turn = true;
+    // }
 	
 
 	public void AtaqueHorizontal()

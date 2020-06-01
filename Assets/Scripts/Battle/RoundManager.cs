@@ -50,8 +50,6 @@ public class RoundManager : MonoBehaviour
     	}
     	StartTurn();
         
-		// Console.Write("Number of elements in the Queue(StartTurn()) are : "); 
-		// Console.WriteLine(TurnTeam.Count);
     }
 
     public static void StartTurn()
@@ -110,7 +108,7 @@ public class RoundManager : MonoBehaviour
 
     public void EnimKilled()
     {
-	     for(int i = 0; i < enemies.Count; i++)
+	    for(int i = 0; i < enemies.Count; i++)
         {
 			enemies.RemoveAt(i);
         } 
@@ -123,11 +121,6 @@ public class RoundManager : MonoBehaviour
 	    if (enemies.Count == 0)
 	    {
 		    StartCoroutine(nameof(EndScene));
-			
-			// for (var i = 0; i < teamList.Count; i++) //Apagando teamList assim que os inimigos morrem
- 			// {
-     			//teamList.RemoveAt(i);
- 			// }
 	    }
 
 		
