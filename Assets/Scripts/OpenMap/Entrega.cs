@@ -99,5 +99,25 @@ public class Entrega : MonoBehaviour
             DragonRetrun.SetActive(true);
 
         }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 16)
+        {
+            BemVindo.SetActive(false);
+            Quadro.SetActive(false);
+            Missao.SetActive(false);
+            Entregra.SetActive(false);
+            DragonRetrun.SetActive(false);
+            Irmaos.SetActive(true);
+
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 17)
+        {
+            BemVindo.SetActive(false);
+            Quadro.SetActive(false);
+            Missao.SetActive(false);
+            Entregra.SetActive(false);
+            DragonRetrun.SetActive(false);
+            Irmaos.SetActive(false);
+
+        }
     }
 }

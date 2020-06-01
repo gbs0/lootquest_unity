@@ -17,8 +17,20 @@ public class ControleMonstros : MonoBehaviour
     public GameObject DragaoDialogo;
     public GameObject DragaoDialogoPosComb;
     public GameObject DialogoCidadePosDragao;
+    public GameObject DialogoCemiterio;
+    public GameObject Berseker;
+
     public GameObject GhoulDialogo;
     public GameObject Ghoul1;
+    public GameObject Ghoul1Dialogo;
+    public GameObject Ghoul2;
+    public GameObject Ghoul2Dialogo;
+
+    public GameObject Sucubus;
+    public GameObject AntSucubus;
+    public GameObject PosSucubus;
+
+
     public GameObject EventoCidadeVoltando;
 
 
@@ -116,7 +128,24 @@ public class ControleMonstros : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("Ghoul1") == 1)
         {
+            GhoulDialogo.SetActive(false);
+            Ghoul1Dialogo.SetActive(true);
+
+            if (PlayerPrefs.GetInt("Ghoul2") == 1)
+            {
+                Ghoul1.SetActive(false);
+
+            }
+        }
+        if (PlayerPrefs.GetInt("Ghoul2") == 1)
+        {
             Ghoul1.SetActive(false);
+            Ghoul2Dialogo.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("Sucubus") == 1)
+        {
+            AntSucubus.SetActive(false);
+            PosSucubus.SetActive(true);
 
         }
 
@@ -168,9 +197,34 @@ public class ControleMonstros : MonoBehaviour
             DragaoDialogoPosComb.SetActive(false);
             EventoCidadeVoltando.SetActive(true);
         }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 14)
+        {
+            DragaoDialogoPosComb.SetActive(false);
+            DialogoCemiterio.SetActive(true);
+        }
         if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 15)
         {
-            GhoulDialogo.SetActive(true);
+            Ghoul1.SetActive(true);
+            Ghoul2.SetActive(true);
+            Berseker.SetActive(true);
+
+        }
+
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) >= 16)
+        {
+            Ghoul1.SetActive(false);
+            Ghoul2.SetActive(false);
+            Berseker.SetActive(false);
+
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 17)
+        {
+            Sucubus.SetActive(true);
+
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 18)
+        {
+            Application.LoadLevel("Vitoria");
         }
     }
 }

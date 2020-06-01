@@ -90,13 +90,20 @@ public class TempDistCheckSucubus : MonoBehaviour
         {
             hitCount = 0;
         }
+        if (charm == false)
+        {
+            hitCount = 0;
+        }
     }
 
     private void SkipTurn()
     {
+        CharmeImagem.SetActive(false);
+
         charm = false;
-        CharmExp();
         canHit = true;
+       // CharmeImagem.SetActive(false);
+
 
     }
 
@@ -134,10 +141,13 @@ public class TempDistCheckSucubus : MonoBehaviour
 
     private void TestDamage()
     {
-        atack = Random.Range(1, 4);
+
+        atack = Random.Range(0, 5);
           if (atack < 3)
-        { 
-           GS.SetTrigger("Attack");
+        {
+
+
+            GS.SetTrigger("Attack");
            PlayerAnim.SetTrigger("Damage");
            hitCount++;
 
@@ -149,11 +159,12 @@ public class TempDistCheckSucubus : MonoBehaviour
         }
        else //(atack == 3)
         {
+
+
             GS.SetTrigger("Charm");
             charm = true;
             CharmeImagem.SetActive(true);
             canHit = false;
-            StartCoroutine("CharAnim");
 
         }
     }
@@ -181,8 +192,10 @@ public class TempDistCheckSucubus : MonoBehaviour
     IEnumerator CharmExp()
     {
         Charm.SetTrigger("Explode");
-        yield return new WaitForSeconds(0.7f);
-        CharmeImagem.SetActive(false);
+
+        yield return new WaitForSeconds(1.2f);
+
+
     }
     public void DistCheck()
     {

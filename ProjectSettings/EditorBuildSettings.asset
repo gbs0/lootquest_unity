@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ghoul.unity
     guid: a8acd03e87f23f44a840f534c906b59c
+  - enabled: 1
+    path: Assets/Scenes/Sucubus.unity
+    guid: e8b222174fc895a4aab5877ab7521731
   m_configObjects: {}
