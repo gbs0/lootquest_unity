@@ -11,7 +11,7 @@ public class TempPlayerHp : MonoBehaviour
     public GameObject coll02;
     public GameObject coll03;
     public GameObject coll04;
-    public static int PlayerHealth;
+    public float PlayerHealth;
     public Image LifeBar;
     public float tempLife;
     float waitForSec = 5.0f;
@@ -32,11 +32,7 @@ public class TempPlayerHp : MonoBehaviour
     }
 
     // Checar a vida do player a cada Frame
-    void Update()
-    {
-        // LifeCheck();
-        // Debug.Log("P. Health: " + PlayerHealth);              
-    }
+  
 
     private void OnTriggerEnter(Collider col)
     {
@@ -54,14 +50,12 @@ public class TempPlayerHp : MonoBehaviour
         }
     }
 
-    public void LifeCheck()
+    public void LifeCheck(float dam)
     {
-        
-        if( slimeAnimator.GetCurrentAnimatorStateInfo(0).IsName("GS_Attack"))
-         {
-                PlayerHealth--;    
-                LifeBar.fillAmount -= 1.0f / waitForSec * Time.deltaTime;
-         }
-        
+
+        var normalizeDam = dam * 10;
+        PlayerHealth -= normalizeDam;
+        LifeBar.fillAmount = PlayerHealth / 100;
+
     }
 }

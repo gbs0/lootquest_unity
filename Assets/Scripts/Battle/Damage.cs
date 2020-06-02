@@ -64,7 +64,6 @@ public class Damage : MonoBehaviour
                 StartCoroutine("DamageAnim");
                 tempLife -= playerMove.HitForce*10;
                 float barra = tempLife / 100;
-                Debug.Log(barra);
                 LifeBar.fillAmount = barra;
                 if (tempLife <= 0)
                 {
