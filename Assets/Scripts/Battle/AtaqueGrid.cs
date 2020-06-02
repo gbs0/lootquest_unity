@@ -28,14 +28,19 @@ public class AtaqueGrid : TaticsMove
 		Init();
 	}
 
+	public void AtaqueHorizontal()
+	{
+		MarcarTiles(horizontalTiles);
+
+		// DanoNoPlayer(horizontalTiles);
+ 	}
 	public void AtaqueTraseiro(List<GameObject> tilesList)
  	{
  		// Animate Dragon's attack
 		
-		FogoNaTileAnim(tilesList);
+		FogoNaTile(tilesList);
  		DanoNoPlayer(tilesList);
 		 
-		
 		/*
 		foreach(GameObject tile in backTiles)
  		{
@@ -47,9 +52,9 @@ public class AtaqueGrid : TaticsMove
 		*/
  	}
 
- 	public void FogoNaTileAnim(List<GameObject> GOlist)
+ 	public void FogoNaTile(List<GameObject> g)
  	{
-		foreach(GameObject tile in GOlist)
+		foreach(GameObject tile in g)
  		{
  			// Quaternion rotationParticula = new Quaternion(tile.transform.rotation.x, tile.transform.rotation.y, tile.transform.rotation.z, 0f );
  			Quaternion rotationParticula = new Quaternion( -90f, tile.transform.rotation.y, tile.transform.rotation.z, 0f );
@@ -63,15 +68,12 @@ public class AtaqueGrid : TaticsMove
 		// playTransform playerTrans = GO.transform.position.x;
 		foreach(GameObject tile in GO) // Comparar com posição atual do player nas tiles
 		{
-			// Debug.Log(tile.transform.position.x);
-
 			if(player.transform.position.x == tile.transform.position.x)
 			{
 				// Dar dano ao player
 				Debug.Log("Transform do player: " + player.transform.position.x);
-				
-				
 			}
+			// Debug.Log(tile.transform.position.x);
 		}
 	}
 
@@ -80,21 +82,24 @@ public class AtaqueGrid : TaticsMove
 		foreach(GameObject tile in GOlist)
 		{
 			// Remover efeitos da tile
-			
-
 		}
 	}
 	
 	public void MarcarTiles(List<GameObject> GOlist)
 	{
+		
 		foreach(GameObject tile in GOlist)
 		{
 			// GetComponent<Renderer>().material.color = tile.GetComponent<Renderer>().material.GetColor("_Color");
-			Color corAtual = tile.GetComponent<Renderer>().material.color;
-			corAtual = tileColor;
+			// Color corAtual = tile.GetComponent<Renderer>().material.color;
+			// corAtual = tileColor;
+			
 			Debug.Log("Coloriu Tile");
-		}
 
+       		var tileRenderer = tile.GetComponent<Renderer>();
+       		tileRenderer.material.SetColor("_Color", Color.red);
+		}
+		FogoNaTile(GOlist);
 		RoundManager.EndTurn();
 	}
 
@@ -121,9 +126,9 @@ public class AtaqueGrid : TaticsMove
     {		}
 
     public override void  Move() { // Quando é a vez da grid, este override não é chamado
-		moving = false;
-		Debug.Log("Move() da grid");
-		MarcarTiles(horizontalTiles);
+		// moving = false;
+		// Debug.Log("Move() da grid");
+		// MarcarTiles(horizontalTiles);
     }
 
     public override void RemoveSelectableTiles()
@@ -159,17 +164,9 @@ public class AtaqueGrid : TaticsMove
 	public override void FindPath(Tile target)
     {		}
 
-	// public override void BeginTurn() // Ainda n troca o turno
-	// {
-	// 	Move();
-	// 	turn = true;
-    // }
-	
-
-	public void AtaqueHorizontal()
+	public override void BeginTurn() // Ainda n troca o turno
 	{
-		MarcarTiles(horizontalTiles);
-		// FogoNaTileAnim(horizontalTiles);
-		// DanoNoPlayer(horizontalTiles);
-	}
+		// Move();
+		// turn = true;
+    }
 }
