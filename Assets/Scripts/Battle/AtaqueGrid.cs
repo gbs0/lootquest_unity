@@ -165,5 +165,7 @@ public class AtaqueGrid : TaticsMove
 	{
 		// Move();
 		// turn = true;
+		Debug.Log("vez da grid");
+		MarcarTiles(horizontalTiles);
     }
 }
