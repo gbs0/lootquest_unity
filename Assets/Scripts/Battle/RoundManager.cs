@@ -74,7 +74,6 @@ public class RoundManager : MonoBehaviour
 			
 				Debug.Log("Vez da grid");
 			
-		
 			}
 
 			PlayerTurn = false;

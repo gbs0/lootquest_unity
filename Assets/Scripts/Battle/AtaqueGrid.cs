@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class AtaqueGrid : TaticsMove
 {
+	public bool onFire = false;
 	public Slider dragaoHealthBar;
 	public int vidaBoss;
 	public int danoLateral;
@@ -90,14 +91,10 @@ public class AtaqueGrid : TaticsMove
 		
 		foreach(GameObject tile in GOlist)
 		{
-			// GetComponent<Renderer>().material.color = tile.GetComponent<Renderer>().material.GetColor("_Color");
-			// Color corAtual = tile.GetComponent<Renderer>().material.color;
-			// corAtual = tileColor;
+			var actualTile = tile.GetComponent<Tile>();
+			actualTile.target = true;
 			
 			Debug.Log("Coloriu Tile");
-
-       		var tileRenderer = tile.GetComponent<Renderer>();
-       		tileRenderer.material.SetColor("_Color", Color.red);
 		}
 		FogoNaTile(GOlist);
 		RoundManager.EndTurn();
