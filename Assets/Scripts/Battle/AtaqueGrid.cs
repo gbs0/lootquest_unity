@@ -78,6 +78,7 @@ public class AtaqueGrid : TaticsMove
 				healthPlayer.DamegePlayer();
 			}
 			// Debug.Log(tile.transform.position.x);
+			RoundManager.EndTurn();
 		}
 	}
 
@@ -99,8 +100,6 @@ public class AtaqueGrid : TaticsMove
 			
 		}
 		FogoNaTile(GOlist);
-		DanoNoPlayer(GOlist);
-		RoundManager.EndTurn();
 	}
 
 	// public override void Init()
@@ -169,5 +168,6 @@ public class AtaqueGrid : TaticsMove
 		// Move();
 		// turn = true;
 		MarcarTiles(verticalTiles);
+		DanoNoPlayer(verticalTiles);
     }
 }
