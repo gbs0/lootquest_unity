@@ -6,7 +6,7 @@ using UnityEngine;
 public class AnimationEnim : MonoBehaviour
 {
     public TempPlayerHp PHP;
-    public float Hitforce = 1;
+    public float Hitforce = 10;
     private void Start()
     {
         PHP = FindObjectOfType<TempPlayerHp>();

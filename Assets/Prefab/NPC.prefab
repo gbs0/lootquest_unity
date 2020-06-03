@@ -103,6 +103,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2830709220789261765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3397164898782556113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d0404ddb990e0445a441ce4e9bc5486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PHP: {fileID: 0}
+  Hitforce: 10
 --- !u!1 &4889621933577898582
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,6 +327,7 @@ MonoBehaviour:
   moveSpeed: 2
   actualTargetTile: {fileID: 0}
   LootGenTest: 0
+  target: {fileID: 0}
   GS: {fileID: 4889621933968704882}
   tempDistCheck: {fileID: 0}
 --- !u!114 &4889621934937223168
@@ -334,6 +349,7 @@ MonoBehaviour:
   GS: {fileID: 4889621933968704882}
   TimeAnimation: 0
   Morte: 0
+  Undo: {fileID: 0}
   selected: 0
 --- !u!114 &4993610007012293987
 MonoBehaviour:
@@ -361,13 +377,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextCenaName: Derrota
-  distTotal: 0
-  hitTime: 0
-  canHit: 0
-  hitCount: 0
-  SkipButton: {fileID: 0}
+  PainelVitoria: {fileID: 0}
   GS: {fileID: 4889621933968704882}
   PlayerAnim: {fileID: 0}
+  Selection: {fileID: 4889621933577898582}
+  LifeBar: {fileID: 3397164897117064623}
+  atkDistance: 1.5
+  distTotal: 0
+  Morte: 0
+  selected: 0
+  vidaplayer: 0
+  canHit: 0
+  hitTime: 0
+  hitCount: 0
+  tempLife: 100
+  vida: 0
+  SkipButton: {fileID: 0}
+  TimeAnimation: 0
+  m_ExperienceValue: 0
 --- !u!1001 &4889621934727695231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -379,32 +406,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: personagem canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 7853796472497751760, guid: 46c68c5ed33ce43469d8a23e5149d2a1,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 943c0482b5ecdae42ad20c364df5ef77,
-        type: 3}
-    - target: {fileID: 7853796472497751760, guid: 46c68c5ed33ce43469d8a23e5149d2a1,
-        type: 3}
-      propertyPath: m_Type
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7853796472497751760, guid: 46c68c5ed33ce43469d8a23e5149d2a1,
-        type: 3}
-      propertyPath: m_FillCenter
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7853796472497751760, guid: 46c68c5ed33ce43469d8a23e5149d2a1,
-        type: 3}
-      propertyPath: m_FillMethod
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7853796472497751760, guid: 46c68c5ed33ce43469d8a23e5149d2a1,
-        type: 3}
-      propertyPath: m_FillOrigin
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7853796472687808247, guid: 46c68c5ed33ce43469d8a23e5149d2a1,
         type: 3}
@@ -546,6 +547,37 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.44
       objectReference: {fileID: 0}
+    - target: {fileID: 7853796472687808244, guid: 46c68c5ed33ce43469d8a23e5149d2a1,
+        type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853796472497751760, guid: 46c68c5ed33ce43469d8a23e5149d2a1,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 943c0482b5ecdae42ad20c364df5ef77,
+        type: 3}
+    - target: {fileID: 7853796472497751760, guid: 46c68c5ed33ce43469d8a23e5149d2a1,
+        type: 3}
+      propertyPath: m_Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853796472497751760, guid: 46c68c5ed33ce43469d8a23e5149d2a1,
+        type: 3}
+      propertyPath: m_FillCenter
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853796472497751760, guid: 46c68c5ed33ce43469d8a23e5149d2a1,
+        type: 3}
+      propertyPath: m_FillMethod
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853796472497751760, guid: 46c68c5ed33ce43469d8a23e5149d2a1,
+        type: 3}
+      propertyPath: m_FillOrigin
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7853796471974077614, guid: 46c68c5ed33ce43469d8a23e5149d2a1,
         type: 3}
       propertyPath: m_Name
@@ -557,11 +589,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: a023ac15c05d40c42bb86dc7b0e956e8,
         type: 3}
-    - target: {fileID: 7853796472687808244, guid: 46c68c5ed33ce43469d8a23e5149d2a1,
-        type: 3}
-      propertyPath: m_BlockingMask.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46c68c5ed33ce43469d8a23e5149d2a1, type: 3}
 --- !u!224 &3397164897075905928 stripped
