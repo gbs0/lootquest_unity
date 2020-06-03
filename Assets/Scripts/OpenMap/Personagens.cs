@@ -18,6 +18,19 @@ public class Personagens : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 10)
+        {
+            PlayerPrefs.SetInt("Bruxa", 1);
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 1)
+        {
+            PlayerPrefs.SetInt("Maga", 1);
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 16)
+        {
+            PlayerPrefs.SetInt("Berseker", 1);
+        }
+
         if (PlayerPrefs.GetInt("Bruxa", 0) == 1)
         {
             Bruxa.SetActive(true);

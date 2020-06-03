@@ -3,17 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TempDistCheckSucubus : MonoBehaviour
+public class TempDistCheckBerseker : TempDistCheck
 {
-    // **Bugs Atuais:**
-    // - Barra de Vida do jogador não diminui;
-    // - Player ataca o NPC, porém espada buga
-
-    // **OK:**
-    // - Barra de Vida do NPC;
-    // - Ataque do NPC
-
-    // Elementos do Gameplay
     private RoundManager RM;
 
     public string NextCenaName;
@@ -24,11 +15,7 @@ public class TempDistCheckSucubus : MonoBehaviour
     PlayerMove playerMove;
     public Animator GS;
     public Animator PlayerAnim;
-    public Animator Charm;
-
     public GameObject Selection;
-    public GameObject CharmeImagem;
-
     public Image LifeBar;
 
     // Elementos do Combate
@@ -43,7 +30,7 @@ public class TempDistCheckSucubus : MonoBehaviour
     private float DZ;
 
     bool selectable = false;
-    public static bool charm;
+
     public bool Morte = false;
     public bool selected = false;
     public float vidaplayer;
@@ -54,7 +41,6 @@ public class TempDistCheckSucubus : MonoBehaviour
     public float vida;
     public Button SkipButton;
     public float TimeAnimation;
-    public int atack;
 
     // Start is called before the first frame update
 
@@ -81,7 +67,6 @@ public class TempDistCheckSucubus : MonoBehaviour
         DistCheck();
         if (distTotal <= atkDistance && canHit == true)
         {
-
             TestDamage(); // Toggle Death Method
             //GS.ResetTrigger("Attack");
         }
@@ -90,30 +75,20 @@ public class TempDistCheckSucubus : MonoBehaviour
         {
             hitCount = 0;
         }
-        if (charm == false)
-        {
-            hitCount = 0;
-        }
     }
 
     private void SkipTurn()
     {
-        CharmeImagem.SetActive(false);
-
-        charm = false;
         canHit = true;
-       // CharmeImagem.SetActive(false);
-
 
     }
 
     private void Attack()
     {
-        if (playerMove.LootGenTest == 0 && distTotal < 6 && charm == false)
+        if (playerMove.LootGenTest == 0 && distTotal < 6)
         {
-
             selectable = true;
-            if (Input.GetMouseButtonDown(0) && Selection.activeSelf )
+            if (Input.GetMouseButtonDown(0) && Selection.activeSelf)
             {
                 PlayerAnim.SetTrigger("Attack");
                 //GS.SetTrigger("Damage");
@@ -141,40 +116,20 @@ public class TempDistCheckSucubus : MonoBehaviour
 
     private void TestDamage()
     {
-
-        atack = Random.Range(0, 5);
-          if (atack < 3)
+        GS.SetTrigger("Attack");
+        PlayerAnim.SetTrigger("Damage");
+        hitCount++;
+        canHit = false;
+        if (hitCount == 5)
         {
-
-
-            GS.SetTrigger("Attack");
-           PlayerAnim.SetTrigger("Damage");
-           hitCount++;
-
-           canHit = false;
-           if (hitCount == 5)
-           {
             StartCoroutine("DeathAnim");
-           }
-        }
-       else //(atack == 3)
-        {
-
-
-            GS.SetTrigger("Charm");
-            charm = true;
-            CharmeImagem.SetActive(true);
-            canHit = false;
-
         }
     }
-    
-
 
     IEnumerator DeathAnim()
     {
         PlayerAnim.SetBool("Morto", true);
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(2.0f);
         PlayerPrefs.SetString("_sceneName", NextCenaName);
         LoadingSisten.LoadLevel(NextCenaName);
     }
@@ -184,19 +139,7 @@ public class TempDistCheckSucubus : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         GS.SetTrigger("Damage");
     }
-    IEnumerator CharAnim()
-    {
-        yield return new WaitForSeconds(0.5f);
-        GS.SetTrigger("Charm");
-    }
-    IEnumerator CharmExp()
-    {
-        Charm.SetTrigger("Explode");
 
-        yield return new WaitForSeconds(1.2f);
-
-
-    }
     public void DistCheck()
     {
         distX = (player.transform.position.x - transform.position.x) / 1;
@@ -238,5 +181,4 @@ public class TempDistCheckSucubus : MonoBehaviour
         Selection.SetActive(false);
         selected = false;
     }
-
 }

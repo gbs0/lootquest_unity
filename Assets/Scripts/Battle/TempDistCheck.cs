@@ -50,19 +50,26 @@ public class TempDistCheck : MonoBehaviour
     public float vida;
     public Button SkipButton;
     public float TimeAnimation;
-    
+    public UndoLoot Undo;
+
     // Start is called before the first frame update
-    
+    private void Awake()
+    {
+        RM = FindObjectOfType<RoundManager>();
+        Undo = FindObjectOfType<UndoLoot>();
+        player = GameObject.Find("Player");
+        playerMove = player.GetComponent<PlayerMove>();
+    }
     public void Start()
     {
         // LifeBar = GameObject.Find("sprite slime");
         // LifeBar = this.GetComponentInChildren<InputField>();
         // LifeBar = this.GameObject.Find("personagem canvas").GetComponentInChildren<InputField>();
         vida = tempLife;
-        RM = FindObjectOfType<RoundManager>();
+        //1RM = FindObjectOfType<RoundManager>();
         // player = GameObject.FindGameObjectWithTag("Player");
-        player = GameObject.Find("Player");
-        playerMove = player.GetComponent<PlayerMove>();
+       //1 player = GameObject.Find("Player");
+       //1 playerMove = player.GetComponent<PlayerMove>();
 
         canHit = true;
         hitCount = 0;
@@ -94,7 +101,7 @@ public class TempDistCheck : MonoBehaviour
 
     private void Attack()
     {
-        if (playerMove.LootGenTest == 3 && distTotal < 6)
+        if (playerMove.LootGenTest == 0 && distTotal < 6)
         {
             selectable = true;
             if (Input.GetMouseButtonDown(0)&& Selection.activeSelf)
@@ -118,6 +125,8 @@ public class TempDistCheck : MonoBehaviour
 
                 }
                 playerMove.LootGenTest = 0;
+                Undo.CleanBtn();
+
                 //RoundManager.EndTurn();
             }
         }
