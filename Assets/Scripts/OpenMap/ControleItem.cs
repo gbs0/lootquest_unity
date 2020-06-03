@@ -13,6 +13,14 @@ public class ControleItem : MonoBehaviour
     public GameObject FestiveBox;
     public GameObject CreatuurrsGauntlet;
 
+    public GameObject DialogoSlimceCrown;
+    public GameObject DialogoMonthlySardine;
+    public GameObject DialogoCrystalBob;
+    public GameObject DialogoLovesWhip;
+    public GameObject DialogoWhispersofLoot;
+    public GameObject DialogoFestiveBox;
+    public GameObject DialogoCreatuurrsGauntlet;
+
     public Image ItemVisual;
     public Text Descricao;
     public Text Habilidade;
@@ -38,6 +46,50 @@ public class ControleItem : MonoBehaviour
 // Update is called once per frame
 void Update()
     {
+        if (PlayerPrefs.GetInt("JaItem1", 0) == 0)
+        {
+            if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 5)
+            {
+                DialogoSlimceCrown.SetActive(true);
+                PlayerPrefs.SetInt("JaItem1", 1);
+
+            }
+        }
+        if (PlayerPrefs.GetInt("JaItem2", 0) == 0)
+        {
+            if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 10)
+            {
+                
+                DialogoMonthlySardine.SetActive(true);
+                PlayerPrefs.SetInt("JaItem2", 1);
+            }
+        }
+        if (PlayerPrefs.GetInt("JaItem3", 0) == 0)
+        {
+            if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 12)
+            {
+                DialogoCrystalBob.SetActive(true);
+                PlayerPrefs.SetInt("JaItem3", 1);
+            }
+        }
+        if (PlayerPrefs.GetInt("JaItem4", 0) == 1)
+        {
+            DialogoSlimceCrown.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("JaItem5", 0) == 1)
+        {
+            DialogoSlimceCrown.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("JaItem6", 0) == 1)
+        {
+            DialogoSlimceCrown.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("JaItem7", 0) == 1)
+        {
+            DialogoSlimceCrown.SetActive(true);
+        }
+
+
         if (PlayerPrefs.GetInt("SlimceCrown", 0) >= 1)
         {
             SlimceCrown.SetActive(true);

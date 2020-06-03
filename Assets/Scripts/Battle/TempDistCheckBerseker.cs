@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TempDistCheck : MonoBehaviour
+public class TempDistCheckBerseker : TempDistCheck
 {
-
-    // Elementos do Gameplay
     private RoundManager RM;
 
     public string NextCenaName;
     public GameObject PainelVitoria;
-    
+
     // Elementos dos Personagens
     private GameObject player;
     PlayerMove playerMove;
@@ -32,7 +30,7 @@ public class TempDistCheck : MonoBehaviour
     private float DZ;
 
     bool selectable = false;
-    
+
     public bool Morte = false;
     public bool selected = false;
     public float vidaplayer;
@@ -43,32 +41,19 @@ public class TempDistCheck : MonoBehaviour
     public float vida;
     public Button SkipButton;
     public float TimeAnimation;
-<<<<<<< HEAD
 
-    public int m_ExperienceValue;
-    
-=======
-    public UndoLoot Undo;
-
->>>>>>> TempDisk Funcional
     // Start is called before the first frame update
-    private void Awake()
-    {
-        RM = FindObjectOfType<RoundManager>();
-        Undo = FindObjectOfType<UndoLoot>();
-        player = GameObject.Find("Player");
-        playerMove = player.GetComponent<PlayerMove>();
-    }
+
     public void Start()
     {
         // LifeBar = GameObject.Find("sprite slime");
         // LifeBar = this.GetComponentInChildren<InputField>();
         // LifeBar = this.GameObject.Find("personagem canvas").GetComponentInChildren<InputField>();
         vida = tempLife;
-        //1RM = FindObjectOfType<RoundManager>();
+        RM = FindObjectOfType<RoundManager>();
         // player = GameObject.FindGameObjectWithTag("Player");
-       //1 player = GameObject.Find("Player");
-       //1 playerMove = player.GetComponent<PlayerMove>();
+        player = GameObject.Find("Player");
+        playerMove = player.GetComponent<PlayerMove>();
 
         canHit = true;
         hitCount = 0;
@@ -85,7 +70,7 @@ public class TempDistCheck : MonoBehaviour
             TestDamage(); // Toggle Death Method
             //GS.ResetTrigger("Attack");
         }
-        
+
         if (Input.GetMouseButtonDown(1))
         {
             hitCount = 0;
@@ -103,13 +88,14 @@ public class TempDistCheck : MonoBehaviour
         if (playerMove.LootGenTest == 0 && distTotal < 6)
         {
             selectable = true;
-            if (Input.GetMouseButtonDown(0)&& Selection.activeSelf)
+            if (Input.GetMouseButtonDown(0) && Selection.activeSelf)
             {
                 PlayerAnim.SetTrigger("Attack");
                 //GS.SetTrigger("Damage");
                 StartCoroutine("DamageAnim");
-                tempLife -= playerMove.HitForce*10;
+                tempLife -= playerMove.HitForce * 10;
                 float barra = tempLife / vida;
+                Debug.Log(barra);
                 LifeBar.fillAmount = barra;
                 if (tempLife <= 0)
                 {
@@ -118,13 +104,11 @@ public class TempDistCheck : MonoBehaviour
 
                     GS.SetBool("Morto", true);
                     RM.EnimKilled();
-                    
+
 
 
                 }
                 playerMove.LootGenTest = 0;
-                Undo.CleanBtn();
-
                 //RoundManager.EndTurn();
             }
         }
@@ -146,8 +130,6 @@ public class TempDistCheck : MonoBehaviour
     {
         PlayerAnim.SetBool("Morto", true);
         yield return new WaitForSeconds(2.0f);
-        m_ExperienceValue = PlayerPrefs.GetInt("_xp", 0) + m_ExperienceValue;
-        PlayerPrefs.SetInt("_xp", m_ExperienceValue);
         PlayerPrefs.SetString("_sceneName", NextCenaName);
         LoadingSisten.LoadLevel(NextCenaName);
     }
@@ -158,7 +140,7 @@ public class TempDistCheck : MonoBehaviour
         GS.SetTrigger("Damage");
     }
 
-    public void DistCheck() 
+    public void DistCheck()
     {
         distX = (player.transform.position.x - transform.position.x) / 1;
         distZ = (player.transform.position.z - transform.position.z) / 1;
@@ -199,5 +181,4 @@ public class TempDistCheck : MonoBehaviour
         Selection.SetActive(false);
         selected = false;
     }
-
 }

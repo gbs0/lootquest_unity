@@ -109,7 +109,7 @@ public class TempDistCheckSucubus : MonoBehaviour
 
     private void Attack()
     {
-        if (playerMove.LootGenTest == 3 && distTotal < 6 && charm == false)
+        if (playerMove.LootGenTest == 0 && distTotal < 6 && charm == false)
         {
 
             selectable = true;

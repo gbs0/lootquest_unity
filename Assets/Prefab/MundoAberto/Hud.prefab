@@ -98,7 +98,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3248767236011083036
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1167,7 +1167,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4286753235871878722}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8691259147224239518}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &4853121417878996499
@@ -1892,10 +1903,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45b87bb8e4b1b9042aa2eceefce69ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bruxa: {fileID: 0}
-  Maga: {fileID: 0}
-  Berseker: {fileID: 0}
-  Ninja: {fileID: 0}
+  Bruxa: {fileID: 1536492708077999168}
+  Maga: {fileID: 4853121417878996499}
+  Berseker: {fileID: 2784891086964493865}
+  Ninja: {fileID: 1579818454915800656}
 --- !u!1 &7860179408391027427
 GameObject:
   m_ObjectHideFlags: 0
@@ -2035,7 +2046,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4747089821188668001
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2110,7 +2121,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1211359378652311660
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2455,7 +2466,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8691259145784800778
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2650,6 +2661,13 @@ MonoBehaviour:
   WhispersofLoot: {fileID: 8691259146658316987}
   FestiveBox: {fileID: 1011988730769100802}
   CreatuurrsGauntlet: {fileID: 8649939148099430497}
+  DialogoSlimceCrown: {fileID: 0}
+  DialogoMonthlySardine: {fileID: 0}
+  DialogoCrystalBob: {fileID: 0}
+  DialogoLovesWhip: {fileID: 0}
+  DialogoWhispersofLoot: {fileID: 0}
+  DialogoFestiveBox: {fileID: 0}
+  DialogoCreatuurrsGauntlet: {fileID: 0}
   ItemVisual: {fileID: 1916163725692301416}
   Descricao: {fileID: 4143880297150900755}
   Habilidade: {fileID: 3736528332772874116}
@@ -2955,7 +2973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8691259146658316984
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3105,7 +3123,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8691259146762885373
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3179,7 +3197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8691259147224239519
 RectTransform:
   m_ObjectHideFlags: 0
