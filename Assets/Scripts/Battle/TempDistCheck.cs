@@ -79,6 +79,7 @@ public class TempDistCheck : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
+
         Attack();
         DistCheck();
         if (distTotal <= atkDistance && canHit == true)
