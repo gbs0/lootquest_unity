@@ -29,11 +29,11 @@ public class TempPlayerHp : MonoBehaviour
 
     public void LifeCheck(float dam)
     {
-        Debug.LogError("cheguei aq");
-        Debug.LogError(dam);
+        // Debug.LogError("cheguei aq");
+        // Debug.LogError(dam);
         PlayerHealth -= dam;
         LifeBar.fillAmount = PlayerHealth / 100;
-        Debug.LogError(PlayerHealth);
+        // Debug.LogError(PlayerHealth);
 
     }
 }

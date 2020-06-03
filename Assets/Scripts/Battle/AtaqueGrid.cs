@@ -74,7 +74,7 @@ public class AtaqueGrid : TaticsMove
 			if(player.transform.position.x == tile.transform.position.x)
 			{
 				// Dar dano ao player
-				Debug.Log("Transform do player: " + player.transform.position.x);
+				// Debug.Log("Transform do player: " + player.transform.position.x);
 				healthPlayer.DamegePlayer();
 			}
 			// Debug.Log(tile.transform.position.x);
@@ -97,7 +97,6 @@ public class AtaqueGrid : TaticsMove
 			var actualTile = tile.GetComponent<Tile>();
 			actualTile.target = true;
 			
-			Debug.Log("Coloriu Tile");
 		}
 		FogoNaTile(GOlist);
 		DanoNoPlayer(GOlist);
@@ -169,7 +168,6 @@ public class AtaqueGrid : TaticsMove
 	{
 		// Move();
 		// turn = true;
-		Debug.Log("vez da grid");
 		MarcarTiles(verticalTiles);
     }
 }

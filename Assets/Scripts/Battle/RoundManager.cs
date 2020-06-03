@@ -61,7 +61,7 @@ public class RoundManager : MonoBehaviour
 			{
 				PlayerTurn = true;
 				_enemyPainel.SetActive(false);
-				Debug.Log("Vez do player");
+				// Debug.Log("Vez do player");
 
 				return;
 			}
@@ -87,7 +87,7 @@ public class RoundManager : MonoBehaviour
     {
     	TaticsMove unit = _allCaracters.Dequeue();
     	unit.EndTurn();
-		Debug.Log(_allCaracters.Count);
+		// Debug.Log(_allCaracters.Count);
 
     	if (_allCaracters.Count > 0)
     	{
