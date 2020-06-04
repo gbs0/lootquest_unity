@@ -89,7 +89,7 @@ public class TempDistCheck : MonoBehaviour
 
     private void Attack()
     {
-        if (playerMove.LootGenTest == 3 && distTotal < 6)
+        if (playerMove.LootGenTest == 0 && distTotal < 6)
         {
             selectable = true;
             if (Input.GetMouseButtonDown(0)&& Selection.activeSelf)

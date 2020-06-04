@@ -7,12 +7,14 @@ using UnityEngine.UI;
 
 public class AtaqueGrid : TaticsMove
 {
+	public AnimationEnim healthPlayer;
 	public bool onFire = false;
 	public Slider dragaoHealthBar;
 	public int vidaBoss;
 	public int danoLateral;
 	
 	public List<GameObject> horizontalTiles = new List<GameObject>();
+	public List<GameObject> verticalTiles = new List<GameObject>();
 
 	// public Animator ataqueBoss;
 	// public Animator camAnim;
@@ -72,9 +74,11 @@ public class AtaqueGrid : TaticsMove
 			if(player.transform.position.x == tile.transform.position.x)
 			{
 				// Dar dano ao player
-				Debug.Log("Transform do player: " + player.transform.position.x);
+				// Debug.Log("Transform do player: " + player.transform.position.x);
+				healthPlayer.DamegePlayer();
 			}
 			// Debug.Log(tile.transform.position.x);
+			RoundManager.EndTurn();
 		}
 	}
 
@@ -94,10 +98,8 @@ public class AtaqueGrid : TaticsMove
 			var actualTile = tile.GetComponent<Tile>();
 			actualTile.target = true;
 			
-			Debug.Log("Coloriu Tile");
 		}
 		FogoNaTile(GOlist);
-		RoundManager.EndTurn();
 	}
 
 	// public override void Init()
@@ -165,7 +167,7 @@ public class AtaqueGrid : TaticsMove
 	{
 		// Move();
 		// turn = true;
-		Debug.Log("vez da grid");
-		MarcarTiles(horizontalTiles);
+		MarcarTiles(verticalTiles);
+		DanoNoPlayer(verticalTiles);
     }
 }
