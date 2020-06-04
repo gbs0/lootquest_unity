@@ -25,8 +25,6 @@ public class InventoryUI : MonoBehaviour
     public GameObject craftingTab; // Aba Craft
     public GameObject passivaTab; // Aba Passiva
     public GameObject passivaGUI; // Painel de passivas
-
-    private List<ItemSlot> itemSlotList = new List<ItemSlot>();
     public GameObject itemSlotPrefab;
     public Transform inventoryItemTransform;
     
@@ -55,14 +53,6 @@ public class InventoryUI : MonoBehaviour
 
     private void SetupCraftingRecipes()
     {
-        List<Item> craftingRecipes = GameManager.instance.craftingRecipes;
-
-        foreach(Item recipe in craftingRecipes) // Adiciona as receitas na aba Craft
-        {
-            GameObject gameObject = Instantiate(itemSlotPrefab, craftingItemTransform);
-            ItemSlot slot = gameObject.GetComponent<ItemSlot>();
-            slot.AddItem(recipe);
-        }
 
     }
 
@@ -70,35 +60,12 @@ public class InventoryUI : MonoBehaviour
     {
         int itemCount = InventoryManager.instance.itemsList.Count;
         
-        if(itemCount > itemSlotList.Count)
-        {
-            AddItemSlots(itemCount); // Adiciona o primeiro item se não existir numericamente
-        }
-
-        for(int i = 0; i < itemSlotList.Count; ++i) // Se existir
-        {
-            if(i < itemCount)
-            {
-                itemSlotList[i].AddItem(InventoryManager.instance.itemsList[i]); // Adiciona uma instacia do item na lista atual do inventario
-            }
-            else
-            {
-                itemSlotList[i].DestroySlot(); // Remove o item da lista atual e,
-                itemSlotList.RemoveAt(i); // Destroy o slot com e o icone
-            }
-        }
+        
     }
 
     private void AddItemSlots(int itemCount) // Adiciona mais items nos slots do invetário
     {
-        int amount = itemCount - itemSlotList.Count;
-
-        for(int i = 0; i < amount; ++i)
-        {
-            GameObject gameObject = Instantiate(itemSlotPrefab, inventoryItemTransform);
-            ItemSlot newSlot = gameObject.GetComponent<ItemSlot>();
-            itemSlotList.Add(newSlot);
-        }
+        
     }
 
     private void OpenInventory() // Ao pressionar a tecla "i", o inventario abre

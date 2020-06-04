@@ -21,15 +21,13 @@ public class PlayerMove : TaticsMove
     void Start()
     {
 	    Undo = FindObjectOfType<UndoLoot>();
-        //UIScript = ItemGen.GetComponent<UIScript>();
         Init();
     }
 
 
     void Update()
     {
-        //LootGen = UIScript.LootID;
-        //TempReact();
+        
         if (!turn)
         {
             PlayerAnim.SetBool("Walk", false);
@@ -69,8 +67,6 @@ public class PlayerMove : TaticsMove
 					CalculatePointVector(target);
 					SetHorizotalVelocity();
 				}
-				//Locomoção
-				//transform.forward = pointVector;
 				transform.position += velocity * Time.deltaTime;
 			} else {
 				transform.position = target;

@@ -8,7 +8,7 @@ public class TempPlayerHp : MonoBehaviour
 {
     public string NextCenaName;
 
-   
+    public float totalHP;
     public float PlayerHealth;
     public Image LifeBar;
     float waitForSec = 5.0f;
@@ -18,7 +18,7 @@ public class TempPlayerHp : MonoBehaviour
     
     void Start()
     {
-        PlayerHealth = 100;
+        PlayerHealth = totalHP;
         particulaAura.Emit(1);
     }
 
@@ -29,11 +29,10 @@ public class TempPlayerHp : MonoBehaviour
 
     public void LifeCheck(float dam)
     {
-        Debug.LogError("cheguei aq");
-        Debug.LogError(dam);
+        
         PlayerHealth -= dam;
-        LifeBar.fillAmount = PlayerHealth / 100;
-        Debug.LogError(PlayerHealth);
+        LifeBar.fillAmount = PlayerHealth / totalHP;
+        
 
     }
 }

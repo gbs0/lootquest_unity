@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
     public class Loot: MonoBehaviour
     {
+        public bool Spell;
         public int BadDrop = 50, MidDrop= 75, GoodDrop =90;
         public int TypeLoot;
         public bool CanUse;
@@ -29,84 +30,80 @@ using System.Collections.Generic;
 
 
     private void Awake()
+    {
+        UL = FindObjectOfType<UndoLoot>();            
+        CanUse = true;
+        m_Image = GetComponent<Image>();
+        botao = transform.GetComponent<Button>();
+        botao.onClick.AddListener(SpendLoot);
+        int prob = Random.Range(0, 100);
+        SelectRarit(prob);
+        if (!Spell)
         {
-            //PlayerAnim = gameObject.GetComponent<Animator>(); 
-            UL = FindObjectOfType<UndoLoot>();            
-            CanUse = true;
-            m_Image = GetComponent<Image>();
-            botao = transform.GetComponent<Button>();
-            botao.onClick.AddListener(SpendLoot);
-            int prob = Random.Range(0, 100);
-            SelectRarit(prob);
             player = RoundManager._allCaracters.Peek();
-            PlayerAni = GameObject.FindGameObjectWithTag("PlayerSprite");
-            AnimePlayer = PlayerAni.GetComponent<Animator>();
+        }
+        PlayerAni = GameObject.FindGameObjectWithTag("PlayerSprite");
+        AnimePlayer = PlayerAni.GetComponent<Animator>();
 
-    //     if (TypeLoot == 1)
-    //         {
-    //             if (_rarit == 1)
-    //             {
-    //                 m_Image.sprite = Run_Sprite;
-    //     
-    //             }
-    //             if (_rarit == 2)
-    //             {
-    //                 m_Image.sprite = Run_Sprite2;
-    //             
-    //     
-    //             }
-    //             if (_rarit == 3)
-    //             {
-    //                 //  AnimePlayer.SetTrigger("PositiveReact");
-    //     
-    //                 m_Image.sprite = Run_Sprite3;
-    //     
-    //             }
-    //             if (_rarit == 4)
-    //             {
-    //                 //  AnimePlayer.SetTrigger("PositiveReact");
-    //     
-    //                 m_Image.sprite = Run_Sprite4;
-    //             
-    //     
-    //             } 
-    //         } 
-    //     if(TypeLoot == 0) {
-    //         if (_rarit == 1)
-    //         {
-    //             //AnimePlayer.SetTrigger("NegativeReact");
-    //             m_Image.sprite = Fight_Sprite;
-    //         }
-    //         if (_rarit == 2)
-    //         {
-    //             m_Image.sprite = Fight_Sprite2;
-    //         }
-    //         if (_rarit == 3)
-    //         {
-    //             //  AnimePlayer.SetTrigger("PositiveReact");
-    //     
-    //             m_Image.sprite = Fight_Sprite3;
-    //            
-    //         }
-    //         if (_rarit == 4)
-    //         {
-    //             // AnimePlayer.SetTrigger("PositiveReact");
-    //             m_Image.sprite = Fight_Sprite4;
-    //             
-    //         }
-    //     }
-    //     text.GetComponent<Text>().text = _rarit.ToString();
+        if (Spell)
+        {
+            return;
+        }
+        
+        if (TypeLoot == 1)
+        {
+            if (_rarit == 1) {
+                m_Image.sprite = Run_Sprite;
+            } 
+            if (_rarit == 2) 
+            {
+                m_Image.sprite = Run_Sprite2;
+            } 
+            if (_rarit == 3) 
+            { 
+                AnimePlayer.SetTrigger("PositiveReact");
+                m_Image.sprite = Run_Sprite3;
+            } 
+            if (_rarit == 4) 
+            { 
+                AnimePlayer.SetTrigger("PositiveReact");
+                m_Image.sprite = Run_Sprite4;
+            } 
+        } 
+        if(TypeLoot == 0) {
+            if (_rarit == 1)
+            {
+                AnimePlayer.SetTrigger("NegativeReact");
+                m_Image.sprite = Fight_Sprite;
+            }
+            if (_rarit == 2)
+            {
+                m_Image.sprite = Fight_Sprite2;
+            }
+            if (_rarit == 3)
+            {
+                AnimePlayer.SetTrigger("PositiveReact");
+    
+                m_Image.sprite = Fight_Sprite3;
+           
+            }
+            if (_rarit == 4)
+            {
+                 AnimePlayer.SetTrigger("PositiveReact");
+                m_Image.sprite = Fight_Sprite4;
+            }
+        }
     }
 
     private void Start()
     {
-        
+        if (Spell) return;
 
         if (m_Image.sprite == null)
         {
             if(TypeLoot == 1)
             {
-               if( PlayerPrefs.GetInt("MonthlySardine", 0) == 2)
+                if( PlayerPrefs.GetInt("MonthlySardine", 0) == 2)
                 {
                     if (_rarit <=3)
                     {
@@ -122,7 +119,7 @@ using System.Collections.Generic;
                 }
                 if (_rarit == 1)
                 {
-                    //  AnimePlayer.SetTrigger("NegativeReact");
+                    AnimePlayer.SetTrigger("NegativeReact");
 
                     m_Image.sprite = Run_Sprite;
                 }
@@ -132,13 +129,13 @@ using System.Collections.Generic;
                 }
                 if (_rarit == 3)
                 {
-                    //  AnimePlayer.SetTrigger("PositiveReact");
+                    AnimePlayer.SetTrigger("PositiveReact");
 
                     m_Image.sprite = Run_Sprite3;
                 }
                 if (_rarit == 4)
                 {
-                    //  AnimePlayer.SetTrigger("PositiveReact");
+                    AnimePlayer.SetTrigger("PositiveReact");
 
                     m_Image.sprite = Run_Sprite4;
                 };
@@ -161,7 +158,7 @@ using System.Collections.Generic;
                 }
                 if (_rarit == 1)
                 {
-                    //AnimePlayer.SetTrigger("NegativeReact");
+                    AnimePlayer.SetTrigger("NegativeReact");
 
                     m_Image.sprite = Fight_Sprite;
                 }
@@ -171,13 +168,13 @@ using System.Collections.Generic;
                 }
                 if (_rarit == 3)
                 {
-                    // AnimePlayer.SetTrigger("PositiveReact");
+                    AnimePlayer.SetTrigger("PositiveReact");
 
                     m_Image.sprite = Fight_Sprite3;
                 }
                 if (_rarit == 4)
                 {
-                    // AnimePlayer.SetTrigger("PositiveReact");
+                    AnimePlayer.SetTrigger("PositiveReact");
 
                     m_Image.sprite = Fight_Sprite4;
                 }
@@ -189,6 +186,10 @@ using System.Collections.Generic;
 
     public void SpendLoot()
     {
+        if (Spell)
+        {
+            return;
+        }
         if (CanUse)
         {
             UL.sLoot = this;
@@ -207,10 +208,14 @@ using System.Collections.Generic;
 
     private void SelectRarit(int prob)
     {
+        if (Spell)
+        {
+            return;
+        }
         if (prob>GoodDrop)
         {
             _rarit = 4;
-            //PlayerAnim.SetTrigger("PositiveReact");
+            
         }
         else if (prob>MidDrop)
         {
@@ -223,7 +228,7 @@ using System.Collections.Generic;
         else if (prob<=BadDrop)
         {
             _rarit = 1;
-            //PlayerAnim.SetTrigger("NegativeReact");
+            
         }
     }
     public void Chose()
@@ -254,7 +259,7 @@ using System.Collections.Generic;
             }
             if (_rarit == 1)
             {
-                //AnimePlayer.SetTrigger("NegativeReact");
+                AnimePlayer.SetTrigger("NegativeReact");
 
                 m_Image.sprite = Run_Sprite;
             }
@@ -306,7 +311,7 @@ using System.Collections.Generic;
 
             if (_rarit == 0)
             {
-                //AnimePlayer.SetTrigger("NegativeReact");
+                AnimePlayer.SetTrigger("NegativeReact");
 
                 m_Image.sprite = Fight_Sprite;
             }

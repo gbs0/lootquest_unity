@@ -11,7 +11,7 @@ public partial class TaticsMove : MonoBehaviour
     GameObject[] tiles;
 
 	protected Stack<Tile> path = new Stack<Tile>();
-    Tile currentTile;
+    public Tile currentTile;
 
 	public int HitForce; 
     public bool moving = false;
