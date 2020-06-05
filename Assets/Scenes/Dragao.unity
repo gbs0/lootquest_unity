@@ -18081,7 +18081,13 @@ MonoBehaviour:
   dragaoHealthBar: {fileID: 0}
   vidaBoss: 0
   danoLateral: 0
-  horizontalTiles: []
+  horizontalTiles:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   verticalTiles:
   - {fileID: 681938039}
   particulaAtaque: {fileID: 0}

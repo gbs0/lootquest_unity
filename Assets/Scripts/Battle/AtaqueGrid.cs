@@ -69,17 +69,24 @@ public class AtaqueGrid : TaticsMove
 	public void DanoNoPlayer(List<GameObject> GO)
 	{
 		// playTransform playerTrans = GO.transform.position.x;
+		// Debug.Log(player.transform.position.x);
+
 		foreach(GameObject tile in GO) // Comparar com posição atual do player nas tiles
 		{
 			if(player.transform.position.x == tile.transform.position.x)
 			{
+				Debug.Log(tile.transform.position.x);
 				// Dar dano ao player
 				// Debug.Log("Transform do player: " + player.transform.position.x);
 				healthPlayer.DamegePlayer();
 			}
 			// Debug.Log(tile.transform.position.x);
-			RoundManager.EndTurn();
+
+			tile.GetComponent<Tile>().target = false;
+			
 		}
+		
+		RoundManager.EndTurn();
 	}
 
 	public void RemoverEfeitos(List<GameObject> GOlist)
@@ -167,7 +174,7 @@ public class AtaqueGrid : TaticsMove
 	{
 		// Move();
 		// turn = true;
-		MarcarTiles(verticalTiles);
-		DanoNoPlayer(verticalTiles);
+		// MarcarTiles(verticalTiles);
+
     }
 }
