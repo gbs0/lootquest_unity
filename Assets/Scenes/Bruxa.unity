@@ -16721,13 +16721,11 @@ PrefabInstance:
       propertyPath: Undo
       value: 
       objectReference: {fileID: 213916844}
-    - target: {fileID: 4889621934937223168, guid: f6958a85ecf449946827983584a2195c,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: PlayerAnim
       value: 
       objectReference: {fileID: 954975168}
-    - target: {fileID: 4889621934937223168, guid: f6958a85ecf449946827983584a2195c,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -16897,8 +16895,7 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4889621934937223199, guid: f6958a85ecf449946827983584a2195c, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6958a85ecf449946827983584a2195c, type: 3}
 --- !u!1 &1267464288 stripped
 GameObject:
@@ -16919,6 +16916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turn: 0
+  currentTile: {fileID: 0}
   HitForce: 4
   moving: 0
   move: 2
@@ -27220,11 +27218,6 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3889825052640751793, guid: 790e0d5ad2ae4404c8755295d629a12b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3889825051828314915, guid: 790e0d5ad2ae4404c8755295d629a12b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27289,21 +27282,15 @@ PrefabInstance:
       propertyPath: slimeAnimator
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 358309590, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
-      propertyPath: m_LocalRotation.y
+    - target: {fileID: 3889825052640751793, guid: 790e0d5ad2ae4404c8755295d629a12b,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 358309590, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 358309590, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 358309590, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.94
+    - target: {fileID: 3889825053199291085, guid: 790e0d5ad2ae4404c8755295d629a12b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3889825053199291084, guid: 790e0d5ad2ae4404c8755295d629a12b,
         type: 3}
@@ -27330,6 +27317,26 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: -0.098
       objectReference: {fileID: 0}
+    - target: {fileID: 358309590, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 358309590, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 358309590, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 358309590, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 358309589, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4812412947396997109, guid: 790e0d5ad2ae4404c8755295d629a12b,
         type: 3}
       propertyPath: m_IsActive
@@ -27347,15 +27354,6 @@ PrefabInstance:
     - target: {fileID: 358309591, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
       propertyPath: m_Size.y
       value: 0.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 3889825053199291085, guid: 790e0d5ad2ae4404c8755295d629a12b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 358309589, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}

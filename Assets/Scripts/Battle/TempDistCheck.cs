@@ -43,32 +43,21 @@ public class TempDistCheck : MonoBehaviour
     public float vida;
     public Button SkipButton;
     public float TimeAnimation;
-<<<<<<< HEAD
 
     public int m_ExperienceValue;
     
-=======
-    public UndoLoot Undo;
-
->>>>>>> TempDisk Funcional
     // Start is called before the first frame update
-    private void Awake()
-    {
-        RM = FindObjectOfType<RoundManager>();
-        Undo = FindObjectOfType<UndoLoot>();
-        player = GameObject.Find("Player");
-        playerMove = player.GetComponent<PlayerMove>();
-    }
+    
     public void Start()
     {
         // LifeBar = GameObject.Find("sprite slime");
         // LifeBar = this.GetComponentInChildren<InputField>();
         // LifeBar = this.GameObject.Find("personagem canvas").GetComponentInChildren<InputField>();
         vida = tempLife;
-        //1RM = FindObjectOfType<RoundManager>();
+        RM = FindObjectOfType<RoundManager>();
         // player = GameObject.FindGameObjectWithTag("Player");
-       //1 player = GameObject.Find("Player");
-       //1 playerMove = player.GetComponent<PlayerMove>();
+        player = GameObject.Find("Player");
+        playerMove = player.GetComponent<PlayerMove>();
 
         canHit = true;
         hitCount = 0;
@@ -123,8 +112,6 @@ public class TempDistCheck : MonoBehaviour
 
                 }
                 playerMove.LootGenTest = 0;
-                Undo.CleanBtn();
-
                 //RoundManager.EndTurn();
             }
         }
