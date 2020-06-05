@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.UI;
+using Random=UnityEngine.Random;
 
 public class AtaqueGrid : TaticsMove
 {
@@ -13,17 +14,14 @@ public class AtaqueGrid : TaticsMove
 	public int vidaBoss;
 	public int danoLateral;
 	
-	public List<GameObject> horizontalTiles = new List<GameObject>();
-	public List<GameObject> verticalTiles = new List<GameObject>();
-
+	public List<GameObject> backTiles = new List<GameObject>();
+	public List<GameObject> sideTiles = new List<GameObject>();
+	public List<GameObject> centerTiles = new List<GameObject>();
 	// public Animator ataqueBoss;
 	// public Animator camAnim;
 	// public Animator danoBoss;
-
 	public ParticleSystem particulaAtaque;
-
 	public GameObject player; // Pegar Transform do Player
-	public Color tileColor = Color.red;
 		
 	// Dictionary<string, GameObject> myDictionaryObjects = new Dictionary<string, GameObject>();
 	private void Start()
@@ -31,42 +29,57 @@ public class AtaqueGrid : TaticsMove
 		Init();
 	}
 
-	public void AtaqueHorizontal()
+	public void SorteioAtaque()
 	{
-		MarcarTiles(horizontalTiles);
+		int num = Random.Range(-1, 4);
+	
+		switch (num)
+        {
+        case 4:
+            AtaqueMeio(centerTiles);
+            break;
+        case 3:
+            AtaqueLateral(sideTiles);
+            break;
+        case 2:
+            AtaqueTraseiro(backTiles);
+            break;
+        case 1:
+            print ("SMASH!");
+            break;
+        case 0:
+            print ("Pblblblblb");
+            break;
+        default:
+            // Esperar um Round;
+			print ("Esperando Round");
+            break;
+        }
 
-		// DanoNoPlayer(horizontalTiles);
+		RoundManager.EndTurn();
+		
+
+ 	}
+
+	public void AtaqueLateral(List<GameObject> tilesList)
+	{
+		MarcarTiles(tilesList);
+
  	}
 	public void AtaqueTraseiro(List<GameObject> tilesList)
  	{
- 		// Animate Dragon's attack
-		
-		FogoNaTile(tilesList);
- 		DanoNoPlayer(tilesList);
-		 
-		/*
-		foreach(GameObject tile in backTiles)
- 		{
- 			// Quaternion rotationParticula = new Quaternion(tile.transform.rotation.x, tile.transform.rotation.y, tile.transform.rotation.z, 0f );
- 			Quaternion rotationParticula = new Quaternion( -90f, tile.transform.rotation.y, tile.transform.rotation.z, 0f );
-            // Instantiate(particulaFogo, tile.transform.position, tile.transform.rotation);
-            Instantiate(particulaAtaque, tile.transform.position, rotationParticula);
- 		}
-		*/
+ 		
+		MarcarTiles(tilesList);
+ 			 
  	}
 
- 	public void FogoNaTile(List<GameObject> g)
- 	{
-		foreach(GameObject tile in g)
- 		{
- 			// Quaternion rotationParticula = new Quaternion(tile.transform.rotation.x, tile.transform.rotation.y, tile.transform.rotation.z, 0f );
- 			Quaternion rotationParticula = new Quaternion( -90f, tile.transform.rotation.y, tile.transform.rotation.z, 0f );
-            // Instantiate(particulaFogo, tile.transform.position, tile.transform.rotation);
-            //Instantiate(particulaAtaque, tile.transform.position, rotationParticula);
- 		}
+	public void AtaqueMeio(List<GameObject> tilesList)
+	{
+		MarcarTiles(tilesList);	
+		 
  	}
-	
-	public void DanoNoPlayer(List<GameObject> GO)
+
+ 	public void DanoNoPlayer(List<GameObject> GO)
 	{
 		// playTransform playerTrans = GO.transform.position.x;
 		// Debug.Log(player.transform.position.x);
@@ -88,6 +101,17 @@ public class AtaqueGrid : TaticsMove
 		
 		RoundManager.EndTurn();
 	}
+	 public void FogoNaTile(List<GameObject> g)
+ 	{
+		foreach(GameObject tile in g)
+ 		{
+ 			// Quaternion rotationParticula = new Quaternion(tile.transform.rotation.x, tile.transform.rotation.y, tile.transform.rotation.z, 0f );
+ 			Quaternion rotationParticula = new Quaternion( -90f, tile.transform.rotation.y, tile.transform.rotation.z, 0f );
+            // Instantiate(particulaFogo, tile.transform.position, tile.transform.rotation);
+            //Instantiate(particulaAtaque, tile.transform.position, rotationParticula);
+ 		}
+ 	}
+	
 
 	public void RemoverEfeitos(List<GameObject> GOlist)
 	{
@@ -172,9 +196,6 @@ public class AtaqueGrid : TaticsMove
 
 	public override void BeginTurn() // Ainda n troca o turno
 	{
-		// Move();
-		// turn = true;
-		// MarcarTiles(verticalTiles);
-
+		SorteioAtaque();
     }
 }
