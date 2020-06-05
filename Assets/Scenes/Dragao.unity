@@ -18081,18 +18081,37 @@ MonoBehaviour:
   dragaoHealthBar: {fileID: 0}
   vidaBoss: 0
   danoLateral: 0
-  horizontalTiles:
+  backTiles:
+  - {fileID: 1441958023}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  verticalTiles:
-  - {fileID: 681938039}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  sideTiles:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  centerTiles:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   particulaAtaque: {fileID: 0}
   player: {fileID: 470873706}
-  tileColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!65 &1105728070
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -130,7 +130,7 @@ public class AtaqueGrid : TaticsMove
 			actualTile.target = true;
 			
 		}
-		FogoNaTile(GOlist);
+		DanoNoPlayer(GOlist);
 	}
 
 	// public override void Init()
