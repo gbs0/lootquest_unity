@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 0c640479904b5f846855772e5b0eaddf
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1677872204073175764
+    second: Creatuurr's Gauntlet _0
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,11 +96,32 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Creatuurr's Gauntlet _0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 44
+        width: 285
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851ee0a98c643f04699a21f69ff31c9a
+      internalID: -1677872204073175764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 56bebe27f2fb78441b36fffd1f4e3813
     internalID: 0
     vertices: []
     indices: 
