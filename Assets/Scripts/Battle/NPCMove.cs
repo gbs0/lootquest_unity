@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class NPCMove : TaticsMove
 {
+	public bool Stuned;
     private GameObject NPC;
 	public GameObject target;
     public Animator GS;
@@ -25,6 +26,11 @@ public class NPCMove : TaticsMove
         {
             return;
         }
+
+        if (Stuned)
+        {
+	        return;
+        }
         if (!moving)
         {
             FindNearestTarget();
@@ -41,6 +47,30 @@ public class NPCMove : TaticsMove
 
             Move();
         }
+    }
+    public override void BeginTurn()
+    {
+	    if (Stuned)
+	    {
+		    // roda anima de bixo stunado e passa
+		    RoundManager.EndTurn();
+		    Stuned = false;
+		    return;
+	    }
+	    if (LootGenTest == 1)
+	    {	    
+		    FindSelectableTiles();
+	    }
+
+	    if (LootGenTest == 0)
+	    {
+		    var enimi = FindObjectsOfType<Damage>();
+		    foreach (var objDamage in enimi)
+		    {
+			    objDamage.DistCheck();
+		    }
+	    }
+	    turn = true;
     }
 
    public  IEnumerator MoveAnim()

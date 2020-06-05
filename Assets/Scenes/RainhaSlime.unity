@@ -5042,6 +5042,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: Spell
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: AnimePlayer
+      value: 
+      objectReference: {fileID: 954975168}
+    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: intSpell
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
       propertyPath: m_Color.r
@@ -5057,16 +5072,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: Spell
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: AnimePlayer
-      value: 
-      objectReference: {fileID: 954975168}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16aa103a5adf8a4e9425cd9c39ba6b6, type: 3}
 --- !u!1 &328658001
@@ -33843,6 +33848,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: Spell
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: AnimePlayer
+      value: 
+      objectReference: {fileID: 954975168}
+    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: intSpell
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
       propertyPath: m_Color.r
@@ -33858,16 +33878,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.8207547
       objectReference: {fileID: 0}
-    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: Spell
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: AnimePlayer
-      value: 
-      objectReference: {fileID: 954975168}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16aa103a5adf8a4e9425cd9c39ba6b6, type: 3}
 --- !u!1 &2108068394
@@ -34392,6 +34402,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: Spell
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: AnimePlayer
+      value: 
+      objectReference: {fileID: 954975168}
+    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: intSpell
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
       propertyPath: m_Color.r
@@ -34407,16 +34432,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.20754717
       objectReference: {fileID: 0}
-    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: Spell
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: AnimePlayer
-      value: 
-      objectReference: {fileID: 954975168}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16aa103a5adf8a4e9425cd9c39ba6b6, type: 3}
 --- !u!1 &2134949436

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Damage : MonoBehaviour
 {
+    public bool DD;
     private RoundManager RM;
     public GameObject PainelVitoria;
     public GameObject Selection;
@@ -62,7 +63,14 @@ public class Damage : MonoBehaviour
                 PlayerAnim.SetTrigger("Attack");
                 //GS.SetTrigger("Damage");
                 StartCoroutine("DamageAnim");
-                tempLife -= playerMove.HitForce*10;
+                if (DD)
+                {
+                    tempLife -= playerMove.HitForce*10*2;
+                }
+                else
+                {
+                    tempLife -= playerMove.HitForce*10;
+                }
                 float barra = tempLife / 100;
                 LifeBar.fillAmount = barra;
                 if (tempLife <= 0)
@@ -72,12 +80,10 @@ public class Damage : MonoBehaviour
 
                     GS.SetBool("Morto", true);
                     RM.EnimKilled();
-                    
-
-
                 }
                 playerMove.LootGenTest = 99;
                 Undo.CleanBtn();
+                DD = false;
                 //RoundManager.EndTurn();
             }
         }

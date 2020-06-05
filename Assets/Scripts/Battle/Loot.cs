@@ -6,6 +6,7 @@ using System.Collections.Generic;
     public class Loot: MonoBehaviour
     {
         public bool Spell;
+        public int intSpell;
         public int BadDrop = 50, MidDrop= 75, GoodDrop =90;
         public int TypeLoot;
         public bool CanUse;
@@ -38,10 +39,7 @@ using System.Collections.Generic;
         botao.onClick.AddListener(SpendLoot);
         int prob = Random.Range(0, 100);
         SelectRarit(prob);
-        if (!Spell)
-        {
-            player = RoundManager._allCaracters.Peek();
-        }
+        player = RoundManager._allCaracters.Peek();
         PlayerAni = GameObject.FindGameObjectWithTag("PlayerSprite");
         AnimePlayer = PlayerAni.GetComponent<Animator>();
 
@@ -188,6 +186,21 @@ using System.Collections.Generic;
     {
         if (Spell)
         {
+            switch (intSpell)
+            {
+                case 0:
+                    SpellTP();
+                    break;
+                case 1:
+                    SpellStun();
+                    break;
+                case 2:
+                    SpellDD();
+                    break;
+                case 3:
+                    SpellLuck();
+                    break;
+            }
             return;
         }
         if (CanUse)
@@ -204,6 +217,50 @@ using System.Collections.Generic;
         {
             FindObjectOfType<PassiveManager>().ChoseOne(this);
         }
+    }
+
+    private void SpellLuck()
+    {
+        var loots = FindObjectsOfType<Loot>();
+        foreach (var lot in loots)
+        {
+            lot._rarit = 4;
+        }
+        player.BeginTurn();
+        Destroy(gameObject);
+    }
+
+    private void SpellDD()
+    {
+        var dam = FindObjectsOfType<Damage>();
+        foreach (var damage in dam)
+        {
+            damage.DD = true;
+        }
+        player.BeginTurn();
+        Destroy(gameObject);
+    }
+
+    private void SpellStun()
+    {
+        var enim = FindObjectsOfType<NPCMove>();
+        foreach (var npc in enim)
+        {
+            npc.Stuned = true;
+            
+        }
+        player.BeginTurn();
+        Destroy(gameObject);
+    }
+
+    private void SpellTP()
+    {
+        UL.sLoot = this;
+        UL.btn.gameObject.SetActive(true);
+        player.LootGenTest = 1;
+        player.move = 100;
+        player.BeginTurn();
+        Destroy(gameObject);
     }
 
     private void SelectRarit(int prob)
