@@ -462,6 +462,7 @@ GameObject:
   - component: {fileID: 29555131}
   - component: {fileID: 29555134}
   - component: {fileID: 29555133}
+  - component: {fileID: 29555135}
   - component: {fileID: 29555132}
   m_Layer: 0
   m_Name: Foguinhos_aleatorios_0 (2)
@@ -484,20 +485,32 @@ Transform:
   m_Father: {fileID: 82814557}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &29555132
-MonoBehaviour:
+--- !u!61 &29555132
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29555130}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d2c3b2f1f84df419564bb3cc47805b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeStart1: 0
-  TempoAnimacao: 17
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.014454022, y: -0.0867078}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.54925966, y: 0.5781572}
+  m_EdgeRadius: 0
 --- !u!95 &29555133
 Animator:
   serializedVersion: 3
@@ -565,6 +578,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &29555135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29555130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e19baddb8557e4596da59b5bf678ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Espirito: {fileID: 1422367758}
+  timeStart1: 0
+  TempoAnimacao: 7
 --- !u!1 &35306699
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +683,7 @@ GameObject:
   - component: {fileID: 38704012}
   - component: {fileID: 38704015}
   - component: {fileID: 38704014}
+  - component: {fileID: 38704016}
   - component: {fileID: 38704013}
   m_Layer: 0
   m_Name: Foguinhos_aleatorios_0
@@ -677,20 +706,32 @@ Transform:
   m_Father: {fileID: 82814557}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &38704013
-MonoBehaviour:
+--- !u!61 &38704013
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38704011}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d2c3b2f1f84df419564bb3cc47805b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeStart1: 0
-  TempoAnimacao: 15
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.106161624, y: -0.15924384}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6370786, y: 0.6724628}
+  m_EdgeRadius: 0
 --- !u!95 &38704014
 Animator:
   serializedVersion: 3
@@ -758,6 +799,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &38704016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38704011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e19baddb8557e4596da59b5bf678ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Espirito: {fileID: 1422367758}
+  timeStart1: 0
+  TempoAnimacao: 8
 --- !u!1 &39703576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,6 +1422,7 @@ GameObject:
   - component: {fileID: 67344499}
   - component: {fileID: 67344502}
   - component: {fileID: 67344501}
+  - component: {fileID: 67344503}
   - component: {fileID: 67344500}
   m_Layer: 0
   m_Name: Foguinhos_aleatorios_0 (12)
@@ -1388,20 +1445,32 @@ Transform:
   m_Father: {fileID: 82814557}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &67344500
-MonoBehaviour:
+--- !u!61 &67344500
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67344498}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d2c3b2f1f84df419564bb3cc47805b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeStart1: 21
-  TempoAnimacao: 15
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00026994944, y: -0.090246856}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8823371, y: 0.9824314}
+  m_EdgeRadius: 0
 --- !u!95 &67344501
 Animator:
   serializedVersion: 3
@@ -1469,6 +1538,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &67344503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67344498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e19baddb8557e4596da59b5bf678ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Espirito: {fileID: 1422367758}
+  timeStart1: 0
+  TempoAnimacao: 15
 --- !u!1 &68523902
 GameObject:
   m_ObjectHideFlags: 0
@@ -2612,6 +2696,7 @@ GameObject:
   - component: {fileID: 138678412}
   - component: {fileID: 138678415}
   - component: {fileID: 138678414}
+  - component: {fileID: 138678416}
   - component: {fileID: 138678413}
   m_Layer: 0
   m_Name: Foguinhos_aleatorios_0 (8)
@@ -2634,20 +2719,32 @@ Transform:
   m_Father: {fileID: 82814557}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &138678413
-MonoBehaviour:
+--- !u!61 &138678413
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138678411}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d2c3b2f1f84df419564bb3cc47805b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeStart1: 0
-  TempoAnimacao: 15
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.15665294, y: 0.25763166}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.81571543, y: 0.7811874}
+  m_EdgeRadius: 0
 --- !u!95 &138678414
 Animator:
   serializedVersion: 3
@@ -2715,6 +2812,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &138678416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138678411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e19baddb8557e4596da59b5bf678ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Espirito: {fileID: 1422367758}
+  timeStart1: 0
+  TempoAnimacao: 12
 --- !u!1 &139024310
 GameObject:
   m_ObjectHideFlags: 0
@@ -4617,7 +4729,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 551944412}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &294585793
 GameObject:
@@ -5212,6 +5324,7 @@ GameObject:
   - component: {fileID: 303196120}
   - component: {fileID: 303196123}
   - component: {fileID: 303196122}
+  - component: {fileID: 303196124}
   - component: {fileID: 303196121}
   m_Layer: 0
   m_Name: Foguinhos_aleatorios_0 (5)
@@ -5234,20 +5347,32 @@ Transform:
   m_Father: {fileID: 82814557}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &303196121
-MonoBehaviour:
+--- !u!61 &303196121
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303196119}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d2c3b2f1f84df419564bb3cc47805b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeStart1: 0
-  TempoAnimacao: 15
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.0001, y: 0.0001}
+  m_EdgeRadius: 0
 --- !u!95 &303196122
 Animator:
   serializedVersion: 3
@@ -5315,6 +5440,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &303196124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303196119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e19baddb8557e4596da59b5bf678ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Espirito: {fileID: 1422367758}
+  timeStart1: 0
+  TempoAnimacao: 16
 --- !u!1 &315828248
 GameObject:
   m_ObjectHideFlags: 0
@@ -6284,6 +6424,7 @@ GameObject:
   - component: {fileID: 355880047}
   - component: {fileID: 355880050}
   - component: {fileID: 355880049}
+  - component: {fileID: 355880051}
   - component: {fileID: 355880048}
   m_Layer: 0
   m_Name: Foguinhos_aleatorios_0 (10)
@@ -6306,20 +6447,32 @@ Transform:
   m_Father: {fileID: 82814557}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &355880048
-MonoBehaviour:
+--- !u!61 &355880048
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355880046}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d2c3b2f1f84df419564bb3cc47805b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeStart1: 0
-  TempoAnimacao: 15
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.060163274, y: -0.09353101}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.65535057, y: 1.0032058}
+  m_EdgeRadius: 0
 --- !u!95 &355880049
 Animator:
   serializedVersion: 3
@@ -6387,6 +6540,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &355880051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355880046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e19baddb8557e4596da59b5bf678ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Espirito: {fileID: 1422367758}
+  timeStart1: 0
+  TempoAnimacao: 11
 --- !u!1 &363483207
 GameObject:
   m_ObjectHideFlags: 0
@@ -9594,7 +9762,6 @@ Transform:
   m_LocalPosition: {x: 100.82523, y: 24.9, z: 121.7908}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1420958635}
   - {fileID: 1801676980}
   - {fileID: 1559290651}
   - {fileID: 1640627883}
@@ -10208,6 +10375,7 @@ GameObject:
   - component: {fileID: 602860371}
   - component: {fileID: 602860374}
   - component: {fileID: 602860373}
+  - component: {fileID: 602860375}
   - component: {fileID: 602860372}
   m_Layer: 0
   m_Name: Foguinhos_aleatorios_0 (3)
@@ -10230,20 +10398,32 @@ Transform:
   m_Father: {fileID: 82814557}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &602860372
-MonoBehaviour:
+--- !u!61 &602860372
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602860370}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d2c3b2f1f84df419564bb3cc47805b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeStart1: 0
-  TempoAnimacao: 15
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.0001, y: 0.0001}
+  m_EdgeRadius: 0
 --- !u!95 &602860373
 Animator:
   serializedVersion: 3
@@ -10311,6 +10491,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &602860375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602860370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e19baddb8557e4596da59b5bf678ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Espirito: {fileID: 1422367758}
+  timeStart1: 0
+  TempoAnimacao: 27
+--- !u!1 &611390911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 611390912}
+  m_Layer: 0
+  m_Name: PedraE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &611390912
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611390911}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 122.4, y: -36.2, z: 3.7254918}
+  m_LocalScale: {x: 2.464, y: 2.464, z: 2.464}
+  m_Children:
+  - {fileID: 1422367759}
+  m_Father: {fileID: 885546189}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &645433768
 GameObject:
   m_ObjectHideFlags: 0
@@ -14034,11 +14260,11 @@ Transform:
   - {fileID: 2092729881}
   - {fileID: 1512650600}
   - {fileID: 175625153}
+  - {fileID: 2039341672}
   - {fileID: 1389501036}
-  - {fileID: 1422367759}
+  - {fileID: 611390912}
   - {fileID: 1972144895}
   - {fileID: 927495671}
-  - {fileID: 2039341672}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14382,11 +14608,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 927495670}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.29, y: -25.34, z: 3.7254918}
+  m_LocalPosition: {x: 48.3, y: -67.3, z: 3.7254918}
   m_LocalScale: {x: 2.464, y: 2.464, z: 2.464}
   m_Children: []
   m_Father: {fileID: 885546189}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &927820549
 GameObject:
@@ -21087,12 +21313,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1389501036}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: PedraD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1389501036
 Transform:
   m_ObjectHideFlags: 0
@@ -21101,11 +21327,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389501035}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.29, y: -25.34, z: 3.7254918}
+  m_LocalPosition: {x: 41.95, y: 15.5, z: 3.7254918}
   m_LocalScale: {x: 2.464, y: 2.464, z: 2.464}
-  m_Children: []
+  m_Children:
+  - {fileID: 1420958635}
   m_Father: {fileID: 885546189}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1397342457
 GameObject:
@@ -21517,10 +21744,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420958634}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.23, y: -6.38, z: 0}
-  m_LocalScale: {x: 2.464, y: 2.464, z: 2.464}
+  m_LocalPosition: {x: -0.04170932, y: -0.23436275, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 551944412}
+  m_Father: {fileID: 1389501036}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &1420958636
@@ -21645,7 +21872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelBox: {fileID: 528418076}
-  Conversa: {fileID: 1420958634}
+  Conversa: {fileID: 1389501035}
   podeFalar: 0
   linhaAtual: 0
   textoMensagem: {fileID: 39703577}
@@ -21655,7 +21882,8 @@ MonoBehaviour:
   - 'Just hide this thing! '
   - ' But why?!'
   - ' No time and money to pay any copyrights issues, duh.'
-  limitText: 4
+  - 
+  limitText: 5
   jafoi: 0
   Coroa: 0
   Peixe: 0
@@ -21673,6 +21901,7 @@ MonoBehaviour:
   - {fileID: 957712810}
   - {fileID: 9115073238497143755}
   - {fileID: 957712810}
+  - {fileID: 957712810}
   PlayerRigi: {fileID: 0}
   Player: {fileID: 0}
   rodaCut: 0
@@ -21685,6 +21914,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1422367759}
+  - component: {fileID: 1422367761}
+  - component: {fileID: 1422367760}
   m_Layer: 0
   m_Name: GameObject (1)
   m_TagString: Untagged
@@ -21700,12 +21931,96 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1422367758}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.29, y: -25.34, z: 3.7254918}
-  m_LocalScale: {x: 2.464, y: 2.464, z: 2.464}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 885546189}
-  m_RootOrder: 5
+  m_Father: {fileID: 611390912}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1422367760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422367758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7fb2b0939003d4297b6dfac8e19800, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelBox: {fileID: 528418076}
+  Conversa: {fileID: 611390911}
+  podeFalar: 0
+  linhaAtual: 0
+  textoMensagem: {fileID: 0}
+  texto:
+  - 'Yo! I touched something. Yikes, it is cold! '
+  - "I think it is\u2026 a\u2026 hm\u2026"
+  - "A little\u2026 "
+  - 'Cute ghost thing! '
+  - "It is cute\u2026"
+  - but is too ghostly like to me.
+  - "It is\u2026 whispering something?"
+  - .--. .-.. . .- ... . --..-- / -.. --- -. - / .-.. . .- ...- . / -- . / .- .-..
+    --- -. . / .--- ..- ... - / -... . -.-. .- ..- ... . / .. / .- -- / .- / -...
+    .- -.. / .-.. --- --- -
+  - '....'
+  - "It said \u201Cplease, don\u2019t leave me alone just because I am a bad loot\u2026\u201D"
+  - Ok, keeping it.
+  limitText: 10
+  jafoi: 0
+  Coroa: 0
+  Peixe: 0
+  CristalBob: 0
+  Chicote: 0
+  Loot: 0
+  Fantasma: 1
+  Manopla: 0
+  teste: 0
+  jaComecaFalando: 0
+  img: {fileID: 0}
+  imgs:
+  - {fileID: 9115073238497143792}
+  - {fileID: 529716322}
+  - {fileID: 9115073238497143755}
+  - {fileID: 9115073238497143789}
+  - {fileID: 819435739}
+  - {fileID: 9115073238497143792}
+  - {fileID: 9115073238497143755}
+  - {fileID: 9115073238497143791}
+  - {fileID: 1978706292}
+  - {fileID: 529716322}
+  - {fileID: 1662651662}
+  PlayerRigi: {fileID: 0}
+  Player: {fileID: 0}
+  rodaCut: 0
+--- !u!61 &1422367761
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422367758}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.0314293, y: 0.35735178}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 27.923225, y: 14.478225}
+  m_EdgeRadius: 0
 --- !u!1 &1422877184
 GameObject:
   m_ObjectHideFlags: 0
@@ -21932,6 +22247,7 @@ GameObject:
   - component: {fileID: 1443657739}
   - component: {fileID: 1443657742}
   - component: {fileID: 1443657741}
+  - component: {fileID: 1443657743}
   - component: {fileID: 1443657740}
   m_Layer: 0
   m_Name: Foguinhos_aleatorios_0 (9)
@@ -21954,20 +22270,32 @@ Transform:
   m_Father: {fileID: 82814557}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1443657740
-MonoBehaviour:
+--- !u!61 &1443657740
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443657738}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d2c3b2f1f84df419564bb3cc47805b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeStart1: 0
-  TempoAnimacao: 19
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.07212494, y: -0.12919465}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.80312073, y: 0.6804433}
+  m_EdgeRadius: 0
 --- !u!95 &1443657741
 Animator:
   serializedVersion: 3
@@ -22035,6 +22363,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1443657743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443657738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e19baddb8557e4596da59b5bf678ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Espirito: {fileID: 1422367758}
+  timeStart1: 0
+  TempoAnimacao: 19
 --- !u!1 &1452701565
 GameObject:
   m_ObjectHideFlags: 0
@@ -23765,7 +24108,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 551944412}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1559947635
 GameObject:
@@ -23778,6 +24121,7 @@ GameObject:
   - component: {fileID: 1559947636}
   - component: {fileID: 1559947639}
   - component: {fileID: 1559947638}
+  - component: {fileID: 1559947640}
   - component: {fileID: 1559947637}
   m_Layer: 0
   m_Name: Foguinhos_aleatorios_0 (7)
@@ -23800,20 +24144,32 @@ Transform:
   m_Father: {fileID: 82814557}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1559947637
-MonoBehaviour:
+--- !u!61 &1559947637
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559947635}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d2c3b2f1f84df419564bb3cc47805b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeStart1: 0
-  TempoAnimacao: 15
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.0001, y: 0.0001}
+  m_EdgeRadius: 0
 --- !u!95 &1559947638
 Animator:
   serializedVersion: 3
@@ -23881,6 +24237,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1559947640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559947635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e19baddb8557e4596da59b5bf678ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Espirito: {fileID: 1422367758}
+  timeStart1: 0
+  TempoAnimacao: 13
 --- !u!1 &1569213898
 GameObject:
   m_ObjectHideFlags: 0
@@ -24928,7 +25299,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 551944412}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1640627884
 MonoBehaviour:
@@ -25424,6 +25795,7 @@ GameObject:
   - component: {fileID: 1664121501}
   - component: {fileID: 1664121504}
   - component: {fileID: 1664121503}
+  - component: {fileID: 1664121505}
   - component: {fileID: 1664121502}
   m_Layer: 0
   m_Name: Foguinhos_aleatorios_0 (13)
@@ -25446,20 +25818,32 @@ Transform:
   m_Father: {fileID: 82814557}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1664121502
-MonoBehaviour:
+--- !u!61 &1664121502
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664121500}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d2c3b2f1f84df419564bb3cc47805b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeStart1: 0
-  TempoAnimacao: 25
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.1061604, y: -0.10616174}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.77862954, y: 0.7078534}
+  m_EdgeRadius: 0
 --- !u!95 &1664121503
 Animator:
   serializedVersion: 3
@@ -25527,6 +25911,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1664121505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664121500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e19baddb8557e4596da59b5bf678ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Espirito: {fileID: 1422367758}
+  timeStart1: 0
+  TempoAnimacao: 25
 --- !u!1 &1665312737
 GameObject:
   m_ObjectHideFlags: 0
@@ -25720,6 +26119,7 @@ GameObject:
   - component: {fileID: 1665357650}
   - component: {fileID: 1665357653}
   - component: {fileID: 1665357652}
+  - component: {fileID: 1665357654}
   - component: {fileID: 1665357651}
   m_Layer: 0
   m_Name: Foguinhos_aleatorios_0 (14)
@@ -25742,20 +26142,32 @@ Transform:
   m_Father: {fileID: 82814557}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1665357651
-MonoBehaviour:
+--- !u!61 &1665357651
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1665357649}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d2c3b2f1f84df419564bb3cc47805b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeStart1: 0
-  TempoAnimacao: 13
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.0001, y: 0.0001}
+  m_EdgeRadius: 0
 --- !u!95 &1665357652
 Animator:
   serializedVersion: 3
@@ -25823,6 +26235,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1665357654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665357649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e19baddb8557e4596da59b5bf678ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Espirito: {fileID: 1422367758}
+  timeStart1: 0
+  TempoAnimacao: 13
 --- !u!1 &1666748815
 GameObject:
   m_ObjectHideFlags: 0
@@ -26744,6 +27171,7 @@ GameObject:
   - component: {fileID: 1759093139}
   - component: {fileID: 1759093142}
   - component: {fileID: 1759093141}
+  - component: {fileID: 1759093143}
   - component: {fileID: 1759093140}
   m_Layer: 0
   m_Name: Foguinhos_aleatorios_0 (6)
@@ -26766,20 +27194,32 @@ Transform:
   m_Father: {fileID: 82814557}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1759093140
-MonoBehaviour:
+--- !u!61 &1759093140
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759093138}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d2c3b2f1f84df419564bb3cc47805b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeStart1: 0
-  TempoAnimacao: 15
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.0001, y: 0.0001}
+  m_EdgeRadius: 0
 --- !u!95 &1759093141
 Animator:
   serializedVersion: 3
@@ -26847,6 +27287,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1759093143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759093138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e19baddb8557e4596da59b5bf678ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Espirito: {fileID: 1422367758}
+  timeStart1: 0
+  TempoAnimacao: 17
 --- !u!1 &1768431924
 GameObject:
   m_ObjectHideFlags: 0
@@ -27222,7 +27677,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 551944412}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1801676981
 MonoBehaviour:
@@ -28317,6 +28772,7 @@ GameObject:
   - component: {fileID: 1837584389}
   - component: {fileID: 1837584392}
   - component: {fileID: 1837584391}
+  - component: {fileID: 1837584393}
   - component: {fileID: 1837584390}
   m_Layer: 0
   m_Name: Foguinhos_aleatorios_0 (11)
@@ -28339,20 +28795,32 @@ Transform:
   m_Father: {fileID: 82814557}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1837584390
-MonoBehaviour:
+--- !u!61 &1837584390
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837584388}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d2c3b2f1f84df419564bb3cc47805b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeStart1: 0
-  TempoAnimacao: 10
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.043653287, y: -0.11972451}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.38576818, y: 0.59216046}
+  m_EdgeRadius: 0
 --- !u!95 &1837584391
 Animator:
   serializedVersion: 3
@@ -28420,6 +28888,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1837584393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837584388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e19baddb8557e4596da59b5bf678ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Espirito: {fileID: 1422367758}
+  timeStart1: 0
+  TempoAnimacao: 10
 --- !u!1 &1848266697
 GameObject:
   m_ObjectHideFlags: 0
@@ -29307,6 +29790,7 @@ GameObject:
   - component: {fileID: 1866145503}
   - component: {fileID: 1866145506}
   - component: {fileID: 1866145505}
+  - component: {fileID: 1866145507}
   - component: {fileID: 1866145504}
   m_Layer: 0
   m_Name: Foguinhos_aleatorios_0 (1)
@@ -29329,20 +29813,32 @@ Transform:
   m_Father: {fileID: 82814557}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1866145504
-MonoBehaviour:
+--- !u!61 &1866145504
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866145502}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d2c3b2f1f84df419564bb3cc47805b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeStart1: 0
-  TempoAnimacao: 15
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.0001, y: 0.0001}
+  m_EdgeRadius: 0
 --- !u!95 &1866145505
 Animator:
   serializedVersion: 3
@@ -29410,6 +29906,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1866145507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866145502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e19baddb8557e4596da59b5bf678ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Espirito: {fileID: 1422367758}
+  timeStart1: 0
+  TempoAnimacao: 6
 --- !u!1 &1870023312
 GameObject:
   m_ObjectHideFlags: 0
@@ -31484,11 +31995,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972144894}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.29, y: -25.34, z: 3.7254918}
+  m_LocalPosition: {x: 128.61, y: -2.01, z: 3.7254918}
   m_LocalScale: {x: 2.464, y: 2.464, z: 2.464}
   m_Children: []
   m_Father: {fileID: 885546189}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1973814722
 GameObject:
@@ -32689,7 +33200,7 @@ Transform:
   m_Children:
   - {fileID: 2078065339}
   m_Father: {fileID: 885546189}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2045090874
 GameObject:
@@ -34173,6 +34684,7 @@ GameObject:
   - component: {fileID: 2123380741}
   - component: {fileID: 2123380744}
   - component: {fileID: 2123380743}
+  - component: {fileID: 2123380745}
   - component: {fileID: 2123380742}
   m_Layer: 0
   m_Name: Foguinhos_aleatorios_0 (4)
@@ -34195,20 +34707,32 @@ Transform:
   m_Father: {fileID: 82814557}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2123380742
-MonoBehaviour:
+--- !u!61 &2123380742
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2123380740}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d2c3b2f1f84df419564bb3cc47805b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeStart1: 0
-  TempoAnimacao: 15
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.0001, y: 0.0001}
+  m_EdgeRadius: 0
 --- !u!95 &2123380743
 Animator:
   serializedVersion: 3
@@ -34276,6 +34800,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2123380745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123380740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e19baddb8557e4596da59b5bf678ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Espirito: {fileID: 1422367758}
+  timeStart1: 0
+  TempoAnimacao: 19
 --- !u!1 &2133913468 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9115073240026989752, guid: af68fab85d72a9f43a8e466f2e3ae98e,
@@ -34826,6 +35365,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4298871447831412258, guid: 060d9b5adfc37a94f95a8d8ba10cb935,
+        type: 3}
+      propertyPath: m_Text
+      value: "Tutorial:\r\nWelcome to Gramorp village!\r\nJoin the guild and talk
+        to the guild master\r."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 060d9b5adfc37a94f95a8d8ba10cb935, type: 3}
@@ -35665,6 +36210,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 528418077}
     m_Modifications:
+    - target: {fileID: 2125588023741335021, guid: af68fab85d72a9f43a8e466f2e3ae98e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0b554204058a6414ebc120b3d994ef16,
+        type: 3}
+    - target: {fileID: 5740573146235770798, guid: af68fab85d72a9f43a8e466f2e3ae98e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 5639152027145423015, guid: af68fab85d72a9f43a8e466f2e3ae98e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9115073239796578312, guid: af68fab85d72a9f43a8e466f2e3ae98e,
         type: 3}
       propertyPath: m_Name
@@ -35906,6 +36467,41 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 671721581ebba524bb410c16c70b30a3,
         type: 3}
+    - target: {fileID: 5412231854378583719, guid: af68fab85d72a9f43a8e466f2e3ae98e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9120954639137097957, guid: af68fab85d72a9f43a8e466f2e3ae98e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732305886806540043, guid: af68fab85d72a9f43a8e466f2e3ae98e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643833990278453382, guid: af68fab85d72a9f43a8e466f2e3ae98e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4535830372592801708, guid: af68fab85d72a9f43a8e466f2e3ae98e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710541859186578234, guid: af68fab85d72a9f43a8e466f2e3ae98e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2706430709289998847, guid: af68fab85d72a9f43a8e466f2e3ae98e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af68fab85d72a9f43a8e466f2e3ae98e, type: 3}
 --- !u!1 &9115073238497143749 stripped
@@ -36157,6 +36753,18 @@ GameObject:
 --- !u!1 &9115073238497143790 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1585694875357196375, guid: af68fab85d72a9f43a8e466f2e3ae98e,
+    type: 3}
+  m_PrefabInstance: {fileID: 9115073238497143748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9115073238497143791 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5639152027145423015, guid: af68fab85d72a9f43a8e466f2e3ae98e,
+    type: 3}
+  m_PrefabInstance: {fileID: 9115073238497143748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9115073238497143792 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3000108046470358077, guid: af68fab85d72a9f43a8e466f2e3ae98e,
     type: 3}
   m_PrefabInstance: {fileID: 9115073238497143748}
   m_PrefabAsset: {fileID: 0}

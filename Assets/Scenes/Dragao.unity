@@ -18084,12 +18084,50 @@ MonoBehaviour:
   vidaBoss: 0
   danoLateral: 0
   backTiles:
+  - {fileID: 808943103}
+  - {fileID: 2080297734}
+  - {fileID: 732217630}
   - {fileID: 1004019876}
+  - {fileID: 273894200}
+  - {fileID: 1256693419}
+  - {fileID: 758629714}
+  - {fileID: 1062869039}
+  - {fileID: 615485970}
+  - {fileID: 286219183}
+  - {fileID: 1729841901}
+  - {fileID: 1530954988}
+  - {fileID: 824841760}
+  - {fileID: 1239749329}
   sideTiles:
-  - {fileID: 1114571259}
+  - {fileID: 1576146797}
+  - {fileID: 1596718510}
+  - {fileID: 989481668}
+  - {fileID: 1132244588}
+  - {fileID: 1193803818}
+  - {fileID: 1258632809}
+  - {fileID: 420247156}
   - {fileID: 1703116530}
+  - {fileID: 1667260703}
+  - {fileID: 1732059910}
+  - {fileID: 1299302978}
+  - {fileID: 311534512}
+  - {fileID: 1175737352}
+  - {fileID: 1441958023}
+  - {fileID: 1114571259}
+  - {fileID: 929509681}
   centerTiles:
-  - {fileID: 1004019876}
+  - {fileID: 185689290}
+  - {fileID: 967143919}
+  - {fileID: 419880328}
+  - {fileID: 1559412608}
+  - {fileID: 876868145}
+  - {fileID: 1533860262}
+  - {fileID: 553714504}
+  - {fileID: 1704676499}
+  - {fileID: 681938039}
+  - {fileID: 1711846154}
+  - {fileID: 1276140078}
+  - {fileID: 380363967}
   particulaAtaque: {fileID: 19800002, guid: 50339303116674b30a2c7b44fbbb72ef, type: 3}
   player: {fileID: 470873706}
 --- !u!65 &1105728070
