@@ -92,6 +92,14 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetString("_sceneName", NextCenaName);
                 Application.LoadLevel("LoadingScene");
             }
+            if (Monstros == 12)
+            {
+                PlayerPrefs.SetInt("indexSpam", 5);
+                PlayerPrefs.SetInt("Beserker", 1);
+                PlayerPrefs.SetInt("indexSpam", Monstros);
+                PlayerPrefs.SetString("_sceneName", NextCenaName);
+                Application.LoadLevel("LoadingScene");
+            }
             if (Monstros == 13)
             {
                 PlayerPrefs.SetInt("indexSpam", 5);

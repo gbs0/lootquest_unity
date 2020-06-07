@@ -25,6 +25,7 @@ public class ControleMonstros : MonoBehaviour
     public GameObject Ghoul1Dialogo;
     public GameObject Ghoul2;
     public GameObject Ghoul2Dialogo;
+    public GameObject Beserker;
 
     public GameObject Sucubus;
     public GameObject AntSucubus;
@@ -137,10 +138,9 @@ public class ControleMonstros : MonoBehaviour
 
             }
         }
-        if (PlayerPrefs.GetInt("Ghoul2") == 1)
+        if (PlayerPrefs.GetInt("Beserker") == 1)
         {
-            Ghoul1.SetActive(false);
-            Ghoul2Dialogo.SetActive(true);
+            Beserker.SetActive(false);
         }
         if (PlayerPrefs.GetInt("Sucubus") == 1)
         {
