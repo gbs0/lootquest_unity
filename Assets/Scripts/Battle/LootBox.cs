@@ -45,10 +45,10 @@ namespace DefaultNamespace.Battle
         {
             animator.Play("LootAnimation");
             tempo = true;
-            //var index = Random.Range(0, 2);
+            var index = Random.Range(0, 2);
             
             var loot = Instantiate(PrefabLoots, Vector3.zero, Quaternion.identity, PainelLootBox.transform);
-            //loot.GetComponent<Loot>().TypeLoot = index;
+            loot.GetComponent<Loot>().TypeLoot = index;
             Destroy(transform.gameObject);
         }
 

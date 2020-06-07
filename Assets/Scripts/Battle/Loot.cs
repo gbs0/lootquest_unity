@@ -42,12 +42,13 @@ using System.Collections.Generic;
         player = RoundManager._allCaracters.Peek();
         PlayerAni = GameObject.FindGameObjectWithTag("PlayerSprite");
         AnimePlayer = PlayerAni.GetComponent<Animator>();
-        TypeLoot = Random.Range(0, 2);
 
-        if (Spell)
-        {
-            return;
-        }
+
+    }
+
+    private void Start()
+    {
+        if (Spell) return;
         
         if (TypeLoot == 1)
         {
@@ -88,15 +89,10 @@ using System.Collections.Generic;
             }
             if (_rarit == 4)
             {
-                 AnimePlayer.SetTrigger("PositiveReact");
+                AnimePlayer.SetTrigger("PositiveReact");
                 m_Image.sprite = Fight_Sprite4;
             }
         }
-    }
-
-    private void Start()
-    {
-        if (Spell) return;
 
         if (m_Image.sprite == null)
         {
