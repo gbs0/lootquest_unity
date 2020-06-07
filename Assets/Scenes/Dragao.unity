@@ -16925,7 +16925,7 @@ GameObject:
   - component: {fileID: 1004019877}
   - component: {fileID: 1004019882}
   m_Layer: 0
-  m_Name: Tile (3)
+  m_Name: Tile (3)-Back
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18069,6 +18069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turn: 0
+  currentTile: {fileID: 0}
   HitForce: 0
   moving: 0
   move: 3
@@ -18082,35 +18083,13 @@ MonoBehaviour:
   vidaBoss: 0
   danoLateral: 0
   backTiles:
-  - {fileID: 1441958023}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1004019876}
   sideTiles:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1114571259}
+  - {fileID: 1703116530}
   centerTiles:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  particulaAtaque: {fileID: 0}
+  - {fileID: 1004019876}
+  particulaAtaque: {fileID: 19800002, guid: 50339303116674b30a2c7b44fbbb72ef, type: 3}
   player: {fileID: 470873706}
 --- !u!65 &1105728070
 BoxCollider:
@@ -18253,7 +18232,7 @@ GameObject:
   - component: {fileID: 1114571261}
   - component: {fileID: 1114571265}
   m_Layer: 0
-  m_Name: Tile
+  m_Name: Tile-TopSide
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20545,7 +20524,7 @@ GameObject:
   - component: {fileID: 1276140080}
   - component: {fileID: 1276140084}
   m_Layer: 0
-  m_Name: Tile (3)
+  m_Name: Tile (3)-Center
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27505,7 +27484,7 @@ GameObject:
   - component: {fileID: 1703116532}
   - component: {fileID: 1703116536}
   m_Layer: 0
-  m_Name: Tile (6)
+  m_Name: Tile (6)-BottomSide
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

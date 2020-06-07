@@ -14,6 +14,7 @@ public class AtaqueGrid : TaticsMove
 	public int vidaBoss;
 	public int danoLateral;
 	
+	int gridTurnN;
 	public List<GameObject> backTiles = new List<GameObject>();
 	public List<GameObject> sideTiles = new List<GameObject>();
 	public List<GameObject> centerTiles = new List<GameObject>();
@@ -27,58 +28,55 @@ public class AtaqueGrid : TaticsMove
 	private void Start()
 	{
 		Init();
+		gridTurnN = 0;
 	}
 
 	public void SorteioAtaque()
 	{
 		int num = Random.Range(-1, 4);
 	
-		switch (num)
-        {
-        case 4:
-            AtaqueMeio(centerTiles);
-            break;
-        case 3:
-            AtaqueLateral(sideTiles);
-            break;
-        case 2:
-            AtaqueTraseiro(backTiles);
-            break;
-        case 1:
-            print ("SMASH!");
-            break;
-        case 0:
-            print ("Pblblblblb");
-            break;
-        default:
-            // Esperar um Round;
-			print ("Esperando Round");
-            break;
-        }
-
-		RoundManager.EndTurn();
+		if(gridTurnN % 2 == 0)
+		{
+			switch (num)
+			{
+			case 4:
+				print("IMPOSSIVEL");
+				break;
+			case 3:
+				print("Sorteio Raro");
+				break;
+			case 2:
+				AtaqueTiles(backTiles);
+				break;
+			case 1:
+				AtaqueTiles(sideTiles);
+				break;
+			case 0:
+				AtaqueTiles(centerTiles);
+				break;
+			default:
+				// Esperar um Round;
+				print ("Nao tem ataque");
+				break;
+			}
+			RoundManager.EndTurn();
+		}
+		else {
+			Debug.Log("Esperei um round");
+			RoundManager.EndTurn();
+		}
+		
+		
 		
 
  	}
 
-	public void AtaqueLateral(List<GameObject> tilesList)
+	public void AtaqueTiles(List<GameObject> tilesList)
 	{
 		MarcarTiles(tilesList);
-
+		Debug.Log("AtaqueLateral()");
  	}
-	public void AtaqueTraseiro(List<GameObject> tilesList)
- 	{
- 		
-		MarcarTiles(tilesList);
- 			 
- 	}
-
-	public void AtaqueMeio(List<GameObject> tilesList)
-	{
-		MarcarTiles(tilesList);	
-		 
- 	}
-
+	
  	public void DanoNoPlayer(List<GameObject> GO)
 	{
 		// playTransform playerTrans = GO.transform.position.x;
@@ -95,13 +93,11 @@ public class AtaqueGrid : TaticsMove
 			}
 			// Debug.Log(tile.transform.position.x);
 
-			tile.GetComponent<Tile>().target = false;
-			
 		}
-		
+		DesmarcarTiles(GO);		
 		RoundManager.EndTurn();
 	}
-	 public void FogoNaTile(List<GameObject> g)
+	public void FogoNaTile(List<GameObject> g)
  	{
 		foreach(GameObject tile in g)
  		{
@@ -112,12 +108,12 @@ public class AtaqueGrid : TaticsMove
  		}
  	}
 	
-
-	public void RemoverEfeitos(List<GameObject> GOlist)
+	public void DesmarcarTiles(List<GameObject> GOlist)
 	{
 		foreach(GameObject tile in GOlist)
 		{
 			// Remover efeitos da tile
+			tile.GetComponent<Tile>().target = false;
 		}
 	}
 	
@@ -132,11 +128,6 @@ public class AtaqueGrid : TaticsMove
 		}
 		DanoNoPlayer(GOlist);
 	}
-
-	// public override void Init()
-    // {
-    // 	RoundManager.AddUnit(this); // Inicia essa unidade da grid na lista do RoundManager
-    // }
 
     public override void GetCurrentTile()
     {		}
@@ -196,6 +187,7 @@ public class AtaqueGrid : TaticsMove
 
 	public override void BeginTurn() // Ainda n troca o turno
 	{
+		gridTurnN += 1; 
 		SorteioAtaque();
     }
 }
