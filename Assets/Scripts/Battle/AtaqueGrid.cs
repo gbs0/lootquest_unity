@@ -92,13 +92,14 @@ public class AtaqueGrid : TaticsMove
 				// Dar dano ao player
 				// Debug.Log("Transform do player: " + player.transform.position.x);
 				healthPlayer.DamegePlayer();
+					tile.GetComponent<Tile>().target = false;
 			}
 			// Debug.Log(tile.transform.position.x);
 
-			tile.GetComponent<Tile>().target = false;
+		
 			
 		}
-		
+		DesmarcarTiles(GO);		
 		RoundManager.EndTurn();
 	}
 	 public void FogoNaTile(List<GameObject> g)
@@ -113,11 +114,12 @@ public class AtaqueGrid : TaticsMove
  	}
 	
 
-	public void RemoverEfeitos(List<GameObject> GOlist)
+	public void DesmarcarTiles(List<GameObject> GOlist)
 	{
 		foreach(GameObject tile in GOlist)
 		{
 			// Remover efeitos da tile
+			tile.GetComponent<Tile>().target = false;
 		}
 	}
 	
@@ -132,11 +134,6 @@ public class AtaqueGrid : TaticsMove
 		}
 		DanoNoPlayer(GOlist);
 	}
-
-	// public override void Init()
-    // {
-    // 	RoundManager.AddUnit(this); // Inicia essa unidade da grid na lista do RoundManager
-    // }
 
     public override void GetCurrentTile()
     {		}
