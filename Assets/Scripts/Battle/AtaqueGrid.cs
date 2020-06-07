@@ -30,13 +30,19 @@ public class AtaqueGrid : TaticsMove
 		Init();
 		gridTurnN = 0;
 	}
-
+	public override void BeginTurn() // Ainda n troca o turno
+	{
+		turn = true;
+		print(gridTurnN);
+		SorteioAtaque();
+	}
 	public void SorteioAtaque()
 	{
 		int num = Random.Range(-1, 4);
 	
 		if(gridTurnN % 2 == 0)
 		{
+			gridTurnN += 1; 
 			switch (num)
 			{
 			case 4:
@@ -59,10 +65,11 @@ public class AtaqueGrid : TaticsMove
 				AtaqueTiles(centerTiles);
 				break;
 			}
-			RoundManager.EndTurn();
+			
 		}
 
 		else {
+			gridTurnN += 1; 
 			Debug.Log("Esperei um round");
 			RoundManager.EndTurn();
 		}
@@ -115,7 +122,7 @@ public class AtaqueGrid : TaticsMove
 
 		}
 		StartCoroutine("DesmarcarTiles", GOlist);		
-		RoundManager.EndTurn();
+		
 	}
 
 	IEnumerator DesmarcarTiles(List<GameObject> GOlist)
@@ -125,7 +132,10 @@ public class AtaqueGrid : TaticsMove
 		{
 			// Remover efeitos da tile
 			tile.GetComponent<Tile>().target = false;
-		}    
+		}
+
+		turn = false;
+		RoundManager.EndTurn();
     }
 
     public override void GetCurrentTile()
@@ -184,10 +194,5 @@ public class AtaqueGrid : TaticsMove
 	public override void FindPath(Tile target)
     {		}
 
-	public override void BeginTurn() // Ainda n troca o turno
-	{
-		gridTurnN += 1; 
-		print(gridTurnN);
-		SorteioAtaque();
-    }
+	
 }

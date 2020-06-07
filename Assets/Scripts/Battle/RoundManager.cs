@@ -66,16 +66,6 @@ public class RoundManager : MonoBehaviour
 				return;
 			}
 
-			if (_allCaracters.Peek().gameObject.GetComponent<AtaqueGrid>())
-			{
-				var grid = _allCaracters.Peek().gameObject.GetComponent<AtaqueGrid>();
-				PlayerTurn = false;
-				_allCaracters.Peek().BeginTurn();
-
-				return;
-			
-			}
-
 			PlayerTurn = false;
 			_enemyPainel.SetActive(true);
 			_allCaracters.Peek().BeginTurn();
