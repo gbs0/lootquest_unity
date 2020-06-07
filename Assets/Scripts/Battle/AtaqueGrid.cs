@@ -43,7 +43,7 @@ public class AtaqueGrid : TaticsMove
 				print("IMPOSSIVEL");
 				break;
 			case 3:
-				print("Sorteio Raro");
+				AtaqueTiles(sideTiles);
 				break;
 			case 2:
 				AtaqueTiles(backTiles);
@@ -56,47 +56,24 @@ public class AtaqueGrid : TaticsMove
 				break;
 			default:
 				// Esperar um Round;
-				print ("Nao tem ataque");
+				AtaqueTiles(centerTiles);
 				break;
 			}
 			RoundManager.EndTurn();
 		}
+
 		else {
 			Debug.Log("Esperei um round");
 			RoundManager.EndTurn();
 		}
-		
-		
-		
-
  	}
 
 	public void AtaqueTiles(List<GameObject> tilesList)
 	{
 		MarcarTiles(tilesList);
-		Debug.Log("AtaqueLateral()");
  	}
 	
- 	public void DanoNoPlayer(List<GameObject> GO)
-	{
-		// playTransform playerTrans = GO.transform.position.x;
-		// Debug.Log(player.transform.position.x);
-
-		foreach(GameObject tile in GO) // Comparar com posição atual do player nas tiles
-		{
-			if(player.transform.position.x == tile.transform.position.x)
-			{
-				Debug.Log(tile.transform.position.x);
-				// Dar dano ao player
-				// Debug.Log("Transform do player: " + player.transform.position.x);
-				healthPlayer.DamegePlayer();
-			}
-			// Debug.Log(tile.transform.position.x);
-
-		}
-		DesmarcarTiles(GO);		
-		RoundManager.EndTurn();
-	}
+ 	
 	public void FogoNaTile(List<GameObject> g)
  	{
 		foreach(GameObject tile in g)
@@ -107,15 +84,6 @@ public class AtaqueGrid : TaticsMove
             //Instantiate(particulaAtaque, tile.transform.position, rotationParticula);
  		}
  	}
-	
-	public void DesmarcarTiles(List<GameObject> GOlist)
-	{
-		foreach(GameObject tile in GOlist)
-		{
-			// Remover efeitos da tile
-			tile.GetComponent<Tile>().target = false;
-		}
-	}
 	
 	public void MarcarTiles(List<GameObject> GOlist)
 	{
@@ -128,6 +96,37 @@ public class AtaqueGrid : TaticsMove
 		}
 		DanoNoPlayer(GOlist);
 	}
+
+	public void DanoNoPlayer(List<GameObject> GOlist)
+	{
+		// playTransform playerTrans = GO.transform.position.x;
+		// Debug.Log(player.transform.position.x);
+
+		foreach(GameObject tile in GOlist) // Comparar com posição atual do player nas tiles
+		{
+			if(player.transform.position.x == tile.transform.position.x)
+			{
+				Debug.Log(tile.transform.position.x);
+				// Dar dano ao player
+				// Debug.Log("Transform do player: " + player.transform.position.x);
+				healthPlayer.DamegePlayer();
+			}
+			// Debug.Log(tile.transform.position.x);
+
+		}
+		StartCoroutine("DesmarcarTiles", GOlist);		
+		RoundManager.EndTurn();
+	}
+
+	IEnumerator DesmarcarTiles(List<GameObject> GOlist)
+    {
+		yield return new WaitForSeconds(2.0f);
+		foreach(GameObject tile in GOlist)
+		{
+			// Remover efeitos da tile
+			tile.GetComponent<Tile>().target = false;
+		}    
+    }
 
     public override void GetCurrentTile()
     {		}
@@ -188,6 +187,7 @@ public class AtaqueGrid : TaticsMove
 	public override void BeginTurn() // Ainda n troca o turno
 	{
 		gridTurnN += 1; 
+		print(gridTurnN);
 		SorteioAtaque();
     }
 }

@@ -42,6 +42,7 @@ using System.Collections.Generic;
         player = RoundManager._allCaracters.Peek();
         PlayerAni = GameObject.FindGameObjectWithTag("PlayerSprite");
         AnimePlayer = PlayerAni.GetComponent<Animator>();
+        TypeLoot = Random.Range(0, 2);
 
         if (Spell)
         {
