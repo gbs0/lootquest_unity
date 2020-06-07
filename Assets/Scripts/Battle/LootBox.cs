@@ -27,19 +27,6 @@ namespace DefaultNamespace.Battle
             transform.GetComponent<Button>().onClick.AddListener(RunLoot);
             GetActualPlayer();
         }
-        void Update()
-        {
-            if(tempo)
-            {
-                timeStart += Time.deltaTime;
-
-            }
-            if (timeStart >= 1.5f)
-            {
-
-                
-            }
-        }
 
         private void RunLoot()
         {

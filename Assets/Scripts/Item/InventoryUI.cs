@@ -99,11 +99,15 @@ public class InventoryUI : MonoBehaviour
 
     public void onPassivaTabClicked()
     {
-        craftingTab.SetActive(false);
+        //craftingTab.SetActive(false);
        // inventoryTab.SetActive(false);
        // passivaTab.SetActive(true);
-        passivaGUI.SetActive(true);
-        PassiveM.OpenPainel();
+        
+        if (!craftingTab.activeSelf)
+        {
+            PassiveM.OpenPainel();
+            passivaGUI.SetActive(true);
+        }
     }
 
     // P/ travar o cursor do player e não atrapalhar no mapa

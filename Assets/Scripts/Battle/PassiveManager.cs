@@ -9,7 +9,7 @@ public class PassiveManager : MonoBehaviour
 {
     private PlayerStats _player;
     public Button closeButton;
-    
+    public GameObject SpeelsPainel;
     public List<GameObject> passivePainel;
     private int i, l;
     private Transform lastParent;
@@ -46,24 +46,27 @@ public class PassiveManager : MonoBehaviour
 
     public void OpenPainel()
     {
-        if (FirstTime)
-        {
-            TutorialPainel.SetActive(true);
-        }
-        loots = FindObjectsOfType<Loot>();
-        if (RoundManager.PlayerTurn || FirstTime)
-        {
-            Debug.Log("entrou aq");
-            _player = RoundManager._allCaracters.Peek().gameObject.GetComponent<PlayerStats>();
-            i = _player.passivaIndex;
-            passivePainel[i].SetActive(true);
-            foreach (var loot in loots)
+        
+            if (FirstTime)
             {
-                
-                loot.botao.onClick.RemoveListener(loot.SpendLoot);
-                loot.botao.onClick.AddListener(loot.Chose);
+                TutorialPainel.SetActive(true);
             }
-        }
+            loots = FindObjectsOfType<Loot>();
+            if (RoundManager.PlayerTurn || FirstTime)
+            {
+                Debug.Log("entrou aq");
+                _player = RoundManager._allCaracters.Peek().gameObject.GetComponent<PlayerStats>();
+                i = _player.passivaIndex;
+                passivePainel[i].SetActive(true);
+                foreach (var loot in loots)
+                {
+                
+                    loot.botao.onClick.RemoveListener(loot.SpendLoot);
+                    loot.botao.onClick.AddListener(loot.Chose);
+                }
+            }
+        
+        
         
     }
 
