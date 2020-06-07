@@ -18,6 +18,14 @@ public class TempPlayerHp : MonoBehaviour
     
     void Start()
     {
+        if (PlayerPrefs.GetInt("SlimceCrown", 0) >= 2)
+        {
+            totalHP = totalHP + 50;
+        }
+        if (PlayerPrefs.GetInt("CreatuurrsGauntlet", 0) >= 2)
+        {
+            totalHP = totalHP + 50;
+        }
         PlayerHealth = totalHP;
         particulaAura.Emit(1);
     }

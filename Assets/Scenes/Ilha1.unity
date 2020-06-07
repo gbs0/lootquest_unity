@@ -33168,6 +33168,7 @@ MonoBehaviour:
   Ghoul1Dialogo: {fileID: 1619870235}
   Ghoul2: {fileID: 338466446}
   Ghoul2Dialogo: {fileID: 503174352}
+  Beserker: {fileID: 0}
   Sucubus: {fileID: 1856203795}
   AntSucubus: {fileID: 2073171893}
   PosSucubus: {fileID: 1640726682}
@@ -35099,6 +35100,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4298871448796138104, guid: 060d9b5adfc37a94f95a8d8ba10cb935,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 060d9b5adfc37a94f95a8d8ba10cb935, type: 3}

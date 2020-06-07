@@ -144,6 +144,7 @@ public class Mission : MonoBehaviour
             Portal.SetActive(false);
             missao5.SetActive(false);
             missao6.SetActive(true);
+            PlayerPrefs.SetInt("Cave", 1);
             PlayerPrefs.SetInt("Batloot",1);
         }
         if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 11)
@@ -172,7 +173,6 @@ public class Mission : MonoBehaviour
             missao5.SetActive(false);
             missao6.SetActive(false);
             missao7.SetActive(true);
-            PlayerPrefs.SetInt("Cave", 1);
 
         }
         if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 13)
