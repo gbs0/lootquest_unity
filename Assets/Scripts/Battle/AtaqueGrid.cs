@@ -43,7 +43,7 @@ public class AtaqueGrid : TaticsMove
 				print("IMPOSSIVEL");
 				break;
 			case 3:
-				print("Sorteio Raro");
+				AtaqueTiles(sideTiles);
 				break;
 			case 2:
 				AtaqueTiles(backTiles);
@@ -56,28 +56,48 @@ public class AtaqueGrid : TaticsMove
 				break;
 			default:
 				// Esperar um Round;
-				print ("Nao tem ataque");
+				AtaqueTiles(centerTiles);
 				break;
 			}
 			RoundManager.EndTurn();
 		}
+
 		else {
 			Debug.Log("Esperei um round");
 			RoundManager.EndTurn();
 		}
-		
-		
-		
-
  	}
 
 	public void AtaqueTiles(List<GameObject> tilesList)
 	{
 		MarcarTiles(tilesList);
-		Debug.Log("AtaqueLateral()");
  	}
 	
- 	public void DanoNoPlayer(List<GameObject> GO)
+ 	
+	public void FogoNaTile(List<GameObject> g)
+ 	{
+		foreach(GameObject tile in g)
+ 		{
+ 			// Quaternion rotationParticula = new Quaternion(tile.transform.rotation.x, tile.transform.rotation.y, tile.transform.rotation.z, 0f );
+ 			Quaternion rotationParticula = new Quaternion( -90f, tile.transform.rotation.y, tile.transform.rotation.z, 0f );
+            // Instantiate(particulaFogo, tile.transform.position, tile.transform.rotation);
+            //Instantiate(particulaAtaque, tile.transform.position, rotationParticula);
+ 		}
+ 	}
+	
+	public void MarcarTiles(List<GameObject> GOlist)
+	{
+		
+		foreach(GameObject tile in GOlist)
+		{
+			var actualTile = tile.GetComponent<Tile>();
+			actualTile.target = true;
+			
+		}
+		DanoNoPlayer(GOlist);
+	}
+
+	public void DanoNoPlayer(List<GameObject> GO)
 	{
 		// playTransform playerTrans = GO.transform.position.x;
 		// Debug.Log(player.transform.position.x);
@@ -97,37 +117,18 @@ public class AtaqueGrid : TaticsMove
 		DesmarcarTiles(GO);		
 		RoundManager.EndTurn();
 	}
-	public void FogoNaTile(List<GameObject> g)
- 	{
-		foreach(GameObject tile in g)
- 		{
- 			// Quaternion rotationParticula = new Quaternion(tile.transform.rotation.x, tile.transform.rotation.y, tile.transform.rotation.z, 0f );
- 			Quaternion rotationParticula = new Quaternion( -90f, tile.transform.rotation.y, tile.transform.rotation.z, 0f );
-            // Instantiate(particulaFogo, tile.transform.position, tile.transform.rotation);
-            //Instantiate(particulaAtaque, tile.transform.position, rotationParticula);
- 		}
- 	}
-	
-	public void DesmarcarTiles(List<GameObject> GOlist)
-	{
+
+	IEnumerator DesmarcarTiles(List<GameObject> GOlist)
+    {
+	    
+	    yield return new WaitForSeconds(0.7f);
 		foreach(GameObject tile in GOlist)
 		{
 			// Remover efeitos da tile
 			tile.GetComponent<Tile>().target = false;
-		}
-	}
-	
-	public void MarcarTiles(List<GameObject> GOlist)
-	{
-		
-		foreach(GameObject tile in GOlist)
-		{
-			var actualTile = tile.GetComponent<Tile>();
-			actualTile.target = true;
-			
-		}
-		DanoNoPlayer(GOlist);
-	}
+		}    
+	    
+    }
 
     public override void GetCurrentTile()
     {		}
@@ -188,6 +189,7 @@ public class AtaqueGrid : TaticsMove
 	public override void BeginTurn() // Ainda n troca o turno
 	{
 		gridTurnN += 1; 
+		print(gridTurnN);
 		SorteioAtaque();
     }
 }
