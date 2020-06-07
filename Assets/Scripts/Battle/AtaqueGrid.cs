@@ -97,12 +97,12 @@ public class AtaqueGrid : TaticsMove
 		DanoNoPlayer(GOlist);
 	}
 
-	public void DanoNoPlayer(List<GameObject> GO)
+	public void DanoNoPlayer(List<GameObject> GOlist)
 	{
 		// playTransform playerTrans = GO.transform.position.x;
 		// Debug.Log(player.transform.position.x);
 
-		foreach(GameObject tile in GO) // Comparar com posição atual do player nas tiles
+		foreach(GameObject tile in GOlist) // Comparar com posição atual do player nas tiles
 		{
 			if(player.transform.position.x == tile.transform.position.x)
 			{
@@ -114,20 +114,18 @@ public class AtaqueGrid : TaticsMove
 			// Debug.Log(tile.transform.position.x);
 
 		}
-		DesmarcarTiles(GO);		
+		StartCoroutine("DesmarcarTiles", GOlist);		
 		RoundManager.EndTurn();
 	}
 
 	IEnumerator DesmarcarTiles(List<GameObject> GOlist)
     {
-	    
-	    yield return new WaitForSeconds(0.7f);
+		yield return new WaitForSeconds(2.0f);
 		foreach(GameObject tile in GOlist)
 		{
 			// Remover efeitos da tile
 			tile.GetComponent<Tile>().target = false;
 		}    
-	    
     }
 
     public override void GetCurrentTile()
