@@ -97,10 +97,8 @@ public class RoundManager : MonoBehaviour
 
     public void EnimKilled()
     {
-	    for(int i = 0; i < enemies.Count; i++)
-        {
-			enemies.RemoveAt(i);
-        } 
+	    
+	    enemies.RemoveAt(0);
 
 	 	/* foreach(NPCMove e in enemies)
         {

@@ -31,7 +31,7 @@ public class Damage : MonoBehaviour
     bool selectable = false;
     public bool selected = false;
 
-    float tempLife;
+    public float tempLife = 100;
     
     private void Awake()
     {
@@ -80,6 +80,8 @@ public class Damage : MonoBehaviour
 
                     GS.SetBool("Morto", true);
                     RM.EnimKilled();
+                    Destroy(this);
+                    Destroy(GetComponent<TempDistCheck>());
                 }
                 playerMove.LootGenTest = 99;
                 Undo.CleanBtn();

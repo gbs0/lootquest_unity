@@ -6580,6 +6580,11 @@ PrefabInstance:
       propertyPath: PlayerAnim
       value: 
       objectReference: {fileID: 954975168}
+    - target: {fileID: 4889621934937223168, guid: ec3582913b4ddef4fa45f161c06bf26a,
+        type: 3}
+      propertyPath: tempLife
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1661451079, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
       propertyPath: SkipButton
       value: 
@@ -15455,6 +15460,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8413361128937307171, guid: da0bf2a39d91bd84297ecb20fe655b35,
+        type: 3}
+      propertyPath: TutorialPainel
+      value: 
+      objectReference: {fileID: 222066640}
     - target: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
       propertyPath: enemies.Array.size
       value: 2
@@ -20493,6 +20503,11 @@ PrefabInstance:
       propertyPath: PlayerAnim
       value: 
       objectReference: {fileID: 954975168}
+    - target: {fileID: 4889621934937223168, guid: ec3582913b4ddef4fa45f161c06bf26a,
+        type: 3}
+      propertyPath: tempLife
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1661451079, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
       propertyPath: SkipButton
       value: 

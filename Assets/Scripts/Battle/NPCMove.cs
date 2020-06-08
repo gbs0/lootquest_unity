@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class NPCMove : TaticsMove
 {
+	public bool morto;
 	public bool Stuned;
     private GameObject NPC;
 	public GameObject target;
@@ -22,34 +23,41 @@ public class NPCMove : TaticsMove
     // Update is called once per frame
     public virtual void Update()
     {
-        if (!turn)
-        {
-            return;
-        }
+	    
+		    if (!turn)
+		    {
+			    return;
+		    }
 
-        if (Stuned)
-        {
-	        return;
-        }
-        if (!moving)
-        {
-            FindNearestTarget();
-            FindSelectableTiles(); // Still show the movement from NPC
-            CalculatePath();
-            actualTargetTile.target = true;
-        }
-        else
-        {
-            if (tempDistCheck.distTotal >= 1.5f)
-            {
-                StartCoroutine("MoveAnim");
-            }
+		    if (Stuned)
+		    {
+			    return;
+		    }
+		    if (!moving)
+		    {
+			    FindNearestTarget();
+			    FindSelectableTiles(); // Still show the movement from NPC
+			    CalculatePath();
+			    actualTargetTile.target = true;
+		    }
+		    else
+		    {
+			    if (tempDistCheck.distTotal >= 1.5f)
+			    {
+				    StartCoroutine("MoveAnim");
+			    }
 
-            Move();
-        }
+			    Move();
+		    }
+
     }
     public override void BeginTurn()
     {
+	    if (morto)
+	    {
+		    RoundManager.EndTurn();
+		    return;
+	    }
 	    if (Stuned)
 	    {
 		    // roda anima de bixo stunado e passa

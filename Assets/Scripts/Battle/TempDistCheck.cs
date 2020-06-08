@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -67,18 +68,22 @@ public class TempDistCheck : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        Attack();
-        DistCheck();
-        if (distTotal <= atkDistance && canHit == true)
+        if (!Morte)
         {
-            TestDamage(); // Toggle Death Method
-            //GS.ResetTrigger("Attack");
+            Attack();
+            DistCheck();
+            if (distTotal <= atkDistance && canHit == true)
+            {
+                TestDamage(); // Toggle Death Method
+                //GS.ResetTrigger("Attack");
+            }
+        
+            if (Input.GetMouseButtonDown(1))
+            {
+                hitCount = 0;
+            }
         }
         
-        if (Input.GetMouseButtonDown(1))
-        {
-            hitCount = 0;
-        }
     }
 
     private void SkipTurn()
@@ -111,7 +116,7 @@ public class TempDistCheck : MonoBehaviour
 
 
                 }
-                playerMove.LootGenTest = 0;
+                playerMove.LootGenTest = 99;
                 //RoundManager.EndTurn();
             }
         }
@@ -187,4 +192,9 @@ public class TempDistCheck : MonoBehaviour
         selected = false;
     }
 
+    private void OnDestroy()
+    {
+        Selection.SetActive(false);
+        GetComponent<NPCMove>().morto = true;
+    }
 }
