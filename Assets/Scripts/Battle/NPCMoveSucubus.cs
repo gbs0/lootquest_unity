@@ -6,18 +6,23 @@ public class NPCMoveSucubus : NPCMove
 {
 
     private GameObject NPC;
-    public TempDistCheckSucubus tempDistCheckk;
     // Start is called before the first frame update
 
-    public void start()
+
+    
+    public TempDistCheckSucubus tempDistCheckS;
+    // Start is called before the first frame update
+
+    public override void Start()
     {
         NPC = gameObject;
-        tempDistCheckk = NPC.GetComponent<TempDistCheckSucubus>();
+        tempDistCheckS = NPC.GetComponent<TempDistCheckSucubus>();
         Init();
     }
 
     // Update is called once per frame
     public override  void Update()
+
     {
         if (!turn)
         {
@@ -32,13 +37,28 @@ public class NPCMoveSucubus : NPCMove
         }
         else
         {
-            if (tempDistCheckk.distTotal >= 1.5f)
+
+            if (tempDistCheckS.distTotal >= 1.5f)
             {
                 StartCoroutine("MoveAnim");
             }
 
             Move();
         }
+    }
+
+
+    public override IEnumerator MoveAnim()
+    {
+        GS.SetTrigger("Move");
+        yield return new WaitForSeconds(0.9f);
+        GS.ResetTrigger("Move");
+    }
+    
+    public override void CalculatePath()
+    {
+        Tile targetTile = GetTargetTile(target);
+        FindPath(targetTile); // Perform A*
     }
 
     public override void FindNearestTarget()

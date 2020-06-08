@@ -8,14 +8,14 @@ public class TempDistCheck : MonoBehaviour
 {
 
     // Elementos do Gameplay
-    private RoundManager RM;
+    public RoundManager RM;
 
     public string NextCenaName;
     public GameObject PainelVitoria;
     
     // Elementos dos Personagens
-    private GameObject player;
-    PlayerMove playerMove;
+    public GameObject player;
+    public PlayerMove playerMove;
     public Animator GS;
     public Animator PlayerAnim;
     public GameObject Selection;
@@ -23,16 +23,16 @@ public class TempDistCheck : MonoBehaviour
 
     // Elementos do Combate
     public float atkDistance = 1.5f;
-    private float distX;
-    private float distZ;
-    private float PEdist;
+    public float distX;
+    public float distZ;
+    public float PEdist;
     public float distTotal;
-    private float PositivizadorX;
-    private float PositivizadorZ;
-    private float DX;
-    private float DZ;
+    public float PositivizadorX;
+    public float PositivizadorZ;
+    public float DX;
+    public float DZ;
 
-    bool selectable = false;
+    public bool selectable = false;
     
     public bool Morte = false;
     public bool selected = false;
@@ -48,7 +48,7 @@ public class TempDistCheck : MonoBehaviour
     
     // Start is called before the first frame update
     
-    public void Start()
+    public virtual void Start()
     {
         // LifeBar = GameObject.Find("sprite slime");
         // LifeBar = this.GetComponentInChildren<InputField>();
@@ -65,7 +65,7 @@ public class TempDistCheck : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void Update()
+    public virtual void Update()
     {
 
 
@@ -87,14 +87,14 @@ public class TempDistCheck : MonoBehaviour
         
     }
 
-    private void SkipTurn()
+    public virtual void SkipTurn()
     {
         canHit = true;
         print(canHit);
 
     }
 
-    private void Attack()
+    public virtual void Attack()
     {
         if (playerMove.LootGenTest == 0 && distTotal < 6)
         {
@@ -124,7 +124,7 @@ public class TempDistCheck : MonoBehaviour
         }
     }
 
-    private void TestDamage()
+    public virtual void TestDamage()
     {
         GS.SetTrigger("Attack");
         PlayerAnim.SetTrigger("Damage");
@@ -136,7 +136,7 @@ public class TempDistCheck : MonoBehaviour
         }
     }
 
-    IEnumerator DeathAnim()
+    public virtual IEnumerator DeathAnim()
     {
         PlayerAnim.SetBool("Morto", true);
         yield return new WaitForSeconds(2.0f);
@@ -146,13 +146,13 @@ public class TempDistCheck : MonoBehaviour
         LoadingSisten.LoadLevel(NextCenaName);
     }
 
-    IEnumerator DamageAnim()
+    public virtual IEnumerator DamageAnim()
     {
         yield return new WaitForSeconds(0.5f);
         GS.SetTrigger("Damage");
     }
 
-    public void DistCheck() 
+    public virtual void DistCheck() 
     {
         distX = (player.transform.position.x - transform.position.x) / 1;
         distZ = (player.transform.position.z - transform.position.z) / 1;
@@ -179,7 +179,7 @@ public class TempDistCheck : MonoBehaviour
         distTotal = DX + DZ;
     }
 
-    private void OnMouseEnter()
+    public virtual void OnMouseEnter()
     {
         if (selectable == true)
         {
@@ -188,13 +188,13 @@ public class TempDistCheck : MonoBehaviour
         }
     }
 
-    private void OnMouseExit()
+    public virtual void OnMouseExit()
     {
         Selection.SetActive(false);
         selected = false;
     }
 
-    private void OnDestroy()
+    public virtual void OnDestroy()
     {
         Selection.SetActive(false);
         GetComponent<NPCMove>().morto = true;

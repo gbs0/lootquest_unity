@@ -335,7 +335,7 @@ using System.Collections.Generic;
         {
             if (PlayerPrefs.GetInt("LovesWhip", 0) == 2)
             {
-                if (_rarit == 0)
+                if (_rarit == 1)
                 {
                     _rarit = _rarit + 2;
                 }
@@ -350,7 +350,7 @@ using System.Collections.Generic;
 
             if (PlayerPrefs.GetInt("CreatuurrsGauntlet", 0) == 2)
             {
-                if (_rarit == 0)
+                if (_rarit == 1)
                 {
                     _rarit = _rarit + 2;
                 }
@@ -363,7 +363,7 @@ using System.Collections.Generic;
                 }
             }
 
-            if (_rarit == 0)
+            if (_rarit == 1)
             {
                 AnimePlayer.SetTrigger("NegativeReact");
 

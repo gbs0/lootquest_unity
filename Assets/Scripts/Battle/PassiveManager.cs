@@ -54,7 +54,6 @@ public class PassiveManager : MonoBehaviour
             loots = FindObjectsOfType<Loot>();
             if (RoundManager.PlayerTurn || FirstTime)
             {
-                Debug.Log("entrou aq");
                 _player = RoundManager._allCaracters.Peek().gameObject.GetComponent<PlayerStats>();
                 i = _player.passivaIndex;
                 passivePainel[i].SetActive(true);
