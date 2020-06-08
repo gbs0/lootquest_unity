@@ -595,6 +595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   closeButton: {fileID: 8413361128865256886}
+  SpeelsPainel: {fileID: 0}
   passivePainel:
   - {fileID: 8413361128360280872}
   loots: []
@@ -1493,8 +1494,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.0002494, y: 659.0001}
-  m_SizeDelta: {x: 123.7, y: 23.2}
+  m_AnchoredPosition: {x: 12.3, y: 656.3}
+  m_SizeDelta: {x: 170.4, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8737581070352678362
 CanvasRenderer:
@@ -1524,7 +1525,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4b681e83e3796466483872bbfaed29b6, type: 3}
+  m_Sprite: {fileID: 7908933360528658844, guid: 7f94ce5eef22a7248aa54265034c8439,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1792,8 +1794,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 979.9998, y: 659.0001}
-  m_SizeDelta: {x: 123.7, y: 23.2}
+  m_AnchoredPosition: {x: 988.5, y: 651.7}
+  m_SizeDelta: {x: 170.7, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8737581070464670834
 CanvasRenderer:
@@ -1823,7 +1825,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4b681e83e3796466483872bbfaed29b6, type: 3}
+  m_Sprite: {fileID: -1583827255421252762, guid: 7f94ce5eef22a7248aa54265034c8439,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2349,8 +2352,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -983.69995, y: 658.99994}
-  m_SizeDelta: {x: 123.7, y: 23.2}
+  m_AnchoredPosition: {x: -944.2, y: 651.6}
+  m_SizeDelta: {x: 169, y: 31.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8737581070671046124
 CanvasRenderer:
@@ -2380,7 +2383,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4b681e83e3796466483872bbfaed29b6, type: 3}
+  m_Sprite: {fileID: -2496185460133230906, guid: 7f94ce5eef22a7248aa54265034c8439,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4361,10 +4365,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8890955729904374015}
-  - {fileID: 8890955730259073091}
-  - {fileID: 8890955729514384647}
-  - {fileID: 8890955729487157718}
+  - {fileID: 8737581070080454748}
+  - {fileID: 8737581070296217824}
+  - {fileID: 8737581072114773412}
+  - {fileID: 8737581072074701173}
   m_Father: {fileID: 8737581071518043427}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6084,7 +6088,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Items
+  m_Text: 'Team
 
 '
 --- !u!1 &8737581071840093087
@@ -6968,7 +6972,12 @@ PrefabInstance:
     - target: {fileID: 3274952489686710200, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
       propertyPath: m_Name
-      value: Loot
+      value: Teletransporte
+      objectReference: {fileID: 0}
+    - target: {fileID: 3274952489686710200, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 153433075819094363, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
@@ -7075,6 +7084,17 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8890402119605909493, guid: ac59bbfd4382b4c46a30b0f30faccd87,
+        type: 3}
+    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
       propertyPath: Spell
@@ -7082,7 +7102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16aa103a5adf8a4e9425cd9c39ba6b6, type: 3}
---- !u!224 &8890955729904374015 stripped
+--- !u!224 &8737581070080454748 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 153433075819094363, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
     type: 3}
@@ -7098,7 +7118,7 @@ PrefabInstance:
     - target: {fileID: 3274952489686710200, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
       propertyPath: m_Name
-      value: Loot (1)
+      value: Stun
       objectReference: {fileID: 0}
     - target: {fileID: 153433075819094363, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
@@ -7158,7 +7178,7 @@ PrefabInstance:
     - target: {fileID: 153433075819094363, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 855
+      value: 255
       objectReference: {fileID: 0}
     - target: {fileID: 153433075819094363, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
@@ -7205,6 +7225,32 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1061089003538993161, guid: ac59bbfd4382b4c46a30b0f30faccd87,
+        type: 3}
+    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
       propertyPath: Spell
@@ -7215,24 +7261,9 @@ PrefabInstance:
       propertyPath: intSpell
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.8867924
-      objectReference: {fileID: 0}
-    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16aa103a5adf8a4e9425cd9c39ba6b6, type: 3}
---- !u!224 &8890955730259073091 stripped
+--- !u!224 &8737581070296217824 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 153433075819094363, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
     type: 3}
@@ -7248,7 +7279,12 @@ PrefabInstance:
     - target: {fileID: 3274952489686710200, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
       propertyPath: m_Name
-      value: Loot (3)
+      value: Luck
+      objectReference: {fileID: 0}
+    - target: {fileID: 3274952489686710200, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 153433075819094363, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
@@ -7355,6 +7391,32 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6155320042613853518, guid: ac59bbfd4382b4c46a30b0f30faccd87,
+        type: 3}
+    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
       propertyPath: Spell
@@ -7365,24 +7427,9 @@ PrefabInstance:
       propertyPath: intSpell
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.30584726
-      objectReference: {fileID: 0}
-    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.35905272
-      objectReference: {fileID: 0}
-    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.8207547
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16aa103a5adf8a4e9425cd9c39ba6b6, type: 3}
---- !u!224 &8890955729487157718 stripped
+--- !u!224 &8737581072074701173 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 153433075819094363, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
     type: 3}
@@ -7398,7 +7445,12 @@ PrefabInstance:
     - target: {fileID: 3274952489686710200, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
       propertyPath: m_Name
-      value: Loot (2)
+      value: Dobro de dano
+      objectReference: {fileID: 0}
+    - target: {fileID: 3274952489686710200, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 153433075819094363, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
@@ -7505,6 +7557,32 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3344917524091300803, guid: ac59bbfd4382b4c46a30b0f30faccd87,
+        type: 3}
+    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
       propertyPath: Spell
@@ -7515,24 +7593,9 @@ PrefabInstance:
       propertyPath: intSpell
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.2539775
-      objectReference: {fileID: 0}
-    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.8301887
-      objectReference: {fileID: 0}
-    - target: {fileID: 1561672323074171811, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.20754717
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16aa103a5adf8a4e9425cd9c39ba6b6, type: 3}
---- !u!224 &8890955729514384647 stripped
+--- !u!224 &8737581072114773412 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 153433075819094363, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
     type: 3}

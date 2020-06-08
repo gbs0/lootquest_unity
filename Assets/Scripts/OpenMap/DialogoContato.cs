@@ -63,9 +63,9 @@ public class DialogoContato : MonoBehaviour
 
                 if (linhaAtual >= limitText)
                 {
-                    PlayerRigi.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
                     PlayerRigi.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
-
+                    PlayerRigi.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+                    PlayerRigi.constraints = RigidbodyConstraints2D.FreezeRotation; Desabilitar();
                     Desabilitar();
                     podeFalar = false;
                     
@@ -97,14 +97,14 @@ public class DialogoContato : MonoBehaviour
         {
             if (jaComecaFalando)
             {
-                PlayerRigi.constraints = RigidbodyConstraints2D.FreezeAll;
+                PlayerRigi.constraints = RigidbodyConstraints2D.FreezePosition;
 
                 podeFalar = true;
                 Habilitar();
             }
             else if (!jaComecaFalando)
             {
-                PlayerRigi.constraints = RigidbodyConstraints2D.FreezeAll;
+                PlayerRigi.constraints = RigidbodyConstraints2D.FreezePosition;
 
 
                 podeFalar = true;

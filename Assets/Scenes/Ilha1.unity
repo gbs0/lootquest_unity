@@ -18725,6 +18725,7 @@ MonoBehaviour:
   Cave: {fileID: 1729847163}
   Cemitery: {fileID: 220270676}
   Desert: {fileID: 1048437362}
+  PlayerRigi: {fileID: 0}
 --- !u!1 &1197712897
 GameObject:
   m_ObjectHideFlags: 0
@@ -27561,6 +27562,9 @@ MonoBehaviour:
   cameras:
   - {fileID: 885202718}
   - {fileID: 1856201796}
+  - {fileID: 822209768}
+  - {fileID: 2069268366}
+  - {fileID: 1008430727}
   freezeTime: 1
 --- !u!1 &1801148532
 GameObject:
@@ -28908,7 +28912,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1848266698
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33978,7 +33982,7 @@ MonoBehaviour:
   img: {fileID: 0}
   imgs:
   - {fileID: 819435739}
-  - {fileID: 9115073238497143755}
+  - {fileID: 529716322}
   - {fileID: 46372114}
   - {fileID: 9115073238497143757}
   - {fileID: 335892086}
@@ -36101,6 +36105,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3231523387073019988, guid: feb5b4d63150f4145ae6bdc5beaf12b1,
+        type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.7264151
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231523387073019988, guid: feb5b4d63150f4145ae6bdc5beaf12b1,
+        type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.7264151
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231523387073019988, guid: feb5b4d63150f4145ae6bdc5beaf12b1,
+        type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.7264151
+      objectReference: {fileID: 0}
     - target: {fileID: 1465385827256600973, guid: feb5b4d63150f4145ae6bdc5beaf12b1,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -36149,6 +36168,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -7596825824253519809, guid: 49f15cd9c7650114ab644fb20926a71d,
         type: 3}
+    - target: {fileID: 2850237193517230280, guid: feb5b4d63150f4145ae6bdc5beaf12b1,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423492563790689101, guid: feb5b4d63150f4145ae6bdc5beaf12b1,
+        type: 3}
+      propertyPath: m_Name
+      value: Text Equipe
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feb5b4d63150f4145ae6bdc5beaf12b1, type: 3}
 --- !u!1 &8691259146135252835 stripped
