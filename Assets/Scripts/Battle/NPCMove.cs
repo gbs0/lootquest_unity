@@ -7,13 +7,13 @@ public class NPCMove : TaticsMove
 {
 	public bool morto;
 	public bool Stuned;
-    private GameObject NPC;
+	public GameObject NPC;
 	public GameObject target;
     public Animator GS;
     public TempDistCheck tempDistCheck;
     // Start is called before the first frame update
 
-    public void Start()
+    public virtual void Start()
     {
 	    NPC = gameObject;
         tempDistCheck = NPC.GetComponent<TempDistCheck>();
@@ -81,14 +81,14 @@ public class NPCMove : TaticsMove
 	    turn = true;
     }
 
-   public  IEnumerator MoveAnim()
+   public virtual IEnumerator MoveAnim()
     {
         GS.SetTrigger("Move");
         yield return new WaitForSeconds(0.9f);
         GS.ResetTrigger("Move");
     }
 
-    public void CalculatePath() 
+    public virtual void CalculatePath() 
     {
     	Tile targetTile = GetTargetTile(target);
     	FindPath(targetTile); // Perform A*

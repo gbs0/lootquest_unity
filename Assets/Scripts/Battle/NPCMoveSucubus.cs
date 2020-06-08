@@ -2,24 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPCMoveSucubus : TaticsMove
+public class NPCMoveSucubus : NPCMove
 {
-
-    private GameObject NPC;
-    public GameObject target;
-    public Animator GS;
-    public TempDistCheckSucubus tempDistCheck;
+    
+    public TempDistCheckSucubus tempDistCheckS;
     // Start is called before the first frame update
 
-    public void Start()
+    public override void Start()
     {
         NPC = gameObject;
-        tempDistCheck = NPC.GetComponent<TempDistCheckSucubus>();
+        tempDistCheckS = NPC.GetComponent<TempDistCheckSucubus>();
         Init();
     }
 
     // Update is called once per frame
-    public virtual void Update()
+    public override void Update()
     {
         if (!turn)
         {
@@ -34,7 +31,7 @@ public class NPCMoveSucubus : TaticsMove
         }
         else
         {
-            if (tempDistCheck.distTotal >= 1.5f)
+            if (tempDistCheckS.distTotal >= 1.5f)
             {
                 StartCoroutine("MoveAnim");
             }
@@ -43,20 +40,20 @@ public class NPCMoveSucubus : TaticsMove
         }
     }
 
-    public IEnumerator MoveAnim()
+    public override IEnumerator MoveAnim()
     {
         GS.SetTrigger("Move");
         yield return new WaitForSeconds(0.9f);
         GS.ResetTrigger("Move");
     }
-
-    public void CalculatePath()
+    
+    public override void CalculatePath()
     {
         Tile targetTile = GetTargetTile(target);
         FindPath(targetTile); // Perform A*
     }
 
-    public virtual void FindNearestTarget()
+    public override void FindNearestTarget()
     {
         GameObject[] targets = GameObject.FindGameObjectsWithTag("Player");
 
