@@ -79,18 +79,7 @@ public class AtaqueGrid : TaticsMove
 	{
 		MarcarTiles(tilesList);
  	}
-	
- 	
-	public void FogoNaTile(List<GameObject> g)
- 	{
-		foreach(GameObject tile in g)
- 		{
- 			// Quaternion rotationParticula = new Quaternion(tile.transform.rotation.x, tile.transform.rotation.y, tile.transform.rotation.z, 0f );
- 			Quaternion rotationParticula = new Quaternion( -90f, tile.transform.rotation.y, tile.transform.rotation.z, 0f );
-            // Instantiate(particulaFogo, tile.transform.position, tile.transform.rotation);
-            //Instantiate(particulaAtaque, tile.transform.position, rotationParticula);
- 		}
- 	}
+
 	
 	public void MarcarTiles(List<GameObject> GOlist)
 	{
@@ -102,6 +91,7 @@ public class AtaqueGrid : TaticsMove
 			
 		}
 		DanoNoPlayer(GOlist);
+		StartCoroutine("FogoNaTile", GOlist);
 	}
 
 	public void DanoNoPlayer(List<GameObject> GOlist)
@@ -123,6 +113,19 @@ public class AtaqueGrid : TaticsMove
 		}
 		StartCoroutine("DesmarcarTiles", GOlist);		
 		
+	}
+
+	IEnumerator FogoNaTile(List<GameObject> GOlist)
+	{
+
+		foreach(GameObject tile in GOlist)
+		{
+            // Quaternion rotationParticula = new Quaternion(tile.transform.rotation.x, tile.transform.rotation.y, tile.transform.rotation.z, 0f );
+            Quaternion rotationParticula = new Quaternion( -45f, tile.transform.rotation.y, tile.transform.rotation.z, 0f);
+            // Instantiate(particulaFogo, tile.transform.position, tile.transform.rotation);
+            Instantiate(particulaAtaque, tile.transform.position, Quaternion.Euler(-90f,0f,0f));
+		}
+		yield return new WaitForSeconds(2.0f);
 	}
 
 	IEnumerator DesmarcarTiles(List<GameObject> GOlist)
@@ -194,5 +197,4 @@ public class AtaqueGrid : TaticsMove
 	public override void FindPath(Tile target)
     {		}
 
-	
 }
