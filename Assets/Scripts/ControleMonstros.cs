@@ -31,6 +31,7 @@ public class ControleMonstros : MonoBehaviour
     public GameObject AntSucubus;
     public GameObject PosSucubus;
 
+    public GameObject CaminhoCemiterio;
 
     public GameObject EventoCidadeVoltando;
 
@@ -225,6 +226,10 @@ public class ControleMonstros : MonoBehaviour
         if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 18)
         {
             Application.LoadLevel("Vitoria");
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) >= 14)
+        {
+            CaminhoCemiterio.SetActive(true);
         }
     }
 }

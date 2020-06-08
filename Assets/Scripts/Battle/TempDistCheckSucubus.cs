@@ -152,10 +152,10 @@ public class TempDistCheckSucubus : MonoBehaviour
            hitCount++;
 
            canHit = false;
-           if (hitCount == 5)
-           {
-            StartCoroutine("DeathAnim");
-           }
+            if (TempPlayerHp.PlayerHealth <= 0)
+            {
+                StartCoroutine("DeathAnim");
+            }
         }
        else //(atack == 3)
         {

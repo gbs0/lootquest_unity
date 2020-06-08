@@ -38,11 +38,10 @@ void Update()
     }
     public void IntroNextScene()
     {
-        if (timeStart <= 26)
-        {
+        
         PlayerPrefs.SetString("_sceneName", NextCenaName);
         LoadingSisten.LoadLevel(NextCenaName);
-        }
+        
     }
 
     public void NewGame()

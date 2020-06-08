@@ -10941,7 +10941,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &663066249
 Transform:
   m_ObjectHideFlags: 0
@@ -33359,6 +33359,7 @@ MonoBehaviour:
   Sucubus: {fileID: 1856203795}
   AntSucubus: {fileID: 2073171893}
   PosSucubus: {fileID: 1640726682}
+  CaminhoCemiterio: {fileID: 0}
   EventoCidadeVoltando: {fileID: 2092729880}
   cot: 0
 --- !u!1 &2058413523 stripped
