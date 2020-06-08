@@ -9,7 +9,7 @@ public class TempPlayerHp : MonoBehaviour
     public string NextCenaName;
 
     public float totalHP;
-    public float PlayerHealth;
+    public static float PlayerHealth;
     public Image LifeBar;
     float waitForSec = 5.0f;
     

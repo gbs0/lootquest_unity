@@ -7299,6 +7299,11 @@ PrefabInstance:
       propertyPath: m_BlockingMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4812412947396997109, guid: 790e0d5ad2ae4404c8755295d629a12b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 358309591, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -7366,11 +7371,6 @@ PrefabInstance:
       propertyPath: InitialModule.startRotationY.minMaxState
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 4812412947396997109, guid: 790e0d5ad2ae4404c8755295d629a12b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3108721053413862232, guid: 790e0d5ad2ae4404c8755295d629a12b,
         type: 3}
       propertyPath: m_Enabled
@@ -7390,6 +7390,34 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: SkipButton
+      value: 
+      objectReference: {fileID: 78673506}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: PlayerAnim
+      value: 
+      objectReference: {fileID: 954975168}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: atkDistance
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: LifeBar
+      value: 
+      objectReference: {fileID: 4889621933968704881}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: Selection
+      value: 
+      objectReference: {fileID: 4889621933968704883}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: tempLife
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: vida
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 4889621933577898582, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
@@ -7451,26 +7479,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
-      propertyPath: SkipButton
-      value: 
-      objectReference: {fileID: 78673506}
-    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
-      propertyPath: PlayerAnim
-      value: 
-      objectReference: {fileID: 954975168}
-    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
-      propertyPath: atkDistance
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
-      propertyPath: LifeBar
-      value: 
-      objectReference: {fileID: 4889621933968704881}
-    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
-      propertyPath: Selection
-      value: 
-      objectReference: {fileID: 4889621933968704883}
     - target: {fileID: 3397164898782556112, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -7506,6 +7514,11 @@ PrefabInstance:
       propertyPath: PlayerAnim
       value: 
       objectReference: {fileID: 954975168}
+    - target: {fileID: 4889621934937223168, guid: d68c92c07d3bb384997ab40b6d643c97,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4889621933577898586, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -7675,7 +7688,13 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2830709220789261765, guid: d68c92c07d3bb384997ab40b6d643c97,
+        type: 3}
+      propertyPath: Hitforce
+      value: 50
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4889621934937223168, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
 --- !u!114 &4889621933968704881 stripped
 MonoBehaviour:

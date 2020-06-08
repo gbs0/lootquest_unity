@@ -18,7 +18,7 @@ public class ProjectileSword : MonoBehaviour
     void Start()
     {
         var player = FindObjectOfType<PlayerMove>();
-       Enem = FindObjectOfType<Damage>().gameObject;
+       Enem = FindObjectOfType<TempDistCheck>().gameObject;
         
         Player = player.transform;
         Enemie = Enem.transform;

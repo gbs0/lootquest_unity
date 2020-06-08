@@ -6605,6 +6605,10 @@ PrefabInstance:
       propertyPath: PainelVitoria
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1661451079, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
+      propertyPath: tempLife
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 3397164897075905928, guid: ec3582913b4ddef4fa45f161c06bf26a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -6661,6 +6665,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6347656735244398741, guid: ec3582913b4ddef4fa45f161c06bf26a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3601240796076962872, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
@@ -6682,6 +6691,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d570e71e90f1262488c3002d278684bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &638809967 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3397164898782556113, guid: ec3582913b4ddef4fa45f161c06bf26a,
+    type: 3}
+  m_PrefabInstance: {fileID: 638809964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &638809968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638809967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d0404ddb990e0445a441ce4e9bc5486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PHP: {fileID: 0}
+  Hitforce: 10
 --- !u!1 &653385111
 GameObject:
   m_ObjectHideFlags: 0
@@ -15460,11 +15489,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8413361128937307171, guid: da0bf2a39d91bd84297ecb20fe655b35,
-        type: 3}
-      propertyPath: TutorialPainel
-      value: 
-      objectReference: {fileID: 222066640}
     - target: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
       propertyPath: enemies.Array.size
       value: 2
@@ -15477,6 +15501,11 @@ PrefabInstance:
       propertyPath: enemies.Array.data[1]
       value: 
       objectReference: {fileID: 813134568}
+    - target: {fileID: 8413361128937307171, guid: da0bf2a39d91bd84297ecb20fe655b35,
+        type: 3}
+      propertyPath: TutorialPainel
+      value: 
+      objectReference: {fileID: 222066640}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
 --- !u!114 &1605600508 stripped
@@ -20363,6 +20392,11 @@ PrefabInstance:
       propertyPath: m_BlockingMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4812412947396997109, guid: 790e0d5ad2ae4404c8755295d629a12b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8228317088733940486, guid: 790e0d5ad2ae4404c8755295d629a12b,
         type: 3}
       propertyPath: InitialModule.startRotationX.minMaxState
@@ -20528,6 +20562,10 @@ PrefabInstance:
       propertyPath: PainelVitoria
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1661451079, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
+      propertyPath: tempLife
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 3397164897075905928, guid: ec3582913b4ddef4fa45f161c06bf26a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -20579,6 +20617,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6347656735244398741, guid: ec3582913b4ddef4fa45f161c06bf26a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
 --- !u!114 &8911518419597746033 stripped
@@ -20611,3 +20654,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d570e71e90f1262488c3002d278684bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &8911518419597746036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3397164898782556113, guid: ec3582913b4ddef4fa45f161c06bf26a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8911518419597746032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8911518419597746037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8911518419597746036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d0404ddb990e0445a441ce4e9bc5486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PHP: {fileID: 0}
+  Hitforce: 10

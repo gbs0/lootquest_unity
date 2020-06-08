@@ -13156,6 +13156,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: bruxa
       objectReference: {fileID: 0}
+    - target: {fileID: 4889621933968704882, guid: f6958a85ecf449946827983584a2195c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1cfb7bf3d06c55d458966e39e0ec9cd7, type: 2}
     - target: {fileID: 4889621934937223198, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13251,11 +13256,6 @@ PrefabInstance:
       propertyPath: Undo
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 4889621933968704882, guid: f6958a85ecf449946827983584a2195c,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 1cfb7bf3d06c55d458966e39e0ec9cd7, type: 2}
     - target: {fileID: 3397164897117064623, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: m_Sprite
@@ -13451,6 +13451,7 @@ MonoBehaviour:
   moveSpeed: 2
   actualTargetTile: {fileID: 0}
   LootGenTest: 0
+  morto: 0
   Stuned: 0
   target: {fileID: 0}
   GS: {fileID: 84637910}
@@ -13490,6 +13491,26 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1267464287}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1267464293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3397164898782556113, guid: f6958a85ecf449946827983584a2195c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1267464287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1267464294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267464293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d0404ddb990e0445a441ce4e9bc5486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PHP: {fileID: 0}
+  Hitforce: 15
 --- !u!1 &1270593228
 GameObject:
   m_ObjectHideFlags: 0
@@ -20519,6 +20540,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4812412947396997109, guid: 790e0d5ad2ae4404c8755295d629a12b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 358309591, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -20531,11 +20557,6 @@ PrefabInstance:
     - target: {fileID: 358309591, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
       propertyPath: m_Size.y
       value: 0.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 4812412947396997109, guid: 790e0d5ad2ae4404c8755295d629a12b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}

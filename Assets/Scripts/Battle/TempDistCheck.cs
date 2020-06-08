@@ -36,7 +36,6 @@ public class TempDistCheck : MonoBehaviour
     
     public bool Morte = false;
     public bool selected = false;
-    public float vidaplayer;
     public bool canHit;
     public float hitTime;
     public int hitCount;
@@ -68,6 +67,8 @@ public class TempDistCheck : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
+
+
         if (!Morte)
         {
             Attack();
@@ -89,6 +90,7 @@ public class TempDistCheck : MonoBehaviour
     private void SkipTurn()
     {
         canHit = true;
+        print(canHit);
 
     }
 
@@ -128,7 +130,7 @@ public class TempDistCheck : MonoBehaviour
         PlayerAnim.SetTrigger("Damage");
         hitCount++;
         canHit = false;
-        if (hitCount == 5)
+        if (TempPlayerHp.PlayerHealth <=0)
         {
             StartCoroutine("DeathAnim");
         }

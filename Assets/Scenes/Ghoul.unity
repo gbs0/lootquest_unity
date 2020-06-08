@@ -565,6 +565,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasTutorial
       objectReference: {fileID: 0}
+    - target: {fileID: 6383063485069638043, guid: ecc6b64f5d46ca14e9626b338f61648c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6383063485069638047, guid: ecc6b64f5d46ca14e9626b338f61648c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2484,6 +2489,11 @@ PrefabInstance:
       propertyPath: m_BlockingMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4812412947396997109, guid: 790e0d5ad2ae4404c8755295d629a12b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 358309591, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2546,11 +2556,6 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startRotationY.minMaxState
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4812412947396997109, guid: 790e0d5ad2ae4404c8755295d629a12b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3108721053413862232, guid: 790e0d5ad2ae4404c8755295d629a12b,
         type: 3}
@@ -6937,6 +6942,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: SkipButton
+      value: 
+      objectReference: {fileID: 886381453}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: PlayerAnim
+      value: 
+      objectReference: {fileID: 1778638921}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: atkDistance
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: LifeBar
+      value: 
+      objectReference: {fileID: 1040142608}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: Selection
+      value: 
+      objectReference: {fileID: 1855636845}
     - target: {fileID: 4889621933577898582, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_IsActive
@@ -6997,26 +7022,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
-      propertyPath: SkipButton
-      value: 
-      objectReference: {fileID: 886381453}
-    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
-      propertyPath: PlayerAnim
-      value: 
-      objectReference: {fileID: 1778638921}
-    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
-      propertyPath: atkDistance
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
-      propertyPath: LifeBar
-      value: 
-      objectReference: {fileID: 1040142608}
-    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
-      propertyPath: Selection
-      value: 
-      objectReference: {fileID: 1855636845}
     - target: {fileID: 3397164898782556112, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -7052,6 +7057,11 @@ PrefabInstance:
       propertyPath: PlayerAnim
       value: 
       objectReference: {fileID: 1778638921}
+    - target: {fileID: 4889621934937223168, guid: d68c92c07d3bb384997ab40b6d643c97,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4889621933577898586, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -7175,6 +7185,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830709220789261765, guid: d68c92c07d3bb384997ab40b6d643c97,
+        type: 3}
+      propertyPath: Hitforce
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
