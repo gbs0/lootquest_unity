@@ -31,6 +31,10 @@ public class ControleItem : MonoBehaviour
 
     public GameObject CristalSlimceCrown;
     public GameObject CristalMonthlySardine;
+    public GameObject CristalBob;
+    public GameObject CristalChicote;
+    public GameObject CristalFantasma;
+    public GameObject CristalManopla;
 
 
 
@@ -51,6 +55,16 @@ void Update()
             CristalMonthlySardine.SetActive(true);
 
         }
+        if (PlayerPrefs.GetInt("Dragao") == 1)
+        {
+            CristalBob.SetActive(true);
+
+        }
+        if (PlayerPrefs.GetInt("Sucubus") == 1)
+        {
+            CristalChicote.SetActive(true);
+
+        }
         if (PlayerPrefs.GetInt("SlimceCrown", 0) >= 1)
         {
             SlimceCrown.SetActive(true);
@@ -66,16 +80,21 @@ void Update()
         if (PlayerPrefs.GetInt("CrystalBob", 0) >= 1)
         {
             CrystalBob.SetActive(true);
+            CristalBob.SetActive(false);
+
 
         }
         if (PlayerPrefs.GetInt("LovesWhip", 0) >= 1)
         {
             LovesWhip.SetActive(true);
+            CristalChicote.SetActive(false);
+
 
         }
         if (PlayerPrefs.GetInt("WhispersofLoot", 0) >= 1)
         {
             WhispersofLoot.SetActive(true);
+            CristalFantasma.SetActive(false);
 
         }
         if (PlayerPrefs.GetInt("FestiveBox", 0) >= 1)
@@ -86,6 +105,9 @@ void Update()
         if (PlayerPrefs.GetInt("CreatuurrsGauntlet", 0) >= 1)
         {
             CreatuurrsGauntlet.SetActive(true);
+
+            CristalManopla.SetActive(false);
+
         }
     }
 
@@ -334,7 +356,10 @@ void Update()
             PlayerPrefs.SetInt("SlimceCrown", 1);
             PlayerPrefs.SetInt("MonthlySardine", 1);
             PlayerPrefs.SetInt("CrystalBob", 1);
-            PlayerPrefs.SetInt("LovesWhip", 1);
+            if (PlayerPrefs.GetInt("LovesWhip", 0) >= 1)
+            {
+                PlayerPrefs.SetInt("LovesWhip", 1);
+            }
             PlayerPrefs.SetInt("WhispersofLoot", 2);
             if (PlayerPrefs.GetInt("FestiveBox", 0) >= 1)
             {
@@ -363,11 +388,26 @@ void Update()
         if (EquipamentoNumero == 7)
         {
             PlayerPrefs.SetInt("SlimceCrown", 1);
-            PlayerPrefs.SetInt("MonthlySardine", 1);
-            PlayerPrefs.SetInt("CrystalBob", 1);
-            PlayerPrefs.SetInt("LovesWhip", 1);
-            PlayerPrefs.SetInt("WhispersofLoot", 1);
-            PlayerPrefs.SetInt("FestiveBox", 1);
+            if (PlayerPrefs.GetInt("MonthlySardine", 0) >= 1)
+            {
+                PlayerPrefs.SetInt("MonthlySardine", 1);
+            }
+            if (PlayerPrefs.GetInt("CrystalBob", 0) >= 1)
+            {
+                PlayerPrefs.SetInt("CrystalBob", 1);
+            }
+            if (PlayerPrefs.GetInt("LovesWhip", 0) >= 1)
+            {
+                PlayerPrefs.SetInt("LovesWhip", 1);
+            }
+            if (PlayerPrefs.GetInt("WhispersofLoot", 0) >= 1)
+            {
+                PlayerPrefs.SetInt("WhispersofLoot", 1);
+            }
+            if (PlayerPrefs.GetInt("FestiveBox", 0) >= 1)
+            {
+                PlayerPrefs.SetInt("FestiveBox", 1);
+            }
             PlayerPrefs.SetInt("CreatuurrsGauntlet", 2);
             PlayerPrefs.SetInt("Equip", 7);
         }
