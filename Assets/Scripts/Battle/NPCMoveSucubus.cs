@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class NPCMoveSucubus : NPCMove
 {
+
+    private GameObject NPC;
+    // Start is called before the first frame update
+
+
     
     public TempDistCheckSucubus tempDistCheckS;
     // Start is called before the first frame update
@@ -16,7 +21,8 @@ public class NPCMoveSucubus : NPCMove
     }
 
     // Update is called once per frame
-    public override void Update()
+    public override  void Update()
+
     {
         if (!turn)
         {
@@ -31,6 +37,7 @@ public class NPCMoveSucubus : NPCMove
         }
         else
         {
+
             if (tempDistCheckS.distTotal >= 1.5f)
             {
                 StartCoroutine("MoveAnim");
@@ -39,6 +46,7 @@ public class NPCMoveSucubus : NPCMove
             Move();
         }
     }
+
 
     public override IEnumerator MoveAnim()
     {
