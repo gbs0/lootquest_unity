@@ -130,11 +130,27 @@ public class AtaqueGrid : TaticsMove
 
 	IEnumerator DesmarcarTiles(List<GameObject> GOlist)
     {
+		string[] fogos = new string[]{"CFX4 Fire(Clone)"};
+		
 		yield return new WaitForSeconds(2.0f);
+
 		foreach(GameObject tile in GOlist)
 		{
 			// Remover efeitos da tile
 			tile.GetComponent<Tile>().target = false;
+
+			foreach (string name in fogos)
+			{
+            	GameObject go = GameObject.Find(name);
+				// print(go);
+                 //if the tree exist then destroy it
+            	Destroy (go.gameObject);
+				if (go)
+				{
+					Destroy(go);	
+				}
+                     
+            }
 		}
 
 		turn = false;
