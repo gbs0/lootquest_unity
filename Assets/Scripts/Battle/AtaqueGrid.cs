@@ -45,7 +45,6 @@ public class AtaqueGrid : TaticsMove
 			SorteioAtaque();
 			gridTurnN += 1;
 			MarcarTiles(sorteioAtual[0]); // Marca a tile a partir do sorteio da lista
-			RoundManager.EndTurn();	
 		}
 
 		if (gridTurnN == 1)
@@ -111,6 +110,7 @@ public class AtaqueGrid : TaticsMove
 			actualTile.target = true;
 			
 		}
+		RoundManager.EndTurn();
 	}
 
 	public void DanoNoPlayer(List<GameObject> GOlist)
