@@ -19,8 +19,9 @@ public class AtaqueGrid : TaticsMove
 	public List<GameObject> sideTiles = new List<GameObject>();
 	public List<GameObject> centerTiles = new List<GameObject>();
 
-	// List<GameObject> sorteioAtual = new List<GameObject>();
-	public GameObject[] sorteioAtual;
+	List<List<GameObject>> sorteioAtual;
+	
+	// public GameObject[] sorteioAtual;
 
 	// public Animator ataqueBoss;
 	// public Animator camAnim;
@@ -33,6 +34,7 @@ public class AtaqueGrid : TaticsMove
 	private void Start()
 	{
 		listP = new List<ParticleSystem>();
+		sorteioAtual = new List<List<GameObject>>();
 		Init();
 		gridTurnN = 0;
 	}
@@ -40,64 +42,53 @@ public class AtaqueGrid : TaticsMove
 	{
 		if (gridTurnN == 0)
 		{
-			
-			// MarcarTiles(sorteioAtual[-1]); // Marca a tile a partir do sorteio da lista
-
+			SorteioAtaque();
+			MarcarTiles(sorteioAtual[0]); // Marca a tile a partir do sorteio da lista
 			gridTurnN += 1;	
 		}
 
-		if (true)
+		if (gridTurnN == 1)
 		{
+			AtaqueTile(sorteioAtual[0]);
 			gridTurnN += 1;
+
+
 		}
 
-		if (gridTurnN > 2)
+		if (gridTurnN >= 2)
 		{
-			
+			turn = false;
+			RoundManager.EndTurn();
 			gridTurnN = 0;
+			Debug.Log("Esperei um round");
 		}
 
-		turn = true;
-		print(gridTurnN);
-		SorteioAtaque();
 	}
 
 	public void SorteioAtaque()
 	{
-		int num = Random.Range(-1, 4);
+		int num = Random.Range(0, 3);
 	
-		if(gridTurnN % 2 == 0 )
-		{
-			gridTurnN += 1; 
 			switch (num)
 			{
-			case 4:
-				print("IMPOSSIVEL");
-				break;
 			case 3:
-				AtaqueTiles(sideTiles);
+				print("IMPOSSIBLE");
 				break;
 			case 2:
-				AtaqueTiles(backTiles);
+				sorteioAtual.Add(sideTiles);
 				break;
 			case 1:
-				AtaqueTiles(sideTiles);
+				sorteioAtual.Add(centerTiles);
 				break;
 			case 0:
-				AtaqueTiles(centerTiles);
-				break;
-			default:
-				// Esperar um Round;
-				AtaqueTiles(centerTiles);
+				sorteioAtual.Add(backTiles);
 				break;
 			}	
-		}
+		// }
 
-		else {
-			gridTurnN += 1; 
-			Debug.Log("Esperei um round");
-			RoundManager.EndTurn();
-		}
+		// else {
+		// 	gridTurnN += 1; 
+		// }
  	}
 
 	public void AtaqueTiles(List<GameObject> tilesList)
@@ -105,7 +96,6 @@ public class AtaqueGrid : TaticsMove
 		MarcarTiles(tilesList);
  	}
 
-	
 	public void MarcarTiles(List<GameObject> GOlist)
 	{
 		
