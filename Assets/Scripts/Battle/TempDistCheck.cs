@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class TempDistCheck : MonoBehaviour
 {
-
+    public AudioSource attackSword;
     // Elementos do Gameplay
     public RoundManager RM;
 
@@ -101,6 +101,7 @@ public class TempDistCheck : MonoBehaviour
             selectable = true;
             if (Input.GetMouseButtonDown(0)&& Selection.activeSelf)
             {
+                attackSword.Play();
                 PlayerAnim.SetTrigger("Attack");
                 //GS.SetTrigger("Damage");
                 StartCoroutine("DamageAnim");

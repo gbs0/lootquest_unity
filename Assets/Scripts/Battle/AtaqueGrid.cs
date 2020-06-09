@@ -38,6 +38,7 @@ public class AtaqueGrid : TaticsMove
 		sorteioAtual = new List<List<GameObject>>();
 		Init();
 	}
+	
 	public override void BeginTurn() // Ainda n troca o turno
 	{
 		if (gridTurnN == 0)
