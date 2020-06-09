@@ -13280,32 +13280,37 @@ PrefabInstance:
     - target: {fileID: 3397164898782556112, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0047175
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 3397164898782556112, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.251
+      value: 1.68
       objectReference: {fileID: 0}
     - target: {fileID: 3397164898782556112, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -0.47845
+      value: 0.317
       objectReference: {fileID: 0}
     - target: {fileID: 3397164898782556112, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: -0.782
+      value: 0.519
+      objectReference: {fileID: 0}
+    - target: {fileID: 3397164898782556112, guid: f6958a85ecf449946827983584a2195c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 3397164897117064620, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.433
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: 3397164897117064620, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0393
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3397164897117064620, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
@@ -13315,7 +13320,7 @@ PrefabInstance:
     - target: {fileID: 3397164897117064620, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.2191
+      value: 0.295
       objectReference: {fileID: 0}
     - target: {fileID: 3397164897117064620, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
@@ -13340,15 +13345,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1279813989, guid: f6958a85ecf449946827983584a2195c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.433
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: 1279813989, guid: f6958a85ecf449946827983584a2195c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.06
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1279813989, guid: f6958a85ecf449946827983584a2195c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.12
+      value: 1.196
       objectReference: {fileID: 0}
     - target: {fileID: 1279813989, guid: f6958a85ecf449946827983584a2195c, type: 3}
       propertyPath: m_SizeDelta.y
@@ -13367,7 +13372,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 7450172814951472338, guid: 62fc4b89094e7a24c9311afa9b8ba696,
+      objectReference: {fileID: 21300000, guid: 34d6046551eafda4cba435840d6b295e,
         type: 3}
     - target: {fileID: 1279813990, guid: f6958a85ecf449946827983584a2195c, type: 3}
       propertyPath: m_Sprite
@@ -13390,17 +13395,17 @@ PrefabInstance:
     - target: {fileID: 6120872981796792426, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.15
+      value: 1.226
       objectReference: {fileID: 0}
     - target: {fileID: 6120872981796792426, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.433
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: 6120872981796792426, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.3867
+      value: -0.23
       objectReference: {fileID: 0}
     - target: {fileID: 6120872981796792426, guid: f6958a85ecf449946827983584a2195c,
         type: 3}
@@ -13453,6 +13458,7 @@ MonoBehaviour:
   LootGenTest: 0
   morto: 0
   Stuned: 0
+  NPC: {fileID: 0}
   target: {fileID: 0}
   GS: {fileID: 84637910}
   tempDistCheck: {fileID: 1267464290}
