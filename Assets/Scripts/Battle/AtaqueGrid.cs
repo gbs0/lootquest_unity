@@ -23,10 +23,12 @@ public class AtaqueGrid : TaticsMove
 	// public Animator danoBoss;
 	public ParticleSystem particulaAtaque;
 	public GameObject player; // Pegar Transform do Player
+	private List<ParticleSystem> listP;
 		
 	// Dictionary<string, GameObject> myDictionaryObjects = new Dictionary<string, GameObject>();
 	private void Start()
 	{
+		listP = new List<ParticleSystem>();
 		Init();
 		gridTurnN = 0;
 	}
@@ -123,7 +125,8 @@ public class AtaqueGrid : TaticsMove
             // Quaternion rotationParticula = new Quaternion(tile.transform.rotation.x, tile.transform.rotation.y, tile.transform.rotation.z, 0f );
             Quaternion rotationParticula = new Quaternion( -45f, tile.transform.rotation.y, tile.transform.rotation.z, 0f);
             // Instantiate(particulaFogo, tile.transform.position, tile.transform.rotation);
-            Instantiate(particulaAtaque, tile.transform.position, Quaternion.Euler(-90f,0f,0f));
+            var p =Instantiate(particulaAtaque, tile.transform.position, Quaternion.Euler(-90f,0f,0f));
+            listP.Add(p);
 		}
 		yield return new WaitForSeconds(2.0f);
 	}
@@ -137,6 +140,11 @@ public class AtaqueGrid : TaticsMove
 			tile.GetComponent<Tile>().target = false;
 		}
 
+		foreach (var particle in listP)
+		{
+			Destroy(particle.gameObject);
+		}
+		listP.Clear();
 		turn = false;
 		RoundManager.EndTurn();
     }
