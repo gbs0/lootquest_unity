@@ -64,8 +64,7 @@ public class AtaqueGrid : TaticsMove
 				// Esperar um Round;
 				AtaqueTiles(centerTiles);
 				break;
-			}
-			
+			}	
 		}
 
 		else {
