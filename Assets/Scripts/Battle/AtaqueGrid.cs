@@ -41,7 +41,7 @@ public class AtaqueGrid : TaticsMove
 		if (gridTurnN == 0)
 		{
 			
-			MarcarTiles(sorteioAtual[-1]); // Marca a tile a partir do sorteio da lista
+			// MarcarTiles(sorteioAtual[-1]); // Marca a tile a partir do sorteio da lista
 
 			gridTurnN += 1;	
 		}
