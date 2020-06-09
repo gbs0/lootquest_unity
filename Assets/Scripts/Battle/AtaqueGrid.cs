@@ -18,6 +18,10 @@ public class AtaqueGrid : TaticsMove
 	public List<GameObject> backTiles = new List<GameObject>();
 	public List<GameObject> sideTiles = new List<GameObject>();
 	public List<GameObject> centerTiles = new List<GameObject>();
+
+	// List<GameObject> sorteioAtual = new List<GameObject>();
+	public GameObject[] sorteioAtual;
+
 	// public Animator ataqueBoss;
 	// public Animator camAnim;
 	// public Animator danoBoss;
@@ -32,15 +36,35 @@ public class AtaqueGrid : TaticsMove
 	}
 	public override void BeginTurn() // Ainda n troca o turno
 	{
+		if (gridTurnN == 0)
+		{
+			
+			MarcarTiles(sorteioAtual[-1]); // Marca a tile a partir do sorteio da lista
+
+			gridTurnN += 1;	
+		}
+
+		if (true)
+		{
+			gridTurnN += 1;
+		}
+
+		if (gridTurnN > 2)
+		{
+			
+			gridTurnN = 0;
+		}
+
 		turn = true;
 		print(gridTurnN);
 		SorteioAtaque();
 	}
+
 	public void SorteioAtaque()
 	{
 		int num = Random.Range(-1, 4);
 	
-		if(gridTurnN % 2 == 0)
+		if(gridTurnN % 2 == 0 )
 		{
 			gridTurnN += 1; 
 			switch (num)
@@ -146,9 +170,9 @@ public class AtaqueGrid : TaticsMove
             	Destroy (go.gameObject);
 				if (go)
 				{
+					Destroy(GameObject.Find(name));
 					Destroy(go);	
 				}
-                     
             }
 		}
 
