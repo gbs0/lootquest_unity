@@ -33,34 +33,39 @@ public class AtaqueGrid : TaticsMove
 	// Dictionary<string, GameObject> myDictionaryObjects = new Dictionary<string, GameObject>();
 	private void Start()
 	{
+		gridTurnN = 0;
 		listP = new List<ParticleSystem>();
 		sorteioAtual = new List<List<GameObject>>();
 		Init();
-		gridTurnN = 0;
 	}
 	public override void BeginTurn() // Ainda n troca o turno
 	{
 		if (gridTurnN == 0)
 		{
 			SorteioAtaque();
+			gridTurnN += 1;
 			MarcarTiles(sorteioAtual[0]); // Marca a tile a partir do sorteio da lista
-			gridTurnN += 1;	
+			RoundManager.EndTurn();	
 		}
 
 		if (gridTurnN == 1)
 		{
-			AtaqueTile(sorteioAtual[0]);
+			AtaqueTiles(sorteioAtual[0]);
 			gridTurnN += 1;
-
-
 		}
 
 		if (gridTurnN >= 2)
 		{
 			turn = false;
-			RoundManager.EndTurn();
 			gridTurnN = 0;
+			sorteioAtual.Clear();
+			RoundManager.EndTurn();
 			Debug.Log("Esperei um round");
+		}
+		else
+		{
+			Debug.Log("O round quebrou");
+	
 		}
 
 	}
@@ -93,7 +98,8 @@ public class AtaqueGrid : TaticsMove
 
 	public void AtaqueTiles(List<GameObject> tilesList)
 	{
-		MarcarTiles(tilesList);
+		DanoNoPlayer(tilesList);
+		StartCoroutine("DesmarcarTiles", tilesList);		
  	}
 
 	public void MarcarTiles(List<GameObject> GOlist)
@@ -105,8 +111,6 @@ public class AtaqueGrid : TaticsMove
 			actualTile.target = true;
 			
 		}
-		DanoNoPlayer(GOlist);
-		StartCoroutine("FogoNaTile", GOlist);
 	}
 
 	public void DanoNoPlayer(List<GameObject> GOlist)
@@ -124,10 +128,8 @@ public class AtaqueGrid : TaticsMove
 				healthPlayer.DamegePlayer();
 			}
 			// Debug.Log(tile.transform.position.x);
-
 		}
-		StartCoroutine("DesmarcarTiles", GOlist);		
-		
+		StartCoroutine("FogoNaTile", GOlist);
 	}
 
 	IEnumerator FogoNaTile(List<GameObject> GOlist)
