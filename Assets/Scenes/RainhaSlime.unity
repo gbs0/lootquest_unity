@@ -27990,6 +27990,10 @@ PrefabInstance:
       propertyPath: EnimDamageSound
       value: 
       objectReference: {fileID: 1854515173}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: m_ExperienceValue
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 4889621933577898582, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_IsActive
@@ -28269,10 +28273,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: battleCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
-      propertyPath: enemies.Array.data[0]
-      value: 
-      objectReference: {fileID: 4889621933968704885}
     - target: {fileID: 8737581070610951836, guid: da0bf2a39d91bd84297ecb20fe655b35,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28378,6 +28378,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
+      propertyPath: enemies.Array.data[0]
+      value: 
+      objectReference: {fileID: 4889621933968704885}
     - target: {fileID: 8737581071765293567, guid: da0bf2a39d91bd84297ecb20fe655b35,
         type: 3}
       propertyPath: m_AnchorMax.x

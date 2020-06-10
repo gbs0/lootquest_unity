@@ -127,7 +127,7 @@ public class Damage : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        if (selectable == true)
+        if (selectable)
         {
             Selection.SetActive(true);
             selected = true;
