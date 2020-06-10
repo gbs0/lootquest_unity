@@ -32,7 +32,7 @@ public class TempDistCheck : MonoBehaviour
     public float PositivizadorZ;
     public float DX;
     public float DZ;
-
+    public UndoLoot Undo;
     public bool selectable = false;
     
     public bool Morte = false;
@@ -56,6 +56,7 @@ public class TempDistCheck : MonoBehaviour
         // LifeBar = this.GameObject.Find("personagem canvas").GetComponentInChildren<InputField>();
         vida = tempLife;
         RM = FindObjectOfType<RoundManager>();
+        Undo = FindObjectOfType<UndoLoot>();
         // player = GameObject.FindGameObjectWithTag("Player");
         player = GameObject.Find("Player");
         playerMove = player.GetComponent<PlayerMove>();
@@ -120,6 +121,7 @@ public class TempDistCheck : MonoBehaviour
 
 
                 }
+                Undo.CleanBtn();
                 playerMove.LootGenTest = 99;
                 //RoundManager.EndTurn();
             }

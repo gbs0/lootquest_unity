@@ -117,7 +117,7 @@ public class RoundManager : MonoBehaviour
 	    _allCaracters.Clear();
 	    safelist.Clear();
 	    test.Clear();
-	    yield return new WaitForSeconds(0.7f);
+	    yield return new WaitForSeconds(2f);
 	    PlayerPrefs.SetString("_sceneName", nextSceneName);
 	    LoadingSisten.LoadLevel(nextSceneName);
     }

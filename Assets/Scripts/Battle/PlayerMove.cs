@@ -16,12 +16,13 @@ public class PlayerMove : TaticsMove
 
     private void Awake()
     {
+	    Undo = FindObjectOfType<UndoLoot>();
+	    Init();
         //ItemGen = GameObject.Find("BatlleUI");
     }
     void Start()
     {
-	    Undo = FindObjectOfType<UndoLoot>();
-        Init();
+	    
     }
 
 

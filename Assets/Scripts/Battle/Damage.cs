@@ -60,6 +60,7 @@ public class Damage : MonoBehaviour
             selectable = true;
             if (Input.GetMouseButtonDown(0)&& Selection.activeSelf)
             {
+                Undo.CleanBtn();
                 PlayerAnim.SetTrigger("Attack");
                 //GS.SetTrigger("Damage");
                 StartCoroutine("DamageAnim");

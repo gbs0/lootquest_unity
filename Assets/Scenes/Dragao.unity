@@ -34615,7 +34615,7 @@ MonoBehaviour:
   - {fileID: 972879698098213089}
   loots: []
   Passiva: {fileID: 972879698098213117}
-  FirstTime: 1
+  FirstTime: 0
   TutorialPainel: {fileID: 222066640}
 --- !u!1001 &3889825052890228149
 PrefabInstance:
