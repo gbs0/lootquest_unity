@@ -85,16 +85,31 @@ public class TempDistCheckSucubus : TempDistCheck
         atack = Random.Range(0, 5);
           if (atack < 3)
         {
-
-
-            GS.SetTrigger("Attack");
-           PlayerAnim.SetTrigger("Damage");
-           hitCount++;
-
-           canHit = false;
-            if (TempPlayerHp.PlayerHealth <= 0)
+            if (distTotal <= 1.5f)
             {
-                StartCoroutine("DeathAnim");
+
+                GS.SetTrigger("AttackMele");
+                PlayerAnim.SetTrigger("Damage");
+                hitCount++;
+
+                canHit = false;
+                if (TempPlayerHp.PlayerHealth <= 0)
+                {
+                    StartCoroutine("DeathAnim");
+                }
+            }
+            if (distTotal > 1.5f)
+            {
+
+                GS.SetTrigger("Attack");
+                PlayerAnim.SetTrigger("Damage");
+                hitCount++;
+
+                canHit = false;
+                if (TempPlayerHp.PlayerHealth <= 0)
+                {
+                    StartCoroutine("DeathAnim");
+                }
             }
         }
           else //(atack == 3)
@@ -123,6 +138,7 @@ public class TempDistCheckSucubus : TempDistCheck
     {
         yield return new WaitForSeconds(0.5f);
         GS.SetTrigger("Charm");
+        
     }
     IEnumerator CharmExp()
     {
@@ -132,5 +148,6 @@ public class TempDistCheckSucubus : TempDistCheck
 
 
     }
+   
 
 }

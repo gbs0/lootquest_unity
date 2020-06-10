@@ -2488,12 +2488,6 @@ Transform:
   m_Father: {fileID: 623420460}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &257594367 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6413799248949010243, guid: 8ccbbe2afe915d448af38e32a431075d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1946278960}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &319925163 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8500574230534134899, guid: 8ccbbe2afe915d448af38e32a431075d,
@@ -3438,7 +3432,6 @@ MonoBehaviour:
   - Ok, missions now!
   - Ok....
   limitText: 48
-  NivelMissao: 0
   NivelEntrando: 1
   teste: 0
   jaComecaFalando: 0
@@ -4282,7 +4275,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &557785576
 Transform:
   m_ObjectHideFlags: 0
@@ -4352,7 +4345,6 @@ MonoBehaviour:
   - " Let\u2019s go back to kick some ass! "
   - 'YES! '
   limitText: 22
-  NivelMissao: 0
   NivelEntrando: 17
   teste: 0
   jaComecaFalando: 1
@@ -4376,7 +4368,7 @@ MonoBehaviour:
   - {fileID: 1617691956}
   - {fileID: 337511010}
   - {fileID: 319925163}
-  - {fileID: 257594367}
+  - {fileID: 0}
   - {fileID: 1876802675}
   - {fileID: 1572361067}
   - {fileID: 885902634}
@@ -5934,7 +5926,6 @@ MonoBehaviour:
   - Roger that.
   - "\u2026"
   limitText: 9
-  NivelMissao: 0
   NivelEntrando: 6
   teste: 0
   jaComecaFalando: 0
@@ -11548,7 +11539,6 @@ MonoBehaviour:
   - I can give you some apples when you return.
   - "Yo, let\u2019s go. You guys are too slow. Come on!"
   limitText: 41
-  NivelMissao: 0
   NivelEntrando: 17
   teste: 0
   jaComecaFalando: 0
@@ -13005,7 +12995,6 @@ MonoBehaviour:
   - "(You should have told the truth about the others\u2026)"
   - "(They will discover soon\u2026 )"
   limitText: 19
-  NivelMissao: 0
   NivelEntrando: 14
   teste: 0
   jaComecaFalando: 0
