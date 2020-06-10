@@ -5,8 +5,6 @@ using UnityEngine;
 public class TempDistCheckDragao : TempDistCheck
 {
     public Animator Roar;
-    public GameObject CharmeImagem;
-
     // Start is called before the first frame update
     public AtaqueGrid ataqueGrid; 
 

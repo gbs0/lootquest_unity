@@ -27,11 +27,12 @@ public class AtaqueGrid : TaticsMove
 	// public Animator ataqueBoss;
 	// public Animator camAnim;
 	// public Animator danoBoss;
-	
+
 	public ParticleSystem particulaAtaque;
 	public GameObject player; // Pegar Transform do Player
 	private List<ParticleSystem> listP;
-		
+
+	public TempDistCheckDragao tempDistCheck;	
 	// Dictionary<string, GameObject> myDictionaryObjects = new Dictionary<string, GameObject>();
 	private void Start()
 	{
