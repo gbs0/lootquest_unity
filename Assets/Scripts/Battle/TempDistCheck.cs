@@ -8,6 +8,7 @@ public class TempDistCheck : MonoBehaviour
 {
     public AudioSource attackSword;
     // Elementos do Gameplay
+    public AudioSource EnimDamageSound;
     public RoundManager RM;
 
     public string NextCenaName;
@@ -129,6 +130,7 @@ public class TempDistCheck : MonoBehaviour
     {
         GS.SetTrigger("Attack");
         PlayerAnim.SetTrigger("Damage");
+        EnimDamageSound.Play();
         hitCount++;
         canHit = false;
         if (TempPlayerHp.PlayerHealth <=0)

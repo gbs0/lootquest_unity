@@ -5647,11 +5647,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 66b7f300c5cf3427fb049ec141e851da, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2d4871f353199462d9f9685b7f926d6a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -15553,16 +15553,16 @@ PrefabInstance:
       propertyPath: enemies.Array.data[1]
       value: 
       objectReference: {fileID: 813134568}
-    - target: {fileID: 8737581071396633112, guid: da0bf2a39d91bd84297ecb20fe655b35,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -218
-      objectReference: {fileID: 0}
     - target: {fileID: 8413361128937307171, guid: da0bf2a39d91bd84297ecb20fe655b35,
         type: 3}
       propertyPath: TutorialPainel
       value: 
       objectReference: {fileID: 222066640}
+    - target: {fileID: 8737581071396633112, guid: da0bf2a39d91bd84297ecb20fe655b35,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -218
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
 --- !u!114 &1605600508 stripped
