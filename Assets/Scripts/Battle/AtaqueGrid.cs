@@ -51,6 +51,7 @@ public class AtaqueGrid : TaticsMove
 			gridTurnN += 1;
 			vulneravel = true;
 			tempDistCheck.canHit = true;
+			tempDistCheck.selectable = true;
 			MarcarTiles(sorteioAtual[0]); // Marca a tile a partir do sorteio da lista
 			return;
 		}
@@ -67,6 +68,7 @@ public class AtaqueGrid : TaticsMove
 			turn = false;
 			gridTurnN = 0;
 			vulneravel = true;
+			tempDistCheck.selectable = true;
 			sorteioAtual.Clear();
 			RoundManager.EndTurn();
 			Debug.Log("Esperei um round");
