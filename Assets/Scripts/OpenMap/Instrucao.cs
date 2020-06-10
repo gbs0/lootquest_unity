@@ -5,6 +5,8 @@ using UnityEngine;
 public class Instrucao : MonoBehaviour
 {
     public GameObject Instru;
+    public GameObject Instru1;
+    public GameObject Instru2;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +34,12 @@ public class Instrucao : MonoBehaviour
     {
         PlayerPrefs.SetInt("Int", 1);
         Instru.SetActive(false);
+
+    }
+    public void Proxima()
+    {
+        Instru1.SetActive(false);
+        Instru2.SetActive(true);
 
     }
 }
