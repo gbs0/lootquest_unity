@@ -6,7 +6,6 @@ public class TempDistCheckDragao : TempDistCheck
 {
     public Animator Roar;
     public GameObject CharmeImagem;
-    
 
     // Start is called before the first frame update
 
@@ -25,8 +24,7 @@ public class TempDistCheckDragao : TempDistCheck
         if (Input.GetMouseButtonDown(1))
         {
             hitCount = 0;
-        }
-        
+        }        
     }
 
     public override void SkipTurn()
@@ -37,7 +35,7 @@ public class TempDistCheckDragao : TempDistCheck
 
     public override void Attack()
     {
-        if (playerMove.LootGenTest == 0 && distTotal < 6 && charm == false)
+        if (playerMove.LootGenTest == 0 && distTotal < 6)
         {
 
             selectable = true;
@@ -78,7 +76,7 @@ public class TempDistCheckDragao : TempDistCheck
 
             canHit = false;
         }
-    }\
+    }
 
     public override void DistCheck() {
 
