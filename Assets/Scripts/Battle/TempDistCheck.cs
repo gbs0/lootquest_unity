@@ -100,7 +100,7 @@ public class TempDistCheck : MonoBehaviour
     {
         if (playerMove.LootGenTest == 0 && distTotal < 6)
         {
-            selectable = true;
+            
             if (Input.GetMouseButtonDown(0)&& Selection.activeSelf)
             {
                 attackSword.Play();
