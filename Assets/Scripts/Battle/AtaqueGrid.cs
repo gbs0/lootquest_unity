@@ -36,7 +36,7 @@ public class AtaqueGrid : TaticsMove
 	// Dictionary<string, GameObject> myDictionaryObjects = new Dictionary<string, GameObject>();
 	private void Start()
 	{
-		tempDistCheck.canHit = false;
+		tempDistCheck.selectable = false;
 		gridTurnN = 0;
 		listP = new List<ParticleSystem>();
 		sorteioAtual = new List<List<GameObject>>();
