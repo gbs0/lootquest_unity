@@ -5650,7 +5650,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &357904809
 Transform:
   m_ObjectHideFlags: 0
@@ -8749,11 +8749,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 284009262729596095, guid: 34843a3011af85944806d504764b821f,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 253112c8f1d23154280e6395cd8d571d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9db70640e50914579a9897a3163d4cde, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.8
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -12219,7 +12219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &719683151
 Transform:
   m_ObjectHideFlags: 0
@@ -13695,7 +13695,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -800
-  m_Sprite: {fileID: 21300000, guid: 5917d2078c648e845a2ca279eea02208, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c52bfc02c99f041dab0840dd5700b1a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14457,7 +14457,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &856050667
 Transform:
   m_ObjectHideFlags: 0
@@ -34337,6 +34337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   closeButton: {fileID: 972879698625037951}
+  SpeelsPainel: {fileID: 0}
   passivePainel:
   - {fileID: 972879698098213089}
   loots: []
