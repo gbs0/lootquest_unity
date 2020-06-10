@@ -8,6 +8,7 @@ public class TempDistCheckDragao : TempDistCheck
     public GameObject CharmeImagem;
 
     // Start is called before the first frame update
+    public AtaqueGrid ataqueGrid; 
 
     // Update is called once per frame
     public override void Update()
@@ -16,7 +17,6 @@ public class TempDistCheckDragao : TempDistCheck
         DistCheck();
         if (distTotal <= atkDistance && canHit == true)
         {
-
             TestDamage(); // Toggle Death Method
             //GS.ResetTrigger("Attack");
         }
@@ -79,7 +79,10 @@ public class TempDistCheckDragao : TempDistCheck
     }
 
     public override void DistCheck() {
-
+        // while ataqueGrid.onFire != false
+        // {
+            
+        // }
     }
     
     public override IEnumerator DeathAnim()

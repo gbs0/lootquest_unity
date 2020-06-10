@@ -7,12 +7,9 @@ using UnityEngine.UI;
 using Random=UnityEngine.Random;
 
 public class AtaqueGrid : TaticsMove
-{
-	public GameObject selected;
-	public bool selectable = false;
-	
+{	
 	public AnimationEnim healthPlayer;
-	public bool onFire = false;
+	public bool vulneravel = false;
 	public Slider dragaoHealthBar;
 	public int vidaBoss;
 	public int danoLateral;
@@ -49,7 +46,7 @@ public class AtaqueGrid : TaticsMove
 		{
 			SorteioAtaque();
 			gridTurnN += 1;
-			selectable = true; 
+			vulneravel = true;
 			MarcarTiles(sorteioAtual[0]); // Marca a tile a partir do sorteio da lista
 			return;
 		}
@@ -65,7 +62,7 @@ public class AtaqueGrid : TaticsMove
 		{
 			turn = false;
 			gridTurnN = 0;
-			selectable = true;
+			vulneravel = true;
 			sorteioAtual.Clear();
 			RoundManager.EndTurn();
 			Debug.Log("Esperei um round");
