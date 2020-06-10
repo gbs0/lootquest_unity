@@ -13,7 +13,6 @@ public class PlayerMove : TaticsMove
     //UIScript UIScript;
     //private int LootGen;
     
-
     private void Awake()
     {
 	    Undo = FindObjectOfType<UndoLoot>();

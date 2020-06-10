@@ -7,9 +7,9 @@ using UnityEngine.UI;
 using Random=UnityEngine.Random;
 
 public class AtaqueGrid : TaticsMove
-{
+{	
 	public AnimationEnim healthPlayer;
-	public bool onFire = false;
+	public bool vulneravel = false;
 	public Slider dragaoHealthBar;
 	public int vidaBoss;
 	public int danoLateral;
@@ -27,13 +27,16 @@ public class AtaqueGrid : TaticsMove
 	// public Animator ataqueBoss;
 	// public Animator camAnim;
 	// public Animator danoBoss;
+
 	public ParticleSystem particulaAtaque;
 	public GameObject player; // Pegar Transform do Player
 	private List<ParticleSystem> listP;
-		
+
+	public TempDistCheckDragao tempDistCheck;	
 	// Dictionary<string, GameObject> myDictionaryObjects = new Dictionary<string, GameObject>();
 	private void Start()
 	{
+		tempDistCheck.canHit = false;
 		gridTurnN = 0;
 		listP = new List<ParticleSystem>();
 		sorteioAtual = new List<List<GameObject>>();
@@ -46,6 +49,8 @@ public class AtaqueGrid : TaticsMove
 		{
 			SorteioAtaque();
 			gridTurnN += 1;
+			vulneravel = true;
+			tempDistCheck.canHit = true;
 			MarcarTiles(sorteioAtual[0]); // Marca a tile a partir do sorteio da lista
 			return;
 		}
@@ -61,6 +66,7 @@ public class AtaqueGrid : TaticsMove
 		{
 			turn = false;
 			gridTurnN = 0;
+			vulneravel = true;
 			sorteioAtual.Clear();
 			RoundManager.EndTurn();
 			Debug.Log("Esperei um round");
@@ -68,9 +74,8 @@ public class AtaqueGrid : TaticsMove
 		else
 		{
 			Debug.Log("O round quebrou");
-	
-		}
 
+		}
 	}
 
 	public void SorteioAtaque()
