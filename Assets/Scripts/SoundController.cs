@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class SoundController : MonoBehaviour
 {
+    public AudioSource onClick;
+    
     public AudioMixer MasterMixer;
 
     public Slider MasterSlider;
@@ -62,6 +64,11 @@ public class SoundController : MonoBehaviour
     
     void Update()
     {
+        if(Input.GetMouseButtonDown(0))
+        {
+            onClick.Play();
+        }
+
         MasterMixer.SetFloat("MasterV", masterVolume);
 
         MasterMixer.SetFloat("MusicaV", musicVolume);
