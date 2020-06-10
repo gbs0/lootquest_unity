@@ -1,14 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Net.Mime;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ControleXP : MonoBehaviour
 {
-    int m_XP;
+    float m_XP;
+
+    public Image img;
     // Start is called before the first frame update
     void Start()
     {
-        m_XP = PlayerPrefs.GetInt("_xp", 0);
+        
+        m_XP = PlayerPrefs.GetFloat("CurrentXP");
         SetXP();
     }
 
@@ -20,12 +25,14 @@ public class ControleXP : MonoBehaviour
 
     void SetXP()
     {
-        // while(m_XP < 200)
-        // {
-            
-        //     return;
-        // }
+        if(m_XP < 200)
+        {
+            img.fillAmount = m_XP / 200;
+            return;
+        }
 
+        m_XP = 0;
         
+
     }
 }

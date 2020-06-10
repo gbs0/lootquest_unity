@@ -45,7 +45,7 @@ public class TempDistCheck : MonoBehaviour
     public Button SkipButton;
     public float TimeAnimation;
 
-    public int m_ExperienceValue;
+    public float m_ExperienceValue;
     
     // Start is called before the first frame update
     
@@ -100,7 +100,7 @@ public class TempDistCheck : MonoBehaviour
     {
         if (playerMove.LootGenTest == 0 && distTotal < 6)
         {
-            
+            selectable = true;
             if (Input.GetMouseButtonDown(0)&& Selection.activeSelf)
             {
                 attackSword.Play();
@@ -126,6 +126,10 @@ public class TempDistCheck : MonoBehaviour
                 //RoundManager.EndTurn();
             }
         }
+        else
+        {
+            selectable = false;
+        }
     }
 
     public virtual void TestDamage()
@@ -145,8 +149,8 @@ public class TempDistCheck : MonoBehaviour
     {
         PlayerAnim.SetBool("Morto", true);
         yield return new WaitForSeconds(2.0f);
-        m_ExperienceValue = PlayerPrefs.GetInt("_xp", 0) + m_ExperienceValue;
-        PlayerPrefs.SetInt("_xp", m_ExperienceValue);
+        m_ExperienceValue = PlayerPrefs.GetFloat("CurrentXP") + m_ExperienceValue;
+        PlayerPrefs.GetFloat("CurrentXP", m_ExperienceValue);
         PlayerPrefs.SetString("_sceneName", NextCenaName);
         LoadingSisten.LoadLevel(NextCenaName);
     }
@@ -186,7 +190,7 @@ public class TempDistCheck : MonoBehaviour
 
     public virtual void OnMouseEnter()
     {
-        if (selectable == true)
+        if (selectable)
         {
             Selection.SetActive(true);
             selected = true;

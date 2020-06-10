@@ -32,6 +32,7 @@ using System.Collections.Generic;
 
     private void Awake()
     {
+        CheckLvl();
         UL = FindObjectOfType<UndoLoot>();            
         CanUse = true;
         m_Image = GetComponent<Image>();
@@ -44,6 +45,33 @@ using System.Collections.Generic;
         AnimePlayer = PlayerAni.GetComponent<Animator>();
 
 
+    }
+
+    private void CheckLvl()
+    {
+        switch (PlayerPrefs.GetInt("Lvl"))
+        {
+            case 0:
+                BadDrop = 50;
+                MidDrop = 75;
+                GoodDrop =90;
+                break;
+            case 1:
+                BadDrop = 45;
+                MidDrop = 70;
+                GoodDrop = 85;
+                break;
+            case 2:
+                BadDrop = 40;
+                MidDrop = 65;
+                GoodDrop = 80;
+                break;
+            case 3:
+                BadDrop = 35;
+                MidDrop = 60;
+                GoodDrop = 75;
+                break;
+        }
     }
 
     private void Start()
