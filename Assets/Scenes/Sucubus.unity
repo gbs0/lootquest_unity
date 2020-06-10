@@ -692,6 +692,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0605ff8d1c4f73b4697e991d160a07a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSword: {fileID: 0}
+  EnimDamageSound: {fileID: 0}
   RM: {fileID: 1311436739}
   NextCenaName: Derrota
   PainelVitoria: {fileID: 1284185074}
@@ -1376,11 +1378,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 66b7f300c5cf3427fb049ec141e851da, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 23ecbde0f02c04b39a2605dd7b6d02b7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.8
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
