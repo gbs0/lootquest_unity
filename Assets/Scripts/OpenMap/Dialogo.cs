@@ -19,7 +19,6 @@ public class Dialogo : MonoBehaviour
     public TextMeshProUGUI textoMensagem;
     public string[] texto;
     public int limitText;
-    public int NivelMissao;
     public int NivelEntrando;
 
 

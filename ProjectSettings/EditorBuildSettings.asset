@@ -45,7 +45,7 @@ EditorBuildSettings:
     path: Assets/Scenes/RainhaSlime.unity
     guid: b8fdd4dba9196cf419c98e048da17af8
   - enabled: 1
-    path: Assets/Scenes/TacticsMovement-lobo.unity
+    path: Assets/Scenes/Gatos.unity
     guid: 689e709eae24d1b4b96b2ce2886eecc4
   - enabled: 1
     path: Assets/Scenes/Cogumelo.unity

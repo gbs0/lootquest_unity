@@ -1453,6 +1453,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &56860225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 56860226}
+  m_Layer: 0
+  m_Name: FaseFinal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &56860226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56860225}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -65.42, y: -8.379997, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 153472085}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &67344498
 GameObject:
   m_ObjectHideFlags: 0
@@ -3008,6 +3038,7 @@ Transform:
   m_Children:
   - {fileID: 635016181}
   - {fileID: 1437107205}
+  - {fileID: 56860226}
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12935,6 +12966,245 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &820607618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 820607619}
+  - component: {fileID: 820607621}
+  - component: {fileID: 820607620}
+  m_Layer: 0
+  m_Name: Dialogo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &820607619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820607618}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1609897884}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &820607620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820607618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c8157dd596a721478244d0f98870e4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelBox: {fileID: 528418076}
+  Maga: {fileID: 1547685760}
+  "Interroga\xE7ao": {fileID: 894432085}
+  Conversa: {fileID: 1609897883}
+  podeFalar: 1
+  Guilda: 1
+  jafoi: 0
+  linhaAtual: 0
+  textoMensagem: {fileID: 39703577}
+  texto:
+  - Look what we got here.
+  - So you came all the way here Ari Engine!
+  - "I\u2026"
+  - "Yes, I did! I won\u2019t give up!"
+  - But, I need to ask, who come you know my name?
+  - '...'
+  - '...'
+  - '...'
+  - ???
+  - "You really don\u2019t know me?"
+  - Nope.
+  - "I have lived on your island since I was a little boy and you don\u2019t know
+    ME?!"
+  - Say whaaaat?
+  - "Hold on! Aren\u2019t you a ninja?"
+  - Better than that, I am a rogue ninja!
+  - Does that make sense?
+  - Anyways, you must be someone that is hard to notice, right?
+  - Of course!
+  - "So\u2026 How do you want the princess to notice you?"
+  - 'Ah! '
+  - Still, I am very sorry.
+  - Fine, I will tell you more about myself.
+  - So even the player can know how spectacular I am!
+  - "I am Zen, the rogue ninja! I once lived on Minerva\u2019s island, making some
+    small thefts."
+  - I never ever had received any complaints about a thief.
+  - Of course, your people were too rich to care about something like that.
+  - Makes some damn sense.
+  - "Anyways\u2026"
+  - The problem IS!
+  - The queen and some other dumb riches changed everything! Even my power has changed!
+    And even WORSE! You guys went bankrupt because you all are so damn unlucky! So
+    even I went bankrupt!
+  - "Well\u2026 Sorry about that? I don\u2019t even know how to feel!"
+  - That does not matter anymore! I will make you and your royalty family pay!
+  - " I won\u2019t let you stand on my way!"
+  - "Behold, my ninja\u2019s skill! Transformation! "
+  - 
+  - Yo, how can this be useful to ya?
+  - It went wrong! Behold again! Transformation!
+  - 
+  - '...'
+  - "DON\u2019T SAY A WORD! BEHOLD THE ULTIMATE TRANSFORMATION!"
+  - 
+  - "I can\u2019t hold anymore! Ha ha!"
+  - Cuteee!
+  - Poor guy, is just like an apple tree that drops oranges.
+  - THAT DAMN STUPID RANDOM FACTOR!
+  - "I can\u2019t believe it! I don\u2019t have more transformations to do in the
+    next 5 minutes. I give up, unfortunately."
+  - Ha, so gimme the item you stole it! Here it is!
+  - 
+  - What is this?
+  - "Be careful! That item makes you summon the last horseman\u2026"
+  - "Yo, what do you mean the last? I just fought two until now, weren\u2019t they
+    four?"
+  - The third horseman, Saltyr, was a really superb guy, he liked to rub others' faces
+    with his incredible luck.
+  - ' His pride was so big, so big! That he decided to fight the last one for the
+    title of the last horseman. Well, you know now things went very wrong to him.'
+  - "Yay, creator\u2019s finally made my journey easier! One to go now, guys!"
+  - You did not listen to me, did you?
+  - She did, do not worry so much about her boy.
+  - That even makes it seem you like her somehow.
+  - I DO NOT LIKE PRINCESS THAT WAY!
+  - He even transformed back!
+  - He called her princess <3
+  - Give me back the box! I will be the one to change things back!
+  - No way, bunny boy! It is mine now, and is my fate, also you are not the main character!
+  - "Wouldn\u2019t things be easier if you just come with us? You totally have the
+    vibe of a new member."
+  - I refuse!
+  - Think fast, if you do not join us that means you like Ari!
+  - I join!
+  - 
+  - Ha ha! That was silly!
+  - What have I done?
+  - Well, welcome to the team, I guess.
+  limitText: 69
+  NivelEntrando: 0
+  teste: 0
+  jaComecaFalando: 1
+  img: {fileID: 0}
+  imgs:
+  - {fileID: 8500574232313828240}
+  - {fileID: 9115073238497143776}
+  - {fileID: 9115073238497143786}
+  - {fileID: 1662651662}
+  - {fileID: 9115073238497143786}
+  - {fileID: 9115073238497143776}
+  - {fileID: 1662651662}
+  - {fileID: 8500574232313828240}
+  - {fileID: 9115073238497143786}
+  - {fileID: 9115073238497143776}
+  - {fileID: 9115073238497143786}
+  - {fileID: 8500574232313828239}
+  - {fileID: 9115073238497143786}
+  - {fileID: 76949268}
+  - {fileID: 8500574232313828238}
+  - {fileID: 8500574232313828237}
+  - {fileID: 335892086}
+  - {fileID: 8500574232313828238}
+  - {fileID: 335892086}
+  - {fileID: 8500574232313828236}
+  - {fileID: 1535015111}
+  - {fileID: 9115073238497143776}
+  - {fileID: 8500574232313828238}
+  - {fileID: 9115073238497143776}
+  - {fileID: 9115073238497143786}
+  - {fileID: 9115073238497143776}
+  - {fileID: 1662651662}
+  - {fileID: 8500574232313828240}
+  - {fileID: 9115073238497143776}
+  - {fileID: 8500574232313828239}
+  - {fileID: 9115073238497143786}
+  - {fileID: 8500574232313828239}
+  - {fileID: 957712810}
+  - {fileID: 9115073238497143776}
+  - {fileID: 8500574232313828235}
+  - {fileID: 9115073238497143786}
+  - {fileID: 8500574232313828234}
+  - {fileID: 8500574232313828233}
+  - {fileID: 9115073238497143786}
+  - {fileID: 8500574232313828232}
+  - {fileID: 8500574232313828231}
+  - {fileID: 9115073238497143757}
+  - {fileID: 8500574232313828230}
+  - {fileID: 9115073238497143752}
+  - {fileID: 8500574232313828229}
+  - {fileID: 8500574232313828228}
+  - {fileID: 46372114}
+  - {fileID: 8500574232313828227}
+  - {fileID: 9115073238497143786}
+  - {fileID: 8500574232313828226}
+  - {fileID: 9115073238497143786}
+  - {fileID: 8500574232313828226}
+  - {fileID: 8500574232313828226}
+  - {fileID: 46372114}
+  - {fileID: 8500574232313828231}
+  - {fileID: 8500574232313828225}
+  - {fileID: 9115073238497143787}
+  - {fileID: 8500574232313828224}
+  - {fileID: 8500574232313828223}
+  - {fileID: 8500574232313828225}
+  - {fileID: 8500574232313828239}
+  - {fileID: 1662651662}
+  - {fileID: 1781796623}
+  - {fileID: 9115073238497143776}
+  - {fileID: 9115073238497143787}
+  - {fileID: 8500574232313828224}
+  - {fileID: 8500574232313828222}
+  - {fileID: 8500574232313828230}
+  - {fileID: 8500574232313828236}
+  - {fileID: 9115073238497143786}
+  conta: 0
+  PlayerRigi: {fileID: 0}
+  Player: {fileID: 0}
+  rodaCut: 0
+--- !u!61 &820607621
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820607618}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.16394806, y: 1.8238983}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.557831, y: 7.3529053}
+  m_EdgeRadius: 0
 --- !u!1 &822209768
 GameObject:
   m_ObjectHideFlags: 0
@@ -14456,6 +14726,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &894432085
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 894432086}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &894432086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894432085}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1609897884}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &895849243
 GameObject:
   m_ObjectHideFlags: 0
@@ -24218,6 +24518,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1547685760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1547685761}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1547685761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547685760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1609897884}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1556964577
 GameObject:
   m_ObjectHideFlags: 0
@@ -24941,6 +25271,39 @@ Transform:
   - {fileID: 1495040310}
   m_Father: {fileID: 0}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1609897883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1609897884}
+  m_Layer: 0
+  m_Name: NinjaEntrega
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1609897884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609897883}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -68.05, y: 5.89, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 820607619}
+  - {fileID: 1547685761}
+  - {fileID: 894432086}
+  m_Father: {fileID: 1719057015}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1614073794
 GameObject:
@@ -27123,6 +27486,8 @@ Transform:
   - {fileID: 1821946650}
   - {fileID: 2060510164}
   - {fileID: 2144565764}
+  - {fileID: 1775639287}
+  - {fileID: 1609897884}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27731,6 +28096,36 @@ EdgeCollider2D:
   - {x: 10.146039, y: 2.0480893}
   - {x: 10.474403, y: 1.1722261}
   - {x: 14.01759, y: 1.0527025}
+--- !u!1 &1775639286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1775639287}
+  m_Layer: 0
+  m_Name: Deserto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1775639287
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775639286}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -68, y: 9.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1719057015}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1781796623 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8500574230534134899, guid: 8ccbbe2afe915d448af38e32a431075d,
@@ -35870,6 +36265,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1290605671}
     m_Modifications:
+    - target: {fileID: 2792899037244287710, guid: 8ccbbe2afe915d448af38e32a431075d,
+        type: 3}
+      propertyPath: m_Name
+      value: Ninja Envergonhado
+      objectReference: {fileID: 0}
+    - target: {fileID: 5158755130613917614, guid: 8ccbbe2afe915d448af38e32a431075d,
+        type: 3}
+      propertyPath: m_Name
+      value: Coelho Ninja Triste
+      objectReference: {fileID: 0}
     - target: {fileID: 8500574232325428832, guid: 8ccbbe2afe915d448af38e32a431075d,
         type: 3}
       propertyPath: m_Name
@@ -35945,11 +36350,130 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3376641259622155312, guid: 8ccbbe2afe915d448af38e32a431075d,
+        type: 3}
+      propertyPath: m_Name
+      value: Luva
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ccbbe2afe915d448af38e32a431075d, type: 3}
 --- !u!1 &8500574232313828221 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9125810050066072665, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828222 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7711982228061167961, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6527618204123780585, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828224 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2792899037244287710, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828225 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1323595177589600951, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828226 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6107643923301999173, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3852165762110156564, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828228 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5158755130613917614, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828229 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4750407860842090548, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828230 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4216343592248968004, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828231 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3719937727796220686, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4417197949801041189, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828233 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 856628387946359229, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828234 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7707731619292388777, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828235 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6787825379314876103, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3891028086562569858, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828237 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5787355488289965427, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3362957566842307475, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828239 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3151964917361296567, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8500574232313828220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8500574232313828240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3390171013151927868, guid: 8ccbbe2afe915d448af38e32a431075d,
     type: 3}
   m_PrefabInstance: {fileID: 8500574232313828220}
   m_PrefabAsset: {fileID: 0}
