@@ -35,10 +35,11 @@ public class TempDistCheckDragao : TempDistCheck
 
     public override void Attack()
     {
-        if (playerMove.LootGenTest == 0 && distTotal < 6)
+        if (playerMove.LootGenTest == 0 && distTotal < 4)
         {
 
             selectable = true;
+            
             if (Input.GetMouseButtonDown(0) && Selection.activeSelf )
             {
                 PlayerAnim.SetTrigger("Attack");
@@ -71,18 +72,17 @@ public class TempDistCheckDragao : TempDistCheck
         {
             StartCoroutine("DeathAnim");
         }
-          else //(attack == 3)
+          else
         {
-
             canHit = false;
         }
     }
 
     public override void DistCheck() {
-        // while ataqueGrid.onFire != false
-        // {
-            
-        // }
+        while (ataqueGrid.vulneravel == true)
+        {
+            selectable = true;
+        }
     }
     
     public override IEnumerator DeathAnim()
