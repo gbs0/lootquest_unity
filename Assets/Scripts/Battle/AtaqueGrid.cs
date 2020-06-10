@@ -14,6 +14,7 @@ public class AtaqueGrid : TaticsMove
 	public int vidaBoss;
 	public int danoLateral;
 	
+	public AudioSource fireSound;
 	int gridTurnN;
 	public List<GameObject> backTiles = new List<GameObject>();
 	public List<GameObject> sideTiles = new List<GameObject>();
@@ -38,7 +39,7 @@ public class AtaqueGrid : TaticsMove
 		sorteioAtual = new List<List<GameObject>>();
 		Init();
 	}
-	
+
 	public override void BeginTurn() // Ainda n troca o turno
 	{
 		if (gridTurnN == 0)
@@ -132,6 +133,7 @@ public class AtaqueGrid : TaticsMove
 			}
 			// Debug.Log(tile.transform.position.x);
 		}
+		fireSound.Play();
 		StartCoroutine("FogoNaTile", GOlist);
 	}
 

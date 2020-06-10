@@ -18085,6 +18085,7 @@ MonoBehaviour:
   dragaoHealthBar: {fileID: 0}
   vidaBoss: 0
   danoLateral: 0
+  fireSound: {fileID: 1105728071}
   backTiles:
   - {fileID: 808943103}
   - {fileID: 2080297734}
@@ -18143,51 +18144,105 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.93681526, y: 1.1780124, z: 0.9542427}
-  m_Center: {x: 4.0367117, y: 2.1136873, z: 4.9927197}
---- !u!114 &1105728071
-MonoBehaviour:
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!82 &1105728071
+AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105728065}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d570e71e90f1262488c3002d278684bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackSword: {fileID: 0}
-  EnimDamageSound: {fileID: 0}
-  RM: {fileID: 0}
-  NextCenaName: ilha1
-  PainelVitoria: {fileID: 0}
-  player: {fileID: 0}
-  playerMove: {fileID: 0}
-  GS: {fileID: 0}
-  PlayerAnim: {fileID: 0}
-  Selection: {fileID: 0}
-  LifeBar: {fileID: 0}
-  atkDistance: 1.5
-  distX: 0
-  distZ: 0
-  PEdist: 0
-  distTotal: 0
-  PositivizadorX: 0
-  PositivizadorZ: 0
-  DX: 0
-  DZ: 0
-  selectable: 0
-  Morte: 0
-  selected: 0
-  canHit: 0
-  hitTime: 0
-  hitCount: 0
-  tempLife: 100
-  vida: 100
-  SkipButton: {fileID: 1778096701}
-  TimeAnimation: 0
-  m_ExperienceValue: 0
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 9142910783356112533, guid: 34843a3011af85944806d504764b821f,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 2f3676a3034ee41ab85a3da899146e13, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1110757703
 GameObject:
   m_ObjectHideFlags: 0
