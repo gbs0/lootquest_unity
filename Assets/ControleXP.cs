@@ -20,10 +20,11 @@ public class ControleXP : MonoBehaviour
 
     void SetXP()
     {
-        while(m_XP < 200)
-        {
-            return;
-        }
+        // while(m_XP < 200)
+        // {
+            
+        //     return;
+        // }
 
         
     }
