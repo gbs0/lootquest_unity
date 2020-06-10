@@ -36,6 +36,7 @@ public class AtaqueGrid : TaticsMove
 	// Dictionary<string, GameObject> myDictionaryObjects = new Dictionary<string, GameObject>();
 	private void Start()
 	{
+		tempDistCheck.canHit = false;
 		gridTurnN = 0;
 		listP = new List<ParticleSystem>();
 		sorteioAtual = new List<List<GameObject>>();
@@ -49,6 +50,7 @@ public class AtaqueGrid : TaticsMove
 			SorteioAtaque();
 			gridTurnN += 1;
 			vulneravel = true;
+			tempDistCheck.canHit = true;
 			MarcarTiles(sorteioAtual[0]); // Marca a tile a partir do sorteio da lista
 			return;
 		}

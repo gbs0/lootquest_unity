@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class TempDistCheckDragao : TempDistCheck
 {
-    public Animator Roar;
     // Start is called before the first frame update
-    public AtaqueGrid ataqueGrid; 
-
+        
     // Update is called once per frame
     public override void Update()
     {
@@ -22,13 +20,18 @@ public class TempDistCheckDragao : TempDistCheck
         if (Input.GetMouseButtonDown(1))
         {
             hitCount = 0;
-        }        
+        }  
+        if (canHit == false)
+        {
+            selectable = false;           
+        } 
+
     }
 
     public override void SkipTurn()
     {
         
-        canHit = true;
+        // canHit = true;
     }
 
     public override void Attack()
@@ -54,9 +57,6 @@ public class TempDistCheckDragao : TempDistCheck
 
                     GS.SetBool("Morto", true);
                     RM.EnimKilled();
-
-
-
                 }
                 playerMove.LootGenTest = 0;
                 //RoundManager.EndTurn();
@@ -76,11 +76,10 @@ public class TempDistCheckDragao : TempDistCheck
         }
     }
 
-    public override void DistCheck() {
-        while (ataqueGrid.vulneravel == true)
-        {
-            selectable = true;
-        }
+    public override void DistCheck() 
+    {
+        
+            
     }
     
     public override IEnumerator DeathAnim()
