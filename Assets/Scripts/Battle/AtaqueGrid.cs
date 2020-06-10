@@ -8,6 +8,9 @@ using Random=UnityEngine.Random;
 
 public class AtaqueGrid : TaticsMove
 {
+	public GameObject selected;
+	public bool selectable = false;
+	
 	public AnimationEnim healthPlayer;
 	public bool onFire = false;
 	public Slider dragaoHealthBar;
@@ -46,6 +49,7 @@ public class AtaqueGrid : TaticsMove
 		{
 			SorteioAtaque();
 			gridTurnN += 1;
+			
 			MarcarTiles(sorteioAtual[0]); // Marca a tile a partir do sorteio da lista
 			return;
 		}
@@ -68,7 +72,7 @@ public class AtaqueGrid : TaticsMove
 		else
 		{
 			Debug.Log("O round quebrou");
-	
+
 		}
 
 	}

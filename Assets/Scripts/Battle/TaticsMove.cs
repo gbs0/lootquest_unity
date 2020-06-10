@@ -119,9 +119,7 @@ public partial class TaticsMove : MonoBehaviour
     }
 
     public virtual void  Move() {
-    	
-    	Debug.Log("Move() from tacticsMove script");
-
+        
         if (path.Count > 0)
     	{
     		Tile t = path.Peek();
