@@ -6722,6 +6722,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: f538d161580be7f49befe80b221607d4,
         type: 3}
+    - target: {fileID: 3034950940992430761, guid: ec3582913b4ddef4fa45f161c06bf26a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.045000076
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3601240796076962872, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
@@ -20393,6 +20398,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 889807870}
+    - target: {fileID: 3889825051828314913, guid: 790e0d5ad2ae4404c8755295d629a12b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3889825053199291087, guid: 790e0d5ad2ae4404c8755295d629a12b,
         type: 3}
       propertyPath: m_Sprite
@@ -20423,6 +20433,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RaycastTarget
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3889825053292878568, guid: 790e0d5ad2ae4404c8755295d629a12b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.39
       objectReference: {fileID: 0}
     - target: {fileID: 3889825053199291084, guid: 790e0d5ad2ae4404c8755295d629a12b,
         type: 3}
@@ -20473,26 +20488,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4812412947396997109, guid: 790e0d5ad2ae4404c8755295d629a12b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 358309591, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f559ff3d2be506e47a6049b875f9587f,
-        type: 3}
-    - target: {fileID: 3889825051828314913, guid: 790e0d5ad2ae4404c8755295d629a12b,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3889825053292878568, guid: 790e0d5ad2ae4404c8755295d629a12b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.39
-      objectReference: {fileID: 0}
     - target: {fileID: 3889825052640751795, guid: 790e0d5ad2ae4404c8755295d629a12b,
         type: 3}
       propertyPath: m_RaycastTarget
@@ -20508,6 +20503,16 @@ PrefabInstance:
       propertyPath: m_BlockingMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4812412947396997109, guid: 790e0d5ad2ae4404c8755295d629a12b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 358309591, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f559ff3d2be506e47a6049b875f9587f,
+        type: 3}
     - target: {fileID: 8228317088733940486, guid: 790e0d5ad2ae4404c8755295d629a12b,
         type: 3}
       propertyPath: InitialModule.startRotationX.minMaxState
@@ -20742,7 +20747,7 @@ PrefabInstance:
     - target: {fileID: 3397164897117064620, guid: ec3582913b4ddef4fa45f161c06bf26a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0736
+      value: 0.073599994
       objectReference: {fileID: 0}
     - target: {fileID: 3397164897117064620, guid: ec3582913b4ddef4fa45f161c06bf26a,
         type: 3}
@@ -20757,7 +20762,7 @@ PrefabInstance:
     - target: {fileID: 3397164897117064620, guid: ec3582913b4ddef4fa45f161c06bf26a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0076
+      value: 0.0076000094
       objectReference: {fileID: 0}
     - target: {fileID: 3397164897117064620, guid: ec3582913b4ddef4fa45f161c06bf26a,
         type: 3}
