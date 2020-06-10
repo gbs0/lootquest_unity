@@ -31734,8 +31734,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackSword: {fileID: 1960843138}
   EnimDamageSound: {fileID: 1960843137}
-  RM: {fileID: 0}
-  NextCenaName: 
+  RM: {fileID: 1105728067}
+  NextCenaName: ilha1
   PainelVitoria: {fileID: 0}
   player: {fileID: 470873706}
   playerMove: {fileID: 470873710}
@@ -31760,7 +31760,7 @@ MonoBehaviour:
   hitTime: 0
   hitCount: 0
   tempLife: 100
-  vida: 0
+  vida: 100
   SkipButton: {fileID: 0}
   TimeAnimation: 0
   m_ExperienceValue: 0
