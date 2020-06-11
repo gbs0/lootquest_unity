@@ -73,11 +73,14 @@ public class TempDistCheck : MonoBehaviour
 
         if (!Morte && gameObject.GetComponent<TaticsMove>().turn)
         {
+            
             Attack();
+            
             DistCheck();
             if (distTotal <= atkDistance && canHit == true)
             {
                 TestDamage(); // Toggle Death Method
+                Debug.LogError("vo atacar");
                 //GS.ResetTrigger("Attack");
             }
         
@@ -92,7 +95,6 @@ public class TempDistCheck : MonoBehaviour
     public virtual void SkipTurn()
     {
         canHit = true;
-        print(canHit);
 
     }
 
@@ -139,6 +141,7 @@ public class TempDistCheck : MonoBehaviour
         EnimDamageSound.Play();
         hitCount++;
         canHit = false;
+        
         if (TempPlayerHp.PlayerHealth <=0)
         {
             StartCoroutine("DeathAnim");

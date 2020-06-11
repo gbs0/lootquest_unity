@@ -53,6 +53,7 @@ public class NPCMove : TaticsMove
     }
     public override void BeginTurn()
     {
+	    tempDistCheck.canHit = true;
 	    if (morto)
 	    {
 		    RoundManager.EndTurn();
