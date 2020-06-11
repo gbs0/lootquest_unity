@@ -7888,6 +7888,10 @@ PrefabInstance:
       propertyPath: m_ExperienceValue
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: deathTime
+      value: 1.51
+      objectReference: {fileID: 0}
     - target: {fileID: 4889621933968704882, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_Controller
