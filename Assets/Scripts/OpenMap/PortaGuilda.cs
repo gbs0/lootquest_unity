@@ -24,12 +24,12 @@ public class PortaGuilda : MonoBehaviour
             if (Entrando == true)
             {
                 PlayerPrefs.SetInt("indexSpam", 2);
-                PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Scene", NextCenaName);
                 Application.LoadLevel("LoadingScene");
             }
             if (Entrando == false)
             {
-                PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Scene", NextCenaName);
                 Application.LoadLevel("LoadingScene");
             }
         }

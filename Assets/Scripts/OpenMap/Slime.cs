@@ -29,7 +29,7 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("Monstro1", 1);
 
                 PlayerPrefs.SetInt("indexSpam", Monstros);
-                PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Scene", NextCenaName);
                 PlayerPrefs.SetString("Monstros", NextCenaName);
 
                 Application.LoadLevel("LoadingScene");
