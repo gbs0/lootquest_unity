@@ -5845,6 +5845,29 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4889621933968704880}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1661451074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661451073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa1838dbb5ce1cc44900a16d909118fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DD: 0
+  PainelVitoria: {fileID: 0}
+  Selection: {fileID: 4889621933968704883}
+  LifeBar: {fileID: 4889621933968704881}
+  PlayerAnim: {fileID: 954975168}
+  GS: {fileID: 4889621933968704882}
+  TimeAnimation: 0
+  Morte: 0
+  Undo: {fileID: 0}
+  selected: 0
+  tempLife: 100
 --- !u!95 &1661451075
 Animator:
   serializedVersion: 3
