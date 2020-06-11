@@ -5375,6 +5375,7 @@ GameObject:
   - component: {fileID: 931693530}
   - component: {fileID: 931693532}
   - component: {fileID: 931693531}
+  - component: {fileID: 931693533}
   m_Layer: 0
   m_Name: IDLE (1)
   m_TagString: Untagged
@@ -5477,6 +5478,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeStart1: 0
   timeStart2: 0
+--- !u!61 &931693533
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931693528}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1186423, y: -0.5457604}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.84, y: 8.16}
+    newSize: {x: 6.84, y: 8.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3824477, y: 2.3227918}
+  m_EdgeRadius: 0
 --- !u!1 &969683979 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1536492708077999168, guid: feb5b4d63150f4145ae6bdc5beaf12b1,
@@ -8347,7 +8374,7 @@ MonoBehaviour:
   "Interroga\xE7ao": {fileID: 817727869}
   Conversa: {fileID: 1611338110}
   podeFalar: 0
-  Guilda: 0
+  Guilda: 1
   jafoi: 0
   linhaAtual: 0
   textoMensagem: {fileID: 239984654}

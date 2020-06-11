@@ -3639,9 +3639,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1659136479}
-        m_MethodName: fechar
-        m_Mode: 1
+      - m_Target: {fileID: 2110984217}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -38014,7 +38014,6 @@ GameObject:
   - component: {fileID: 2110984218}
   - component: {fileID: 2110984221}
   - component: {fileID: 2110984220}
-  - component: {fileID: 2110984219}
   m_Layer: 5
   m_Name: Panel 2
   m_TagString: Untagged
@@ -38043,22 +38042,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.019470215, y: -0.02709961}
   m_SizeDelta: {x: 320.0498, y: 180.05005}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2110984219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110984217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56c0b0b8ee474a44698c43b7fa86e79c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Instru: {fileID: 2110984217}
-  Instru1: {fileID: 1366117206}
-  Instru2: {fileID: 1366117206}
-  IntNumero: 2
 --- !u!114 &2110984220
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2394,15 +2394,15 @@ PrefabInstance:
       propertyPath: TutorialPassiva
       value: 
       objectReference: {fileID: 222066640}
-    - target: {fileID: 6383063485077655782, guid: ecc6b64f5d46ca14e9626b338f61648c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6138219185723720304, guid: ecc6b64f5d46ca14e9626b338f61648c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -4.800293
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383063485077655782, guid: ecc6b64f5d46ca14e9626b338f61648c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6383063484432062455, guid: ecc6b64f5d46ca14e9626b338f61648c,
         type: 3}
@@ -6583,7 +6583,7 @@ PrefabInstance:
     - target: {fileID: 4889621934937223168, guid: ec3582913b4ddef4fa45f161c06bf26a,
         type: 3}
       propertyPath: tempLife
-      value: 100
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4889621934937223168, guid: ec3582913b4ddef4fa45f161c06bf26a,
         type: 3}
@@ -6645,6 +6645,10 @@ PrefabInstance:
     - target: {fileID: 1661451079, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
       propertyPath: deathTime
       value: 0.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661451079, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
+      propertyPath: atkDistance
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 3397164897075905928, guid: ec3582913b4ddef4fa45f161c06bf26a,
         type: 3}
@@ -15662,22 +15666,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
-      propertyPath: enemies.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
-      propertyPath: enemies.Array.data[0]
-      value: 
-      objectReference: {fileID: 319570704}
-    - target: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
-      propertyPath: enemies.Array.data[1]
-      value: 
-      objectReference: {fileID: 813134568}
-    - target: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
-      propertyPath: m_ExperienceValue
-      value: 60
-      objectReference: {fileID: 0}
     - target: {fileID: 8737581070610951836, guid: da0bf2a39d91bd84297ecb20fe655b35,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15782,6 +15770,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
+      propertyPath: enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
+      propertyPath: enemies.Array.data[0]
+      value: 
+      objectReference: {fileID: 319570704}
+    - target: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
+      propertyPath: enemies.Array.data[1]
+      value: 
+      objectReference: {fileID: 813134568}
+    - target: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
+      propertyPath: m_ExperienceValue
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8737581071765293567, guid: da0bf2a39d91bd84297ecb20fe655b35,
         type: 3}
@@ -20815,15 +20819,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: f559ff3d2be506e47a6049b875f9587f,
         type: 3}
-    - target: {fileID: 3889825053292878571, guid: 790e0d5ad2ae4404c8755295d629a12b,
-        type: 3}
-      propertyPath: m_IgnoreReversedGraphics
-      value: 0
+    - target: {fileID: 358309589, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3889825053292878571, guid: 790e0d5ad2ae4404c8755295d629a12b,
+    - target: {fileID: 3889825053292878568, guid: 790e0d5ad2ae4404c8755295d629a12b,
         type: 3}
-      propertyPath: m_BlockingMask.m_Bits
-      value: 0
+      propertyPath: m_AnchoredPosition.x
+      value: 0.39
       objectReference: {fileID: 0}
     - target: {fileID: 3889825051828314913, guid: 790e0d5ad2ae4404c8755295d629a12b,
         type: 3}
@@ -20833,6 +20836,16 @@ PrefabInstance:
     - target: {fileID: 3889825052640751795, guid: 790e0d5ad2ae4404c8755295d629a12b,
         type: 3}
       propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3889825053292878571, guid: 790e0d5ad2ae4404c8755295d629a12b,
+        type: 3}
+      propertyPath: m_IgnoreReversedGraphics
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3889825053292878571, guid: 790e0d5ad2ae4404c8755295d629a12b,
+        type: 3}
+      propertyPath: m_BlockingMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8228317088733940486, guid: 790e0d5ad2ae4404c8755295d629a12b,
@@ -20889,15 +20902,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3889825053292878568, guid: 790e0d5ad2ae4404c8755295d629a12b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.39
-      objectReference: {fileID: 0}
-    - target: {fileID: 358309589, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3108721053413862232, guid: 790e0d5ad2ae4404c8755295d629a12b, type: 3}
@@ -20987,7 +20991,7 @@ PrefabInstance:
     - target: {fileID: 4889621934937223168, guid: ec3582913b4ddef4fa45f161c06bf26a,
         type: 3}
       propertyPath: tempLife
-      value: 100
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4889621934937223168, guid: ec3582913b4ddef4fa45f161c06bf26a,
         type: 3}
@@ -21049,6 +21053,10 @@ PrefabInstance:
     - target: {fileID: 1661451079, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
       propertyPath: deathTime
       value: 0.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661451079, guid: ec3582913b4ddef4fa45f161c06bf26a, type: 3}
+      propertyPath: atkDistance
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 3397164897075905928, guid: ec3582913b4ddef4fa45f161c06bf26a,
         type: 3}

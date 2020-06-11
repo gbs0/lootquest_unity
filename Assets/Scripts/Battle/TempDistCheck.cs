@@ -187,7 +187,7 @@ public class TempDistCheck : MonoBehaviour
         distTotal = DX + DZ;
     }
 
-    public virtual void OnMouseEnter()
+    public  void OnMouseEnter()
     {
         if (selectable)
         {
@@ -196,7 +196,7 @@ public class TempDistCheck : MonoBehaviour
         }
     }
 
-    public virtual void OnMouseExit()
+    public  void OnMouseExit()
     {
         Selection.SetActive(false);
         selected = false;
@@ -207,4 +207,5 @@ public class TempDistCheck : MonoBehaviour
         Selection.SetActive(false);
         GetComponent<NPCMove>().morto = true;
     }
+
 }

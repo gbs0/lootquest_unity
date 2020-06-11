@@ -3706,6 +3706,7 @@ GameObject:
   - component: {fileID: 8737581070986789732}
   - component: {fileID: 8737581070986789734}
   - component: {fileID: 8737581070986789735}
+  - component: {fileID: 7868828452540701910}
   m_Layer: 5
   m_Name: EnemyPanel
   m_TagString: Untagged
@@ -3771,6 +3772,25 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!95 &7868828452540701910
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8737581070986789733}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 396755f4adb4cfe449b6df60372d7733, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8737581071017403145
 GameObject:
   m_ObjectHideFlags: 0
@@ -4861,7 +4881,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8737581071523988175
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4922,7 +4942,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\renemy turn"
+  m_Text: EnemyTurn
 --- !u!1 &8737581071529328392
 GameObject:
   m_ObjectHideFlags: 0
