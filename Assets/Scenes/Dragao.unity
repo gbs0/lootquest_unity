@@ -18145,6 +18145,7 @@ MonoBehaviour:
   enemies:
   - {fileID: 0}
   test: []
+  m_ExperienceValue: 100
 --- !u!114 &1105728068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20205,7 +20206,6 @@ MonoBehaviour:
   vida: 100
   SkipButton: {fileID: 1416505810}
   TimeAnimation: 0
-  m_ExperienceValue: 120
 --- !u!1 &1230516323
 GameObject:
   m_ObjectHideFlags: 0
