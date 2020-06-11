@@ -30,6 +30,8 @@ public class Slime : MonoBehaviour
 
                 PlayerPrefs.SetInt("indexSpam", Monstros);
                 PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Monstros", NextCenaName);
+
                 Application.LoadLevel("LoadingScene");
 
             }
@@ -40,6 +42,8 @@ public class Slime : MonoBehaviour
 
                 PlayerPrefs.SetInt("indexSpam", Monstros);
                 PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Monstros", NextCenaName);
+
                 Application.LoadLevel("LoadingScene");
             }
             if (Monstros == 3)
@@ -48,6 +52,8 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("Gatos",1);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
                 PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Monstros", NextCenaName);
+
                 Application.LoadLevel("LoadingScene");
             }
             if (Monstros == 4)
@@ -56,6 +62,8 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("BruxaCombate", 1);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
                 PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Monstros", NextCenaName);
+
                 Application.LoadLevel("LoadingScene");
             }
             if (Monstros == 5)
@@ -64,6 +72,8 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("Cogumelo1", 1);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
                 PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Monstros", NextCenaName);
+
                 Application.LoadLevel("LoadingScene");
             }
             if (Monstros == 6)
@@ -72,6 +82,8 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("Dragao", 1);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
                 PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Monstros", NextCenaName);
+
                 Application.LoadLevel("LoadingScene");
             }
 
@@ -81,6 +93,8 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("Ghoul1", 1);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
                 PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Monstros", NextCenaName);
+
                 Application.LoadLevel("LoadingScene");
             }
             if (Monstros == 11)
@@ -89,6 +103,8 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("Ghoul2", 1);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
                 PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Monstros", NextCenaName);
+
                 Application.LoadLevel("LoadingScene");
             }
             if (Monstros == 12)
@@ -97,6 +113,8 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("Beserker", 1);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
                 PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Monstros", NextCenaName);
+
                 Application.LoadLevel("LoadingScene");
             }
             if (Monstros == 13)
@@ -105,6 +123,8 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("Sucubus", 1);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
                 PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Monstros", NextCenaName);
+
                 Application.LoadLevel("LoadingScene");
             }
             if (Monstros == 14)
@@ -112,6 +132,8 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("indexSpam", 5);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
                 PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Monstros", NextCenaName);
+
                 Application.LoadLevel("LoadingScene");
             }
         }
