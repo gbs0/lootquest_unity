@@ -129,7 +129,7 @@ public class TempDistCheckBerseker : TempDistCheck
     IEnumerator DeathAnim()
     {
         PlayerAnim.SetBool("Morto", true);
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(deathTime);
         PlayerPrefs.SetString("_sceneName", NextCenaName);
         LoadingSisten.LoadLevel(NextCenaName);
     }
