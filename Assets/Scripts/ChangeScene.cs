@@ -5,7 +5,7 @@ using UnityEngine;
 public class ChangeScene : MonoBehaviour
 {
 
-    public string NextCenaName;
+    private string NextCenaName;
     public string NovoJogo;
     public float timeStart;
     public bool time = false;
@@ -33,14 +33,14 @@ void Update()
 
     public void NextScene()
     {
-        PlayerPrefs.SetString("_sceneName", NextCenaName);
-        LoadingSisten.LoadLevel(NextCenaName);
+        PlayerPrefs.SetString("Scene", NextCenaName);
+        LoadingSisten.LoadLevel("LoadingScene");
     }
     public void IntroNextScene()
     {
         
-        PlayerPrefs.SetString("_sceneName", NextCenaName);
-        LoadingSisten.LoadLevel(NextCenaName);
+        PlayerPrefs.SetString("Scene", NextCenaName);
+        LoadingSisten.LoadLevel("LoadingScene");
         
     }
 
