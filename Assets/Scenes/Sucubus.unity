@@ -754,53 +754,7 @@ MonoBehaviour:
   GS: {fileID: 178807525}
   tempDistCheck: {fileID: 178807534}
   tempDistCheckS: {fileID: 178807534}
---- !u!114 &178807534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 178807529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0605ff8d1c4f73b4697e991d160a07a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackSword: {fileID: 178807542}
-  EnimDamageSound: {fileID: 178807541}
-  RM: {fileID: 1311436739}
-  NextCenaName: Derrota
-  PainelVitoria: {fileID: 1284185074}
-  player: {fileID: 178807529}
-  playerMove: {fileID: 599900949}
-  GS: {fileID: 178807525}
-  PlayerAnim: {fileID: 599900939}
-  Selection: {fileID: 178807527}
-  LifeBar: {fileID: 178807528}
-  atkDistance: 3
-  distX: 0
-  distZ: 0
-  PEdist: 0
-  distTotal: 0
-  PositivizadorX: 0
-  PositivizadorZ: 0
-  DX: 0
-  DZ: 0
-  Undo: {fileID: 1556435820}
-  selectable: 0
-  Morte: 0
-  selected: 0
-  canHit: 0
-  hitTime: 0
-  hitCount: 0
-  tempLife: 150
-  vida: 0
-  SkipButton: {fileID: 312207043}
-  TimeAnimation: 0
-  Charm: {fileID: 74689643}
-  CharmeImagem: {fileID: 74689641}
-  atack: 0
---- !u!82 &178807541
+--- !u!82 &178807531
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -809,10 +763,11 @@ AudioSource:
   m_GameObject: {fileID: 178807529}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 23ecbde0f02c04b39a2605dd7b6d02b7, type: 3}
+  OutputAudioMixerGroup: {fileID: 9142910783356112533, guid: 34843a3011af85944806d504764b821f,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 9595357358867144781baf88ab034753, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.782
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -896,6 +851,53 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &178807534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178807529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0605ff8d1c4f73b4697e991d160a07a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSword: {fileID: 178807542}
+  EnimDamageSound: {fileID: 178807531}
+  RM: {fileID: 1311436739}
+  NextCenaName: Derrota
+  PainelVitoria: {fileID: 1284185074}
+  player: {fileID: 178807529}
+  playerMove: {fileID: 599900949}
+  GS: {fileID: 178807525}
+  PlayerAnim: {fileID: 599900939}
+  Selection: {fileID: 178807527}
+  LifeBar: {fileID: 178807528}
+  atkDistance: 3
+  distX: 0
+  distZ: 0
+  PEdist: 0
+  distTotal: 0
+  PositivizadorX: 0
+  PositivizadorZ: 0
+  DX: 0
+  DZ: 0
+  Undo: {fileID: 1556435820}
+  selectable: 0
+  Morte: 0
+  selected: 0
+  canHit: 0
+  hitTime: 0
+  hitCount: 0
+  tempLife: 150
+  vida: 0
+  SkipButton: {fileID: 312207043}
+  TimeAnimation: 0
+  deathTime: 0
+  Charm: {fileID: 74689643}
+  CharmeImagem: {fileID: 74689641}
+  atack: 0
 --- !u!82 &178807542
 AudioSource:
   m_ObjectHideFlags: 0
@@ -905,7 +907,8 @@ AudioSource:
   m_GameObject: {fileID: 178807529}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 9142910783356112533, guid: 34843a3011af85944806d504764b821f,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 8b18c54e9e7bc4cf6877ef2980296265, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
