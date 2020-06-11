@@ -37472,11 +37472,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Luva
       objectReference: {fileID: 0}
-    - target: {fileID: 4355328592142302179, guid: 8ccbbe2afe915d448af38e32a431075d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4465868389442889456, guid: 8ccbbe2afe915d448af38e32a431075d,
         type: 3}
       propertyPath: m_Text
@@ -37514,6 +37509,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: "Maestro, a drum roll, please. Yes, it is another item! Congrats!\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355328592142302179, guid: 8ccbbe2afe915d448af38e32a431075d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ccbbe2afe915d448af38e32a431075d, type: 3}
@@ -38547,8 +38547,25 @@ PrefabInstance:
       propertyPath: m_FillOrigin
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8712361101896536969, guid: feb5b4d63150f4145ae6bdc5beaf12b1,
+        type: 3}
+      propertyPath: img
+      value: 
+      objectReference: {fileID: 8691259146135252831}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feb5b4d63150f4145ae6bdc5beaf12b1, type: 3}
+--- !u!114 &8691259146135252831 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1366832641688099805, guid: feb5b4d63150f4145ae6bdc5beaf12b1,
+    type: 3}
+  m_PrefabInstance: {fileID: 8691259146135252830}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8691259146135252835 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4344634556920722498, guid: feb5b4d63150f4145ae6bdc5beaf12b1,
