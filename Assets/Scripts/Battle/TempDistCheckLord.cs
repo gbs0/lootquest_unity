@@ -17,23 +17,27 @@ public class TempDistCheckLord : TempDistCheck
     // Update is called once per frame
     public override void Update()
     {
-        Attack();
-        DistCheck();
-        if (distTotal <= atkDistance && canHit == true)
+        if (gameObject.GetComponent<TaticsMove>().turn)
         {
+            Attack();
+            DistCheck();
+            if (distTotal <= atkDistance && canHit == true)
+            {
 
-            TestDamage(); // Toggle Death Method
-            //GS.ResetTrigger("Attack");
-        }
+                TestDamage(); // Toggle Death Method
+                //GS.ResetTrigger("Attack");
+            }
 
-        if (Input.GetMouseButtonDown(1))
-        {
-            hitCount = 0;
+            if (Input.GetMouseButtonDown(1))
+            {
+                hitCount = 0;
+            }
+            if (charm == false)
+            {
+                hitCount = 0;
+            }
         }
-        if (charm == false)
-        {
-            hitCount = 0;
-        }
+        
     }
 
     public override void SkipTurn()

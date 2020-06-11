@@ -72,18 +72,22 @@ public class TempGridCheck : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        Attack();
-        
-        if (distTotal <= atkDistance && canHit == true)
+        if (gameObject.GetComponent<TaticsMove>().turn)
         {
-            TestDamage(); // Toggle Death Method
-            //GS.ResetTrigger("Attack");
+            Attack();
+        
+            if (distTotal <= atkDistance && canHit == true)
+            {
+                TestDamage(); // Toggle Death Method
+                //GS.ResetTrigger("Attack");
+            }
+        
+            if (Input.GetMouseButtonDown(1))
+            {
+                hitCount = 0;
+            }
         }
         
-        if (Input.GetMouseButtonDown(1))
-        {
-            hitCount = 0;
-        }
     }
 
     private void SkipTurn()

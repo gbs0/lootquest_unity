@@ -70,7 +70,7 @@ public class TempDistCheck : MonoBehaviour
     {
 
 
-        if (!Morte)
+        if (!Morte && gameObject.GetComponent<TaticsMove>().turn)
         {
             Attack();
             DistCheck();
