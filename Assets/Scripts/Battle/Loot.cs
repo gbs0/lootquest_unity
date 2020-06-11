@@ -320,6 +320,7 @@ public class Loot: MonoBehaviour
     public void Chose()
     {
         FindObjectOfType<PassiveManager>().SelectLoot(gameObject);
+        LBpainel.Remove();
     }
 
     public void SetValue(bool b, int r, int t)
