@@ -3457,6 +3457,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8737581070060206835, guid: da0bf2a39d91bd84297ecb20fe655b35,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8737581071396633112, guid: da0bf2a39d91bd84297ecb20fe655b35,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3472,6 +3477,16 @@ PrefabInstance:
       propertyPath: TutorialPainel
       value: 
       objectReference: {fileID: 680844162}
+    - target: {fileID: 8737581071286879467, guid: da0bf2a39d91bd84297ecb20fe655b35,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.00024414062
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737581071286879467, guid: da0bf2a39d91bd84297ecb20fe655b35,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00012207031
+      objectReference: {fileID: 0}
     - target: {fileID: 8737581071355434282, guid: da0bf2a39d91bd84297ecb20fe655b35,
         type: 3}
       propertyPath: m_SizeDelta.y
@@ -7370,6 +7385,10 @@ PrefabInstance:
       propertyPath: attackSword
       value: 
       objectReference: {fileID: 1614909496}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: deathTime
+      value: 2.46
+      objectReference: {fileID: 0}
     - target: {fileID: 4889621933968704882, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_Controller
