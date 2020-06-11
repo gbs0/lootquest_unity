@@ -33,12 +33,12 @@ public class CutSceneManeger : MonoBehaviour
         btn.gameObject.SetActive(false);
         VideoClip.Stop();
         dublagem.mute= true;
-        PlayerPrefs.SetString("_sceneName", NextCenaName);
+        PlayerPrefs.SetString("Scene", NextCenaName);
         LoadingSisten.LoadLevel(NextCenaName);
     }
     void EndReached(UnityEngine.Video.VideoPlayer vp)
     {
-        PlayerPrefs.SetString("_sceneName", NextCenaName);
+        PlayerPrefs.SetString("Scene", NextCenaName);
         LoadingSisten.LoadLevel(NextCenaName);
     }
     
@@ -46,7 +46,7 @@ public class CutSceneManeger : MonoBehaviour
     public void NewGame()
     {
         Persistence.ResetGame();
-        PlayerPrefs.SetString("_sceneName", NovoJogo);
+        PlayerPrefs.SetString("Scene", NovoJogo);
         LoadingSisten.LoadLevel(NextCenaName);
     }
    
