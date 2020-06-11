@@ -17,7 +17,7 @@ public class Eventos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerPrefs.GetInt("DialogoGuilda") == 5   )
+        if (PlayerPrefs.GetInt("DialogoGuilda") == 4   )
         {
             if (evento1 == false)
             {
