@@ -45,7 +45,7 @@ public class TempDistCheck : MonoBehaviour
     public Button SkipButton;
     public float TimeAnimation;
 
-    
+    public float deathTime;    
     // Start is called before the first frame update
     
     public virtual void Start()
@@ -147,7 +147,7 @@ public class TempDistCheck : MonoBehaviour
     public virtual IEnumerator DeathAnim()
     {
         PlayerAnim.SetBool("Morto", true);
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(deathTime);
 
         PlayerPrefs.SetString("_sceneName", NextCenaName);
         LoadingSisten.LoadLevel(NextCenaName);
