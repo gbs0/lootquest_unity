@@ -201,6 +201,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1644109936}
     m_Modifications:
+    - target: {fileID: 6207274212814066977, guid: feb5b4d63150f4145ae6bdc5beaf12b1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8691259146066270532, guid: feb5b4d63150f4145ae6bdc5beaf12b1,
         type: 3}
       propertyPath: m_Name
@@ -2870,7 +2875,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &516791320
 Transform:
   m_ObjectHideFlags: 0
@@ -2897,7 +2902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c8157dd596a721478244d0f98870e4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelBox: {fileID: 0}
+  panelBox: {fileID: 1947107739}
   Maga: {fileID: 1918082631}
   "Interroga\xE7ao": {fileID: 256428610}
   Conversa: {fileID: 516791319}
@@ -2905,7 +2910,7 @@ MonoBehaviour:
   Guilda: 1
   jafoi: 0
   linhaAtual: 0
-  textoMensagem: {fileID: 0}
+  textoMensagem: {fileID: 239984654}
   texto:
   - Uh. Excuse me.
   - 'Well,  hello. I am here to enter this guild. '
@@ -3064,8 +3069,8 @@ MonoBehaviour:
   - {fileID: 1946278962}
   - {fileID: 1572361067}
   conta: 0
-  PlayerRigi: {fileID: 0}
-  Player: {fileID: 0}
+  PlayerRigi: {fileID: 1726869222}
+  Player: {fileID: 1726869218}
   rodaCut: 0
 --- !u!61 &516791322
 BoxCollider2D:
@@ -3080,7 +3085,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05058098, y: -1.2882757}
+  m_Offset: {x: -0.05058098, y: -1.9443073}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3091,7 +3096,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.5908337, y: 3.5765514}
+  m_Size: {x: 4.5908337, y: 4.8886147}
   m_EdgeRadius: 0
 --- !u!1 &519743138
 GameObject:
@@ -5231,7 +5236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c8157dd596a721478244d0f98870e4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelBox: {fileID: 0}
+  panelBox: {fileID: 1947107739}
   Maga: {fileID: 0}
   "Interroga\xE7ao": {fileID: 256428610}
   Conversa: {fileID: 826815469}
@@ -5239,7 +5244,7 @@ MonoBehaviour:
   Guilda: 1
   jafoi: 0
   linhaAtual: 0
-  textoMensagem: {fileID: 0}
+  textoMensagem: {fileID: 239984654}
   texto:
   - Welcome back, great job! Here is you reward!
   - That is cool, and all, but...
@@ -5853,6 +5858,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4347007623005583342, guid: 8bc9b12f9ebee464284cccc956b0d5a5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347007623005583342, guid: 8bc9b12f9ebee464284cccc956b0d5a5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4347007623005583333, guid: 8bc9b12f9ebee464284cccc956b0d5a5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5908,10 +5923,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4347007621937551327, guid: 8bc9b12f9ebee464284cccc956b0d5a5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347007622311234211, guid: 8bc9b12f9ebee464284cccc956b0d5a5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4347007623005583329, guid: 8bc9b12f9ebee464284cccc956b0d5a5,
         type: 3}
       propertyPath: Speed
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347007622938644237, guid: 8bc9b12f9ebee464284cccc956b0d5a5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bc9b12f9ebee464284cccc956b0d5a5, type: 3}
@@ -8712,6 +8742,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719785244}
   m_CullTransparentMesh: 0
+--- !u!1 &1726869218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4347007623005583342, guid: 8bc9b12f9ebee464284cccc956b0d5a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1095087893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1726869222 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 4347007623005583330, guid: 8bc9b12f9ebee464284cccc956b0d5a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1095087893}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1759505423
 GameObject:
   m_ObjectHideFlags: 0
@@ -9250,7 +9292,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1802450435
 Transform:
   m_ObjectHideFlags: 0
@@ -9304,7 +9346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c8157dd596a721478244d0f98870e4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelBox: {fileID: 0}
+  panelBox: {fileID: 1947107739}
   Maga: {fileID: 1302640179}
   "Interroga\xE7ao": {fileID: 977069025}
   Conversa: {fileID: 1802450434}
@@ -9312,7 +9354,7 @@ MonoBehaviour:
   Guilda: 1
   jafoi: 0
   linhaAtual: 0
-  textoMensagem: {fileID: 0}
+  textoMensagem: {fileID: 239984654}
   texto:
   - I need to talk with Venus. N.O.W.
   - Oh, hello a-
@@ -12108,7 +12150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c8157dd596a721478244d0f98870e4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelBox: {fileID: 0}
+  panelBox: {fileID: 1947107739}
   Maga: {fileID: 1302640179}
   "Interroga\xE7ao": {fileID: 256428610}
   Conversa: {fileID: 2054786920}
@@ -12116,7 +12158,7 @@ MonoBehaviour:
   Guilda: 1
   jafoi: 0
   linhaAtual: 0
-  textoMensagem: {fileID: 0}
+  textoMensagem: {fileID: 239984654}
   texto:
   - "Welcome back, everyone\u2026"
   - Why is there a big hat girl with you guys?
