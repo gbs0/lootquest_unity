@@ -29,7 +29,7 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("Monstro1", 1);
 
                 PlayerPrefs.SetInt("indexSpam", Monstros);
-                PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Scene", NextCenaName);
                 PlayerPrefs.SetString("Monstros", NextCenaName);
 
                 Application.LoadLevel("LoadingScene");
@@ -41,7 +41,7 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("indexSpam", 3);
 
                 PlayerPrefs.SetInt("indexSpam", Monstros);
-                PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Scene", NextCenaName);
                 PlayerPrefs.SetString("Monstros", NextCenaName);
 
                 Application.LoadLevel("LoadingScene");
@@ -51,7 +51,7 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("indexSpam", 4);
                 PlayerPrefs.SetInt("Gatos",1);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
-                PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Scene", NextCenaName);
                 PlayerPrefs.SetString("Monstros", NextCenaName);
 
                 Application.LoadLevel("LoadingScene");
@@ -61,7 +61,7 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("indexSpam", 4);
                 PlayerPrefs.SetInt("BruxaCombate", 1);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
-                PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Scene", NextCenaName);
                 PlayerPrefs.SetString("Monstros", NextCenaName);
 
                 Application.LoadLevel("LoadingScene");
@@ -71,7 +71,7 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("indexSpam", 4);
                 PlayerPrefs.SetInt("Cogumelo1", 1);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
-                PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Scene", NextCenaName);
                 PlayerPrefs.SetString("Monstros", NextCenaName);
 
                 Application.LoadLevel("LoadingScene");
@@ -81,7 +81,7 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("indexSpam", 5);
                 PlayerPrefs.SetInt("Dragao", 1);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
-                PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Scene", NextCenaName);
                 PlayerPrefs.SetString("Monstros", NextCenaName);
 
                 Application.LoadLevel("LoadingScene");
@@ -92,7 +92,7 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("indexSpam", 5);
                 PlayerPrefs.SetInt("Ghoul1", 1);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
-                PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Scene", NextCenaName);
                 PlayerPrefs.SetString("Monstros", NextCenaName);
 
                 Application.LoadLevel("LoadingScene");
@@ -102,7 +102,7 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("indexSpam", 5);
                 PlayerPrefs.SetInt("Ghoul2", 1);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
-                PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Scene", NextCenaName);
                 PlayerPrefs.SetString("Monstros", NextCenaName);
 
                 Application.LoadLevel("LoadingScene");
@@ -112,7 +112,7 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("indexSpam", 5);
                 PlayerPrefs.SetInt("Beserker", 1);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
-                PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Scene", NextCenaName);
                 PlayerPrefs.SetString("Monstros", NextCenaName);
 
                 Application.LoadLevel("LoadingScene");
@@ -122,7 +122,7 @@ public class Slime : MonoBehaviour
                 PlayerPrefs.SetInt("indexSpam", 5);
                 PlayerPrefs.SetInt("Sucubus", 1);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
-                PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Scene", NextCenaName);
                 PlayerPrefs.SetString("Monstros", NextCenaName);
 
                 Application.LoadLevel("LoadingScene");
@@ -131,7 +131,7 @@ public class Slime : MonoBehaviour
             {
                 PlayerPrefs.SetInt("indexSpam", 5);
                 PlayerPrefs.SetInt("indexSpam", Monstros);
-                PlayerPrefs.SetString("_sceneName", NextCenaName);
+                PlayerPrefs.SetString("Scene", NextCenaName);
                 PlayerPrefs.SetString("Monstros", NextCenaName);
 
                 Application.LoadLevel("LoadingScene");

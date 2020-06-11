@@ -40,7 +40,7 @@ public static class Persistence
 
     public static void ResetGame()
     {
-        PlayerPrefs.SetString("Scene",_sceneName);
+        PlayerPrefs.SetString("Scene","Prolog");
         PlayerPrefs.SetFloat("indexSpam",0);
         PlayerPrefs.SetFloat("Monstro1", 0);
         PlayerPrefs.SetFloat("Monstro2", 0);
@@ -48,7 +48,10 @@ public static class Persistence
         PlayerPrefs.SetFloat("Missao", 0);
         PlayerPrefs.SetFloat("Tutorial", 0);
         PlayerPrefs.SetFloat("CurrentXP", 0);
+        PlayerPrefs.SetInt("DialogoGuilda", 0);
         PlayerPrefs.SetInt("Lvl", 0);
+        PlayerPrefs.SetInt("Dragao", 0);
+        PlayerPrefs.SetInt("Bruxa", 0);
     }
     
 }

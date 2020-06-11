@@ -8,7 +8,7 @@ public class MenuChecker : MonoBehaviour
 
     public OptionsMenu menu;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         menu = FindObjectOfType<OptionsMenu>();
         if (menu==null)

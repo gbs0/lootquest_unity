@@ -142,7 +142,7 @@ public class TempGridCheck : MonoBehaviour
     {
         PlayerAnim.SetBool("Morto", true);
         yield return new WaitForSeconds(2.0f);
-        PlayerPrefs.SetString("_sceneName", NextCenaName);
+        PlayerPrefs.SetString("Scene", NextCenaName);
         LoadingSisten.LoadLevel(NextCenaName);
     }
 

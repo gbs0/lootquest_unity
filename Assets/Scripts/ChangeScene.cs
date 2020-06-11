@@ -47,10 +47,10 @@ void Update()
     public void NewGame()
     {
         PlayerPrefs.SetInt("Int", 0);
-        Persistence.ResetGame();
         PlayerPrefs.SetInt("DialogoGuilda", 0);
         PlayerPrefs.SetString("Scene", NovoJogo);
         PlayerPrefs.DeleteAll();
+        Persistence.ResetGame();
         LoadingSisten.LoadLevel(NovoJogo);
 
     }

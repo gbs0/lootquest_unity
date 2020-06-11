@@ -234,6 +234,11 @@ PrefabInstance:
       propertyPath: dublagem
       value: 
       objectReference: {fileID: 914813855}
+    - target: {fileID: 6958450945442078886, guid: ac6899f2b3776ce43a94f379bc0557c6,
+        type: 3}
+      propertyPath: btn
+      value: 
+      objectReference: {fileID: 1863620536}
     - target: {fileID: 6958450945427194741, guid: ac6899f2b3776ce43a94f379bc0557c6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1025,7 +1030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c210087906848974586c966de0628380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NovoJogo: 
+  NovoJogo: ilha1
   timeStart: 0
   time: 1
 --- !u!114 &1906178340
