@@ -10,6 +10,7 @@ public class CutSceneManeger : MonoBehaviour
     public VideoPlayer VideoClip;
     public string NextCenaName;
     public string NovoJogo;
+    public AudioSource dublagem;
     
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,8 @@ public class CutSceneManeger : MonoBehaviour
 
     public void NextScene()
     {
-        VideoClip.Pause();
+        VideoClip.Stop();
+        dublagem.mute= true;
         PlayerPrefs.SetString("_sceneName", NextCenaName);
         LoadingSisten.LoadLevel(NextCenaName);
     }

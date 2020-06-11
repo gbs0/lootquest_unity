@@ -59,6 +59,7 @@ void Update()
     {
         PlayerPrefs.SetString("Scene", "MenuInicial");
         LoadingSisten.LoadLevel("MenuInicial");
+        Time.timeScale = 1;
     }
     
 
