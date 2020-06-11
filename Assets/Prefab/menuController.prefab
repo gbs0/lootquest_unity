@@ -661,7 +661,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1995672519}
-        m_MethodName: NextScene
+        m_MethodName: BackMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2368,7 +2368,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c210087906848974586c966de0628380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextCenaName: MenuInicial
   NovoJogo: MenuInicial
   timeStart: 0
   time: 1

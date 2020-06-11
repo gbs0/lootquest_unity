@@ -25,6 +25,7 @@ public class CutSceneManeger : MonoBehaviour
 
     public void NextScene()
     {
+        VideoClip.Pause();
         PlayerPrefs.SetString("_sceneName", NextCenaName);
         LoadingSisten.LoadLevel(NextCenaName);
     }

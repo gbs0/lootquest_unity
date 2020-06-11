@@ -54,6 +54,12 @@ void Update()
         LoadingSisten.LoadLevel(NovoJogo);
 
     }
+
+    public void BackMenu()
+    {
+        PlayerPrefs.SetString("Scene", "MenuInicial");
+        LoadingSisten.LoadLevel("MenuInicial");
+    }
     
 
     public void QuitGame()
