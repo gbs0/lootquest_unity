@@ -49,9 +49,9 @@ void Update()
         PlayerPrefs.SetInt("Int", 0);
         Persistence.ResetGame();
         PlayerPrefs.SetInt("DialogoGuilda", 0);
-        PlayerPrefs.SetString("_sceneName", NovoJogo);
+        PlayerPrefs.SetString("Scene", NovoJogo);
         PlayerPrefs.DeleteAll();
-        LoadingSisten.LoadLevel(NextCenaName);
+        LoadingSisten.LoadLevel(NovoJogo);
 
     }
     
