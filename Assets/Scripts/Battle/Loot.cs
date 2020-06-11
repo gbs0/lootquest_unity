@@ -2,8 +2,9 @@
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace.Battle;
 
-    public class Loot: MonoBehaviour
+public class Loot: MonoBehaviour
     {
         public bool Spell;
         public int intSpell;
@@ -27,6 +28,7 @@ using System.Collections.Generic;
         private GameObject PlayerAni;
         public Animator AnimePlayer;
 
+        public LootBoxPainel LBpainel;
         //private Animator PlayerAnim;
 
 
@@ -43,6 +45,7 @@ using System.Collections.Generic;
         player = RoundManager._allCaracters.Peek();
         PlayerAni = GameObject.FindGameObjectWithTag("PlayerSprite");
         AnimePlayer = PlayerAni.GetComponent<Animator>();
+        LBpainel = FindObjectOfType<LootBoxPainel>();
 
 
     }
@@ -236,6 +239,7 @@ using System.Collections.Generic;
             player.move = _rarit;
             player.HitForce = _rarit;
             player.BeginTurn();
+            LBpainel.Remove();
             Destroy(gameObject);
         }
         else

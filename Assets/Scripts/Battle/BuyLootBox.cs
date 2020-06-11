@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace.Battle;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,6 +27,7 @@ public class BuyLootBox : MonoBehaviour
                 {           
                     var newLootbox = Instantiate(LootBoxPrefab,Vector3.zero,Quaternion.identity,PainelLootBox.transform);
                     _currentGold = value;
+                    PainelLootBox.GetComponent<LootBoxPainel>().Add();
                     GoldText.text = _currentGold.ToString();
                 }
             }
@@ -67,7 +69,11 @@ public class BuyLootBox : MonoBehaviour
 
     private void CreateLootBox()
     {
-        Gold--;
+        if (PainelLootBox.GetComponent<LootBoxPainel>().list.Count<4)
+        {
+            Gold--;
+        }
+        
     }
 
 }
