@@ -1367,7 +1367,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Invent\xE1rio"
+  m_Text: Inventory
 --- !u!1 &8737581070348588256
 GameObject:
   m_ObjectHideFlags: 0
@@ -2529,7 +2529,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Habilidades
+  m_Text: Skill
 --- !u!114 &8737581070674091328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3016,7 +3016,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Receitas
+  m_Text: 'Team
+
+'
 --- !u!1 &8737581070847755180
 GameObject:
   m_ObjectHideFlags: 0
@@ -4063,7 +4065,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 979.9998, y: 659.0001}
-  m_SizeDelta: {x: 123.7, y: 23.2}
+  m_SizeDelta: {x: 169, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8737581071214854805
 CanvasRenderer:
@@ -4093,7 +4095,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4b681e83e3796466483872bbfaed29b6, type: 3}
+  m_Sprite: {fileID: -1583827255421252762, guid: 7f94ce5eef22a7248aa54265034c8439,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4247,7 +4250,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Receitas
+  m_Text: 'Team
+
+'
 --- !u!1 &8737581071286879464
 GameObject:
   m_ObjectHideFlags: 0
@@ -4336,6 +4341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ed24295fe584db08d57cd7e82b632d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  list: []
 --- !u!1 &8737581071355434283
 GameObject:
   m_ObjectHideFlags: 0
@@ -4494,7 +4500,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Habilidades
+  m_Text: Skill
 --- !u!114 &8737581071375361614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4709,7 +4715,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -2.0002494, y: 659.0001}
-  m_SizeDelta: {x: 123.7, y: 23.2}
+  m_SizeDelta: {x: 169, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8737581071465926963
 CanvasRenderer:
@@ -4739,7 +4745,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4b681e83e3796466483872bbfaed29b6, type: 3}
+  m_Sprite: {fileID: 7908933360528658844, guid: 7f94ce5eef22a7248aa54265034c8439,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5068,7 +5075,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Invent\xE1rio"
+  m_Text: Inventory
 --- !u!1 &8737581071552893123
 GameObject:
   m_ObjectHideFlags: 0
@@ -6128,7 +6135,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -983.7, y: 658.99994}
-  m_SizeDelta: {x: 123.7, y: 23.2}
+  m_SizeDelta: {x: 169, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8737581071840093075
 CanvasRenderer:
@@ -6158,7 +6165,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4b681e83e3796466483872bbfaed29b6, type: 3}
+  m_Sprite: {fileID: -2496185460133230906, guid: 7f94ce5eef22a7248aa54265034c8439,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6825,7 +6833,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Skills
+  m_Text: Skill
 --- !u!114 &8737581072120507895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6979,6 +6987,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: Spell
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 153433075819094363, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7095,11 +7108,6 @@ PrefabInstance:
       propertyPath: m_Type
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: Spell
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16aa103a5adf8a4e9425cd9c39ba6b6, type: 3}
 --- !u!224 &8890955729904374015 stripped
@@ -7119,6 +7127,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stun
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: Spell
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: intSpell
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 153433075819094363, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
@@ -7251,16 +7269,6 @@ PrefabInstance:
       propertyPath: m_Type
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: Spell
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: intSpell
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16aa103a5adf8a4e9425cd9c39ba6b6, type: 3}
 --- !u!224 &8890955730259073091 stripped
@@ -7285,6 +7293,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: Spell
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: intSpell
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 153433075819094363, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
@@ -7417,16 +7435,6 @@ PrefabInstance:
       propertyPath: m_Type
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: Spell
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: intSpell
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16aa103a5adf8a4e9425cd9c39ba6b6, type: 3}
 --- !u!224 &8890955729487157718 stripped
@@ -7451,6 +7459,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: Spell
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
+        type: 3}
+      propertyPath: intSpell
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 153433075819094363, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
         type: 3}
@@ -7582,16 +7600,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Type
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: Spell
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7164597613547002980, guid: b16aa103a5adf8a4e9425cd9c39ba6b6,
-        type: 3}
-      propertyPath: intSpell
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16aa103a5adf8a4e9425cd9c39ba6b6, type: 3}

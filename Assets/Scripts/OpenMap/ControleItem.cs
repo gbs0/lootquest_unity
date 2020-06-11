@@ -29,6 +29,9 @@ public class ControleItem : MonoBehaviour
     public Sprite ItemFestiveBox;
     public Sprite ItemCreatuurrsGauntlet;
 
+    public GameObject Instrução2;
+
+
     public GameObject CristalSlimceCrown;
     public GameObject CristalMonthlySardine;
     public GameObject CristalBob;
@@ -49,6 +52,8 @@ void Update()
         if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 5)
         {
             CristalSlimceCrown.SetActive(true);
+            Instrução2.SetActive(true);
+
         }
         if (PlayerPrefs.GetInt("Gatos") == 1)
         {
@@ -69,6 +74,7 @@ void Update()
         {
             SlimceCrown.SetActive(true);
             CristalSlimceCrown.SetActive(false);
+            Instrução2.SetActive(false);
 
         }
         if (PlayerPrefs.GetInt("MonthlySardine", 0) >= 1)

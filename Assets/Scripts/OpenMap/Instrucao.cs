@@ -7,7 +7,7 @@ public class Instrucao : MonoBehaviour
     public GameObject Instru;
     public GameObject Instru1;
     public GameObject Instru2;
-
+    public int IntNumero;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +20,16 @@ public class Instrucao : MonoBehaviour
         if (Instru == false ) 
 
         {
-            PlayerPrefs.SetInt("Int",1);
+            if (IntNumero == 1)
+            {
+                PlayerPrefs.SetInt("Int", 1);
+
+            }
+            if (IntNumero == 2)
+            {
+                PlayerPrefs.SetInt("Int2", 1);
+
+            }
         }
         if (PlayerPrefs.GetInt("Int") == 1)
 
@@ -28,11 +37,24 @@ public class Instrucao : MonoBehaviour
             Instru.SetActive(false);
 
         }
+        if (PlayerPrefs.GetInt("Int2") == 1)
+
+        {
+            Instru2.SetActive(false);
+
+        }
 
     }
     public void fechar()
     {
-        PlayerPrefs.SetInt("Int", 1);
+        if (IntNumero == 1)
+        {
+            PlayerPrefs.SetInt("Int", 1);
+        }
+        if (IntNumero == 2)
+        {
+            PlayerPrefs.SetInt("Int2", 1);
+        }
         Instru.SetActive(false);
 
     }
