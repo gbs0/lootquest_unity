@@ -32,7 +32,7 @@ public class AtaqueGrid : TaticsMove
 	public GameObject player; // Pegar Transform do Player
 	private List<ParticleSystem> listP;
 
-	public TempDistCheckDragao tempDistCheck;	
+	public TempDistCheck tempDistCheck;	
 	// Dictionary<string, GameObject> myDictionaryObjects = new Dictionary<string, GameObject>();
 	private void Start()
 	{
@@ -52,6 +52,7 @@ public class AtaqueGrid : TaticsMove
 			vulneravel = true;
 			tempDistCheck.canHit = true;
 			tempDistCheck.selectable = true;
+			tempDistCheck.Selection.SetActive(true);
 			MarcarTiles(sorteioAtual[0]); // Marca a tile a partir do sorteio da lista
 			return;
 		}
@@ -59,6 +60,9 @@ public class AtaqueGrid : TaticsMove
 		if (gridTurnN == 1)
 		{
 			AtaqueTiles(sorteioAtual[0]);
+			vulneravel = false;
+			tempDistCheck.canHit = false;
+			tempDistCheck.Selection.SetActive(false);
 			gridTurnN += 1;
 			return;
 		}
@@ -69,6 +73,7 @@ public class AtaqueGrid : TaticsMove
 			gridTurnN = 0;
 			vulneravel = true;
 			tempDistCheck.selectable = true;
+			tempDistCheck.Selection.SetActive(true);
 			sorteioAtual.Clear();
 			RoundManager.EndTurn();
 			Debug.Log("Esperei um round");
