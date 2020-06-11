@@ -12,7 +12,7 @@ public class ChangeScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        NextCenaName = PlayerPrefs.GetString("Scene");
     }
 
 // Update is called once per frame

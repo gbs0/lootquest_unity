@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TempDistCheckDragao : TempDistCheck
 {
@@ -80,7 +81,7 @@ public class TempDistCheckDragao : TempDistCheck
     {
         PlayerAnim.SetBool("Morto", true);
         yield return new WaitForSeconds(deathTime);
-        PlayerPrefs.SetString("_sceneName", NextCenaName);
+        PlayerPrefs.SetString("Scene", SceneManager.GetActiveScene().name);
         LoadingSisten.LoadLevel(NextCenaName);
     }
     

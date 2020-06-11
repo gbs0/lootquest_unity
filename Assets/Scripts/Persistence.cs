@@ -16,6 +16,7 @@ public static class Persistence
 
     public static void SaveData()
     {
+        PlayerPrefs.SetString("Scene", _sceneName);
         PlayerPrefs.SetFloat("MasterV", _masterV);
         PlayerPrefs.SetFloat("MusicV", _musicV);
         PlayerPrefs.SetFloat("SfxV", _sfxV);
@@ -27,6 +28,7 @@ public static class Persistence
 
     public static void LoadData()
     {
+        _sceneName = PlayerPrefs.GetString("Scene");
         _masterV = PlayerPrefs.GetFloat("MasterV");
         _musicV = PlayerPrefs.GetFloat("MusicV");
         _sfxV = PlayerPrefs.GetFloat("SfxV");
@@ -38,7 +40,7 @@ public static class Persistence
 
     public static void ResetGame()
     {
-        PlayerPrefs.SetString("_sceneName",_sceneName);
+        PlayerPrefs.SetString("Scene",_sceneName);
         PlayerPrefs.SetFloat("indexSpam",0);
         PlayerPrefs.SetFloat("Monstro1", 0);
         PlayerPrefs.SetFloat("Monstro2", 0);
