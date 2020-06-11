@@ -2910,7 +2910,7 @@ MonoBehaviour:
   - Uh. Excuse me.
   - 'Well,  hello. I am here to enter this guild. '
   - " \u2026 Of course. Could first tell me why?"
-  - ' I guess.'
+  - " I\u2026 need good equipment\u2026  I guess."
   - You sound suspicious, ya know?
   - "Uh\u2026 Look, I lost a lot\u2026 I have  no money for good equipment\u2026 "
   - "Hm\u2026"
@@ -2926,9 +2926,9 @@ MonoBehaviour:
   - 'A tamer for companions to fight battles or for just growing a zoo of pets in
     your home if you lonely enough for that! '
   - 'Also, of course, a panel for missions, get them done and you will have money
-    and other stuff! '
-  - 'A nursery if you get  hurt. '
+    and other stuff! A nursery if you get  hurt.  '
   - 'A bathroom, for you know. And, most important, this  pretty face of mine! '
+  - '.....'
   - ' Anyways, read the terms and we can get your  registration done. '
   - 'Ok, let me see. '
   - 'I agree, uh huh. Yeah.  And... Done. '
@@ -2992,49 +2992,49 @@ MonoBehaviour:
   img: {fileID: 0}
   imgs:
   - {fileID: 1572361067}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 337511010}
+  - {fileID: 1946278964}
+  - {fileID: 1946278962}
+  - {fileID: 1946278968}
+  - {fileID: 1946278962}
+  - {fileID: 1946278968}
+  - {fileID: 1572361067}
+  - {fileID: 1572361067}
+  - {fileID: 1946278962}
+  - {fileID: 1946278964}
+  - {fileID: 1946278965}
+  - {fileID: 1946278962}
+  - {fileID: 1946278967}
+  - {fileID: 1946278967}
+  - {fileID: 1946278967}
+  - {fileID: 1946278967}
+  - {fileID: 1946278962}
+  - {fileID: 1946278964}
+  - {fileID: 1572361067}
+  - {fileID: 337511010}
+  - {fileID: 1946278967}
+  - {fileID: 1244287676}
+  - {fileID: 1946278962}
+  - {fileID: 1946278965}
+  - {fileID: 1946278967}
+  - {fileID: 1572361067}
+  - {fileID: 1946278967}
+  - {fileID: 1946278964}
+  - {fileID: 1946278962}
+  - {fileID: 1946278963}
+  - {fileID: 1946278966}
+  - {fileID: 1946278967}
+  - {fileID: 1572361067}
+  - {fileID: 1946278967}
+  - {fileID: 1946278962}
+  - {fileID: 1946278964}
+  - {fileID: 1946278967}
+  - {fileID: 1244287676}
+  - {fileID: 1946278968}
+  - {fileID: 1946278962}
+  - {fileID: 1946278963}
+  - {fileID: 1946278964}
+  - {fileID: 1946278962}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -5015,6 +5015,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755751190}
   m_CullTransparentMesh: 0
+--- !u!1 &796239564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 796239565}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &796239565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796239564}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.12, y: -25.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &817727869
 GameObject:
   m_ObjectHideFlags: 0
@@ -9887,6 +9917,11 @@ PrefabInstance:
       propertyPath: m_margin.z
       value: -85.694336
       objectReference: {fileID: 0}
+    - target: {fileID: 8500574232051399093, guid: 8ccbbe2afe915d448af38e32a431075d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8500574232474438570, guid: 8ccbbe2afe915d448af38e32a431075d,
         type: 3}
       propertyPath: m_IsActive
@@ -9945,6 +9980,36 @@ PrefabInstance:
     - target: {fileID: 8500574232325428833, guid: 8ccbbe2afe915d448af38e32a431075d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8500574232033364903, guid: 8ccbbe2afe915d448af38e32a431075d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8500574231318883259, guid: 8ccbbe2afe915d448af38e32a431075d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4353834454543242559, guid: 8ccbbe2afe915d448af38e32a431075d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5256973137284089584, guid: 8ccbbe2afe915d448af38e32a431075d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262011752156952301, guid: 8ccbbe2afe915d448af38e32a431075d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460552779950005381, guid: 8ccbbe2afe915d448af38e32a431075d,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8500574230796238322, guid: 8ccbbe2afe915d448af38e32a431075d,
@@ -10117,6 +10182,16 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 21
       objectReference: {fileID: 0}
+    - target: {fileID: 8500574231644711200, guid: 8ccbbe2afe915d448af38e32a431075d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8500574231644711200, guid: 8ccbbe2afe915d448af38e32a431075d,
+        type: 3}
+      propertyPath: m_Name
+      value: Venus Desconfiada
+      objectReference: {fileID: 0}
     - target: {fileID: 8737440058021635719, guid: 8ccbbe2afe915d448af38e32a431075d,
         type: 3}
       propertyPath: m_RootOrder
@@ -10127,6 +10202,48 @@ PrefabInstance:
 --- !u!4 &1946278961 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8500574232325428833, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1946278960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1946278962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8500574232051399093, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1946278960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1946278963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2668562347119190702, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1946278960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1946278964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8500574231526136511, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1946278960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1946278965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8500574232408336345, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1946278960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1946278966 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8500574230638494762, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1946278960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1946278967 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8500574230923865144, guid: 8ccbbe2afe915d448af38e32a431075d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1946278960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1946278968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8500574231644711200, guid: 8ccbbe2afe915d448af38e32a431075d,
     type: 3}
   m_PrefabInstance: {fileID: 1946278960}
   m_PrefabAsset: {fileID: 0}
