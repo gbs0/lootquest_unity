@@ -3773,7 +3773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Monstros: 3
-  NextCenaName: TacticsMovement-lobo
+  NextCenaName: Gatos
 --- !u!58 &206345402
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13704,7 +13704,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &820607619
 Transform:
   m_ObjectHideFlags: 0
@@ -20020,7 +20020,7 @@ RectTransform:
   - {fileID: 1048437363}
   - {fileID: 220270677}
   m_Father: {fileID: 1659136478}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -27195,11 +27195,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 528418077}
   - {fileID: 207926811}
   - {fileID: 1188399355}
   - {fileID: 920445580}
   - {fileID: 2041274564}
+  - {fileID: 528418077}
   - {fileID: 860627133}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -35199,7 +35199,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1659136478}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -35441,11 +35441,11 @@ MonoBehaviour:
   Ghoul1Dialogo: {fileID: 1619870235}
   Ghoul2: {fileID: 338466446}
   Ghoul2Dialogo: {fileID: 503174352}
-  Beserker: {fileID: 0}
+  Beserker: {fileID: 1306993035}
   Sucubus: {fileID: 1856203795}
   AntSucubus: {fileID: 2073171893}
   PosSucubus: {fileID: 1640726682}
-  CaminhoCemiterio: {fileID: 0}
+  CaminhoCemiterio: {fileID: 663066248}
   EventoCidadeVoltando: {fileID: 2092729880}
   cot: 0
 --- !u!1 &2058413523 stripped
@@ -37200,7 +37200,7 @@ PrefabInstance:
     - target: {fileID: 4298871447662265582, guid: 060d9b5adfc37a94f95a8d8ba10cb935,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4298871447662265582, guid: 060d9b5adfc37a94f95a8d8ba10cb935,
         type: 3}
@@ -37415,7 +37415,7 @@ PrefabInstance:
     - target: {fileID: 8500574232325428833, guid: 8ccbbe2afe915d448af38e32a431075d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8500574232325428833, guid: 8ccbbe2afe915d448af38e32a431075d,
         type: 3}
@@ -37471,6 +37471,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Luva
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355328592142302179, guid: 8ccbbe2afe915d448af38e32a431075d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4465868389442889456, guid: 8ccbbe2afe915d448af38e32a431075d,
         type: 3}
@@ -37762,7 +37767,7 @@ PrefabInstance:
     - target: {fileID: 8691259146066270533, guid: feb5b4d63150f4145ae6bdc5beaf12b1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8691259146066270533, guid: feb5b4d63150f4145ae6bdc5beaf12b1,
         type: 3}

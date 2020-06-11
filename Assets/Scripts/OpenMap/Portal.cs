@@ -24,7 +24,7 @@ public class Portal : MonoBehaviour
 
 
 
-        if (collision.gameObject.CompareTag("Player") && PlayerPrefs.GetInt("DialogoGuilda", 0) == 7)
+        if (collision.gameObject.CompareTag("Player") && PlayerPrefs.GetInt("DialogoGuilda", 0) >= 7)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
