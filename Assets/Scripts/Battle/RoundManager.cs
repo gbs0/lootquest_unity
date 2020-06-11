@@ -17,6 +17,14 @@ public class RoundManager : MonoBehaviour
     private static List<TaticsMove> safelist = new List<TaticsMove>();
     public List<TaticsMove> test;
     
+	public float m_ExperienceValue;
+   // Gato Sessenta xp
+   // Bruxa Cem xp
+   // Cogumelo Sessenta XP
+   // Dragao Cem XP
+   // Ghoul Sessenta XP 
+   // Sucubus Cem XP
+
 	private void Start()
     {
 	    _enemyPainel = enemyPainel;
@@ -108,6 +116,8 @@ public class RoundManager : MonoBehaviour
 	    if (enemies.Count == 0)
 	    {
 		    StartCoroutine(nameof(EndScene));
+			m_ExperienceValue = PlayerPrefs.GetFloat("CurrentXP") + m_ExperienceValue;
+        	PlayerPrefs.GetFloat("CurrentXP", m_ExperienceValue);
 	    }
 
 		

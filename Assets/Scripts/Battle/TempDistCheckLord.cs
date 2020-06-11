@@ -130,8 +130,7 @@ public class TempDistCheckLord : TempDistCheck
     {
         PlayerAnim.SetBool("Morto", true);
         yield return new WaitForSeconds(3.0f);
-        m_ExperienceValue = PlayerPrefs.GetFloat("CurrentXP") + m_ExperienceValue;
-        PlayerPrefs.GetFloat("CurrentXP", m_ExperienceValue);
+        
         PlayerPrefs.SetString("_sceneName", NextCenaName);
         LoadingSisten.LoadLevel(NextCenaName);
     }
