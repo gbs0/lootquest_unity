@@ -14976,7 +14976,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &860627133
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26998,14 +26998,14 @@ MonoBehaviour:
   - {fileID: 9115073238497143776}
   - {fileID: 9115073238497143781}
   - {fileID: 1662651662}
-  - {fileID: 0}
+  - {fileID: 8500574232313828240}
   - {fileID: 9115073238497143776}
   - {fileID: 9115073238497143778}
   - {fileID: 9115073238497143785}
   - {fileID: 1662651662}
   - {fileID: 9115073238497143776}
   - {fileID: 1662651662}
-  - {fileID: 0}
+  - {fileID: 8500574232313828240}
   - {fileID: 9115073238497143776}
   - {fileID: 1662651662}
   - {fileID: 9115073238497143785}
@@ -37355,7 +37355,7 @@ PrefabInstance:
     - target: {fileID: 4298871447831412258, guid: 060d9b5adfc37a94f95a8d8ba10cb935,
         type: 3}
       propertyPath: m_Text
-      value: "Tutorial:\r\nWelcome to Gramorp village!\r\nJoin the guild and talk
+      value: "Tutorial:\r\nWelcome to LootLand's City!\r\nJoin the guild and talk
         to the guild master\r."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
