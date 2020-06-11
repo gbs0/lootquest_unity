@@ -82,40 +82,14 @@ public class TempDistCheckLord : TempDistCheck
     public override void TestDamage()
     {
 
-        attack = Random.Range(0, 6);
-        switch (attack)
-        {
-            switch (intelligence)
-        {
-        case 5:
-            print ("Why hello there good sir! Let me teach you about Trigonometry!");
-            break;
-        case 4:
-            print ("Hello and good day!");
-            break;
-        case 3:
-            print ("Whadya want?");
-            break;
-        case 2:
-            print ("Grog SMASH!");
-            break;
-        case 1:
-            print ("Ulg, glib, Pblblblblb");
-            break;
-        default:
-            print ("Incorrect intelligence level.");
-            break;
-        }
-        }
+        attack = Random.Range(0, 5);
         if (attack < 3)
         {
             if (distTotal <= 1.5f)
             {
-
                 GS.SetTrigger("AttackMele");
                 PlayerAnim.SetTrigger("Damage");
                 hitCount++;
-
                 canHit = false;
                 if (TempPlayerHp.PlayerHealth <= 0)
                 {
@@ -146,7 +120,9 @@ public class TempDistCheckLord : TempDistCheck
             canHit = false;
 
         }
+         
     }
+    
     
 
 
