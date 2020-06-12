@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class CaitNPC : NPCMove
 {
+    public static bool tel = false;
     private float distance;
     public List<GameObject> TPTarguets;
     public override void Update()
     {
+        if(tel == true)
+        {
+            tel = false;
+            Teleport();
+        }
         if (!turn)
         {
             return;
@@ -18,7 +24,6 @@ public class CaitNPC : NPCMove
             if (distance<2)
             {
                 GS.SetTrigger("Teleport");
-                Teleport();
             }
             else
             {
@@ -79,6 +84,5 @@ public class CaitNPC : NPCMove
         var i = Random.Range(0, 4);
         gameObject.transform.position = TPTarguets[i].transform.position;
         
-    }
-  
+    }   
 }
