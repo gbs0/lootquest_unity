@@ -18,6 +18,8 @@ public class ControleItem : MonoBehaviour
     public Text Habilidade;
     public Text BotaoEquip;
 
+    public GameObject DialogoItem;
+
     public int EquipamentoNumero;
     public GameObject DescricaoQuadro;
 
@@ -173,16 +175,11 @@ void Update()
             }
         }
         if (EquipamentoNumero == 5)
-        {
-            if (PlayerPrefs.GetInt("FestiveBox", 0) == 2)
+        {        
+            if (PlayerPrefs.GetInt("FestiveBox", 0) >= 1)
 
             {
-                BotaoEquip.text = "Equipped";
-            }
-            if (PlayerPrefs.GetInt("FestiveBox", 0) == 1)
-
-            {
-                BotaoEquip.text = "Equip";
+                BotaoEquip.text = "Teleport?";
             }
         }
         if (EquipamentoNumero == 6)
@@ -399,23 +396,7 @@ void Update()
         }
         if (EquipamentoNumero == 5)
         {
-            PlayerPrefs.SetInt("SlimceCrown", 1);
-            PlayerPrefs.SetInt("MonthlySardine", 1);
-            PlayerPrefs.SetInt("CrystalBob", 1);
-            if (PlayerPrefs.GetInt("LovesWhip", 0) >= 1)
-            {
-                PlayerPrefs.SetInt("LovesWhip", 1);
-            }
-            PlayerPrefs.SetInt("WhispersofLoot", 2);
-            if (PlayerPrefs.GetInt("FestiveBox", 0) >= 1)
-            {
-                PlayerPrefs.SetInt("FestiveBox", 1);
-            }
-            if (PlayerPrefs.GetInt("CreatuurrsGauntlet", 0) >= 1)
-            {
-                PlayerPrefs.SetInt("CreatuurrsGauntlet", 1);
-            }
-            PlayerPrefs.SetInt("Equip", 5);
+            DialogoItem.SetActive(true);
         }
         if (EquipamentoNumero == 6)
         {

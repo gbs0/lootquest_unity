@@ -136,6 +136,26 @@ public class Slime : MonoBehaviour
 
                 Application.LoadLevel("LoadingScene");
             }
+            if (Monstros == 15)
+            {
+                PlayerPrefs.SetInt("indexSpam", 5);
+                PlayerPrefs.SetInt("Cacto", 1);
+                PlayerPrefs.SetInt("indexSpam", Monstros);
+                PlayerPrefs.SetString("Scene", NextCenaName);
+                PlayerPrefs.SetString("Monstros", NextCenaName);
+
+                Application.LoadLevel("LoadingScene");
+            }
+            if (Monstros == 16)
+            {
+                PlayerPrefs.SetInt("indexSpam", 5);
+                PlayerPrefs.SetInt("Lord", 1);
+                PlayerPrefs.SetInt("indexSpam", Monstros);
+                PlayerPrefs.SetString("Scene", NextCenaName);
+                PlayerPrefs.SetString("Monstros", NextCenaName);
+
+                Application.LoadLevel("LoadingScene");
+            }
         }
     }
 }
