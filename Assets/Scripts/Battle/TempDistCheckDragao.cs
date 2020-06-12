@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TempDistCheckDragao : TempDistCheck
 {
@@ -76,7 +77,6 @@ public class TempDistCheckDragao : TempDistCheck
         }
     }
     
-    
     public override IEnumerator DeathAnim()
     {
         PlayerAnim.SetBool("Morto", true);
@@ -89,5 +89,13 @@ public class TempDistCheckDragao : TempDistCheck
     {
         yield return new WaitForSeconds(0.5f);
         GS.SetTrigger("Damage");
+    }
+
+    public void OnMouseEnter()
+    {
+    }
+
+    public  void OnMouseExit()
+    {
     }
 }

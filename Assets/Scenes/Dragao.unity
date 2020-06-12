@@ -6350,6 +6350,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4889621933577898582, guid: d68c92c07d3bb384997ab40b6d643c97,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4889621934937223198, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6495,6 +6500,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 4889621933968704882, guid: d68c92c07d3bb384997ab40b6d643c97,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 54970d7db94551d438d9be2fd9fd5502, type: 2}
     - target: {fileID: 3397164897117064623, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_Sprite
@@ -6530,12 +6540,12 @@ PrefabInstance:
       propertyPath: PHP
       value: 
       objectReference: {fileID: 226172992}
-    - target: {fileID: 3397164897117064621, guid: d68c92c07d3bb384997ab40b6d643c97,
+    - target: {fileID: 3397164898782556113, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3397164898782556113, guid: d68c92c07d3bb384997ab40b6d643c97,
+    - target: {fileID: 3397164897117064621, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_IsActive
       value: 1
