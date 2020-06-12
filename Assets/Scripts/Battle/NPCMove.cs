@@ -84,6 +84,7 @@ public class NPCMove : TaticsMove
 		    }
 		    return;
 	    }
+	    
 	    if (LootGenTest == 1)
 	    {	    
 		    FindSelectableTiles();

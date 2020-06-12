@@ -8,6 +8,7 @@ public class PlayerMove : TaticsMove
 
     public Animator PlayerAnim;
     public UndoLoot Undo;
+
     
     //private GameObject ItemGen;
     //UIScript UIScript;
