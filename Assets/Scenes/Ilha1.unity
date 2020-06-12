@@ -21087,7 +21087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Monstros: 16
-  NextCenaName: 
+  NextCenaName: BossFinal
 --- !u!58 &1117023002
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24124,7 +24124,7 @@ PrefabInstance:
     - target: {fileID: 5655836700516903764, guid: 8bc9b12f9ebee464284cccc956b0d5a5,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bc9b12f9ebee464284cccc956b0d5a5, type: 3}
@@ -28588,7 +28588,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1609897884
 Transform:
   m_ObjectHideFlags: 0
@@ -34803,11 +34803,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1870023313}
-  - component: {fileID: 1870023317}
   - component: {fileID: 1870023316}
   - component: {fileID: 1870023314}
-  - component: {fileID: 1870023318}
   - component: {fileID: 1870023315}
+  - component: {fileID: 1870023317}
   m_Layer: 0
   m_Name: Kakito
   m_TagString: Untagged
@@ -34823,7 +34822,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870023312}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 64.12, y: -89.33, z: 74.40642}
+  m_LocalPosition: {x: 64.48, y: -88.85, z: 74.40642}
   m_LocalScale: {x: 0.746, y: 0.746, z: 0.746}
   m_Children: []
   m_Father: {fileID: 2118025987}
@@ -34860,8 +34859,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.84, y: 8.16}
-    newSize: {x: 1.03, y: 0.55}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 5, y: 5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -34926,37 +34925,18 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: b5b31c5607a76b54081d229db993c997, type: 3}
+  m_SortingOrder: 8
+  m_Sprite: {fileID: 21300000, guid: 2b429aaeb9615a941bd929a3b08de5a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.03, y: 0.55}
+  m_Size: {x: 5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1870023318
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1870023312}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 44fe38bbd853a6746b5e370308297525, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1871017543
 GameObject:
   m_ObjectHideFlags: 0
