@@ -55,7 +55,7 @@ public class Damage : MonoBehaviour
 
     void Attack()
     {
-        if (playerMove.LootGenTest == 0 && distTotal < 6 && TempDistCheckSucubus.charm ==false)
+        if (playerMove.LootGenTest == 0 && distTotal < 100 && TempDistCheckSucubus.charm ==false)
         {
             selectable = true;
             if (Input.GetMouseButtonDown(0)&& Selection.activeSelf)
@@ -66,11 +66,11 @@ public class Damage : MonoBehaviour
                 StartCoroutine("DamageAnim");
                 if (DD)
                 {
-                    tempLife -= playerMove.HitForce*10*2;
+                    tempLife -= playerMove.HitForce*100*2;
                 }
                 else
                 {
-                    tempLife -= playerMove.HitForce*10;
+                    tempLife -= playerMove.HitForce*100;
                 }
                 float barra = tempLife / 100;
                 LifeBar.fillAmount = barra;
@@ -84,7 +84,7 @@ public class Damage : MonoBehaviour
                     Destroy(this);
                     Destroy(GetComponent<TempDistCheck>());
                 }
-                playerMove.LootGenTest = 99;
+                playerMove.LootGenTest = 0;
                 Undo.CleanBtn();
                 DD = false;
                 if (kakito)

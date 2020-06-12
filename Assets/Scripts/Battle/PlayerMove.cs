@@ -16,6 +16,7 @@ public class PlayerMove : TaticsMove
     
     private void Awake()
     {
+	    LootGenTest = 0;
 	    Undo = FindObjectOfType<UndoLoot>();
 	    Init();
         //ItemGen = GameObject.Find("BatlleUI");
@@ -113,7 +114,7 @@ public class PlayerMove : TaticsMove
     public void CancelLoot()
     {
 	    RemoveSelectableTiles();
-	    LootGenTest = 99;
+	    LootGenTest = 0;
     }
 
 }
