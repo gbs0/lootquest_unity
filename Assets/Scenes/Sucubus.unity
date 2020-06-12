@@ -763,13 +763,16 @@ MonoBehaviour:
   moveSpeed: 2
   actualTargetTile: {fileID: 0}
   LootGenTest: 0
+  stun: 0
   morto: 0
   Stuned: 0
   NPC: {fileID: 178807529}
   target: {fileID: 0}
   GS: {fileID: 178807525}
   tempDistCheck: {fileID: 178807534}
+  kakito: 0
   Stuncount: 0
+  dmg: {fileID: 0}
   tempDistCheckS: {fileID: 178807534}
 --- !u!82 &178807531
 AudioSource:
@@ -915,6 +918,9 @@ MonoBehaviour:
   Charm: {fileID: 74689643}
   CharmeImagem: {fileID: 74689641}
   atack: 0
+  bossFinal: 0
+  dmg: {fileID: 0}
+  playerHp: {fileID: 0}
 --- !u!82 &178807542
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1663,7 +1669,8 @@ AudioSource:
   m_GameObject: {fileID: 418411786}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 284009262729596095, guid: 34843a3011af85944806d504764b821f,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 23ecbde0f02c04b39a2605dd7b6d02b7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.8
@@ -1765,7 +1772,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.8
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -5946,6 +5953,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: battleCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
+      propertyPath: enemies.Array.data[0]
+      value: 
+      objectReference: {fileID: 178807530}
+    - target: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
+      propertyPath: m_ExperienceValue
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8737581070610951836, guid: da0bf2a39d91bd84297ecb20fe655b35,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6050,14 +6065,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
-      propertyPath: enemies.Array.data[0]
-      value: 
-      objectReference: {fileID: 178807530}
-    - target: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
-      propertyPath: m_ExperienceValue
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8737581071765293567, guid: da0bf2a39d91bd84297ecb20fe655b35,
         type: 3}

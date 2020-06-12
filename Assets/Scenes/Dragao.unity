@@ -441,6 +441,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasTutorial
       objectReference: {fileID: 0}
+    - target: {fileID: 6383063485069638043, guid: ecc6b64f5d46ca14e9626b338f61648c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6383063485069638047, guid: ecc6b64f5d46ca14e9626b338f61648c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1345,6 +1350,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: battleCanvas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8737581070610951836, guid: da0bf2a39d91bd84297ecb20fe655b35,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1448,10 +1457,6 @@ PrefabInstance:
     - target: {fileID: 8737581070610951836, guid: da0bf2a39d91bd84297ecb20fe655b35,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8737581071765293567, guid: da0bf2a39d91bd84297ecb20fe655b35,
@@ -1801,12 +1806,13 @@ AudioSource:
   m_GameObject: {fileID: 562058400}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 284009262729596095, guid: 34843a3011af85944806d504764b821f,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 66b7f300c5cf3427fb049ec141e851da, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3645,12 +3651,12 @@ PrefabInstance:
       propertyPath: PHP
       value: 
       objectReference: {fileID: 226172992}
-    - target: {fileID: 3397164897117064621, guid: d68c92c07d3bb384997ab40b6d643c97,
+    - target: {fileID: 3397164898782556113, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3397164898782556113, guid: d68c92c07d3bb384997ab40b6d643c97,
+    - target: {fileID: 3397164897117064621, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -4096,6 +4102,7 @@ MonoBehaviour:
   moveSpeed: 2
   actualTargetTile: {fileID: 0}
   LootGenTest: 99
+  stun: 0
   healthPlayer: {fileID: 1105728068}
   vulneravel: 0
   dragaoHealthBar: {fileID: 0}
