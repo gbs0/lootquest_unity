@@ -11,8 +11,10 @@ public class NPCMove : TaticsMove
 	public GameObject target;
     public Animator GS;
     public TempDistCheck tempDistCheck;
-
+    public bool kakito;
     public int Stuncount=0;
+
+    public Damage dmg;
     // Start is called before the first frame update
 
     public virtual void Start()
@@ -35,8 +37,13 @@ public class NPCMove : TaticsMove
 		    {
 			    return;
 		    }
+		    if (kakito)
+		    {
+			    dmg.tempLife += 5;
+		    }
 		    if (!moving)
 		    {
+			    
 			    FindNearestTarget();
 			    FindSelectableTiles(); // Still show the movement from NPC
 			    CalculatePath();
