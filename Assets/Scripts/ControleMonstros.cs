@@ -31,10 +31,16 @@ public class ControleMonstros : MonoBehaviour
     public GameObject AntSucubus;
     public GameObject PosSucubus;
 
+    public GameObject LordLoot;
+    public GameObject Kakito;
+    public GameObject FinalmenteVitoria;
+
     public GameObject CaminhoCemiterio;
 
     public GameObject EventoCidadeVoltando;
 
+    public GameObject Ninja;
+    public GameObject Deserto;
 
     public int cot;
 
@@ -96,7 +102,12 @@ public class ControleMonstros : MonoBehaviour
             }
         }
 
+        if (PlayerPrefs.GetInt("Lord") == 1)
+        {
+            LordLoot.SetActive(false);
+            FinalmenteVitoria.SetActive(true);
 
+        }
 
     }
     // Update is called once per frame
@@ -155,8 +166,14 @@ public class ControleMonstros : MonoBehaviour
             Bruxa.SetActive(false);
 
         }
-        
-        
+
+        if (PlayerPrefs.GetInt("Cacto") == 1)
+        {
+            Kakito.SetActive(false);
+
+
+        }
+       
         if (PlayerPrefs.GetInt("Batloot") == 1)
         {
             Batloot.SetActive(false);
@@ -225,7 +242,14 @@ public class ControleMonstros : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 18)
         {
-            Application.LoadLevel("Vitoria");
+            Application.LoadLevel("Guilda");
+        }
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) >= 19)
+        {
+            PlayerPrefs.SetInt("Desert", 1);
+            Ninja.SetActive(true);
+            Deserto.SetActive(true);
+
         }
         if (PlayerPrefs.GetInt("DialogoGuilda", 0) >= 14)
         {

@@ -54,11 +54,11 @@ public class BuyLootBox : MonoBehaviour
     {
         if(PlayerPrefs.GetInt("CrystalBob", 0) == 2)
         {
-            Gold = Gold + 1;
+            Gold +=2;
         }
         if (PlayerPrefs.GetInt("Creatuurr’sGauntlet", 0) == 2)
         {
-            Gold = Gold + 1;
+            Gold +=2;
         }
         else
         { 
