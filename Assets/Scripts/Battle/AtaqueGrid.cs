@@ -19,6 +19,8 @@ public class AtaqueGrid : TaticsMove
 	public List<GameObject> backTiles = new List<GameObject>();
 	public List<GameObject> sideTiles = new List<GameObject>();
 	public List<GameObject> centerTiles = new List<GameObject>();
+    public GameObject Dragon;
+    Animator DragonAnimator;
 
 	List<List<GameObject>> sorteioAtual;
 	
@@ -41,6 +43,7 @@ public class AtaqueGrid : TaticsMove
 		listP = new List<ParticleSystem>();
 		sorteioAtual = new List<List<GameObject>>();
 		Init();
+        DragonAnimator = Dragon.GetComponent<Animator>();
 	}
 
 	public override void BeginTurn() // Ainda n troca o turno
@@ -95,14 +98,26 @@ public class AtaqueGrid : TaticsMove
 				print("IMPOSSIBLE");
 				break;
 			case 2:
+                //Meteoro
 				sorteioAtual.Add(sideTiles);
-				break;
+                DragonAnimator.SetBool("IdleLaranja", true);
+                DragonAnimator.SetBool("IdleAmarelo", false);
+                DragonAnimator.SetBool("IdleAzul", false);
+                break;
 			case 1:
+                //Baforada
 				sorteioAtual.Add(centerTiles);
-				break;
+                DragonAnimator.SetBool("IdleAmarelo", true);
+                DragonAnimator.SetBool("IdleLaranja", false);
+                DragonAnimator.SetBool("IdleAzul", false);
+                break;
 			case 0:
+                //Cristais
 				sorteioAtual.Add(backTiles);
-				break;
+                DragonAnimator.SetBool("IdleAzul", true);
+                DragonAnimator.SetBool("IdleLaranja", false);
+                DragonAnimator.SetBool("IdleAmarelo", false);
+                break;
 			}	
 		// }
 
@@ -114,8 +129,12 @@ public class AtaqueGrid : TaticsMove
 	public void AtaqueTiles(List<GameObject> tilesList)
 	{
 		DanoNoPlayer(tilesList);
-		StartCoroutine("DesmarcarTiles", tilesList);		
- 	}
+		StartCoroutine("DesmarcarTiles", tilesList);
+        DragonAnimator.SetBool("Idle", true);
+        DragonAnimator.SetBool("IdleAzul", false);
+        DragonAnimator.SetBool("IdleLaranja", false);
+        DragonAnimator.SetBool("IdleAmarelo", false);
+    }
 
 	public void MarcarTiles(List<GameObject> GOlist)
 	{

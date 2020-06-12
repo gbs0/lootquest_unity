@@ -56,7 +56,7 @@ public class TempDistCheckDragao : TempDistCheck
 
                     Morte = true;
 
-                    GS.SetBool("Morto", true);
+                    GS.SetTrigger("Death");
                     RM.EnimKilled();
                 }
                 playerMove.LootGenTest = 0;
