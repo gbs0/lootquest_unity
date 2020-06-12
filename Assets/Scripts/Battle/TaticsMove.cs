@@ -27,7 +27,7 @@ public partial class TaticsMove : MonoBehaviour
     public Tile actualTargetTile;
 
 	public int LootGenTest = 99;
-
+	public bool stun;
 
 	public virtual void Init()
     {
@@ -294,6 +294,11 @@ public partial class TaticsMove : MonoBehaviour
 
 	public virtual void BeginTurn()
 	{
+		if (stun)
+		{
+			RoundManager.EndTurn();
+			return;
+		}
 	    if (LootGenTest == 1)
 	    {	    
 		    FindSelectableTiles();

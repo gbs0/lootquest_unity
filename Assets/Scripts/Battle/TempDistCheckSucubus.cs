@@ -11,7 +11,11 @@ public class TempDistCheckSucubus : TempDistCheck
     public GameObject CharmeImagem;
     public static bool charm;
     public int atack;
+    public bool bossFinal;
 
+    public Damage dmg;
+
+    public TempPlayerHp playerHp;
     // Start is called before the first frame update
 
    
@@ -86,46 +90,100 @@ public class TempDistCheckSucubus : TempDistCheck
 
     public override void TestDamage()
     {
-
-        atack = Random.Range(0, 5);
-          if (atack < 3)
+        if (bossFinal)
         {
-            if (distTotal <= 1.5f)
+            atack = Random.Range(0, 6);
+
+            switch (atack)
             {
+                case 0:
+                    GS.SetTrigger("AttackMele");
+                    PlayerAnim.SetTrigger("Damage");
+                    hitCount++;
 
-                GS.SetTrigger("AttackMele");
-                PlayerAnim.SetTrigger("Damage");
-                hitCount++;
+                    canHit = false;
+                    if (TempPlayerHp.PlayerHealth <= 0)
+                    {
+                        StartCoroutine("DeathAnim");
+                    }
+                    break;
+                case 1:
+                    GS.SetTrigger("SuperAttack");
+                    PlayerAnim.SetTrigger("Damage");
+                    hitCount++;
 
-                canHit = false;
-                if (TempPlayerHp.PlayerHealth <= 0)
-                {
-                    StartCoroutine("DeathAnim");
-                }
+                    canHit = false;
+                    if (TempPlayerHp.PlayerHealth <= 0)
+                    {
+                        StartCoroutine("DeathAnim");
+                    }
+                    break;
+                case 2:
+                    GS.SetTrigger("Charm");
+                    charm = true;
+                    CharmeImagem.SetActive(true);
+                    canHit = false;
+                    break;
+                case 3:
+                    GS.SetTrigger("Heal");
+                    dmg.tempLife += 60;
+                    break;
+                case 4:
+                    GS.SetTrigger("Heal");
+                    playerHp.totalHP += 60;
+                    break;
+                case 5:
+                    GS.SetTrigger("Stun");
+                    player.GetComponent<TaticsMove>().stun = true;
+                    break;
+                
             }
-            if (distTotal > 1.5f)
-            {
-
-                GS.SetTrigger("Attack");
-                PlayerAnim.SetTrigger("Damage");
-                hitCount++;
-
-                canHit = false;
-                if (TempPlayerHp.PlayerHealth <= 0)
-                {
-                    StartCoroutine("DeathAnim");
-                }
-            }
+            
+            
         }
-          else //(atack == 3)
+        else
         {
+            atack = Random.Range(0, 5);
+            if (atack < 3)
+            {
+                if (distTotal <= 1.5f)
+                {
+
+                    GS.SetTrigger("AttackMele");
+                    PlayerAnim.SetTrigger("Damage");
+                    hitCount++;
+
+                    canHit = false;
+                    if (TempPlayerHp.PlayerHealth <= 0)
+                    {
+                        StartCoroutine("DeathAnim");
+                    }
+                }
+
+                if (distTotal > 1.5f)
+                {
+
+                    GS.SetTrigger("Attack");
+                    PlayerAnim.SetTrigger("Damage");
+                    hitCount++;
+
+                    canHit = false;
+                    if (TempPlayerHp.PlayerHealth <= 0)
+                    {
+                        StartCoroutine("DeathAnim");
+                    }
+                }
+            }
+            else //(atack == 3)
+            {
 
 
-            GS.SetTrigger("Charm");
-            charm = true;
-            CharmeImagem.SetActive(true);
-            canHit = false;
+                GS.SetTrigger("Charm");
+                charm = true;
+                CharmeImagem.SetActive(true);
+                canHit = false;
 
+            }
         }
     }
     
