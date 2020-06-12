@@ -74,7 +74,7 @@ public class CaitNPC : NPCMove
        
     }
 
-    private void Teleport()
+    public  void Teleport()
     {
         var i = Random.Range(0, 4);
         gameObject.transform.position = TPTarguets[i].transform.position;
