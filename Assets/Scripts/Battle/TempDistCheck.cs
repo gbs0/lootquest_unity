@@ -144,6 +144,7 @@ public class TempDistCheck : MonoBehaviour
         
         if (TempPlayerHp.PlayerHealth <=0)
         {
+            RM.Clean();
             StartCoroutine("DeathAnim");
         }
     }
