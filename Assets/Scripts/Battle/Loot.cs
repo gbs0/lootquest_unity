@@ -20,14 +20,14 @@ public class Loot: MonoBehaviour
         public Sprite Run_Sprite2;
         public Sprite Run_Sprite3;
         public Sprite Run_Sprite4;
-
+        public List<GameObject> stun;
         public Sprite Fight_Sprite;
         public Sprite Fight_Sprite2;
         public Sprite Fight_Sprite3;
         public Sprite Fight_Sprite4;
         private GameObject PlayerAni;
         public Animator AnimePlayer;
-
+      
         public LootBoxPainel LBpainel;
         //private Animator PlayerAnim;
 
@@ -35,6 +35,7 @@ public class Loot: MonoBehaviour
     private void Awake()
     {
         CheckLvl();
+        
         UL = FindObjectOfType<UndoLoot>();            
         CanUse = true;
         m_Image = GetComponent<Image>();
@@ -79,7 +80,11 @@ public class Loot: MonoBehaviour
 
     private void Start()
     {
-        if (Spell) return;
+       
+        if (Spell)
+        {
+            return;
+        }
         
         if (TypeLoot == 1)
         {
@@ -276,8 +281,13 @@ public class Loot: MonoBehaviour
         foreach (var npc in enim)
         {
             npc.Stuned = true;
-            npc.
         }
+
+        foreach (var obj in stun)
+        {
+            obj.SetActive(true);
+        }
+        
         player.BeginTurn();
         Destroy(gameObject);
     }

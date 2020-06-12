@@ -7012,6 +7012,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &638809972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 863777805571887273, guid: ec3582913b4ddef4fa45f161c06bf26a,
+    type: 3}
+  m_PrefabInstance: {fileID: 638809964}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &653385111
 GameObject:
   m_ObjectHideFlags: 0
@@ -15867,6 +15873,21 @@ PrefabInstance:
       propertyPath: FirstTime
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1886968805083211132, guid: da0bf2a39d91bd84297ecb20fe655b35,
+        type: 3}
+      propertyPath: stun.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886968805083211132, guid: da0bf2a39d91bd84297ecb20fe655b35,
+        type: 3}
+      propertyPath: stun.Array.data[0]
+      value: 
+      objectReference: {fileID: 8911518419597746041}
+    - target: {fileID: 1886968805083211132, guid: da0bf2a39d91bd84297ecb20fe655b35,
+        type: 3}
+      propertyPath: stun.Array.data[1]
+      value: 
+      objectReference: {fileID: 638809972}
     - target: {fileID: 8737581070312055287, guid: da0bf2a39d91bd84297ecb20fe655b35,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -21430,3 +21451,9 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &8911518419597746041 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 863777805571887273, guid: ec3582913b4ddef4fa45f161c06bf26a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8911518419597746032}
+  m_PrefabAsset: {fileID: 0}

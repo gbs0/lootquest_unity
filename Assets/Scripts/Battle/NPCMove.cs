@@ -69,6 +69,11 @@ public class NPCMove : TaticsMove
 		    if (Stuncount>1)
 		    {
 			    Stuned = false;
+			    var stun = FindObjectsOfType<StunAnim>();
+			    foreach (var anim in stun)
+			    {
+				    anim.LiveStun();
+			    }
 		    }
 		    return;
 	    }
