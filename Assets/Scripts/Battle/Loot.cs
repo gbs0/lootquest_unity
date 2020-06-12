@@ -276,7 +276,7 @@ public class Loot: MonoBehaviour
         foreach (var npc in enim)
         {
             npc.Stuned = true;
-            
+            npc.
         }
         player.BeginTurn();
         Destroy(gameObject);
