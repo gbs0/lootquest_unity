@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TempDistCheck : MonoBehaviour
@@ -149,7 +150,7 @@ public class TempDistCheck : MonoBehaviour
         PlayerAnim.SetBool("Morto", true);
         yield return new WaitForSeconds(deathTime);
 
-        PlayerPrefs.SetString("_sceneName", NextCenaName);
+        PlayerPrefs.SetString("Scene", SceneManager.GetActiveScene().name);
         LoadingSisten.LoadLevel(NextCenaName);
     }
 
