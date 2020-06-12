@@ -37,10 +37,7 @@ public class NPCMove : TaticsMove
 		    {
 			    return;
 		    }
-		    if (kakito)
-		    {
-			    dmg.tempLife += 5;
-		    }
+		    
 		    if (!moving)
 		    {
 			    
@@ -84,7 +81,12 @@ public class NPCMove : TaticsMove
 		    }
 		    return;
 	    }
-	    if (LootGenTest == 1)
+        if (kakito)
+        {
+            dmg.tempLife += 10;
+            
+        }
+        if (LootGenTest == 1)
 	    {	    
 		    FindSelectableTiles();
 	    }
