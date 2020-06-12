@@ -44,14 +44,8 @@ public class ControleItem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    }
-
-// Update is called once per frame
-void Update()
-    {
         if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 5)
         {
-            CristalSlimceCrown.SetActive(true);
             Instrução2.SetActive(true);
 
         }
@@ -65,6 +59,17 @@ void Update()
             CristalBob.SetActive(true);
 
         }
+    }
+
+// Update is called once per frame
+void Update()
+    {
+        if (PlayerPrefs.GetInt("DialogoGuilda", 0) == 5)
+        {
+            CristalSlimceCrown.SetActive(true);
+
+        }
+        
         if (PlayerPrefs.GetInt("Sucubus") == 1)
         {
             CristalChicote.SetActive(true);

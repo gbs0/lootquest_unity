@@ -196,7 +196,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: 0d44875457302ff42a734bc2aa4f2dff,
+      objectReference: {fileID: 32900000, guid: 16004c3e4ad483c479c37dfb24a8c2c6,
         type: 3}
     - target: {fileID: 6958450943993583731, guid: ac6899f2b3776ce43a94f379bc0557c6,
         type: 3}
@@ -207,7 +207,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: 0d44875457302ff42a734bc2aa4f2dff,
+      objectReference: {fileID: 32900000, guid: 16004c3e4ad483c479c37dfb24a8c2c6,
         type: 3}
     - target: {fileID: 6958450943993583731, guid: ac6899f2b3776ce43a94f379bc0557c6,
         type: 3}
@@ -229,6 +229,16 @@ PrefabInstance:
       propertyPath: NextCenaName
       value: Ilha1
       objectReference: {fileID: 0}
+    - target: {fileID: 6958450945442078886, guid: ac6899f2b3776ce43a94f379bc0557c6,
+        type: 3}
+      propertyPath: dublagem
+      value: 
+      objectReference: {fileID: 914813855}
+    - target: {fileID: 6958450945442078886, guid: ac6899f2b3776ce43a94f379bc0557c6,
+        type: 3}
+      propertyPath: btn
+      value: 
+      objectReference: {fileID: 1863620536}
     - target: {fileID: 6958450945427194741, guid: ac6899f2b3776ce43a94f379bc0557c6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -249,8 +259,44 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 6958450945427194740, guid: ac6899f2b3776ce43a94f379bc0557c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6958450945427194740, guid: ac6899f2b3776ce43a94f379bc0557c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6958450945427194740, guid: ac6899f2b3776ce43a94f379bc0557c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6958450945427194740, guid: ac6899f2b3776ce43a94f379bc0557c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 234172645}
+    - target: {fileID: 6958450945427194740, guid: ac6899f2b3776ce43a94f379bc0557c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 6958450945427194740, guid: ac6899f2b3776ce43a94f379bc0557c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac6899f2b3776ce43a94f379bc0557c6, type: 3}
+--- !u!1 &234172645 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6958450945427194742, guid: ac6899f2b3776ce43a94f379bc0557c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 143927801}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &311409503
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,8 +1030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c210087906848974586c966de0628380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextCenaName: Ilha1
-  NovoJogo: 
+  NovoJogo: ilha1
   timeStart: 0
   time: 1
 --- !u!114 &1906178340

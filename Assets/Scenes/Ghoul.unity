@@ -3577,6 +3577,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1886968805083211132, guid: da0bf2a39d91bd84297ecb20fe655b35,
+        type: 3}
+      propertyPath: stun.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886968805083211132, guid: da0bf2a39d91bd84297ecb20fe655b35,
+        type: 3}
+      propertyPath: stun.Array.data[0]
+      value: 
+      objectReference: {fileID: 1890807681}
     - target: {fileID: 8737581070854349419, guid: da0bf2a39d91bd84297ecb20fe655b35,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -7532,7 +7542,7 @@ PrefabInstance:
     - target: {fileID: 4889621934937223168, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4889621933577898586, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
@@ -7670,6 +7680,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+--- !u!1 &1890807681 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 863777805571887273, guid: d68c92c07d3bb384997ab40b6d643c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 1890807680}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1918165447
 GameObject:
   m_ObjectHideFlags: 0

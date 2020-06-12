@@ -12,6 +12,7 @@ public class PassiveManager : MonoBehaviour
     public GameObject SpeelsPainel;
     public List<GameObject> passivePainel;
     private int i, l;
+    private LootBoxPainel LBpainel;
     private Transform lastParent;
     private GameObject selectLoot;
     public Loot[] loots;
@@ -22,6 +23,7 @@ public class PassiveManager : MonoBehaviour
     private void Start()
     {
         closeButton.onClick.AddListener(ClosePainel);
+        LBpainel = FindObjectOfType<LootBoxPainel>();
     }
 
     private void ClosePainel()
@@ -35,7 +37,7 @@ public class PassiveManager : MonoBehaviour
 
         passivePainel[i].SetActive(false);
         Passiva.CleanPainel();
-        
+        LBpainel.Add();
 
         foreach (var loot in loots)
         {
@@ -52,8 +54,7 @@ public class PassiveManager : MonoBehaviour
                 TutorialPainel.SetActive(true);
             }
             loots = FindObjectsOfType<Loot>();
-            if (RoundManager.PlayerTurn || FirstTime)
-            {
+            
                 _player = RoundManager._allCaracters.Peek().gameObject.GetComponent<PlayerStats>();
                 i = _player.passivaIndex;
                 passivePainel[i].SetActive(true);
@@ -63,7 +64,7 @@ public class PassiveManager : MonoBehaviour
                     loot.botao.onClick.RemoveListener(loot.SpendLoot);
                     loot.botao.onClick.AddListener(loot.Chose);
                 }
-            }
+            
         
         
         

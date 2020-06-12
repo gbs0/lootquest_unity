@@ -17,6 +17,7 @@ public class CaitNPC : NPCMove
             FindNearestTarget();
             if (distance<2)
             {
+                GS.SetTrigger("Teleport");
                 Teleport();
             }
             else

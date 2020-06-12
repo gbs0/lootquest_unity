@@ -11,6 +11,10 @@ public class NPCMove : TaticsMove
 	public GameObject target;
     public Animator GS;
     public TempDistCheck tempDistCheck;
+    public bool kakito;
+    public int Stuncount=0;
+
+    public Damage dmg;
     // Start is called before the first frame update
 
     public virtual void Start()
@@ -33,8 +37,13 @@ public class NPCMove : TaticsMove
 		    {
 			    return;
 		    }
+		    if (kakito)
+		    {
+			    dmg.tempLife += 5;
+		    }
 		    if (!moving)
 		    {
+			    
 			    FindNearestTarget();
 			    FindSelectableTiles(); // Still show the movement from NPC
 			    CalculatePath();
@@ -53,6 +62,7 @@ public class NPCMove : TaticsMove
     }
     public override void BeginTurn()
     {
+	    tempDistCheck.canHit = true;
 	    if (morto)
 	    {
 		    RoundManager.EndTurn();
@@ -62,7 +72,16 @@ public class NPCMove : TaticsMove
 	    {
 		    // roda anima de bixo stunado e passa
 		    RoundManager.EndTurn();
-		    Stuned = false;
+		    Stuncount++;
+		    if (Stuncount>1)
+		    {
+			    Stuned = false;
+			    var stun = FindObjectsOfType<StunAnim>();
+			    foreach (var anim in stun)
+			    {
+				    anim.LiveStun();
+			    }
+		    }
 		    return;
 	    }
 	    if (LootGenTest == 1)

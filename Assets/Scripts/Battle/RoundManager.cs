@@ -131,4 +131,11 @@ public class RoundManager : MonoBehaviour
 	    PlayerPrefs.SetString("_sceneName", nextSceneName);
 	    LoadingSisten.LoadLevel(nextSceneName);
     }
+
+    public void Clean()
+    {
+	    _allCaracters.Clear();
+	    safelist.Clear();
+	    test.Clear();
+    }
 }

@@ -26,6 +26,7 @@ public class UndoLoot : MonoBehaviour
         _player.CancelLoot();
         var l = Instantiate(prefabLoot, Vector3.zero, Quaternion.identity, _painel.transform).GetComponent<Loot>();
         l.SetValue(sLoot.CanUse,sLoot._rarit,sLoot.TypeLoot);
+        _painel.GetComponent<LootBoxPainel>().Add();
         btn.gameObject.SetActive(false);
     }
 

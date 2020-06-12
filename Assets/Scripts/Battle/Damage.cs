@@ -14,7 +14,7 @@ public class Damage : MonoBehaviour
     PlayerMove playerMove;
     public Animator PlayerAnim;
     public Animator GS;
-
+    public bool kakito;
     public float TimeAnimation;
     public bool Morte = false;
     public UndoLoot Undo;
@@ -87,6 +87,10 @@ public class Damage : MonoBehaviour
                 playerMove.LootGenTest = 99;
                 Undo.CleanBtn();
                 DD = false;
+                if (kakito)
+                {
+                    player.GetComponent<TempPlayerHp>().LifeCheck(10);
+                }
                 //RoundManager.EndTurn();
             }
         }

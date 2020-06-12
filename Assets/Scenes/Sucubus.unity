@@ -475,6 +475,11 @@ PrefabInstance:
       propertyPath: PlayerAnim
       value: 
       objectReference: {fileID: 599900939}
+    - target: {fileID: 4889621934937223168, guid: d68c92c07d3bb384997ab40b6d643c97,
+        type: 3}
+      propertyPath: tempLife
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 4889621933577898586, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -774,6 +779,12 @@ PrefabInstance:
     - {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
     - {fileID: 4889621934937223199, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+--- !u!1 &178807524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 863777805571887273, guid: d68c92c07d3bb384997ab40b6d643c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 178807523}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &178807525 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 4889621933968704882, guid: d68c92c07d3bb384997ab40b6d643c97,
@@ -837,6 +848,7 @@ MonoBehaviour:
   target: {fileID: 0}
   GS: {fileID: 178807525}
   tempDistCheck: {fileID: 178807534}
+  Stuncount: 0
   tempDistCheckS: {fileID: 178807534}
 --- !u!82 &178807531
 AudioSource:
@@ -978,7 +990,7 @@ MonoBehaviour:
   vida: 0
   SkipButton: {fileID: 312207043}
   TimeAnimation: 0
-  deathTime: 5
+  deathTime: 2.51
   Charm: {fileID: 74689643}
   CharmeImagem: {fileID: 74689641}
   atack: 0
@@ -3271,7 +3283,7 @@ PrefabInstance:
     - target: {fileID: 3889825052640751792, guid: 790e0d5ad2ae4404c8755295d629a12b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3889825052640751795, guid: 790e0d5ad2ae4404c8755295d629a12b,
         type: 3}
@@ -6268,6 +6280,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1886968805083211132, guid: da0bf2a39d91bd84297ecb20fe655b35,
+        type: 3}
+      propertyPath: stun.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886968805083211132, guid: da0bf2a39d91bd84297ecb20fe655b35,
+        type: 3}
+      propertyPath: stun.Array.data[0]
+      value: 
+      objectReference: {fileID: 178807524}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da0bf2a39d91bd84297ecb20fe655b35, type: 3}
 --- !u!114 &1556435820 stripped

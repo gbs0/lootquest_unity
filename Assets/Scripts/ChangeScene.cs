@@ -5,7 +5,7 @@ using UnityEngine;
 public class ChangeScene : MonoBehaviour
 {
 
-    public string NextCenaName;
+    private string NextCenaName;
     public string NovoJogo;
     public float timeStart;
     public bool time = false;
@@ -33,26 +33,33 @@ void Update()
 
     public void NextScene()
     {
-        PlayerPrefs.SetString("_sceneName", NextCenaName);
-        LoadingSisten.LoadLevel(NextCenaName);
+        PlayerPrefs.SetString("Scene", NextCenaName);
+        LoadingSisten.LoadLevel("LoadingScene");
     }
     public void IntroNextScene()
     {
         
-        PlayerPrefs.SetString("_sceneName", NextCenaName);
-        LoadingSisten.LoadLevel(NextCenaName);
+        PlayerPrefs.SetString("Scene", NextCenaName);
+        LoadingSisten.LoadLevel("LoadingScene");
         
     }
 
     public void NewGame()
     {
         PlayerPrefs.SetInt("Int", 0);
-        Persistence.ResetGame();
         PlayerPrefs.SetInt("DialogoGuilda", 0);
-        PlayerPrefs.SetString("_sceneName", NovoJogo);
+        PlayerPrefs.SetString("Scene", NovoJogo);
         PlayerPrefs.DeleteAll();
-        LoadingSisten.LoadLevel(NextCenaName);
+        Persistence.ResetGame();
+        LoadingSisten.LoadLevel(NovoJogo);
 
+    }
+
+    public void BackMenu()
+    {
+        PlayerPrefs.SetString("Scene", "MenuInicial");
+        LoadingSisten.LoadLevel("MenuInicial");
+        Time.timeScale = 1;
     }
     
 

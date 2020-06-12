@@ -17,7 +17,7 @@ public class OptionsMenu : MonoBehaviour
         BackButton.onClick.AddListener(OpenMenu);
     }
 
-    private void OpenMenu()
+    public void OpenMenu()
     {
         SoundPainel.SetActive(false);
         MenuPainel.SetActive(true);
@@ -56,14 +56,15 @@ public class OptionsMenu : MonoBehaviour
                 {
 
                     MenuPainel.SetActive(!MenuPainel.activeSelf);
-                    if (Time.timeScale == 1.0f)
-                        Time.timeScale = 0.0f;
-                    else
-                        Time.timeScale = 1.0f;
+                    
                 }
 
                 
             }
         }
+        if (MenuPainel.activeSelf)
+            Time.timeScale = 0.0f;
+        else
+            Time.timeScale = 1.0f;
     }
 }
