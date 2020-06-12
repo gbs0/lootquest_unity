@@ -56,14 +56,15 @@ public class OptionsMenu : MonoBehaviour
                 {
 
                     MenuPainel.SetActive(!MenuPainel.activeSelf);
-                    if (MenuPainel.activeSelf)
-                        Time.timeScale = 0.0f;
-                    else
-                        Time.timeScale = 1.0f;
+                    
                 }
 
                 
             }
         }
+        if (MenuPainel.activeSelf)
+            Time.timeScale = 0.0f;
+        else
+            Time.timeScale = 1.0f;
     }
 }
