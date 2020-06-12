@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Teleport : MonoBehaviour
 {
+    public GameObject Cait;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +15,7 @@ public class Teleport : MonoBehaviour
     // Update is called once per frame
     public void Telepot()
     {
-      
+        CaitNPC.tel = true;
     }
 
 }
