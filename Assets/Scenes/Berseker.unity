@@ -4171,6 +4171,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3889825052890228149}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1060997791 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3889825051828314914, guid: 790e0d5ad2ae4404c8755295d629a12b,
+    type: 3}
+  m_PrefabInstance: {fileID: 3889825052890228149}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060997790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 953a00e2a4a8a4b86bc5328dd7cab6bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1060997797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5613,6 +5625,18 @@ MonoBehaviour:
   f: 0
   g: 0
   h: 0
+--- !u!114 &1386460218 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1328292409, guid: da0bf2a39d91bd84297ecb20fe655b35,
+    type: 3}
+  m_PrefabInstance: {fileID: 319777945}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f44629fa53e21499cb4e41c7673474ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1441958023
 GameObject:
   m_ObjectHideFlags: 0
@@ -8025,6 +8049,26 @@ PrefabInstance:
       propertyPath: tempLife
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: RM
+      value: 
+      objectReference: {fileID: 1386460218}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1060997790}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: playerMove
+      value: 
+      objectReference: {fileID: 1060997791}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: Undo
+      value: 
+      objectReference: {fileID: 155954617}
+    - target: {fileID: 1661451079, guid: d68c92c07d3bb384997ab40b6d643c97, type: 3}
+      propertyPath: vida
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 4889621933577898582, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_IsActive
@@ -8186,6 +8230,16 @@ PrefabInstance:
       propertyPath: tempDistCheck
       value: 
       objectReference: {fileID: 1661451076}
+    - target: {fileID: 4889621934937223199, guid: d68c92c07d3bb384997ab40b6d643c97,
+        type: 3}
+      propertyPath: dmg
+      value: 
+      objectReference: {fileID: 1661451077}
+    - target: {fileID: 4889621934937223199, guid: d68c92c07d3bb384997ab40b6d643c97,
+        type: 3}
+      propertyPath: kakito
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3397164897117064620, guid: d68c92c07d3bb384997ab40b6d643c97,
         type: 3}
       propertyPath: m_AnchoredPosition.y
