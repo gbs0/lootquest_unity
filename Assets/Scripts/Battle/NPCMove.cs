@@ -11,6 +11,8 @@ public class NPCMove : TaticsMove
 	public GameObject target;
     public Animator GS;
     public TempDistCheck tempDistCheck;
+
+    public int Stuncount=0;
     // Start is called before the first frame update
 
     public virtual void Start()
@@ -63,7 +65,11 @@ public class NPCMove : TaticsMove
 	    {
 		    // roda anima de bixo stunado e passa
 		    RoundManager.EndTurn();
-		    Stuned = false;
+		    Stuncount++;
+		    if (Stuncount>1)
+		    {
+			    Stuned = false;
+		    }
 		    return;
 	    }
 	    if (LootGenTest == 1)

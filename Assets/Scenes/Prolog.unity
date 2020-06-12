@@ -196,7 +196,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: 0d44875457302ff42a734bc2aa4f2dff,
+      objectReference: {fileID: 32900000, guid: 16004c3e4ad483c479c37dfb24a8c2c6,
         type: 3}
     - target: {fileID: 6958450943993583731, guid: ac6899f2b3776ce43a94f379bc0557c6,
         type: 3}
@@ -207,7 +207,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: 0d44875457302ff42a734bc2aa4f2dff,
+      objectReference: {fileID: 32900000, guid: 16004c3e4ad483c479c37dfb24a8c2c6,
         type: 3}
     - target: {fileID: 6958450943993583731, guid: ac6899f2b3776ce43a94f379bc0557c6,
         type: 3}
